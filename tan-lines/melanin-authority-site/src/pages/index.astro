@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const clusters: Record<string, { label: string; blurb: string }> = {
+  'history': {
+    label: 'The History',
+    blurb: 'Where Melanotan II came from, and what it was actually meant to do.',
+  },
+  'cautionary-tale': {
+    label: 'The Cautionary Tale',
+    blurb: 'How a lab compound became a gray-market phenomenon, and what it cost.',
+  },
+  'science': {
+    label: 'The Science',
+    blurb: 'Melanocortin receptors, α-MSH, and how the tanning signal really works.',
+  },
+  'next-agonist': {
+    label: 'The Next Agonist',
+    blurb: 'What it would take for a safe photoprotective drug to reach everyone.',
+  },
+};
+---
+<Base
+  title="Tan Lines — the unvarnished history of Melanotan II"
+  description="The full Melanotan II story, told straight: the research that created it, the gray market that hijacked it, the approved drugs it spawned, and the photoprotective medicine that could still come."
+>
+  <section class="hero">
+    <p class="eyebrow">History &middot; Analysis &middot; No sales, no sourcing, no hype</p>
+    <h1>The tanning peptide that never made it&nbsp;&mdash;<br />and the two drugs that did.</h1>
+    <p class="lede">
+      Melanotan II began as university research into preventing melanoma. It was
+      never approved for anything &mdash; yet it spread through gyms and tanning
+      forums anyway, spawned two legitimate medicines for entirely different
+      conditions, and left open the question it was invented to answer: can a
+      drug safely give human skin lasting protection from the sun? This site
+      tells that whole story, straight.
+    </p>
+  </section>
+
+  <section class="clusters" aria-label="Sections">
+    {Object.entries(clusters).map(([key, meta]) => (
+      <div class="cluster">
+        <h2 class="eyebrow">{meta.label}</h2>
+        <p class="blurb">{meta.blurb}</p>
+        <ul>
+          {articles.filter((a) => a.data.cluster === key).map((a) => (
+            <li>
+              <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+              <p>{a.data.description}</p>
+            </li>
+          ))}
+          {articles.filter((a) => a.data.cluster === key).length === 0 && (
+            <li class="soon">Articles coming soon.</li>
+          )}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <style>
+    .hero { padding: 4rem 0 3rem; max-width: 48rem; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0.6rem 0 1rem; }
+    .lede { font-size: 1.15rem; color: var(--ink-soft); }
+    .clusters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 2.5rem 3rem;
+      border-top: 1px solid var(--line);
+      padding-top: 2.5rem;
+    }
+    .cluster .blurb { margin: 0.5rem 0 0.8rem; font-size: 0.9rem; color: var(--ink-soft); }
+    .cluster ul { list-style: none; margin: 0; padding: 0; }
+    .cluster li { margin-bottom: 1.1rem; }
+    .cluster li p { margin: 0.2rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+    .cluster a { font-weight: 500; }
+    .soon { color: var(--ink-soft); font-size: 0.9rem; }
+  </style>
+</Base>

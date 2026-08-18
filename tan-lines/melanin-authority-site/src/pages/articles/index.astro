@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<Base
+  title="All articles — Melanin, Explained"
+  description="Every article on melanin biology, sun exposure, supplementation, and safety."
+>
+  <h1 class="page-title">All articles</h1>
+  <ul class="list">
+    {articles.map((a) => (
+      <li>
+        <span class="eyebrow">{a.data.cluster.replace(/-/g, ' ')}</span>
+        <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+        <p>{a.data.description}</p>
+      </li>
+    ))}
+  </ul>
+  <style>
+    .page-title { margin-top: 3rem; font-size: 2.2rem; }
+    .list { list-style: none; padding: 0; max-width: 46rem; }
+    .list li { border-top: 1px solid var(--line); padding: 1.4rem 0; }
+    .list a { font-weight: 500; font-size: 1.2rem; display: inline-block; margin-top: 0.2rem; }
+    .list p { margin: 0.3rem 0 0; color: var(--ink-soft); }
+  </style>
+</Base>

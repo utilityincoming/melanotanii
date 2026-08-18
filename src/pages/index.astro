@@ -39,6 +39,9 @@ const clusters: Record<string, { label: string; blurb: string }> = {
       drug safely give human skin lasting protection from the sun? This site
       tells that whole story, straight.
     </p>
+    <p class="hero-cta">
+      <a href="/timeline/">Start with the timeline&nbsp;&rarr;</a>
+    </p>
   </section>
 
   <section class="clusters" aria-label="Sections">
@@ -65,6 +68,9 @@ const clusters: Record<string, { label: string; blurb: string }> = {
     .hero { padding: 4rem 0 3rem; max-width: 48rem; }
     .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0.6rem 0 1rem; }
     .lede { font-size: 1.15rem; color: var(--ink-soft); }
+    .hero-cta { margin: 1.4rem 0 0; }
+    .hero-cta a { font-weight: 600; text-decoration: none; }
+    .hero-cta a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .clusters {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));

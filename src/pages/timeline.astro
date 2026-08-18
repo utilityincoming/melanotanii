@@ -1,0 +1,267 @@
+---
+import Base from '../layouts/Base.astro';
+
+type Strand = 'mission' | 'market' | 'approval';
+
+interface Event {
+  year: string;
+  strand: Strand;
+  title: string;
+  body: string;
+}
+
+const strands: Record<Strand, { label: string; blurb: string }> = {
+  mission: {
+    label: 'The mission',
+    blurb: 'The original goal — a tested, approved drug that protects skin from the sun.',
+  },
+  market: {
+    label: 'The gray market',
+    blurb: 'What formed in the vacuum when the approved product never arrived.',
+  },
+  approval: {
+    label: 'The spinoffs',
+    blurb: "Approved medicines built from MT-II's side effects — none of them a tan.",
+  },
+};
+
+// Dates are firm where the record is firm (regulatory approvals) and
+// deliberately approximate where the primary sources are not precise.
+const events: Event[] = [
+  {
+    year: '1960s–70s',
+    strand: 'mission',
+    title: 'The signal is mapped',
+    body:
+      "Endocrinologists work out that a family of melanocortin peptides — α-MSH chief among them — is the body's own instruction to make pigment. Natural α-MSH is too fragile to be a drug: it breaks down within minutes of reaching the blood.",
+  },
+  {
+    year: '1980s',
+    strand: 'mission',
+    title: 'The Arizona program begins',
+    body:
+      'At the University of Arizona — a state with some of the harshest UV in the country — chemist Victor Hruby and biologist Mac Hadley set out to engineer stable α-MSH analogs. The premise is public-health-scale: a protective tan induced pharmacologically, before sun exposure, as built-in defense against melanoma.',
+  },
+  {
+    year: 'late 1980s',
+    strand: 'mission',
+    title: 'Two peptides, one number apart',
+    body:
+      'The stabilized linear analog [Nle⁴-D-Phe⁷]-α-MSH becomes Melanotan I (later named afamelanotide). A smaller, more potent cyclic cousin — active across more of the receptor family — becomes Melanotan II. Both are patented; both structures enter the public literature.',
+  },
+  {
+    year: '~1990s',
+    strand: 'approval',
+    title: 'The accident that redirected everything',
+    body:
+      'Testing MT-II, a member of the research team self-administers the compound and develops a prolonged erection — evidence that the peptide reaches central melanocortin circuits far beyond the skin. That off-target effect, not the tan, becomes the most valuable thing anyone found in the vial.',
+  },
+  {
+    year: 'late 1990s–2000s',
+    strand: 'approval',
+    title: 'Industry splits the shotgun into rifles',
+    body:
+      "The melanocortin IP is licensed out. MT-II itself is dropped as a drug candidate — too non-selective to be safe as a lifestyle tan — while its individual effects are pursued as separate, targeted molecules. The erection observation is developed into bremelanotide (PT-141).",
+  },
+  {
+    year: 'mid-2000s',
+    strand: 'market',
+    title: 'The gray market forms',
+    body:
+      'Because the structure is public, any capable peptide lab can make MT-II. "Research chemical" sites sell vials labeled not for human consumption; bodybuilding and tanning forums supply the injection protocols. The press dubs it "the Barbie drug" for its tan-plus-appetite-plus-libido profile.',
+  },
+  {
+    year: 'late 2000s',
+    strand: 'market',
+    title: 'Regulators sound the alarm',
+    body:
+      "Health agencies in the UK, Australia, Denmark, Norway and elsewhere issue public warnings against Melanotan and move to block sales. The warnings document the risks — unverified contents, changing moles, no safety data — but they don't end the market.",
+  },
+  {
+    year: '2014',
+    strand: 'approval',
+    title: 'Melanotan I gets approved — in Europe, for a rare disease',
+    body:
+      'Developed properly over decades by Clinuvel, afamelanotide (SCENESSE) — chemically the original Arizona Melanotan I — is approved by the EMA. Not as a consumer sunscreen, but as a subcutaneous implant for erythropoietic protoporphyria (EPP), a rare disorder in which light causes searing pain.',
+  },
+  {
+    year: 'Jun 2019',
+    strand: 'approval',
+    title: 'The libido rifle lands: Vyleesi',
+    body:
+      "The FDA approves bremelanotide (Vyleesi) for hypoactive sexual desire disorder in premenopausal women — the deliberate, purified descendant of MT-II's accidental side effect.",
+  },
+  {
+    year: 'Oct 2019',
+    strand: 'approval',
+    title: 'The FDA approves SCENESSE',
+    body:
+      'Afamelanotide reaches the US market for EPP — the first melanocortin photoprotective drug ever approved by the FDA. The molecule clears the bar. The indication stays narrow: a rare disease, a specialty implant, rare-disease pricing.',
+  },
+  {
+    year: 'Nov 2020',
+    strand: 'approval',
+    title: 'The appetite rifle lands: Imcivree',
+    body:
+      "Setmelanotide (Imcivree) is FDA-approved for rare genetic obesity syndromes, targeting the MC4R pathway — the third distinct medicine drawn out of MT-II's effect profile, and again for something other than a tan.",
+  },
+  {
+    year: 'Today',
+    strand: 'mission',
+    title: 'The original goal is still open',
+    body:
+      'Three approved drug lineages, none of them the durable, general-public photoprotective tan the Arizona team set out to build. That product still does not exist — while gray-market MT-II keeps circulating in its place. Whether photoprotection ever gets its GLP-1-style breakout is the question this site is here to watch.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The Melanotan II timeline',
+  description:
+    'A dated history of Melanotan II — from 1980s melanoma-prevention research at the University of Arizona to the gray market and the approved drugs it spawned.',
+  datePublished: '2026-08-18',
+};
+---
+<Base
+  title="Timeline — the Melanotan II story, in order — Tan Lines"
+  description="A dated history of Melanotan II: the 1980s Arizona photoprotection mission, the gray market that filled its absence, and the approved drugs spun off from its side effects."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+  <section class="head">
+    <p class="eyebrow">The timeline</p>
+    <h1>One origin, three strands, forty years.</h1>
+    <p class="lede">
+      Melanotan II starts as a single idea in a University of Arizona lab and
+      splits into three separate stories. Read down the spine to watch them
+      diverge — and to see the one strand that still hasn't paid off.
+    </p>
+  </section>
+
+  <ul class="legend" aria-label="The three strands">
+    {(Object.entries(strands) as [Strand, { label: string; blurb: string }][]).map(
+      ([key, s]) => (
+        <li class={`legend-item strand-${key}`}>
+          <span class="swatch" aria-hidden="true"></span>
+          <span><strong>{s.label}.</strong> {s.blurb}</span>
+        </li>
+      )
+    )}
+  </ul>
+
+  <ol class="timeline">
+    {events.map((e) => (
+      <li class={`event strand-${e.strand}`}>
+        <div class="node" aria-hidden="true"></div>
+        <p class="year">{e.year}</p>
+        <p class="strand-tag">{strands[e.strand].label}</p>
+        <h3>{e.title}</h3>
+        <p class="body">{e.body}</p>
+      </li>
+    ))}
+  </ol>
+
+  <section class="closer prose">
+    <p>
+      The strand that started it all is the one still waiting. For why a safe,
+      approved, general-public photoprotective drug hasn't arrived — and what it
+      would take — read
+      <a href="/articles/middle-ground-agonist-already-exists/">The middle-ground agonist already exists</a>.
+    </p>
+  </section>
+
+  <style>
+    .head { padding: 4rem 0 2rem; max-width: 46rem; }
+    .head h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0.6rem 0 1rem; }
+    .lede { font-size: 1.15rem; color: var(--ink-soft); }
+
+    /* Legend */
+    .legend {
+      list-style: none;
+      margin: 0 0 3rem;
+      padding: 1.4rem 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 0.9rem;
+      max-width: 46rem;
+      background: #fff;
+    }
+    .legend-item { display: flex; gap: 0.7rem; align-items: baseline; font-size: 0.95rem; color: var(--ink-soft); }
+    .legend-item strong { color: var(--ink); font-weight: 600; }
+    .swatch {
+      flex: none;
+      width: 0.85rem; height: 0.85rem;
+      border-radius: 50%;
+      margin-top: 0.2rem;
+      background: var(--dot, var(--uv));
+    }
+    .strand-mission { --dot: var(--strand-mission); }
+    .strand-market { --dot: var(--caution); }
+    .strand-approval { --dot: var(--approved); }
+
+    /* Timeline spine */
+    .timeline {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      max-width: 46rem;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 0.5rem;
+      top: 0.4rem;
+      bottom: 0.4rem;
+      width: 2px;
+      background: var(--line);
+    }
+    .event {
+      position: relative;
+      padding: 0 0 2.4rem 2.2rem;
+    }
+    .event:last-child { padding-bottom: 0.5rem; }
+    .node {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.35rem;
+      width: 0.85rem; height: 0.85rem;
+      border-radius: 50%;
+      background: var(--dot, var(--uv));
+      transform: translateX(-50%);
+      box-shadow: 0 0 0 4px var(--paper);
+    }
+    .year {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--dot, var(--uv));
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+    .strand-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--dot, var(--uv));
+      margin: 0.25rem 0 0.4rem;
+      opacity: 0.85;
+    }
+    .event h3 { font-size: 1.28rem; margin: 0 0 0.4rem; }
+    .event .body { margin: 0; color: var(--ink); max-width: 40rem; }
+
+    .closer {
+      margin: 3.5rem 0 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+    }
+
+    @media (max-width: 34rem) {
+      .head { padding-top: 2.5rem; }
+    }
+  </style>
+</Base>

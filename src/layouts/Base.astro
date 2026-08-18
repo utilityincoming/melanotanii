@@ -29,6 +29,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       --ink-soft: #5A4F44;
       --line: #E4DFD6;
       --uv: #503296;
+      /* Story strands (used on the timeline) */
+      --strand-mission: #503296;  /* the photoprotection goal — same as --uv */
+      --caution: #A6431F;         /* the gray market */
+      --approved: #2F6A52;        /* the approved spinoffs */
       /* Pigment scale — the brand device */
       --pigment-scale: linear-gradient(90deg,
         #F3DCC8 0%, #E4B98F 20%, #C08A5A 40%,
@@ -109,6 +113,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <div class="wrap">
       <a class="brand" href="/">Tan Lines</a>
       <nav aria-label="Main">
+        <a href="/timeline/">Timeline</a>
         <a href="/articles/">Articles</a>
         <a href="/about/">About</a>
       </nav>

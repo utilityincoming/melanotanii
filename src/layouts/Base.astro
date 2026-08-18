@@ -1,10 +1,12 @@
 ---
+import { inject } from '@vercel/analytics';
 interface Props {
   title: string;
   description: string;
 }
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+inject();
 ---
 <!doctype html>
 <html lang="en">

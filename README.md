@@ -60,8 +60,9 @@ to `main`. Point melanotanii.com DNS at the host when ready.
 
 ## Roadmap
 
-- [ ] Fill pillars to 4–6 articles each before launch
-- [ ] Timeline page (1980s Arizona → Scenesse FDA 2019 → today)
+- [x] Fill pillars to 4 articles each (16 total) before launch — expand toward 6 as topics warrant
+- [x] Timeline page (1980s Arizona → Scenesse FDA 2019 → today)
 - [ ] Regulator-warning tracker page (UK, AU, DK, NO, US actions)
 - [ ] Author byline + credentials block for E-E-A-T
+- [ ] Cross-links into the network (melanocortin.com, peptidehormone.com)
 - [ ] RSS feed

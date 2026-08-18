@@ -8,7 +8,7 @@ const articles = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    cluster: z.enum(['history', 'cautionary-tale', 'science', 'next-agonist']),
+    cluster: z.enum(['history', 'cautionary-tale', 'science', 'culture', 'next-agonist']),
     draft: z.boolean().default(false),
   }),
 });

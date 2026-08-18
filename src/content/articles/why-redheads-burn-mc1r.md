@@ -10,6 +10,39 @@ mostly about diligence or the right sunscreen. It's largely written into a
 single gene — and it happens to be the gene at the dead center of the entire
 Melanotan story.
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="t4 d4">
+<title id="t4">The MC1R pigment switch</title>
+<desc id="d4">Alpha-MSH activating MC1R strongly makes protective eumelanin (tanning); weak red-hair MC1R variants default to pheomelanin (burning).</desc>
+<defs>
+<linearGradient id="pig4" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#E4B98F"/><stop offset="0.5" stop-color="#8A5A34"/><stop offset="1" stop-color="#241A12"/>
+</linearGradient>
+<marker id="a4uv" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#503296"/></marker>
+<marker id="a4c" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#A6431F"/></marker>
+<marker id="a4k" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#17130E"/></marker>
+</defs>
+<rect x="0" y="0" width="780" height="340" fill="#FBFAF7"/>
+<rect x="8" y="8" width="764" height="324" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="40" y="46" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">The pigment switch</text>
+<text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">&#945;-MSH flips MC1R toward protection &#8212; unless the receptor is weak.</text>
+<rect x="55" y="150" width="80" height="34" rx="6" fill="#FBFAF7" stroke="#17130E" stroke-width="1.3"/>
+<text x="95" y="172" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#17130E">&#945;-MSH</text>
+<line x1="135" y1="167" x2="203" y2="167" stroke="#17130E" stroke-width="1.4" marker-end="url(#a4k)"/>
+<text x="238" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#17130E">MC1R</text>
+<circle cx="238" cy="167" r="15" fill="#FBFAF7" stroke="#17130E" stroke-width="1.6"/>
+<path d="M255,164 C350,150 430,112 545,112" fill="none" stroke="#503296" stroke-width="2" marker-end="url(#a4uv)"/>
+<text x="398" y="120" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#503296">strong signal (cAMP &#8593;)</text>
+<rect x="548" y="92" width="150" height="44" rx="8" fill="url(#pig4)"/>
+<text x="548" y="158" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#17130E">Eumelanin &#8212; tans, protects</text>
+<path d="M255,170 C350,186 430,224 545,224" fill="none" stroke="#A6431F" stroke-width="2" marker-end="url(#a4c)"/>
+<text x="398" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#A6431F">weak &#8216;red-hair&#8217; variant</text>
+<rect x="548" y="204" width="150" height="44" rx="8" fill="#E0A07E"/>
+<text x="548" y="270" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#17130E">Pheomelanin &#8212; burns, freckles</text>
+</svg>
+<figcaption>The pigment switch. Strong &#945;-MSH signalling through MC1R makes protective eumelanin and the skin tans. Weak &#8216;red-hair&#8217; MC1R variants can&#8217;t throw the switch, so the cell defaults to pheomelanin &#8212; and the skin burns.</figcaption>
+</figure>
+
 ## The switch
 
 On the surface of every melanocyte sits a receptor called MC1R. When the

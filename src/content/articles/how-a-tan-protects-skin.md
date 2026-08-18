@@ -10,6 +10,43 @@ have to take a tan seriously as what it physically is: a defensive coating the
 body assembles out of one of the best broadband ultraviolet absorbers in all
 of biology.
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t3 d3">
+<title id="t3">How melanin shields DNA</title>
+<desc id="d3">Eumelanin is the protective brown-black pigment; pheomelanin is a weak red-yellow shield. Melanosomes stack over the sun-facing side of the nucleus like a parasol, blocking UV.</desc>
+<defs>
+<linearGradient id="pig3" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#E4B98F"/><stop offset="0.5" stop-color="#8A5A34"/><stop offset="1" stop-color="#241A12"/>
+</linearGradient>
+<marker id="uv3" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#A6431F"/></marker>
+</defs>
+<rect x="0" y="0" width="780" height="400" fill="#FBFAF7"/>
+<rect x="8" y="8" width="764" height="384" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="40" y="48" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">How melanin shields DNA</text>
+<text x="40" y="72" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Two pigments do very different jobs &#8212; and geometry does the rest.</text>
+<text x="50" y="120" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#8A8275">THE TWO PIGMENTS</text>
+<rect x="50" y="134" width="52" height="52" rx="8" fill="url(#pig3)"/>
+<text x="116" y="156" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#17130E">Eumelanin</text>
+<text x="116" y="174" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">brown&#8211;black &#8212; absorbs UV, protective</text>
+<rect x="50" y="206" width="52" height="52" rx="8" fill="#E0A07E"/>
+<text x="116" y="228" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#17130E">Pheomelanin</text>
+<text x="116" y="246" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">red&#8211;yellow &#8212; weak shield</text>
+<text x="452" y="120" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#8A8275">THE PARASOL</text>
+<text x="576" y="116" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" fill="#A6431F">UV</text>
+<line x1="548" y1="130" x2="556" y2="184" stroke="#A6431F" stroke-width="1.5" marker-end="url(#uv3)"/>
+<line x1="576" y1="128" x2="576" y2="184" stroke="#A6431F" stroke-width="1.5" marker-end="url(#uv3)"/>
+<line x1="604" y1="130" x2="596" y2="184" stroke="#A6431F" stroke-width="1.5" marker-end="url(#uv3)"/>
+<rect x="452" y="150" width="248" height="176" rx="46" fill="#FBFAF7" stroke="#17130E" stroke-width="1.4"/>
+<circle cx="576" cy="252" r="46" fill="#FBFAF7" stroke="#5A4F44" stroke-width="1.2"/>
+<text x="576" y="257" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">DNA</text>
+<circle cx="576" cy="198" r="8" fill="#3A2A1C"/><circle cx="550" cy="203" r="8" fill="#3A2A1C"/><circle cx="602" cy="203" r="8" fill="#3A2A1C"/>
+<circle cx="528" cy="216" r="8" fill="#3A2A1C"/><circle cx="624" cy="216" r="8" fill="#3A2A1C"/>
+<circle cx="514" cy="234" r="8" fill="#3A2A1C"/><circle cx="638" cy="234" r="8" fill="#3A2A1C"/>
+<text x="576" y="352" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">melanosomes cap the sun-facing side of the nucleus</text>
+</svg>
+<figcaption>Two pigments, one shield. Eumelanin &#8212; the protective brown&#8211;black pigment &#8212; is packed into melanosomes that stack over the sun-facing side of each cell&#8217;s nucleus, a built-in parasol. Pheomelanin, the red-yellow pigment of fair skin, barely shields at all.</figcaption>
+</figure>
+
 ## Two pigments, not one
 
 Melanin isn't a single substance, and this distinction is the whole game.

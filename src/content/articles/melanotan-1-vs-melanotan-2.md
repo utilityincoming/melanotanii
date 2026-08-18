@@ -11,6 +11,42 @@ places: one is an approved pharmaceutical made under regulatory supervision;
 the other is a powder sold in unlabeled vials. How one number came to mean so
 much is the most instructive story in the Melanotan file.
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img" aria-labelledby="t5 d5">
+<title id="t5">Melanotan I versus Melanotan II</title>
+<desc id="d5">Melanotan I is a linear peptide analog that became the approved drug SCENESSE. Melanotan II is a cyclic lactam, more potent and non-selective, that went to the gray market.</desc>
+<rect x="0" y="0" width="780" height="320" fill="#FBFAF7"/>
+<rect x="8" y="8" width="764" height="304" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="40" y="46" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">One number apart</text>
+<text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">The same idea, built twice &#8212; linear and stable, or cyclic and potent.</text>
+<line x1="390" y1="98" x2="390" y2="288" stroke="#E4DFD6" stroke-width="1"/>
+<polyline points="70,152 100,142 130,152 160,142 190,152 220,142 250,152" fill="none" stroke="#17130E" stroke-width="1.5"/>
+<circle cx="70" cy="152" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="100" cy="142" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="130" cy="152" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="160" cy="142" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="190" cy="152" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="220" cy="142" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="250" cy="152" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<text x="160" y="205" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="17" font-weight="600" fill="#17130E">Melanotan I</text>
+<text x="160" y="227" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">linear analog &#183; stable</text>
+<text x="160" y="248" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" fill="#2F6A52">became SCENESSE &#8212; approved</text>
+<polygon points="585,100 634,120 649,172 616,213 554,213 521,172 536,120" fill="none" stroke="#17130E" stroke-width="1.5"/>
+<line x1="634" y1="120" x2="554" y2="213" stroke="#503296" stroke-width="2"/>
+<circle cx="585" cy="100" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="634" cy="120" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="649" cy="172" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="616" cy="213" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="554" cy="213" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="521" cy="172" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<circle cx="536" cy="120" r="7" fill="#FBFAF7" stroke="#503296" stroke-width="1.6"/>
+<text x="585" y="250" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="17" font-weight="600" fill="#17130E">Melanotan II</text>
+<text x="585" y="272" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">cyclic lactam &#183; potent, non-selective</text>
+<text x="585" y="293" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" fill="#A6431F">went to the gray market</text>
+</svg>
+<figcaption>One number apart. Melanotan I stayed close to a linear &#945;-MSH analog and became the approved drug SCENESSE. The cyclic lactam of Melanotan II made it more potent but non-selective &#8212; and sent it to the gray market.</figcaption>
+</figure>
+
 ## The same idea, built twice
 
 Both peptides came out of the same University of Arizona program and the same

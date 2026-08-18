@@ -19,7 +19,7 @@ const jsonLd = {
   ...(article.data.updatedDate && { dateModified: article.data.updatedDate.toISOString() }),
 };
 ---
-<Base title={`${article.data.title} — Melanin, Explained`} description={article.data.description}>
+<Base title={`${article.data.title} — Tan Lines`} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <article class="prose">
     <p class="eyebrow">{article.data.cluster.replace(/-/g, ' ')}</p>

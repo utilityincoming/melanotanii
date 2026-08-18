@@ -21,8 +21,9 @@ guide to it.
 
 ## Stack
 
-- Astro 5, static output, zero client-side JS
+- Astro 7, static output, near-zero client JS (only privacy-friendly Vercel Web Analytics)
 - Markdown articles in `src/content/articles/` (schema in `src/content.config.ts`)
+- Original inline-SVG scientific figures (site fonts, no JS), embedded per article
 - Sitemap + per-article JSON-LD
 
 ## Develop

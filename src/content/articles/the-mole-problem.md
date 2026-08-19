@@ -1,6 +1,6 @@
 ---
 title: "The mole problem: what dermatologists actually fear about Melanotan II"
-description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic. The case reports, the unresolved melanoma question, and why a changing mole is the exact signal you don't want to lose."
+description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic. The case reports, the melanoma question, and the signal you can't lose."
 pubDate: 2026-08-18
 cluster: cautionary-tale
 ---

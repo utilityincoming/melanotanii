@@ -1,6 +1,6 @@
 ---
 title: "What a safe tanning drug would actually have to be"
-description: "Not a vial from a forum — a real one. The four things a general-public photoprotective drug would need to clear, and how far today's science already is toward each. Analysis, labeled as such."
+description: "Not a vial from a forum — a real drug. The four bars a public photoprotective drug must clear, and how close today's science already is. Analysis, labeled so."
 pubDate: 2026-08-18
 cluster: next-agonist
 ---

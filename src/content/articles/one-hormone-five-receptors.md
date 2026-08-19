@@ -1,6 +1,6 @@
 ---
 title: "One hormone, five receptors: why Melanotan II did so much more than tan"
-description: "MT-II's strange effect profile — tanning, appetite, libido — isn't mysterious. It's what happens when a non-selective agonist hits the whole melanocortin receptor family at once."
+description: "MT-II's strange effects — tanning, appetite, libido — aren't mysterious. They're what a non-selective agonist does when it hits the whole melanocortin family."
 pubDate: 2026-08-18
 cluster: science
 ---

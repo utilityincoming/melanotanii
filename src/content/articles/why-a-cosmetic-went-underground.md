@@ -1,6 +1,6 @@
 ---
 title: "Why a cosmetic went underground"
-description: "Melanotan II may be the most self-injected drug no regulator ever approved. The reason isn't only lax enforcement — it's that it served a want, not a need, and wants don't wait for clinical trials."
+description: "Maybe the most self-injected drug no regulator approved. Not just lax enforcement — it served a want, not a need, and wants don't wait for trials."
 pubDate: 2026-08-18
 cluster: culture
 ---

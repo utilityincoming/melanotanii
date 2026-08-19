@@ -1,6 +1,6 @@
 ---
 title: "The tan without the sun: what a peptide short-circuits that UV does the hard way"
-description: "A suntan is a wound response — pigment the skin makes only after ultraviolet has already damaged its DNA. Melanotan's elegant idea was to get the pigment without the damage that normally triggers it."
+description: "A suntan is a wound response — pigment made only after UV has damaged DNA. Melanotan's elegant idea: get the pigment without the damage that triggers it."
 pubDate: 2026-08-18
 cluster: science
 ---

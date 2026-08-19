@@ -27,11 +27,42 @@ const clusters: Record<string, { label: string; blurb: string }> = {
     blurb: 'What it would take for a safe photoprotective drug to reach everyone.',
   },
 };
+
+const siteJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://melanotanii.com/#organization',
+      name: 'Tan Lines',
+      url: 'https://melanotanii.com/',
+      description:
+        'History and analysis of Melanotan II and the melanocortin drug class. No sales, no sourcing, no dosing guidance.',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://melanotanii.com/og/default.png',
+        width: 1200,
+        height: 630,
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://melanotanii.com/#website',
+      name: 'Tan Lines',
+      url: 'https://melanotanii.com/',
+      description:
+        'The unvarnished history of Melanotan II: the research that created it, the gray market that hijacked it, the approved drugs it spawned, and the photoprotective medicine that could still come.',
+      publisher: { '@id': 'https://melanotanii.com/#organization' },
+      inLanguage: 'en-US',
+    },
+  ],
+};
 ---
 <Base
   title="Tan Lines — the unvarnished history of Melanotan II"
   description="The full Melanotan II story, told straight: the research that created it, the gray market that hijacked it, the approved drugs it spawned, and the photoprotective medicine that could still come."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(siteJsonLd)} is:inline />
   <section class="hero">
     <p class="eyebrow">History &middot; Analysis &middot; No sales, no sourcing, no hype</p>
     <h1>The tanning peptide that never made it&nbsp;&mdash;<br />and the two drugs that did.</h1>

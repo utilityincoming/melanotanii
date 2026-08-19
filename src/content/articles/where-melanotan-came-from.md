@@ -1,6 +1,6 @@
 ---
 title: "The sunscreen you'd never have to reapply: where Melanotan came from"
-description: "Melanotan II wasn't invented for tanning salons. It came out of 1980s melanoma-prevention research at the University of Arizona — and the original goal was saving lives."
+description: "Melanotan II wasn't made for tanning salons. It came from 1980s melanoma-prevention research at the University of Arizona — the goal was saving lives."
 pubDate: 2026-08-18
 cluster: history
 ---

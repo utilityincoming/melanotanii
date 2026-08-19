@@ -1,6 +1,6 @@
 ---
 title: "The Barbie drug: how an unapproved peptide built a global gray market"
-description: "Melanotan II was never approved anywhere, for anything. It sold anyway — through forums, gyms, and 'research chemical' sites. This is what that market looks like and what it costs."
+description: "Melanotan II was never approved anywhere, for anything — yet it sold through forums, gyms, and 'research chemical' sites. What that market is, and its cost."
 pubDate: 2026-08-18
 cluster: cautionary-tale
 ---

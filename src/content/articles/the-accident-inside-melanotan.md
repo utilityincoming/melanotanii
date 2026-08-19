@@ -1,6 +1,6 @@
 ---
 title: "One injection, eight hours, and a second drug hiding inside Melanotan II"
-description: "The strangest chapter in the Melanotan story: a University of Arizona self-experiment that produced an eight-hour erection — and pointed the way to an FDA-approved libido drug."
+description: "The strangest chapter in the Melanotan story: an Arizona self-experiment that produced an eight-hour erection — and pointed to an FDA-approved libido drug."
 pubDate: 2026-08-18
 cluster: history
 ---

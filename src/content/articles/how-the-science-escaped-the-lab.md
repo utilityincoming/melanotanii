@@ -1,6 +1,6 @@
 ---
 title: "How the science escaped the lab: the patents that made a gray market inevitable"
-description: "Melanotan II's structure was published in journals and patents, then orphaned by its own developers. Once the recipe was public and the demand was real, the gray market was only a matter of time."
+description: "Melanotan II's structure was published in journals and patents, then orphaned by its developers. Once the recipe was public, the gray market was inevitable."
 pubDate: 2026-08-18
 cluster: history
 ---

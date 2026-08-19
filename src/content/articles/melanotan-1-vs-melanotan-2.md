@@ -1,6 +1,6 @@
 ---
 title: "Melanotan I and Melanotan II: one number, two completely different fates"
-description: "Two peptides from the same Arizona lab, almost the same molecule. One became an approved medicine. The other became the gray market's favorite. The difference is a lesson in selectivity."
+description: "Two peptides from the same Arizona lab, nearly identical. One became an approved medicine; the other, the gray market's favorite. A lesson in selectivity."
 pubDate: 2026-08-18
 cluster: history
 ---

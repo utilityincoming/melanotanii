@@ -1,6 +1,6 @@
 ---
 title: "The side-effect ledger: what Melanotan II is actually documented to do"
-description: "Separating what Melanotan II reliably does from forum lore and worst-case rumor: the acute effects, the pigment effects, and the rare serious events that actually reach the medical literature."
+description: "What Melanotan II reliably does, separated from forum lore: the acute effects, the pigment effects, and the rare serious events that reach the literature."
 pubDate: 2026-08-18
 cluster: cautionary-tale
 ---

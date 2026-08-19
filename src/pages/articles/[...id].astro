@@ -15,8 +15,18 @@ const jsonLd = {
   '@type': 'Article',
   headline: article.data.title,
   description: article.data.description,
+  image: new URL(`/og/${article.id}.png`, Astro.site).href,
+  url: new URL(Astro.url.pathname, Astro.site).href,
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
   datePublished: article.data.pubDate.toISOString(),
-  ...(article.data.updatedDate && { dateModified: article.data.updatedDate.toISOString() }),
+  dateModified: (article.data.updatedDate ?? article.data.pubDate).toISOString(),
+  author: { '@type': 'Organization', name: 'Tan Lines', url: 'https://melanotanii.com/' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Tan Lines',
+    url: 'https://melanotanii.com/',
+    logo: { '@type': 'ImageObject', url: 'https://melanotanii.com/og/default.png', width: 1200, height: 630 },
+  },
 };
 ---
 <Base title={`${article.data.title} — Tan Lines`} description={article.data.description} image={`/og/${article.id}.png`} ogType="article">

@@ -1,0 +1,328 @@
+---
+import Base from '../layouts/Base.astro';
+
+type Strand = 'approved' | 'caution' | 'mission';
+
+interface Catalyst {
+  sort: string;      // ISO date for ordering
+  when: string;      // display label
+  org: string;
+  strand: Strand;
+  title: string;
+  note: string;
+  status: 'upcoming' | 'resolved';
+}
+
+const lastReviewed = 'August 18, 2026';
+
+// Add or update entries here; the page re-sorts and re-files them automatically.
+const catalysts: Catalyst[] = [
+  {
+    sort: '2027-02-01', when: '~ Feb 2027', org: 'FDA · PCAC', strand: 'mission', status: 'upcoming',
+    title: 'Advisory committee weighs Melanotan II for the compounding list',
+    note: 'The FDA’s Pharmacy Compounding Advisory Committee is due to consider whether MT-II can move off the restricted Category 2 list and become compoundable. The first time its U.S. legitimacy is formally on a calendar — and the single most consequential date here.',
+  },
+  {
+    sort: '2026-12-01', when: 'Dec 2026', org: 'Clinuvel · CUV105', strand: 'approved', status: 'upcoming',
+    title: 'Phase III vitiligo readout for afamelanotide',
+    note: 'Topline from the 200-patient CUV105 trial of SCENESSE in vitiligo — the approved MC1R agonist reaching for its second indication. A positive result widens the beachhead.',
+  },
+  {
+    sort: '2026-11-01', when: 'Nov 2026', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
+    title: 'Pivotal vitiligo trial (CUV107) set to begin',
+    note: 'The confirmatory study meant to underpin regulatory filings across Europe, North America and Africa.',
+  },
+  {
+    sort: '2026-07-13', when: 'Jul 2026', org: 'Health Canada', strand: 'approved', status: 'resolved',
+    title: 'SCENESSE approved for EPP in Canada',
+    note: 'Afamelanotide adds another country — the first systemic photoprotectant keeps spreading through the front door.',
+  },
+  {
+    sort: '2026-02-27', when: '27 Feb 2026', org: 'HHS · FDA', strand: 'caution', status: 'resolved',
+    title: 'Peptide reshuffle — Melanotan II stays restricted',
+    note: 'HHS moved roughly 14 of 19 restricted peptides back toward the compoundable Category 1; Melanotan II was among the ~5 held back. The door stayed shut.',
+  },
+  {
+    sort: '2026-02-14', when: 'Feb 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
+    title: 'Australia reclassifies MT-II to Schedule 9 — the strictest in the world',
+    note: 'Placed alongside heroin and LSD; possession without a research licence becomes a criminal offence. Triggered by 89 adverse-event reports (2022–25), including two melanoma cases within 18 months of use.',
+  },
+  {
+    sort: '2026-01-15', when: 'Jan 2026', org: 'Tanabe · MT-7117', strand: 'approved', status: 'resolved',
+    title: 'Oral MC1R agonist posts positive Phase 3',
+    note: 'Dersimelagon — a once-daily pill, not an implant — hit its endpoints in EPP and X-linked protoporphyria. Melanocortin photoprotection escaping the needle is the clearest sign yet the class is advancing.',
+  },
+  {
+    sort: '2025-09-23', when: '23 Sep 2025', org: 'EMA · EU', strand: 'approved', status: 'resolved',
+    title: 'EMA approves year-round SCENESSE dosing',
+    note: 'Europe widens the approved use of the first systemic photoprotectant.',
+  },
+  {
+    sort: '2023-09-01', when: 'Sep 2023', org: 'FDA', strand: 'caution', status: 'resolved',
+    title: 'MT-II placed in compounding Category 2',
+    note: 'Designated a bulk substance that “may present significant safety risks” — which is what closed the compounding door in the first place.',
+  },
+  {
+    sort: '2019-10-08', when: '8 Oct 2019', org: 'FDA', strand: 'approved', status: 'resolved',
+    title: 'FDA approves SCENESSE (afamelanotide) for EPP',
+    note: 'The first melanocortin agonist approved in the U.S. for a photoprotective use. Proof the approval door opens.',
+  },
+  {
+    sort: '2014-12-22', when: '22 Dec 2014', org: 'European Commission', strand: 'approved', status: 'resolved',
+    title: 'EU approves SCENESSE — the world’s first systemic photoprotectant',
+    note: 'Afamelanotide authorised for EPP under exceptional circumstances; the class’s first market approval anywhere.',
+  },
+];
+
+const upcoming = catalysts
+  .filter((c) => c.status === 'upcoming')
+  .sort((a, b) => a.sort.localeCompare(b.sort)); // soonest first
+const settled = catalysts
+  .filter((c) => c.status === 'resolved')
+  .sort((a, b) => b.sort.localeCompare(a.sort)); // most recent first
+
+const strandLegend: { key: Strand; label: string; blurb: string }[] = [
+  { key: 'approved', label: 'Approved / advancing', blurb: 'A legitimate melanocortin drug moving forward.' },
+  { key: 'caution', label: 'Restricted', blurb: 'Melanotan II being walled off further.' },
+  { key: 'mission', label: 'Open question', blurb: 'A pending decision worth watching.' },
+];
+
+interface Jurisdiction { place: string; status: string; tone: 'danger' | 'caution'; note: string; }
+const jurisdictions: Jurisdiction[] = [
+  {
+    place: 'United States', status: 'Unapproved · not compoundable', tone: 'caution',
+    note: 'No approved indication; Category 2, so licensed pharmacies can’t compound it; illegal to market for human use. The FDA has sent warning letters to distributors. Compounding status under review in 2027.',
+  },
+  {
+    place: 'United Kingdom', status: 'Illegal to sell · legal to possess', tone: 'caution',
+    note: 'An unlicensed medicine the MHRA bars from sale — sold instead as a “cosmetic” nasal spray through a gap between the rulebooks. Selling is illegal; using is not.',
+  },
+  {
+    place: 'Australia', status: 'Schedule 9 · prohibited', tone: 'danger',
+    note: 'Since Feb 2026, the strictest classification there is — the same schedule as heroin and LSD. Possession without a research licence is a criminal offence. The toughest market in the world for MT-II.',
+  },
+  {
+    place: 'EU & Nordics', status: 'Unapproved · banned as cosmetic', tone: 'caution',
+    note: 'No approved indication anywhere in the EU; banned as a cosmetic in Denmark and others; Ireland’s HPRA warns it is not authorised to treat anything.',
+  },
+];
+
+interface ApprovedDrug { drug: string; kind: string; where: string; }
+const approved: ApprovedDrug[] = [
+  {
+    drug: 'Afamelanotide (SCENESSE)', kind: 'MC1R agonist · subcutaneous implant',
+    where: 'Approved for EPP in the EU (2014), U.S. (2019), Australia (2020), Israel, and Canada (2026). Now in Phase III for vitiligo, with a readout due Dec 2026.',
+  },
+  {
+    drug: 'Dersimelagon (MT-7117)', kind: 'MC1R agonist · once-daily oral pill',
+    where: 'Positive Phase 3 in EPP and X-linked protoporphyria (Jan 2026); regulatory filings expected to follow. The first oral entrant in the class — no needle, no implant.',
+  },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Regulatory watch — Melanotan II & melanocortin photoprotection',
+  description:
+    'A living tracker of the U.S. and global regulatory status of Melanotan II and the melanocortin agonists (afamelanotide, dersimelagon) developed for photoprotective use — dated catalysts, settled milestones, and jurisdiction-by-jurisdiction status.',
+  dateModified: '2026-08-18',
+  isPartOf: { '@type': 'WebSite', name: 'Tan Lines' },
+};
+---
+<Base
+  title="Regulatory watch — Melanotan II & the melanocortin sun drugs — Tan Lines"
+  description="A living tracker: the U.S. and global regulatory status of Melanotan II and the melanocortin photoprotective agonists — dated FDA/EMA/TGA catalysts, settled approvals, and where MT-II legally stands by country."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+
+  <section class="head">
+    <p class="eyebrow">Regulatory watch</p>
+    <h1>On the docket.</h1>
+    <p class="lede">
+      A living scoreboard for the question this whole site is watching: whether
+      legitimate melanocortin photoprotection reaches people faster than the gray
+      market can sell the counterfeit. The dated catalysts ahead, the ones already
+      settled, and where Melanotan II legally stands right now.
+    </p>
+    <p class="meta-line">
+      <strong>Last reviewed {lastReviewed}.</strong> Analysis, not legal or
+      medical advice. Dates are targets and can slip. For how these routes fit
+      together, read <a href="/articles/the-three-doors/">The three doors</a>.
+    </p>
+  </section>
+
+  <ul class="legend" aria-label="What the colours mean">
+    {strandLegend.map((s) => (
+      <li class={`strand-${s.key}`}>
+        <span class="swatch" aria-hidden="true"></span>
+        <span><strong>{s.label}.</strong> {s.blurb}</span>
+      </li>
+    ))}
+  </ul>
+
+  <section class="block">
+    <h2>On the calendar</h2>
+    <p class="sub">Dated decisions and readouts still ahead, soonest first.</p>
+    <div class="board">
+      {upcoming.map((c) => (
+        <article class={`catalyst strand-${c.strand}`}>
+          <div class="top">
+            <span class="when">{c.when}</span>
+            <span class="org">{c.org}</span>
+          </div>
+          <h3>{c.title}</h3>
+          <p class="note">{c.note}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="block settled">
+    <h2>Already settled</h2>
+    <p class="sub">The milestones that shaped the picture above, most recent first.</p>
+    <div class="board">
+      {settled.map((c) => (
+        <article class={`catalyst strand-${c.strand}`}>
+          <div class="top">
+            <span class="when">{c.when}</span>
+            <span class="org">{c.org}</span>
+          </div>
+          <h3>{c.title}</h3>
+          <p class="note">{c.note}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Where Melanotan II stands</h2>
+    <p class="sub">The unapproved compound, jurisdiction by jurisdiction.</p>
+    <div class="grid2">
+      {jurisdictions.map((j) => (
+        <div class="card j">
+          <p class="place">{j.place}</p>
+          <span class={`badge ${j.tone}`}>{j.status}</span>
+          <p class="note">{j.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>The approved side</h2>
+    <p class="sub">
+      The counterweight to all that restriction: the legitimate melanocortin
+      agonists that reached patients the right way — and the pipeline behind them.
+    </p>
+    <div class="grid2">
+      {approved.map((d) => (
+        <div class="card drug">
+          <p class="place">{d.drug}</p>
+          <p class="kind">{d.kind}</p>
+          <p class="note">{d.where}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="closer prose">
+    <p>
+      The through-line: as the legitimate technology keeps advancing —
+      approvals, new indications, an oral entrant — Melanotan II keeps getting
+      walled off further. Those two trends are the whole story. For how a
+      legitimate melanocortin sun drug actually reaches Americans, read
+      <a href="/articles/the-three-doors/">The three doors</a>; for the gray
+      market it competes with, <a href="/articles/barbie-drug-gray-market/">The Barbie drug</a>;
+      for the full arc, <a href="/timeline/">the timeline</a>.
+    </p>
+  </section>
+
+  <style>
+    .head { padding: 4rem 0 1.5rem; max-width: 48rem; }
+    .head h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0.6rem 0 1rem; }
+    .lede { font-size: 1.15rem; color: var(--ink-soft); }
+    .meta-line { margin-top: 1.2rem; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.6; }
+    .meta-line strong { color: var(--ink); }
+
+    .legend {
+      list-style: none;
+      margin: 2rem 0 0;
+      padding: 1.1rem 1.3rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 0.7rem;
+      max-width: 48rem;
+      background: #fff;
+    }
+    .legend li { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.9rem; color: var(--ink-soft); }
+    .legend strong { color: var(--ink); font-weight: 600; }
+    .legend .swatch {
+      flex: none; width: 0.8rem; height: 0.8rem;
+      border-radius: 50%; margin-top: 0.2rem;
+      background: var(--accent, var(--uv));
+    }
+
+    .block { margin-top: 3.2rem; max-width: 48rem; }
+    .block > h2 { font-size: 1.5rem; margin: 0 0 0.3rem; }
+    .block > .sub { color: var(--ink-soft); margin: 0 0 1.4rem; font-size: 0.95rem; }
+
+    .board { display: grid; gap: 1rem; }
+    .catalyst {
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent, var(--uv));
+      border-radius: 8px;
+      background: #fff;
+      padding: 1.05rem 1.2rem;
+    }
+    .settled .catalyst { background: transparent; }
+    .catalyst .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.8rem; margin-bottom: 0.35rem; }
+    .catalyst .when {
+      font-family: var(--font-display); font-weight: 600; font-size: 1.05rem;
+      color: var(--accent, var(--uv));
+    }
+    .catalyst .org {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--ink-soft);
+    }
+    .catalyst h3 { font-size: 1.16rem; margin: 0.1rem 0 0.4rem; }
+    .catalyst .note { margin: 0; color: var(--ink); }
+
+    .strand-approved { --accent: var(--approved); }
+    .strand-caution { --accent: var(--caution); }
+    .strand-mission { --accent: var(--strand-mission); }
+
+    .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1rem; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 1.1rem 1.2rem;
+    }
+    .card.j { border-left: 4px solid var(--caution); }
+    .card.drug { border-left: 4px solid var(--approved); }
+    .card .place { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; margin: 0 0 0.5rem; }
+    .card.drug .place { color: var(--approved); }
+    .card .note { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+    .card .kind { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 0.5rem; }
+    .badge {
+      display: inline-block; font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 0.22rem 0.55rem; border-radius: 999px; margin-bottom: 0.6rem;
+    }
+    .badge.caution { color: var(--caution); border: 1px solid var(--caution); }
+    .badge.danger { color: #fff; background: var(--caution); }
+
+    .closer {
+      margin: 3.5rem 0 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      max-width: 48rem;
+    }
+
+    @media (max-width: 34rem) {
+      .head { padding-top: 2.5rem; }
+    }
+  </style>
+</Base>

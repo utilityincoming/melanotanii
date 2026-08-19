@@ -101,7 +101,8 @@ substances that may present significant safety risks, and it is not on the
 approved compounding list. Even the pharmacy route isn't open to it today —
 though, tellingly, the FDA's advisory committee is scheduled to *review*
 Melanotan II for that list around February 2027. The question of whether it
-partly legitimizes is, for the first time, formally on a calendar.
+partly legitimizes is, for the first time,
+[formally on a calendar](/regulatory/).
 
 **Door three — the gray market.** The "research chemical, not for human
 consumption" trade, where Melanotan II has always actually flowed. It is not a

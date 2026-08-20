@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tan Lines">
+  <title>Tan Lines</title>
+  <defs>
+    <!-- The pigment scale: eumelanin light to dark, the site's brand device -->
+    <linearGradient id="pigment" x1="0" y1="0" x2="512" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F3DCC8"/>
+      <stop offset="0.2" stop-color="#E4B98F"/>
+      <stop offset="0.4" stop-color="#C08A5A"/>
+      <stop offset="0.6" stop-color="#8A5A34"/>
+      <stop offset="0.8" stop-color="#55351D"/>
+      <stop offset="1" stop-color="#241A12"/>
+    </linearGradient>
+    <clipPath id="chip"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <g clip-path="url(#chip)">
+    <rect width="512" height="512" fill="url(#pigment)"/>
+    <!-- the tan line: the pale, unexposed strip across pigmented skin -->
+    <rect x="298" y="0" width="66" height="512" fill="#FBFAF7" opacity="0.96"/>
+    <rect x="398" y="0" width="20" height="512" fill="#FBFAF7" opacity="0.34"/>
+  </g>
+  <!-- keyline so the chip reads on light browser tabs -->
+  <rect x="5" y="5" width="502" height="502" rx="107" fill="none" stroke="#17130E" stroke-opacity="0.12" stroke-width="6"/>
+</svg>

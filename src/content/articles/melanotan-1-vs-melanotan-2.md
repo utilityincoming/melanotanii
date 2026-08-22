@@ -3,6 +3,10 @@ title: "Melanotan I and Melanotan II: one number, two completely different fates
 description: "Two peptides from the same Arizona lab, almost the same molecule. One became an approved medicine. The other became the gray market's favorite. The difference is a lesson in selectivity."
 pubDate: 2026-08-18
 cluster: history
+seeAlso:
+  - href: "https://melanocortin.com/melanotan"
+    label: "Melanotan and Melanotan II"
+    note: "the pharmacology on the science hub"
 ---
 
 The two compounds are separated by a single digit in their names and a small

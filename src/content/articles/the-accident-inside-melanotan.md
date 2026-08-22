@@ -3,6 +3,10 @@ title: "One injection, eight hours, and a second drug hiding inside Melanotan II
 description: "The strangest chapter in the Melanotan story: a University of Arizona self-experiment that produced an eight-hour erection — and pointed the way to an FDA-approved libido drug."
 pubDate: 2026-08-18
 cluster: history
+seeAlso:
+  - href: "https://melanocortin.com/bremelanotide"
+    label: "Bremelanotide (PT-141)"
+    note: "the same accident, told through the melanocortin system"
 ---
 
 The most consequential thing anyone ever discovered about Melanotan II

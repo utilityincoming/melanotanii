@@ -3,6 +3,13 @@ title: "One hormone, five receptors: why Melanotan II did so much more than tan"
 description: "MT-II's strange effect profile — tanning, appetite, libido — isn't mysterious. It's what happens when a non-selective agonist hits the whole melanocortin receptor family at once."
 pubDate: 2026-08-18
 cluster: science
+seeAlso:
+  - href: "https://melanocortin.com/receptors"
+    label: "The five melanocortin receptors"
+    note: "MC1R to MC5R, one receptor at a time"
+  - href: "https://melanocortin.com/system"
+    label: "The melanocortin system"
+    note: "how POMC becomes the whole signal"
 ---
 
 The forum lore around Melanotan II always emphasized its odd bundle of

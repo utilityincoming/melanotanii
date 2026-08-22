@@ -3,6 +3,10 @@ title: "The side-effect ledger: what Melanotan II is actually documented to do"
 description: "Separating what Melanotan II reliably does from forum lore and worst-case rumor: the acute effects, the pigment effects, and the rare serious events that actually reach the medical literature."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+seeAlso:
+  - href: "https://melanocortin.com/effects"
+    label: "Why the agonists make you queasy and tan"
+    note: "the mechanism behind the effects"
 ---
 
 Honest accounting cuts both ways. Overstating Melanotan II's dangers is as

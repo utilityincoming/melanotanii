@@ -28,10 +28,33 @@ const jsonLd = {
       Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
     </p>
     <Content />
+    {article.data.seeAlso && article.data.seeAlso.length > 0 && (
+      <aside class="see-also">
+        <h2>The underlying science</h2>
+        <p>The receptor-level reference behind this story, on our sister site melanocortin.com.</p>
+        <ul>
+          {article.data.seeAlso.map((s) => (
+            <li>
+              <a href={s.href} rel="noopener">{s.label}</a>
+              {s.note && <span class="note"> - {s.note}</span>}
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )}
   </article>
   <style>
     article { padding-top: 3rem; }
     h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.5rem 0; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
+    .see-also {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid color-mix(in srgb, var(--ink-soft) 30%, transparent);
+    }
+    .see-also h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
+    .see-also > p { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 1rem; }
+    .see-also ul { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 0.6rem; }
+    .see-also .note { color: var(--ink-soft); }
   </style>
 </Base>

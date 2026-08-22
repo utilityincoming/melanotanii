@@ -3,6 +3,10 @@ title: "The middle-ground agonist already exists. You just can't have it."
 description: "Afamelanotide (Scenesse) is an approved, rigorously tested melanocortin drug that protects skin from light. Why it's locked in a rare-disease label — and what a GLP-1-style breakout would take."
 pubDate: 2026-08-18
 cluster: next-agonist
+seeAlso:
+  - href: "https://melanocortin.com/afamelanotide"
+    label: "Afamelanotide (Scenesse)"
+    note: "the approved MC1R agonist, in depth"
 ---
 
 Here is the fact that reframes the entire Melanotan story: a safe-enough,

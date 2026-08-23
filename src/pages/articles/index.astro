@@ -1,29 +1,63 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { clusters, clusterOrder, strands } from '../../data/clusters';
 
-const articles = (await getCollection('articles', ({ data }) => !data.draft))
+const all = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function articlesFor(key: keyof typeof clusters) {
+  const inCluster = all.filter((a) => a.data.cluster === key);
+  const lead = inCluster.find((a) => a.id === clusters[key].lead);
+  const rest = inCluster.filter((a) => a.id !== clusters[key].lead);
+  return lead ? [lead, ...rest] : inCluster;
+}
 ---
 <Base
   title="All articles — Tan Lines"
   description="Every article on Tan Lines: the history, science, cautionary tale, and open future of Melanotan II and the melanocortin drug class."
 >
-  <h1 class="page-title">All articles</h1>
-  <ul class="list">
-    {articles.map((a) => (
-      <li>
-        <span class="eyebrow">{a.data.cluster.replace(/-/g, ' ')}</span>
-        <a href={`/articles/${a.id}/`}>{a.data.title}</a>
-        <p>{a.data.description}</p>
-      </li>
-    ))}
-  </ul>
+  <header class="page-head">
+    <h1 class="page-title">All articles</h1>
+    <p class="page-sub">{all.length} pieces across five threads &mdash; the whole Melanotan II story, told straight.</p>
+  </header>
+
+  {clusterOrder.map((key) => {
+    const meta = clusters[key];
+    const items = articlesFor(key);
+    if (items.length === 0) return null;
+    return (
+      <section class="thread" style={`--accent: ${strands[meta.strand].colorVar}`}>
+        <h2 class="thread-label">{meta.label}</h2>
+        <p class="thread-blurb">{meta.blurb}</p>
+        <ul class="list">
+          {items.map((a) => (
+            <li>
+              <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+              <p>{a.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+
   <style>
-    .page-title { margin-top: 3rem; font-size: 2.2rem; }
-    .list { list-style: none; padding: 0; max-width: 46rem; }
-    .list li { border-top: 1px solid var(--line); padding: 1.4rem 0; }
-    .list a { font-weight: 500; font-size: 1.2rem; display: inline-block; margin-top: 0.2rem; }
+    .page-head { margin-top: 3rem; max-width: 46rem; }
+    .page-title { font-size: 2.2rem; margin: 0; }
+    .page-sub { color: var(--ink-soft); margin: 0.5rem 0 0; }
+    .thread {
+      max-width: 46rem;
+      margin-top: 2.75rem;
+      border-top: 3px solid var(--accent);
+      padding-top: 1rem;
+    }
+    .thread-label { font-size: 1.2rem; margin: 0; color: var(--accent); }
+    .thread-blurb { color: var(--ink-soft); font-size: 0.9rem; margin: 0.35rem 0 0.5rem; }
+    .list { list-style: none; padding: 0; margin: 0; }
+    .list li { border-top: 1px solid var(--line); padding: 1.2rem 0; }
+    .list li:first-child { border-top: 0; }
+    .list a { font-weight: 500; font-size: 1.15rem; display: inline-block; }
     .list p { margin: 0.3rem 0 0; color: var(--ink-soft); }
   </style>
 </Base>

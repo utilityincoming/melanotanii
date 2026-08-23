@@ -70,13 +70,17 @@ function articlesFor(key: keyof typeof clusters) {
   </section>
 
   <section class="threads" aria-label="Browse by topic">
-    <p class="eyebrow section-eyebrow">Follow a thread</p>
+    <div class="section-head">
+      <p class="eyebrow">Follow a thread</p>
+      <p class="section-line">Five threads, each colored by the strand it belongs to.</p>
+    </div>
     <div class="clusters">
       {clusterOrder.map((key) => {
         const meta = clusters[key];
         const items = articlesFor(key);
         return (
-          <div class="cluster" id={`thread-${key}`} style={`--accent: ${strands[meta.strand].colorVar}`}>
+          <article class="cluster" id={`thread-${key}`} style={`--accent: ${strands[meta.strand].colorVar}`}>
+            <p class="strand-tag">{strands[meta.strand].label}</p>
             <h2 class="cluster-label">{meta.label}</h2>
             <p class="blurb">{meta.blurb}</p>
             <ul>
@@ -88,11 +92,29 @@ function articlesFor(key: keyof typeof clusters) {
               ))}
               {items.length === 0 && <li class="soon">Articles coming soon.</li>}
             </ul>
-          </div>
+          </article>
         );
       })}
     </div>
   </section>
+
+  <aside class="closer" aria-label="The open question">
+    <span class="pigment-rule" aria-hidden="true"></span>
+    <p class="eyebrow">The strand still waiting</p>
+    <h2>The drug it was built for still doesn&rsquo;t exist.</h2>
+    <p>
+      Melanotan II spun off approved medicines for desire and for genetic
+      obesity, and its sister molecule reached patients for a rare light
+      disorder. But the safe, general-purpose protection from the sun the Arizona
+      team set out to build has never arrived &mdash; and gray-market vials keep
+      circulating in its place. Whether that drug ever comes is the thread this
+      site is here to watch.
+    </p>
+    <p class="closer-cta">
+      <a class="cta-primary" href="/timeline/">See the whole timeline&nbsp;&rarr;</a>
+      <a class="cta-secondary" href="/regulatory/">Track what&rsquo;s in development</a>
+    </p>
+  </aside>
 
   <style>
     .hero { padding: 4rem 0 2.4rem; max-width: 48rem; }
@@ -154,25 +176,70 @@ function articlesFor(key: keyof typeof clusters) {
     .strand-approval { --dot: var(--approved); }
 
     /* Threads */
-    .section-eyebrow { margin: 0 0 1.6rem; }
+    .section-head { max-width: 46rem; margin: 0 0 1.75rem; }
+    .section-head .eyebrow { margin: 0; }
+    .section-line { margin: 0.35rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
     .clusters {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-      gap: 2.75rem 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      gap: 1.5rem;
     }
-    .cluster { border-top: 3px solid var(--accent); padding-top: 0.9rem; }
-    .cluster-label { font-size: 1.15rem; margin: 0; color: var(--accent); }
-    .cluster .blurb { margin: 0.4rem 0 1rem; font-size: 0.9rem; color: var(--ink-soft); }
+    .cluster {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1.15rem 1.3rem 1.35rem;
+      transition: border-color 0.15s ease;
+    }
+    .cluster:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+    .strand-tag {
+      margin: 0 0 0.15rem;
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .cluster-label { font-size: 1.2rem; margin: 0; color: var(--ink); }
+    .cluster .blurb { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--ink-soft); }
     .cluster ul { list-style: none; margin: 0; padding: 0; }
-    .cluster li { margin-bottom: 1.05rem; }
-    .cluster li p { margin: 0.2rem 0 0; font-size: 0.88rem; color: var(--ink-soft); }
+    .cluster li { margin-bottom: 1rem; }
+    .cluster li:last-child { margin-bottom: 0; }
+    .cluster li p { margin: 0.2rem 0 0; font-size: 0.86rem; color: var(--ink-soft); }
     .cluster a { font-weight: 500; text-decoration: none; }
     .cluster a:hover { text-decoration: underline; text-underline-offset: 3px; }
-    .cluster li.lead a { font-size: 1.08rem; font-family: var(--font-display); }
+    .cluster li.lead { border-left: 2px solid var(--accent); padding-left: 0.8rem; }
+    .cluster li.lead a { font-size: 1.06rem; font-family: var(--font-display); }
     .soon { color: var(--ink-soft); font-size: 0.9rem; }
+
+    /* Closer — the mission strand, still open; bookended by the pigment signature */
+    .closer {
+      position: relative;
+      overflow: hidden;
+      max-width: 52rem;
+      margin: 4rem 0 1rem;
+      padding: 2.25rem 1.9rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .closer .pigment-rule {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--pigment-scale);
+    }
+    .closer .eyebrow { color: var(--uv); margin: 0.25rem 0 0; }
+    .closer h2 { font-size: clamp(1.4rem, 3.5vw, 1.85rem); margin: 0.5rem 0 0.7rem; max-width: 30rem; }
+    .closer > p { color: var(--ink-soft); max-width: 44rem; margin: 0; }
+    .closer-cta { margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.4rem; }
 
     @media (max-width: 40rem) {
       .strand-legend { grid-template-columns: 1fr; gap: 0.7rem; }
+      .closer { padding: 1.9rem 1.35rem; }
     }
   </style>
 </Base>

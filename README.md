@@ -1,4 +1,4 @@
-# Tan Lines — melanotanii.com
+# The Melanotan Record — melanotanii.com
 
 History and analysis of Melanotan II, told straight. The site covers the
 compound's origin in melanoma-prevention research, the gray market that

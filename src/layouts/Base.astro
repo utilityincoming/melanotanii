@@ -7,6 +7,14 @@ interface Props {
 const { title, description } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL('/og-image.png', Astro.site).href;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/timeline/', label: 'Timeline' },
+  { href: '/regulatory/', label: 'Regulatory' },
+  { href: '/articles/', label: 'Articles' },
+  { href: '/about/', label: 'About' },
+];
+const isActive = (href: string) => path === href || path.startsWith(href);
 inject();
 ---
 <!doctype html>
@@ -18,7 +26,7 @@ inject();
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
   <link rel="sitemap" href="/sitemap-index.xml" />
-  <link rel="alternate" type="application/rss+xml" title="Tan Lines" href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="The Melanotan Record" href="/rss.xml" />
   <!-- Brand assets -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
@@ -30,11 +38,11 @@ inject();
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonical} />
-  <meta property="og:site_name" content="Tan Lines" />
+  <meta property="og:site_name" content="The Melanotan Record" />
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Tan Lines, the unvarnished history of Melanotan II" />
+  <meta property="og:image:alt" content="The Melanotan Record, the unvarnished history of Melanotan II" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
@@ -112,22 +120,42 @@ inject();
     .pigment-bar { height: 6px; background: var(--pigment-scale); border: 0; }
     .site-header .wrap {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
       gap: 1rem;
       padding-top: 1.1rem;
       padding-bottom: 1.1rem;
     }
     .site-header nav { display: flex; gap: 1.4rem; flex-wrap: wrap; }
-    .site-header nav a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+    .site-header nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+    }
     .site-header nav a:hover { color: var(--uv); }
+    .site-header nav a.is-active { color: var(--uv); border-bottom-color: var(--uv); }
     .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      text-decoration: none;
+      line-height: 1.15;
+    }
+    .brand-name {
       font-family: var(--font-display);
       font-weight: 600;
       font-size: 1.2rem;
       color: var(--ink);
-      text-decoration: none;
     }
+    .brand-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+      color: var(--ink-soft);
+    }
+    @media (max-width: 30rem) { .brand-tag { display: none; } }
     .site-footer {
       margin-top: 5rem;
       border-top: 1px solid var(--line);
@@ -142,12 +170,18 @@ inject();
   <div class="pigment-bar" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">Tan Lines</a>
+      <a class="brand" href="/">
+        <span class="brand-name">The Melanotan Record</span>
+        <span class="brand-tag">The history of Melanotan II, told straight</span>
+      </a>
       <nav aria-label="Main">
-        <a href="/timeline/">Timeline</a>
-        <a href="/regulatory/">Regulatory</a>
-        <a href="/articles/">Articles</a>
-        <a href="/about/">About</a>
+        {nav.map((item) => (
+          <a
+            href={item.href}
+            class={isActive(item.href) ? 'is-active' : undefined}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >{item.label}</a>
+        ))}
       </nav>
     </div>
   </header>
@@ -157,7 +191,7 @@ inject();
   <footer class="site-footer">
     <div class="wrap">
       <p>
-        Tan Lines publishes history and analysis of Melanotan II and the
+        The Melanotan Record publishes history and analysis of Melanotan II and the
         melanocortin drug class. Nothing on this site is medical advice, and
         this site does not sell, source, or provide usage guidance for any
         compound. Melanotan II is not approved by any regulator for any use.

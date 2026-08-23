@@ -43,7 +43,7 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
   publisher: {
     '@type': 'Organization',
-    name: 'Tan Lines',
+    name: 'The Melanotan Record',
     url: Astro.site?.href,
   },
 };
@@ -58,7 +58,7 @@ const breadcrumbLd = {
   ],
 };
 ---
-<Base title={`${article.data.title} — Tan Lines`} description={article.data.description}>
+<Base title={`${article.data.title} — The Melanotan Record`} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   <article class="prose" style={`--accent: ${accent}`}>

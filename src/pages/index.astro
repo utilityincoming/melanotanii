@@ -1,32 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { clusters, clusterOrder, strands, strandOrder } from '../data/clusters';
 
-const articles = (await getCollection('articles', ({ data }) => !data.draft))
+const all = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const clusters: Record<string, { label: string; blurb: string }> = {
-  'history': {
-    label: 'The History',
-    blurb: 'Where Melanotan II came from, and what it was actually meant to do.',
-  },
-  'cautionary-tale': {
-    label: 'The Cautionary Tale',
-    blurb: 'How a lab compound became a gray-market phenomenon, and what it cost.',
-  },
-  'science': {
-    label: 'The Science',
-    blurb: 'Melanocortin receptors, α-MSH, and how the tanning signal really works.',
-  },
-  'culture': {
-    label: 'The Demand',
-    blurb: 'Why anyone wanted it in the first place — the reward loop the sun wired in, a century of fashion, and the market that desire built.',
-  },
-  'next-agonist': {
-    label: 'The Next Agonist',
-    blurb: 'What it would take for a safe photoprotective drug to reach everyone.',
-  },
-};
+// Articles for a thread: the curated lead first, then the rest newest-first.
+function articlesFor(key: keyof typeof clusters) {
+  const inCluster = all.filter((a) => a.data.cluster === key);
+  const lead = inCluster.find((a) => a.id === clusters[key].lead);
+  const rest = inCluster.filter((a) => a.id !== clusters[key].lead);
+  return lead ? [lead, ...rest] : inCluster;
+}
 ---
 <Base
   title="Tan Lines — the unvarnished history of Melanotan II"
@@ -36,57 +22,157 @@ const clusters: Record<string, { label: string; blurb: string }> = {
     <p class="eyebrow">History &middot; Analysis &middot; No sales, no sourcing, no hype</p>
     <h1>The tanning peptide that never made it&nbsp;&mdash;<br />and the two drugs that did.</h1>
     <p class="lede">
-      Melanotan II began as university research into preventing melanoma. It was
-      never approved for anything &mdash; yet it spread through gyms and tanning
-      forums anyway, spawned two legitimate medicines for entirely different
-      conditions, and left open the question it was invented to answer: can a
-      drug safely give human skin lasting protection from the sun? This site
-      tells that whole story, straight.
+      Melanotan II was invented to prevent melanoma. It was never approved for
+      anything. It spread through gyms and tanning forums anyway, spawned two
+      real medicines for conditions no one was aiming at, and left its founding
+      question open: can a drug give human skin lasting protection from the sun,
+      safely? This site tells that whole story, straight.
     </p>
     <p class="hero-cta">
-      <a href="/timeline/">Start with the timeline&nbsp;&rarr;</a>
+      <a class="cta-primary" href="/timeline/">Start with the timeline&nbsp;&rarr;</a>
+      <a class="cta-secondary" href="/articles/">Browse all articles</a>
     </p>
   </section>
 
-  <section class="clusters" aria-label="Sections">
-    {Object.entries(clusters).map(([key, meta]) => (
-      <div class="cluster">
-        <h2 class="eyebrow">{meta.label}</h2>
-        <p class="blurb">{meta.blurb}</p>
-        <ul>
-          {articles.filter((a) => a.data.cluster === key).map((a) => (
-            <li>
-              <a href={`/articles/${a.id}/`}>{a.data.title}</a>
-              <p>{a.data.description}</p>
-            </li>
-          ))}
-          {articles.filter((a) => a.data.cluster === key).length === 0 && (
-            <li class="soon">Articles coming soon.</li>
-          )}
-        </ul>
-      </div>
-    ))}
+  <section class="thesis" aria-label="One origin, three strands">
+    <figure class="strand-figure">
+      <svg
+        viewBox="0 0 720 240"
+        role="img"
+        aria-label="One origin splitting into three strands: the mission, still open; the gray market; and the approved spinoffs."
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <!-- strands -->
+        <path class="strand-path s-mission" style="--len:760; animation-delay:.05s"
+          d="M60,120 C 250,110 360,60 670,44" />
+        <path class="strand-path s-market" style="--len:760; animation-delay:.28s"
+          d="M60,120 C 300,120 420,120 670,120" />
+        <path class="strand-path s-approval" style="--len:760; animation-delay:.5s"
+          d="M60,120 C 250,130 360,178 670,196" />
+        <!-- origin -->
+        <circle class="origin-ring" cx="60" cy="120" r="12" />
+        <circle class="origin-dot" cx="60" cy="120" r="6" />
+        <!-- endpoints: mission is an open ring (unfinished); the others land -->
+        <circle class="end open s-mission" cx="670" cy="44" r="6.5" style="animation-delay:1s" />
+        <circle class="end fill f-market" cx="670" cy="120" r="5.5" style="animation-delay:1.2s" />
+        <circle class="end fill f-approval" cx="670" cy="196" r="5.5" style="animation-delay:1.4s" />
+        <circle class="end fill f-approval" cx="641" cy="205" r="5.5" style="animation-delay:1.52s" />
+      </svg>
+    </figure>
+    <ul class="strand-legend">
+      {strandOrder.map((key) => (
+        <li class={`strand-${key}`}>
+          <span class="swatch" aria-hidden="true"></span>
+          <span><strong>{strands[key].label}.</strong> {strands[key].caption}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="threads" aria-label="Browse by topic">
+    <p class="eyebrow section-eyebrow">Follow a thread</p>
+    <div class="clusters">
+      {clusterOrder.map((key) => {
+        const meta = clusters[key];
+        const items = articlesFor(key);
+        return (
+          <div class="cluster" id={`thread-${key}`} style={`--accent: ${strands[meta.strand].colorVar}`}>
+            <h2 class="cluster-label">{meta.label}</h2>
+            <p class="blurb">{meta.blurb}</p>
+            <ul>
+              {items.map((a, i) => (
+                <li class={i === 0 ? 'lead' : ''}>
+                  <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+                  <p>{a.data.description}</p>
+                </li>
+              ))}
+              {items.length === 0 && <li class="soon">Articles coming soon.</li>}
+            </ul>
+          </div>
+        );
+      })}
+    </div>
   </section>
 
   <style>
-    .hero { padding: 4rem 0 3rem; max-width: 48rem; }
+    .hero { padding: 4rem 0 2.4rem; max-width: 48rem; }
     .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0.6rem 0 1rem; }
     .lede { font-size: 1.15rem; color: var(--ink-soft); }
-    .hero-cta { margin: 1.4rem 0 0; }
-    .hero-cta a { font-weight: 600; text-decoration: none; }
-    .hero-cta a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .hero-cta { margin: 1.8rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.4rem; }
+    .cta-primary {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--paper);
+      font-weight: 600;
+      padding: 0.7rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .cta-primary:hover { background: var(--uv); }
+    .cta-secondary { font-weight: 500; color: var(--uv); text-decoration: none; }
+    .cta-secondary:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* The thesis figure: one origin, three strands */
+    .thesis {
+      margin: 0.5rem 0 3.75rem;
+      padding: 2rem 0 0;
+      border-top: 1px solid var(--line);
+      max-width: 50rem;
+    }
+    .strand-figure { margin: 0; }
+    .strand-figure svg { width: 100%; height: auto; display: block; overflow: visible; }
+    .strand-path { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: var(--len); stroke-dashoffset: 0; animation: draw 1.25s ease backwards; }
+    .s-mission { stroke: var(--strand-mission); }
+    .s-market { stroke: var(--caution); }
+    .s-approval { stroke: var(--approved); }
+    .origin-dot { fill: var(--ink); }
+    .origin-ring { fill: none; stroke: var(--ink); stroke-width: 1.5; opacity: 0.35; }
+    .end { animation: pop 0.5s ease backwards; }
+    .end.fill { stroke: none; }
+    .end.open { fill: var(--paper); stroke-width: 2.5; }
+    .end.open.s-mission { stroke: var(--strand-mission); }
+    .f-market { fill: var(--caution); }
+    .f-approval { fill: var(--approved); }
+    @keyframes draw { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+    @keyframes pop { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
+    .end { transform-box: fill-box; transform-origin: center; }
+
+    /* Strand legend — teaches the color system used by the threads below */
+    .strand-legend {
+      list-style: none;
+      margin: 1.4rem 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem 1.6rem;
+    }
+    .strand-legend li { display: grid; grid-template-columns: auto 1fr; gap: 0.6rem; align-items: start; font-size: 0.9rem; color: var(--ink-soft); }
+    .strand-legend strong { color: var(--ink); font-weight: 600; }
+    .strand-legend .swatch { width: 1.4rem; height: 3px; border-radius: 2px; margin-top: 0.55rem; background: var(--dot); }
+    .strand-mission { --dot: var(--strand-mission); }
+    .strand-market { --dot: var(--caution); }
+    .strand-approval { --dot: var(--approved); }
+
+    /* Threads */
+    .section-eyebrow { margin: 0 0 1.6rem; }
     .clusters {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-      gap: 2.5rem 3rem;
-      border-top: 1px solid var(--line);
-      padding-top: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 2.75rem 2.5rem;
     }
-    .cluster .blurb { margin: 0.5rem 0 0.8rem; font-size: 0.9rem; color: var(--ink-soft); }
+    .cluster { border-top: 3px solid var(--accent); padding-top: 0.9rem; }
+    .cluster-label { font-size: 1.15rem; margin: 0; color: var(--accent); }
+    .cluster .blurb { margin: 0.4rem 0 1rem; font-size: 0.9rem; color: var(--ink-soft); }
     .cluster ul { list-style: none; margin: 0; padding: 0; }
-    .cluster li { margin-bottom: 1.1rem; }
-    .cluster li p { margin: 0.2rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
-    .cluster a { font-weight: 500; }
+    .cluster li { margin-bottom: 1.05rem; }
+    .cluster li p { margin: 0.2rem 0 0; font-size: 0.88rem; color: var(--ink-soft); }
+    .cluster a { font-weight: 500; text-decoration: none; }
+    .cluster a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .cluster li.lead a { font-size: 1.08rem; font-family: var(--font-display); }
     .soon { color: var(--ink-soft); font-size: 0.9rem; }
+
+    @media (max-width: 40rem) {
+      .strand-legend { grid-template-columns: 1fr; gap: 0.7rem; }
+    }
   </style>
 </Base>

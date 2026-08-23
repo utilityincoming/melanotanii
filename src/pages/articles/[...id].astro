@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import { clusters, clusterLabel, clusterColorVar } from '../../data/clusters';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -10,6 +11,26 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 
+const clusterKey = article.data.cluster;
+const label = clusterLabel(clusterKey);
+const accent = clusterColorVar(clusterKey);
+const threadAnchor = `/#thread-${clusterKey}`;
+
+// Siblings in the same thread — the curated lead first, then newest — for the
+// "Continue in this thread" footer (keeps readers moving through the site).
+const leadId = (clusters as Record<string, { lead: string }>)[clusterKey]?.lead;
+const rest = (await getCollection('articles', ({ data }) => !data.draft)).filter(
+  (a) => a.data.cluster === clusterKey && a.id !== article.id
+);
+const lead = rest.find((a) => a.id === leadId);
+const others = rest
+  .filter((a) => a.id !== leadId)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
+
+const pageUrl = new URL(`/articles/${article.id}/`, Astro.site).href;
+const ogImage = new URL('/og-image.png', Astro.site).href;
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -17,17 +38,64 @@ const jsonLd = {
   description: article.data.description,
   datePublished: article.data.pubDate.toISOString(),
   ...(article.data.updatedDate && { dateModified: article.data.updatedDate.toISOString() }),
+  image: ogImage,
+  articleSection: label,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Tan Lines',
+    url: Astro.site?.href,
+  },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'Articles', item: new URL('/articles/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: label, item: new URL(threadAnchor, Astro.site).href },
+  ],
 };
 ---
 <Base title={`${article.data.title} — Tan Lines`} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
-  <article class="prose">
-    <p class="eyebrow">{article.data.cluster.replace(/-/g, ' ')}</p>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  <article class="prose" style={`--accent: ${accent}`}>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/articles/">Articles</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a class="crumb-thread" href={threadAnchor}>{label}</a>
+    </nav>
+    <p class="eyebrow accent">{label}</p>
     <h1>{article.data.title}</h1>
     <p class="meta">
       Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      {article.data.updatedDate && (
+        <> &middot; Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
+      )}
     </p>
     <Content />
+
+    {siblings.length > 0 && (
+      <nav class="continue" aria-label={`More in ${label}`}>
+        <p class="continue-head">
+          <span class="continue-eyebrow accent">Continue in {label}</span>
+        </p>
+        <ul>
+          {siblings.map((a) => (
+            <li>
+              <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+              <p>{a.data.description}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="continue-all"><a href="/articles/">All articles &rarr;</a></p>
+      </nav>
+    )}
+
     {article.data.seeAlso && article.data.seeAlso.length > 0 && (
       <aside class="see-also">
         <h2>The underlying science</h2>
@@ -44,9 +112,45 @@ const jsonLd = {
     )}
   </article>
   <style>
-    article { padding-top: 3rem; }
-    h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.5rem 0; }
+    article { padding-top: 2rem; }
+    .crumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      margin-bottom: 1.6rem;
+    }
+    .crumbs a { color: var(--ink-soft); text-decoration: none; }
+    .crumbs a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
+    .crumbs .crumb-thread { color: var(--accent); font-weight: 600; }
+    .crumbs span { opacity: 0.6; }
+    .accent { color: var(--accent); }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.35rem 0 0.5rem; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
+
+    /* Continue in this thread */
+    .continue {
+      margin-top: 3.5rem;
+      padding-top: 1.6rem;
+      border-top: 3px solid var(--accent);
+    }
+    .continue-head { margin: 0 0 1.1rem; }
+    .continue-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .continue ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.1rem; }
+    .continue li a { font-weight: 500; font-size: 1.08rem; text-decoration: none; }
+    .continue li a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .continue li p { margin: 0.2rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+    .continue-all { margin: 1.4rem 0 0; font-size: 0.9rem; }
+    .continue-all a { font-weight: 500; text-decoration: none; }
+    .continue-all a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
     .see-also {
       margin-top: 2.5rem;
       padding-top: 1.5rem;

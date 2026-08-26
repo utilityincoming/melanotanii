@@ -41,10 +41,16 @@ const jsonLd = {
   image: ogImage,
   articleSection: label,
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+  author: {
+    '@type': 'Organization',
+    name: 'The Melanotan Record',
+    url: new URL('/standards/', Astro.site).href,
+  },
   publisher: {
     '@type': 'Organization',
     name: 'The Melanotan Record',
     url: Astro.site?.href,
+    publishingPrinciples: new URL('/standards/', Astro.site).href,
   },
 };
 
@@ -72,9 +78,11 @@ const breadcrumbLd = {
     <p class="eyebrow accent">{label}</p>
     <h1>{article.data.title}</h1>
     <p class="meta">
+      By <a class="byline" href="/standards/">The Melanotan Record</a>
+      <span aria-hidden="true">&middot;</span>
       Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       {article.data.updatedDate && (
-        <> &middot; Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
+        <> <span aria-hidden="true">&middot;</span> Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
       )}
     </p>
     <Content />
@@ -129,6 +137,8 @@ const breadcrumbLd = {
     .accent { color: var(--accent); }
     h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.35rem 0 0.5rem; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
+    .meta .byline { color: var(--ink); font-weight: 600; text-decoration: none; }
+    .meta .byline:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
 
     /* Continue in this thread */
     .continue {

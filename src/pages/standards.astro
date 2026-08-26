@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'The Melanotan Record',
+  url: Astro.site?.href,
+  description:
+    'An independent publication covering the history and analysis of Melanotan II and the melanocortin drug class.',
+  publishingPrinciples: new URL('/standards/', Astro.site).href,
+  correctionsPolicy: new URL('/standards/', Astro.site).href,
+  knowsAbout: [
+    'Melanotan II',
+    'Melanotan I',
+    'afamelanotide',
+    'bremelanotide',
+    'melanocortin receptors',
+    'alpha-melanocyte-stimulating hormone',
+  ],
+};
+---
+<Base
+  title="Editorial standards — The Melanotan Record"
+  description="How The Melanotan Record reports: primary sources, dated claims, plainly stated harms — and the lines it will never cross. The standard this site is written to."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(orgLd)} is:inline />
+  <article class="prose">
+    <p class="eyebrow">Editorial standards</p>
+    <h1>The standard this site is written to</h1>
+    <p class="lede">
+      The Melanotan Record is an independent publication. Every article here is
+      written to one editorial standard, and this page is that standard, set
+      down in the open so any reader &mdash; or any regulator, dermatologist, or
+      skeptical journalist &mdash; can hold the work to it.
+    </p>
+
+    <h2>Who writes this</h2>
+    <p>
+      The Melanotan Record is written and edited under a single masthead rather
+      than under individual bylines. The name on every article is the
+      publication&rsquo;s, and the standard on this page is the author of
+      record. We claim no medical or clinical credentials, and we never borrow
+      them: nothing here is written in the voice of a doctor giving advice,
+      because it is not.
+    </p>
+    <p>
+      We are independent of the industry we cover. The Record is not affiliated
+      with, funded by, or speaking for any manufacturer, vendor, clinic, or any
+      of the companies whose drugs appear in these pages. It sells nothing.
+    </p>
+
+    <h2>How we report</h2>
+    <p>
+      Every article is built from primary sources &mdash; peer-reviewed
+      literature, patent filings, regulatory records, and companies&rsquo; own
+      disclosures &mdash; and the specific claims are checked against those
+      sources before anything is published. Dates, names, and numbers are meant
+      to be verifiable; where a patent, trial, or approval is cited, it is a
+      real one you can look up.
+    </p>
+    <p>
+      Every article is dated. Where the evidence is thin, the article says so.
+      Where a popular claim is wrong, the article says that too &mdash; including
+      claims made by people selling things. For the receptor-level science
+      underneath the history, we point to our sister reference,
+      <a href="https://melanocortin.com" rel="noopener">melanocortin.com</a>.
+    </p>
+
+    <h2>What we never publish</h2>
+    <p>
+      No sourcing, suppliers, dosing, or usage guidance for unapproved
+      compounds &mdash; not framed as harm reduction, not framed as history.
+      No commerce on this domain. No medical advice. Melanotan II is not
+      approved by any regulator for any use, and this site treats it as the
+      cautionary tale it is, not a manual for it.
+    </p>
+
+    <h2>Where we&rsquo;re opinionated, and say so</h2>
+    <p>
+      The Record holds one openly stated position: that the world still needs
+      what the original researchers were chasing &mdash; a rigorously tested,
+      approved medicine that gives skin durable protection from ultraviolet
+      damage. When we argue that case, we label it as what it is: hope, clearly
+      marked, kept separate from the reporting. The reasoning behind it lives on
+      the <a href="/about/">about page</a>.
+    </p>
+
+    <h2>Corrections</h2>
+    <p>
+      When we find an error, or one is brought to our attention, we fix it and
+      note the date of any material change. Freshness is only signalled when the
+      substance of an article actually changed &mdash; we do not restamp dates to
+      look current. An accurate record is worth more than a fresh-looking one.
+    </p>
+  </article>
+  <style>
+    article { padding-top: 2.5rem; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0.35rem 0 0.75rem; }
+    .lede { font-size: 1.15rem; color: var(--ink); margin-bottom: 2rem; }
+    .prose h2 { font-size: 1.35rem; }
+  </style>
+</Base>

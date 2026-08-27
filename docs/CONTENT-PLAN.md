@@ -24,7 +24,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | --- | --- | --- | --- |
 | `history` | 4 | The History | Solid origin story; thin on the people/patent arc after the lab |
 | `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
-| `science` | 4 | The Science | Good receptor grounding; missing PK/formulation and MC1R-variant depth |
+| `science` | 6 | The Science | Receptor grounding plus PK; variant-spectrum file now live |
 | `culture` | 4 | The Demand | Well-drawn; missing the platform/commerce mechanics (how it's sold today) |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
@@ -69,10 +69,9 @@ is where the GLP-1 parallel breaks. Do not restamp unless a sponsor
 actually announces a general-public program.
 
 ### `science` — "MC1R variants: why the tanning response isn't universal"
-`why-redheads-burn-mc1r` covers the redhead case; a companion on the full
-spectrum of MC1R variation (and what it implies for who a future drug would
-even help) deepens the science cluster and the personalization angle.
-**Council need:** MC1R population-genetics summary, variant→phenotype map.
+**Shipped 26 Aug 2026** as `/articles/mc1r-variants-not-universal/`.
+Companion to `why-redheads-burn-mc1r`: R vs r, heterozygotes, geography,
+trafficking vs coupling, pharmacogenetic ceiling for a future agonist.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

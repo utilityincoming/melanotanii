@@ -22,7 +22,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
-| `history` | 4 | The History | Solid origin story; thin on the people/patent arc after the lab |
+| `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
 | `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
 | `science` | 6 | The Science | Receptor grounding plus PK; variant-spectrum file now live |
 | `culture` | 4 | The Demand | Well-drawn; missing the platform/commerce mechanics (how it's sold today) |
@@ -34,18 +34,18 @@ prioritizing genuine gaps over padding.
 ## Priority 1 — highest editorial value
 
 ### `history` — "The two men and the molecule: Hruby, Hadley, and the patent trail"
-The origin article names Victor Hruby and Mac Hadley but stops at the lab.
-The human + IP arc is a genuine hole: who licensed Melanotan I, how
-Clinuvel ended up with afamelanotide, and how MT-II's structure entered the
-public domain. Anchors E-E-A-T with named, verifiable people and dated
-filings. **Council need:** patent/licensing timeline, primary sources.
+**Shipped 26 Aug 2026** as `/articles/who-owned-melanotan/` (PR #10).
+Covers the licensing of Melanotan I, how Clinuvel ended up with
+afamelanotide, and how MT-II's structure entered the public domain.
+Do not restamp `updatedDate` unless a filing or assignment materially
+changes the ownership story.
 
 ### `science` — "Why the same peptide tans, sickens, and arouses: the PK story"
-The receptor articles explain *which* receptors; this explains *why one
-injected dose hits all of them* — pharmacokinetics, lack of receptor
-selectivity, half-life, why MT-II's non-selectivity is exactly what a
-real drug would need to fix. Bridges cleanly into the next-agonist thesis.
-**Council need:** PK data from the original trials, receptor-affinity table.
+**Shipped 26 Aug 2026** as `/articles/a-drug-with-no-address/` (PR #12).
+Pharmacokinetics, lack of receptor selectivity, half-life — why one
+injected dose hits every receptor, and why that non-selectivity is
+exactly what a real drug would need to fix. Do not restamp
+`updatedDate` unless new primary PK literature lands.
 
 ### `cautionary-tale` — "What the warnings actually did: a decade of enforcement"
 **Shipped 26 Aug 2026** as `/articles/what-the-warnings-actually-did/`.
@@ -76,9 +76,10 @@ trafficking vs coupling, pharmacogenetic ceiling for a future agonist.
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,
-  Australia, Canada, Denmark, Ireland, UK. Add a "last reviewed" date and
-  refresh when any jurisdiction changes status. This is where real
-  `updatedDate` freshness signals should come from.
+  Australia, Canada, Denmark, Ireland, UK, and carries a "Last reviewed"
+  date (added 26 Aug 2026). Refresh the date only when a jurisdiction
+  actually changes status. This is where real `updatedDate` freshness
+  signals should come from.
 - **Timeline extension.** Add entries as afamelanotide indications expand
   and as any MC1R-agonist clinical news lands.
 - **Science-article `updatedDate` passes** only when new primary literature

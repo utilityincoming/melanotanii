@@ -65,6 +65,8 @@ gives the public-health case. What's missing is a sponsor willing to fund
 the decade-long prevention trial — and possibly an intermediate indication
 (high-risk patients, transplant recipients, xeroderma-adjacent populations)
 that could serve as the beachhead the way diabetes did for GLP-1.
+[Who would pay](/articles/who-would-pay-for-the-trial/) is the file on
+that invoice.
 
 ## Labeled hopium
 

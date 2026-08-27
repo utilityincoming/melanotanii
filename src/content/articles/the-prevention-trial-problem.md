@@ -62,7 +62,9 @@ population. In each case a sponsor chose to fund the mountain because the payoff
 justified it.
 
 Photoprotection's mountain is the same shape and the same height. What it's
-waiting for is the same decision: someone concluding that the population at the
-summit is worth the expedition. The most realistic way that decision gets made
-isn't one heroic leap — it's a series of smaller, fundable steps
+waiting for is the same decision: someone concluding that the population at
+the summit is worth the expedition. The most realistic way that decision gets
+made isn't one heroic leap — it's a series of smaller, fundable steps
 ([the beachhead indications](/articles/the-beachhead-indications/)).
+[Who writes the cheque](/articles/who-would-pay-for-the-trial/) is the
+file that decision actually lives in.

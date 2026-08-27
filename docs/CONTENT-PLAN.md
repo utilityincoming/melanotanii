@@ -25,7 +25,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
 | `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
 | `science` | 6 | The Science | Receptor grounding plus PK; variant-spectrum file now live |
-| `culture` | 4 | The Demand | Well-drawn; missing the platform/commerce mechanics (how it's sold today) |
+| `culture` | 5 | The Demand | Well-drawn; supply-mechanics file now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
 Target: bring each cluster toward 6 substantive articles as topics warrant,
@@ -56,11 +56,12 @@ materially changes the file.
 ## Priority 2 — rounds out the clusters
 
 ### `culture` — "How it's sold now: from forums to DTC and social commerce"
-The demand cluster covers *why* people wanted it; this covers the *modern
-supply mechanics* — the shift from bodybuilding forums to nasal-spray
-rebrands, influencer resale, and platform moderation cat-and-mouse.
-Journalism about the market, never a buyer's guide. **Council need:**
-current-market reconnaissance, platform-policy specifics.
+**Shipped 26 Aug 2026** as `/articles/how-its-sold-now/`. The five-layer
+supply stack (research-chemical storefronts, hashtag word games, affiliate
+salesforce, salon counters, payment camouflage), anchored on LegitScript's
+Dec 2025 cross-platform dataset and CHOICE's market reconnaissance.
+Journalism about the market, never a buyer's guide. Do not restamp
+`updatedDate` unless the market's mechanics materially shift again.
 
 ### `next-agonist` — "Who would pay for the trial: the sponsor problem"
 **Shipped 26 Aug 2026** as `/articles/who-would-pay-for-the-trial/`.

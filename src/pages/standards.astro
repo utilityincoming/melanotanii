@@ -1,51 +1,30 @@
 ---
 import Base from '../layouts/Base.astro';
-
-const orgLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'The Melanotan Record',
-  url: Astro.site?.href,
-  description:
-    'An independent publication covering the history and analysis of Melanotan II and the melanocortin drug class.',
-  publishingPrinciples: new URL('/standards/', Astro.site).href,
-  correctionsPolicy: new URL('/standards/', Astro.site).href,
-  knowsAbout: [
-    'Melanotan II',
-    'Melanotan I',
-    'afamelanotide',
-    'bremelanotide',
-    'melanocortin receptors',
-    'alpha-melanocyte-stimulating hormone',
-  ],
-};
 ---
 <Base
-  title="Editorial standards — The Melanotan Record"
-  description="How The Melanotan Record reports: primary sources, dated claims, plainly stated harms — and the lines it will never cross. The standard this site is written to."
+  title="Editorial standards — Tan Lines"
+  description="How Tan Lines reports: primary sources, dated claims, plainly stated harms — and the lines it will never cross. The standard this site is written to."
 >
-  <script type="application/ld+json" set:html={JSON.stringify(orgLd)} is:inline />
   <article class="prose">
     <p class="eyebrow">Editorial standards</p>
     <h1>The standard this site is written to</h1>
     <p class="lede">
-      The Melanotan Record is an independent publication. Every article here is
-      written to one editorial standard, and this page is that standard, set
-      down in the open so any reader &mdash; or any regulator, dermatologist, or
-      skeptical journalist &mdash; can hold the work to it.
+      Tan Lines is an independent publication. Every article here is written to
+      one editorial standard, and this page is that standard, set down in the
+      open so any reader &mdash; or any regulator, dermatologist, or skeptical
+      journalist &mdash; can hold the work to it.
     </p>
 
     <h2>Who writes this</h2>
     <p>
-      The Melanotan Record is written and edited under a single masthead rather
-      than under individual bylines. The name on every article is the
-      publication&rsquo;s, and the standard on this page is the author of
-      record. We claim no medical or clinical credentials, and we never borrow
-      them: nothing here is written in the voice of a doctor giving advice,
-      because it is not.
+      Tan Lines is written and edited under a single masthead rather than under
+      individual bylines. The name on every article is the publication&rsquo;s,
+      and the standard on this page is the author of record. We claim no medical
+      or clinical credentials, and we never borrow them: nothing here is written
+      in the voice of a doctor giving advice, because it is not.
     </p>
     <p>
-      We are independent of the industry we cover. The Record is not affiliated
+      We are independent of the industry we cover. Tan Lines is not affiliated
       with, funded by, or speaking for any manufacturer, vendor, clinic, or any
       of the companies whose drugs appear in these pages. It sells nothing.
     </p>
@@ -78,7 +57,7 @@ const orgLd = {
 
     <h2>Where we&rsquo;re opinionated, and say so</h2>
     <p>
-      The Record holds one openly stated position: that the world still needs
+      Tan Lines holds one openly stated position: that the world still needs
       what the original researchers were chasing &mdash; a rigorously tested,
       approved medicine that gives skin durable protection from ultraviolet
       damage. When we argue that case, we label it as what it is: hope, clearly

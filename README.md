@@ -1,4 +1,7 @@
-# The Melanotan Record — melanotanii.com
+# Tan Lines — melanotanii.com
+
+The public masthead is **Tan Lines**. **The Record** is the dated file
+(timeline, regulatory watch, articles). The address is melanotanii.com.
 
 History and analysis of Melanotan II, told straight. The site covers the
 compound's origin in melanoma-prevention research, the gray market that

@@ -126,17 +126,17 @@ const jsonLd = {
   description:
     'A living tracker of the U.S. and global regulatory status of Melanotan II and the melanocortin agonists (afamelanotide, dersimelagon) developed for photoprotective use — dated catalysts, settled milestones, and jurisdiction-by-jurisdiction status.',
   dateModified: '2026-08-18',
-  isPartOf: { '@type': 'WebSite', name: 'The Melanotan Record' },
+  isPartOf: { '@id': new URL('/#record', Astro.site).href, name: 'The Record' },
 };
 ---
 <Base
-  title="Regulatory watch — Melanotan II & the melanocortin sun drugs — The Melanotan Record"
+  title="Regulatory watch — The Record — Tan Lines"
   description="A living tracker: the U.S. and global regulatory status of Melanotan II and the melanocortin photoprotective agonists — dated FDA/EMA/TGA catalysts, settled approvals, and where MT-II legally stands by country."
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
 
   <section class="head">
-    <p class="eyebrow">Regulatory watch</p>
+    <p class="eyebrow">The Record</p>
     <h1>On the docket.</h1>
     <p class="lede">
       A living scoreboard for the question this whole site is watching: whether

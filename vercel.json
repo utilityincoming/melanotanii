@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    { "source": "/products", "destination": "/about/", "permanent": true },
+    { "source": "/products/", "destination": "/about/", "permanent": true },
+    { "source": "/products/:path*", "destination": "/about/", "permanent": true },
+    { "source": "/about-us", "destination": "/about/", "permanent": true },
+    { "source": "/about-us/", "destination": "/about/", "permanent": true },
+    { "source": "/cart", "destination": "/about/", "permanent": true },
+    { "source": "/cart/", "destination": "/about/", "permanent": true },
+    { "source": "/shipping-policy", "destination": "/about/", "permanent": true },
+    { "source": "/shipping-policy/", "destination": "/about/", "permanent": true },
+    { "source": "/contact-us", "destination": "/about/", "permanent": true },
+    { "source": "/contact-us/", "destination": "/about/", "permanent": true },
+    { "source": "/complaints-policy", "destination": "/about/", "permanent": true },
+    { "source": "/complaints-policy/", "destination": "/about/", "permanent": true },
+    { "source": "/brand/:path*", "destination": "/about/", "permanent": true },
+    { "source": "/product-tag/:path*", "destination": "/about/", "permanent": true },
+    { "source": "/category/:path*", "destination": "/about/", "permanent": true },
+    { "source": "/blog", "destination": "/articles/", "permanent": true },
+    { "source": "/blog/", "destination": "/articles/", "permanent": true },
+    { "source": "/blog/:path*", "destination": "/articles/", "permanent": true }
+  ]
+}

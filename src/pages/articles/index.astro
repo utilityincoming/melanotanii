@@ -14,10 +14,11 @@ function articlesFor(key: keyof typeof clusters) {
 }
 ---
 <Base
-  title="All articles — The Melanotan Record"
-  description="Every article on The Melanotan Record: the history, science, cautionary tale, and open future of Melanotan II and the melanocortin drug class."
+  title="All articles — The Record — Tan Lines"
+  description="Every article in The Record: the history, science, cautionary tale, and open future of Melanotan II and the melanocortin drug class."
 >
   <header class="page-head">
+    <p class="eyebrow">The Record</p>
     <h1 class="page-title">All articles</h1>
     <p class="page-sub">{all.length} pieces across five threads &mdash; the whole Melanotan II story, told straight.</p>
   </header>
@@ -44,6 +45,7 @@ function articlesFor(key: keyof typeof clusters) {
 
   <style>
     .page-head { margin-top: 3rem; max-width: 46rem; }
+    .page-head .eyebrow { margin: 0 0 0.35rem; }
     .page-title { font-size: 2.2rem; margin: 0; }
     .page-sub { color: var(--ink-soft); margin: 0.5rem 0 0; }
     .thread {

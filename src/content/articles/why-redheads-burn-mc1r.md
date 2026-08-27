@@ -84,7 +84,9 @@ It explains a real limit of the drugs: people carrying strong loss-of-function
 MC1R variants — the very fair, the red-haired — may respond weakly even to a
 melanocortin drug, because the keyhole itself is the malfunction. The people a
 tanning drug would most help are partly the people whose receptors answer it
-least.
+least. The [full spectrum](/articles/mc1r-variants-not-universal/) is not a
+binary. Most of the extra risk, and most of the people a future agonist
+would actually meet, do not have red hair.
 
 And it explains why *selectivity* became the holy grail: a molecule that hit
 only MC1R would do the one useful thing and none of the dangerous ones

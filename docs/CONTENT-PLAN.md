@@ -23,7 +23,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 4 | The History | Solid origin story; thin on the people/patent arc after the lab |
-| `cautionary-tale` | 4 | The Cautionary Tale | Strong; missing the harm-reduction & regulator-enforcement angle |
+| `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
 | `science` | 4 | The Science | Good receptor grounding; missing PK/formulation and MC1R-variant depth |
 | `culture` | 4 | The Demand | Well-drawn; missing the platform/commerce mechanics (how it's sold today) |
 | `next-agonist` | 5 | The Next Agonist | Deepest cluster; missing the money/trial-sponsor reality |
@@ -48,11 +48,10 @@ real drug would need to fix. Bridges cleanly into the next-agonist thesis.
 **Council need:** PK data from the original trials, receptor-affinity table.
 
 ### `cautionary-tale` — "What the warnings actually did: a decade of enforcement"
-The gray-market article says regulator warnings "did not end the market."
-The follow-up: what enforcement was actually tried (import seizures, test
-purchases, prosecutions) across UK/AU/EU, and why supply proved resilient.
-Pairs with the `/regulatory` tracker. **Council need:** enforcement actions,
-seizure data, any prosecutions.
+**Shipped 26 Aug 2026** as `/articles/what-the-warnings-actually-did/`.
+Pairs with `/regulatory` (TGA lab test 17 Aug 2026; UK DHSC nasal-spray
+answer 1 Dec 2025). Do not restamp `updatedDate` unless a new jurisdiction
+materially changes the file.
 
 ## Priority 2 — rounds out the clusters
 

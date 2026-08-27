@@ -24,7 +24,8 @@ Media coverage dubbed it "the Barbie drug" for its advertised effect
 profile — tanning, appetite suppression, and libido effects in one vial.
 Health agencies in the UK, Australia, Denmark, Norway and elsewhere issued
 public warnings and moved to block sales. The warnings documented the
-problem; they did not end the market.
+problem; they did not end the market. What those agencies actually did next
+is [the enforcement file](/articles/what-the-warnings-actually-did/).
 
 ## What the cautionary tale actually consists of
 

@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { clusters, clusterLabel, clusterColorVar } from '../../data/clusters';
+import { publication, orgRef, recordRef } from '../../data/brand';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -41,15 +42,10 @@ const jsonLd = {
   image: ogImage,
   articleSection: label,
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
-  author: {
-    '@type': 'Organization',
-    name: 'The Melanotan Record',
-    url: new URL('/standards/', Astro.site).href,
-  },
+  isPartOf: recordRef(Astro.site),
+  author: orgRef(Astro.site),
   publisher: {
-    '@type': 'Organization',
-    name: 'The Melanotan Record',
-    url: Astro.site?.href,
+    ...orgRef(Astro.site),
     publishingPrinciples: new URL('/standards/', Astro.site).href,
   },
 };
@@ -64,7 +60,7 @@ const breadcrumbLd = {
   ],
 };
 ---
-<Base title={`${article.data.title} — The Melanotan Record`} description={article.data.description}>
+<Base title={`${article.data.title} — ${publication}`} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   <article class="prose" style={`--accent: ${accent}`}>
@@ -78,7 +74,7 @@ const breadcrumbLd = {
     <p class="eyebrow accent">{label}</p>
     <h1>{article.data.title}</h1>
     <p class="meta">
-      By <a class="byline" href="/standards/">The Melanotan Record</a>
+      By <a class="byline" href="/about/">{publication}</a>
       <span aria-hidden="true">&middot;</span>
       Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       {article.data.updatedDate && (

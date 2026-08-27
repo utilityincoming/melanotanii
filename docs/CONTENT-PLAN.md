@@ -1,6 +1,6 @@
 # Content plan — melanotanii.com
 
-Working brief for expanding "The Melanotan Record" from its launch set (21 articles,
+Working brief for expanding Tan Lines / The Record from its launch set (21 articles,
 ~400–600 words each, 5 clusters) toward deeper, more durable coverage.
 
 **How to use this:** each proposed article below is a commissioning brief,

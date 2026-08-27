@@ -15,22 +15,27 @@ function articlesFor(key: keyof typeof clusters) {
 }
 ---
 <Base
-  title="The Melanotan Record — the unvarnished history of Melanotan II"
+  title="Tan Lines — the unvarnished history of Melanotan II"
   description="The full Melanotan II story, told straight: the research that created it, the gray market that hijacked it, the approved drugs it spawned, and the photoprotective medicine that could still come."
 >
   <section class="hero">
-    <p class="eyebrow">History &middot; Analysis &middot; No sales, no sourcing, no hype</p>
-    <h1>The tanning peptide that never made it&nbsp;&mdash;<br />and the two drugs that did.</h1>
+    <p class="eyebrow">History &middot; Analysis &middot; No sales, no sourcing</p>
+    <h1>The tanning peptide that never shipped&nbsp;&mdash;<br />and the medicines that did.</h1>
     <p class="lede">
       Melanotan II was invented to prevent melanoma. It was never approved for
-      anything. It spread through gyms and tanning forums anyway, spawned two
-      real medicines for conditions no one was aiming at, and left its founding
-      question open: can a drug give human skin lasting protection from the sun,
-      safely? This site tells that whole story, straight.
+      anything. It spread through gyms and tanning forums anyway, and two of its
+      side effects became real medicines &mdash; neither of them a tan. The
+      founding question is still open: can a drug give human skin lasting
+      protection from the sun, safely?
     </p>
     <p class="hero-cta">
       <a class="cta-primary" href="/timeline/">Start with the timeline&nbsp;&rarr;</a>
       <a class="cta-secondary" href="/articles/">Browse all articles</a>
+    </p>
+    <p class="intent">
+      This is Tan Lines, a publication. We don&rsquo;t sell Melanotan II, source
+      it, or tell you how to use it. The Record below is the file: where it came
+      from, what the vials actually are, and the drugs that shipped instead.
     </p>
   </section>
 
@@ -112,7 +117,7 @@ function articlesFor(key: keyof typeof clusters) {
     </p>
     <p class="closer-cta">
       <a class="cta-primary" href="/timeline/">See the whole timeline&nbsp;&rarr;</a>
-      <a class="cta-secondary" href="/regulatory/">Track what&rsquo;s in development</a>
+      <a class="cta-secondary" href="/regulatory/">Regulatory watch</a>
     </p>
   </aside>
 
@@ -121,6 +126,7 @@ function articlesFor(key: keyof typeof clusters) {
     .hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); margin: 0.6rem 0 1rem; }
     .lede { font-size: 1.15rem; color: var(--ink-soft); }
     .hero-cta { margin: 1.8rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.4rem; }
+    .intent { margin: 1.15rem 0 0; max-width: 38rem; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5; }
     .cta-primary {
       display: inline-block;
       background: var(--ink);

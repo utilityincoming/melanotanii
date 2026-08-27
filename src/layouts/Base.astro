@@ -169,17 +169,28 @@ inject();
     }
     .site-footer .wrap { padding-top: 2rem; padding-bottom: 3rem; }
     .site-footer p { max-width: 46rem; }
+    .site-footer .foot-record,
     .site-footer .foot-links {
       display: flex;
       flex-wrap: wrap;
       gap: 1.1rem;
       margin-bottom: 1.1rem;
+      align-items: baseline;
     }
+    .site-footer .foot-kicker {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-right: 0.3rem;
+    }
+    .site-footer .foot-record a,
     .site-footer .foot-links a {
       color: var(--ink);
       text-decoration: none;
       font-weight: 500;
     }
+    .site-footer .foot-record a:hover,
     .site-footer .foot-links a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
   </style>
 </head>
@@ -207,10 +218,15 @@ inject();
   </main>
   <footer class="site-footer">
     <div class="wrap">
+      <nav class="foot-record" aria-label="The Record">
+        <span class="foot-kicker">The Record</span>
+        <a href="/timeline/">Timeline</a>
+        <a href="/regulatory/">Regulatory</a>
+        <a href="/articles/">Articles</a>
+      </nav>
       <nav class="foot-links" aria-label="Footer">
         <a href="/about/">About</a>
         <a href="/standards/">Editorial standards</a>
-        <a href="/timeline/">Timeline</a>
         <a href="/rss.xml">RSS</a>
       </nav>
       <p>

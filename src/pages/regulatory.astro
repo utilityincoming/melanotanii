@@ -13,7 +13,7 @@ interface Catalyst {
   status: 'upcoming' | 'resolved';
 }
 
-const lastReviewed = 'August 18, 2026';
+const lastReviewed = 'August 26, 2026';
 
 // Add or update entries here; the page re-sorts and re-files them automatically.
 const catalysts: Catalyst[] = [
@@ -31,6 +31,11 @@ const catalysts: Catalyst[] = [
     sort: '2026-11-01', when: 'Nov 2026', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
     title: 'Pivotal vitiligo trial (CUV107) set to begin',
     note: 'The confirmatory study meant to underpin regulatory filings across Europe, North America and Africa.',
+  },
+  {
+    sort: '2026-08-17', when: '17 Aug 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
+    title: 'Lab-tested nasal sprays: 22 mg to 54 mg in bottles labelled 30 mg',
+    note: 'Five seized ‘Pure Tans Triple Strength’ bottles from the same NSW seller already fined $101,412 in May. The label was not a specification.',
   },
   {
     sort: '2026-07-13', when: 'Jul 2026', org: 'Health Canada', strand: 'approved', status: 'resolved',
@@ -51,6 +56,11 @@ const catalysts: Catalyst[] = [
     sort: '2026-01-15', when: 'Jan 2026', org: 'Tanabe · MT-7117', strand: 'approved', status: 'resolved',
     title: 'Oral MC1R agonist posts positive Phase 3',
     note: 'Dersimelagon — a once-daily pill, not an implant — hit its endpoints in EPP and X-linked protoporphyria. Melanocortin photoprotection escaping the needle is the clearest sign yet the class is advancing.',
+  },
+  {
+    sort: '2025-12-01', when: '1 Dec 2025', org: 'UK · DHSC', strand: 'caution', status: 'resolved',
+    title: 'Parliament told: nasal tanners sit outside medicines law',
+    note: 'A written answer: injectables are unlicensed medicines; nasal sprays without medical claims are not regarded as medicinal products, so they are not in the MHRA’s remit. The gap, on the record.',
   },
   {
     sort: '2025-09-23', when: '23 Sep 2025', org: 'EMA · EU', strand: 'approved', status: 'resolved',
@@ -233,6 +243,7 @@ const jsonLd = {
       legitimate melanocortin sun drug actually reaches Americans, read
       <a href="/articles/the-three-doors/">The three doors</a>; for the gray
       market it competes with, <a href="/articles/barbie-drug-gray-market/">The Barbie drug</a>;
+      for what the warnings actually did, <a href="/articles/what-the-warnings-actually-did/">a decade of enforcement</a>;
       for the full arc, <a href="/timeline/">the timeline</a>.
     </p>
   </section>

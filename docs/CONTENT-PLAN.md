@@ -26,7 +26,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
 | `science` | 4 | The Science | Good receptor grounding; missing PK/formulation and MC1R-variant depth |
 | `culture` | 4 | The Demand | Well-drawn; missing the platform/commerce mechanics (how it's sold today) |
-| `next-agonist` | 5 | The Next Agonist | Deepest cluster; missing the money/trial-sponsor reality |
+| `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
 Target: bring each cluster toward 6 substantive articles as topics warrant,
 prioritizing genuine gaps over padding.
@@ -63,11 +63,10 @@ Journalism about the market, never a buyer's guide. **Council need:**
 current-market reconnaissance, platform-policy specifics.
 
 ### `next-agonist` — "Who would pay for the trial: the sponsor problem"
-The cluster argues a safe photoprotective agonist is possible; the missing
-piece is *the economics of who funds a prevention trial* for a
-non-life-threatening indication, and how the GLP-1 obesity precedent
-changed that calculus. **Council need:** trial-cost benchmarks, the
-Clinuvel commercial model, GLP-1 sponsor-economics parallel.
+**Shipped 26 Aug 2026** as `/articles/who-would-pay-for-the-trial/`.
+Clinuvel's rare-disease P&L vs Novo-scale outcomes trials; reimbursement
+is where the GLP-1 parallel breaks. Do not restamp unless a sponsor
+actually announces a general-public program.
 
 ### `science` — "MC1R variants: why the tanning response isn't universal"
 `why-redheads-burn-mc1r` covers the redhead case; a companion on the full

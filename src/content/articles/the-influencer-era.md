@@ -105,9 +105,9 @@ Step back and the whole pillar resolves into one shape. Underneath everything is
 [a reward loop the sun wired into the skin](/articles/tanorexia-the-opioid-your-skin-makes/).
 On top of that sits [a century of manufactured desire](/articles/how-a-suntan-became-desirable/),
 which produced [a want that would not wait for approval](/articles/why-a-cosmetic-went-underground/).
-Social media invented none of this. What it built was the most efficient
-distribution layer the Barbie drug has ever had, and aimed it squarely at
-people young enough to still believe a tan is free.
+Social media invented none of this. What it built was
+[the most efficient distribution layer the Barbie drug has ever had](/articles/how-its-sold-now/),
+and aimed it squarely at people young enough to still believe a tan is free.
 
 That is the demand side of the Melanotan story, told straight. It is also the
 clearest argument for why the supply side matters so much — why this site

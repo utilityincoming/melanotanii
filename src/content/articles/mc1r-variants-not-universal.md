@@ -1,5 +1,6 @@
 ---
 title: "MC1R variants: why the tanning response isn't universal"
+serpTitle: "MC1R variants: why not everyone can tan the same way"
 description: "Red hair is the loud end. Most MC1R variants are quieter: r alleles, heterozygotes, East Asian R163Q. A future agonist would not reach everyone who burns."
 pubDate: 2026-08-26
 cluster: science

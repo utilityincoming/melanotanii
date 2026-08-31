@@ -1,6 +1,7 @@
 ---
 title: "A drug with no address: the pharmacokinetics of doing everything at once"
-description: "One dose of Melanotan II tans, sickens, and arouses together because pharmacokinetics gives it no target: it floods the whole body and outlasts the signal it mimics."
+serpTitle: "Melanotan II pharmacokinetics: why one dose does everything"
+description: "Why one dose of Melanotan II tans, sickens, and arouses at once: its pharmacokinetics give it no address. It floods the body and outlasts the signal it mimics."
 pubDate: 2026-08-26
 cluster: science
 seeAlso:

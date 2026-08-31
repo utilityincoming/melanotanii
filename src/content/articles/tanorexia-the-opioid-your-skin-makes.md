@@ -1,6 +1,7 @@
 ---
 title: "Tanorexia: the opioid your skin makes in the sun"
-description: "Why is a tan so hard to give up? UV light makes your skin manufacture a real opioid. The addiction science — mice, naloxone, and eight frequent tanners — and what it explains about a peptide."
+serpTitle: "Tanorexia and the opioid your skin makes in the sun"
+description: "UV light makes skin manufacture its own opioid — the hidden reward inside every tan. The science of tanning dependence, and what it says about Melanotan."
 pubDate: 2026-08-18
 cluster: culture
 ---

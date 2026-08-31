@@ -1,6 +1,7 @@
 ---
 title: "The three doors: the U.S. regulatory map for a melanocortin sun drug"
-description: "Melanotan II is illegal in America — but the technology it previewed is not. A primer on the U.S. regulatory landscape (FDA approval, compounding, and the gray market) for the melanocortin agonists that give skin photoprotection without the sun."
+serpTitle: "Is Melanotan II legal in the U.S.? Three regulatory doors"
+description: "Is Melanotan II legal in the U.S.? It's unapproved — but the technology isn't. The three doors: FDA approval, compounding, and the gray market."
 pubDate: 2026-08-18
 cluster: next-agonist
 ---

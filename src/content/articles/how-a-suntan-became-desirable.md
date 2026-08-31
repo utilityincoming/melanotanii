@@ -1,6 +1,7 @@
 ---
 title: "How a suntan became desirable"
-description: "For most of history, pale skin meant status and a tan meant labor. Then, in one decade, it flipped. The century that made a tan aspirational — Chanel, the Riviera, the sunbed — and set up everything that came after."
+serpTitle: "How the tan became desirable: Chanel, the Riviera, the sunbed"
+description: "For most of history a tan meant labor; then, in one decade, it flipped. How Chanel, the Riviera, and the sunbed made tanned skin aspirational."
 pubDate: 2026-08-18
 cluster: culture
 ---

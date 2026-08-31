@@ -1,6 +1,7 @@
 ---
 title: "The influencer era: how the Barbie drug got re-sold"
-description: "Melanotan II never went away — it went viral. Nasal sprays, flavored drops, and the 'vacation peptide' on TikTok. How social media re-packaged an unregulated injectable, and the regulatory gap that lets it sell in the open."
+serpTitle: "Melanotan nasal sprays on TikTok: the influencer era"
+description: "How Melanotan II went viral: nasal sprays, flavored drops, and the TikTok 'vacation peptide' re-packaged an unregulated injectable for the open market."
 pubDate: 2026-08-18
 cluster: culture
 ---

@@ -1,6 +1,7 @@
 ---
 title: "The prevention-trial problem: why 'stops skin cancer' is so hard to prove"
-description: "A drug that prevents skin cancer in healthy people would need one of the longest, largest, most expensive trials in medicine. Why the evidence bar — not the chemistry — is the real wall."
+serpTitle: "Why 'prevents skin cancer' is the hardest claim to prove"
+description: "Proving a drug prevents skin cancer needs one of the longest, largest trials in medicine. Why the evidence bar — not the chemistry — is the real wall."
 pubDate: 2026-08-18
 cluster: next-agonist
 ---

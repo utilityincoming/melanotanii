@@ -1,6 +1,7 @@
 ---
 title: "You can't know what's in the vial"
-description: "Gray-market Melanotan II is an unregulated injectable, made by unknown labs and reconstituted at the kitchen table. Purity, sterility, and dose are all assumptions — and assumptions have sent people to the ER."
+serpTitle: "Gray-market Melanotan II: you can't know what's in the vial"
+description: "Gray-market Melanotan II comes from unknown labs: purity, sterility, and dose are all assumptions — and assumptions have sent people to the ER."
 pubDate: 2026-08-18
 cluster: cautionary-tale
 ---

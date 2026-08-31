@@ -1,6 +1,7 @@
 ---
 title: "The beachhead: the narrow uses that could open the door for everyone"
-description: "GLP-1 reached the masses through diabetes first. A photoprotective melanocortin drug has its own candidate beachheads — and one of them, vitiligo, is in Phase III right now."
+serpTitle: "How a photoprotective melanocortin drug could reach everyone"
+description: "How a photoprotective melanocortin drug could reach everyone: beachhead indications, from approved EPP to a vitiligo trial now in Phase III."
 pubDate: 2026-08-18
 cluster: next-agonist
 ---

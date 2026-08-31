@@ -1,5 +1,6 @@
 ---
 title: "How it's sold now: the market that can't say its own name"
+serpTitle: "How Melanotan II is sold now: the DTC supply stack"
 description: "Research-chemical storefronts, banned hashtags, influencer commissions, salon shelves, disguised payments — the supply machine that sells Melanotan II now."
 pubDate: 2026-08-26
 cluster: culture

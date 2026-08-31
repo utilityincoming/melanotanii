@@ -1,6 +1,7 @@
 ---
 title: "How a tan actually protects skin — and why that was the whole idea"
-description: "A tan is the body's own sunscreen: eumelanin absorbing ultraviolet before it reaches DNA. Understanding how melanin protects — and how little — is the key to what Melanotan was reaching for."
+serpTitle: "Does a tan protect your skin? How eumelanin blocks UV"
+description: "A tan is the body's sunscreen: eumelanin absorbing UV before it reaches DNA. How melanin protects skin — and why that was Melanotan's target."
 pubDate: 2026-08-18
 cluster: science
 ---

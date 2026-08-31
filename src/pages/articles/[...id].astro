@@ -32,10 +32,13 @@ const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
 const pageUrl = new URL(`/articles/${article.id}/`, Astro.site).href;
 const ogImage = new URL('/og-image.png', Astro.site).href;
 
+// Query-shaped <title> when a serpTitle exists; the H1 stays the magazine line.
+const pageTitle = `${article.data.serpTitle ?? article.data.title} — ${publication}`;
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: article.data.title,
+  alternativeHeadline: article.data.serpTitle,
   description: article.data.description,
   datePublished: article.data.pubDate.toISOString(),
   ...(article.data.updatedDate && { dateModified: article.data.updatedDate.toISOString() }),
@@ -60,7 +63,7 @@ const breadcrumbLd = {
   ],
 };
 ---
-<Base title={`${article.data.title} — ${publication}`} description={article.data.description}>
+<Base title={pageTitle} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   <article class="prose" style={`--accent: ${accent}`}>

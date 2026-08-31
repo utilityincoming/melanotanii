@@ -1,5 +1,6 @@
 ---
 title: "Who would pay for the trial: the sponsor problem"
+serpTitle: "Who would pay for a sun-drug trial: the sponsor problem"
 description: "Clinuvel profits from a rare-disease implant. Novo funds prevention trials insurers pay for. A general-public sun drug needs both, and has neither."
 pubDate: 2026-08-26
 cluster: next-agonist

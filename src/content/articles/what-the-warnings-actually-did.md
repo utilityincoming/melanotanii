@@ -1,5 +1,6 @@
 ---
 title: "What the warnings actually did: a decade of Melanotan II enforcement"
+serpTitle: "Melanotan II enforcement: what the warnings actually did"
 description: "Regulators seized sites, parcels, and sellers. Australia made possession a crime. The market moved to nasal sprays. Why enforcement keeps losing."
 pubDate: 2026-08-26
 cluster: cautionary-tale

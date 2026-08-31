@@ -1,5 +1,6 @@
 ---
 title: "Two names on the patent: who owned Melanotan, and how it got loose"
+serpTitle: "Who owned Melanotan: the patent trail to Clinuvel and Palatin"
 description: "How a University of Arizona peptide became two FDA drugs and a gray-market staple: the patent trail from Hruby and Hadley to Clinuvel and Palatin."
 pubDate: 2026-08-26
 cluster: history

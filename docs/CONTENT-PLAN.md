@@ -23,7 +23,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
-| `cautionary-tale` | 6 | The Cautionary Tale | Strong; enforcement file plus longevity-menu rebrand live |
+| `cautionary-tale` | 7 | The Cautionary Tale | Strong; enforcement file, longevity-menu rebrand, and protocol-illusion file live |
 | `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
@@ -82,6 +82,15 @@ MC1R activation review, the Vyleesi/Scenesse/Imcivree approvals, and the
 TGA 22–54 mg label variance. Journalism about the claim genre; no dosing.
 Do not restamp `updatedDate` unless a regulator or major trial materially
 changes the record on chronic melanocortin agonism.
+
+### `cautionary-tale` — "The protocol illusion: why dosing math can't fix a vial nobody tested"
+**Shipped 30 Aug 2026** as `/articles/the-protocol-illusion/`. Companion to
+`whats-in-the-vial` (which now forward-links). Journalism about the forum
+dosing-guide genre itself — structure, conventions, why the arithmetic
+cannot survive the label — anchored on Gilhooley et al. 2021 (Dermatology)
+and the TGA 22–54 mg finding. Contains no dosing numbers by design; do not
+"improve" it by adding any. Do not restamp `updatedDate` unless a regulator
+publishes a new quantitative label-variance finding.
 
 ### AEO shorts — "One letter, two different molecules" / "The pill that wasn't"
 **Shipped 30 Aug 2026** as `/articles/not-melatonin/` (science) and

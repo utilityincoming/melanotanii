@@ -24,7 +24,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | --- | --- | --- | --- |
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
 | `cautionary-tale` | 6 | The Cautionary Tale | Strong; enforcement file plus longevity-menu rebrand live |
-| `science` | 8 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy file |
+| `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
@@ -97,6 +97,16 @@ makes it" pitch with the pharmacology — local vs systemic, minutes vs
 hours, analog edits vs the hormone. TGA blog citation anchors the claim
 genre. Do not restamp `updatedDate` unless a regulator materially engages
 the naturalness argument in a new way.
+
+### `science` — "The prevention claim, misread: what the trials showed, what the captions say"
+**Shipped 30 Aug 2026** as `/articles/the-prevention-claim-misread/`.
+Companion to `the-prevention-trial-problem` (which now forward-links):
+answers "Melanotan prevents skin cancer" with the record — prevention was
+the 1980s hypothesis, never tested; afamelanotide's trials measured
+pain-free light exposure, not cancer; Böhm 2024 ("may reduce … does not
+prevent melanoma"); CRUK's tan-doesn't-protect line; Skin Cancer
+Foundation warning of 7 Jul 2026 (dated catalyst). Do not restamp
+`updatedDate` unless a cancer-endpoint trial is announced or completed.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

@@ -69,3 +69,8 @@ made isn't one heroic leap — it's a series of smaller, fundable steps
 ([the beachhead indications](/articles/the-beachhead-indications/)).
 [Who writes the cheque](/articles/who-would-pay-for-the-trial/) is the
 file that decision actually lives in.
+
+The trial doesn't exist yet. The marketing, unfortunately, already does —
+the caption-level claim that Melanotan prevents skin cancer, citing a
+result nobody has ever run. That gap is
+[its own file](/articles/the-prevention-claim-misread/).

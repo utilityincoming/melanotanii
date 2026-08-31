@@ -220,3 +220,7 @@ is not going to be dismantled layer by layer. It will be made obsolete, if
 it ever is, by [a tested, legitimate agonist](/articles/middle-ground-agonist-already-exists/)
 good enough that nobody needs a product that can't say its own name. That
 remains this site's stated opinion, and it is labeled as one.
+
+The newest costume so far borrows a language the molecule never earned:
+the longevity menu. That one is
+[its own file](/articles/the-wellness-menu/).

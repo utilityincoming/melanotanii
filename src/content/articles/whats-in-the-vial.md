@@ -63,3 +63,7 @@ trustworthy label, the uncertainty *is* the product. That's the fact no dosing
 chart or forum protocol can engineer away, and it belongs at the center of the
 whole [side-effect ledger](/articles/the-side-effect-ledger/), because it
 undermines every other line in it.
+
+Why the protocols keep being written anyway — and why the math in them
+cannot survive the label — is [the protocol
+illusion](/articles/the-protocol-illusion/).

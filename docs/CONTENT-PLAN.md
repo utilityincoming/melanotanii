@@ -24,7 +24,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | --- | --- | --- | --- |
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
 | `cautionary-tale` | 6 | The Cautionary Tale | Strong; enforcement file plus longevity-menu rebrand live |
-| `science` | 7 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer |
+| `science` | 8 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy file |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
@@ -89,6 +89,14 @@ changes the record on chronic melanocortin agonism.
 the melatonin name-confusion query and the oral/gummy Melanotan scam
 (peptide digestion chemistry; canthaxanthin-pill history). Keep both
 shorts short; expand only if a named product or regulator action lands.
+
+### `science` — "The natural fallacy: what your body actually does with α-MSH"
+**Shipped 30 Aug 2026** as `/articles/the-natural-fallacy/`. Companion to
+`a-drug-with-no-address`: answers the market's "it's natural, your body
+makes it" pitch with the pharmacology — local vs systemic, minutes vs
+hours, analog edits vs the hormone. TGA blog citation anchors the claim
+genre. Do not restamp `updatedDate` unless a regulator materially engages
+the naturalness argument in a new way.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

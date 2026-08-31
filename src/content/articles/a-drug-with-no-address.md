@@ -158,3 +158,7 @@ does the reverse of nearly everything a real drug would do: a non-selective
 agonist, engineered for persistence, pushed body-wide in one uncontrolled
 dose. It was never going to be only a tan. Its pharmacokinetics ruled that out
 before the chemistry ever reached a receptor.
+
+That gap — a body that whispers this signal, a vial that broadcasts it — is
+why the market's favourite word doesn't survive contact with the
+pharmacology. That is [the natural fallacy](/articles/the-natural-fallacy/).

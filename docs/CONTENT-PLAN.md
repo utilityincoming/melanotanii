@@ -23,9 +23,9 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
-| `cautionary-tale` | 5 | The Cautionary Tale | Strong; enforcement file now live |
-| `science` | 6 | The Science | Receptor grounding plus PK; variant-spectrum file now live |
-| `culture` | 5 | The Demand | Well-drawn; supply-mechanics file now live |
+| `cautionary-tale` | 6 | The Cautionary Tale | Strong; enforcement file plus longevity-menu rebrand live |
+| `science` | 7 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer |
+| `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
 
 Target: bring each cluster toward 6 substantive articles as topics warrant,
@@ -73,6 +73,22 @@ actually announces a general-public program.
 **Shipped 26 Aug 2026** as `/articles/mc1r-variants-not-universal/`.
 Companion to `why-redheads-burn-mc1r`: R vs r, heterozygotes, geography,
 trafficking vs coupling, pharmacogenetic ceiling for a future agonist.
+
+### `cautionary-tale` — "The third rebrand: a gray-market tan on the wellness menu"
+**Shipped 30 Aug 2026** as `/articles/the-wellness-menu/`. The market's
+longevity-wellness rebrand: MT-II listed among anti-aging/metabolic
+peptides on clinic menus. Anchored on Böhm et al. 2024 (JEADV) chronic
+MC1R activation review, the Vyleesi/Scenesse/Imcivree approvals, and the
+TGA 22–54 mg label variance. Journalism about the claim genre; no dosing.
+Do not restamp `updatedDate` unless a regulator or major trial materially
+changes the record on chronic melanocortin agonism.
+
+### AEO shorts — "One letter, two different molecules" / "The pill that wasn't"
+**Shipped 30 Aug 2026** as `/articles/not-melatonin/` (science) and
+`/articles/the-pill-that-wasnt/` (culture). Direct-answer explainers for
+the melatonin name-confusion query and the oral/gummy Melanotan scam
+(peptide digestion chemistry; canthaxanthin-pill history). Keep both
+shorts short; expand only if a named product or regulator action lands.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

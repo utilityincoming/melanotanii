@@ -4,6 +4,13 @@ serpTitle: "Gray-market Melanotan II: you can't know what's in the vial"
 description: "Gray-market Melanotan II comes from unknown labs: purity, sterility, and dose are all assumptions — and assumptions have sent people to the ER."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+faq:
+  - q: "Is gray-market Melanotan II tested for purity?"
+    a: "No. It comes from unregulated labs with no independent verification of purity, sterility, or contents. Any certificate that accompanies a vial is supplied by the seller and cannot be confirmed. Regulator testing has repeatedly found labelled amounts that don't match what's inside."
+  - q: "How much Melanotan II is actually in a vial?"
+    a: "You can't know. A 2026 TGA analysis of seized product found the actual peptide content ranged widely across vials — far from any stated figure. The number on the label is a claim, not a measurement."
+  - q: "Is unregulated Melanotan II dangerous?"
+    a: "The uncertainty itself is the danger. Unknown purity, unsterile preparation, and unverified dose have sent people to hospital. This site reports those harms plainly and does not provide sourcing or usage guidance."
 ---
 
 Set aside, for a moment, every argument about what pure Melanotan II does in

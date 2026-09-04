@@ -62,10 +62,29 @@ const breadcrumbLd = {
     { '@type': 'ListItem', position: 3, name: label, item: new URL(threadAnchor, Astro.site).href },
   ],
 };
+
+// FAQPage JSON-LD — only when the article carries direct-answer Q&A. This is the
+// answer-engine surface (AI Overviews, "People also ask") the name-confusion and
+// myth-correction files are written to capture.
+const faq = article.data.faq;
+const faqLd = faq && faq.length > 0
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      isPartOf: { '@id': pageUrl },
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    }
+  : null;
 ---
 <Base title={pageTitle} description={article.data.description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} is:inline />}
   <article class="prose" style={`--accent: ${accent}`}>
     <nav class="crumbs" aria-label="Breadcrumb">
       <a href="/">Home</a>
@@ -85,6 +104,18 @@ const breadcrumbLd = {
       )}
     </p>
     <Content />
+
+    {faq && faq.length > 0 && (
+      <section class="faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Common questions</h2>
+        {faq.map((item) => (
+          <details class="faq-item">
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </section>
+    )}
 
     {siblings.length > 0 && (
       <nav class="continue" aria-label={`More in ${label}`}>
@@ -159,6 +190,40 @@ const breadcrumbLd = {
     .continue-all { margin: 1.4rem 0 0; font-size: 0.9rem; }
     .continue-all a { font-weight: 500; text-decoration: none; }
     .continue-all a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Common questions — the answer-engine surface, rendered for humans too */
+    .faq {
+      margin-top: 3.25rem;
+      padding-top: 1.6rem;
+      border-top: 3px solid var(--accent);
+    }
+    .faq h2 { font-size: 1.35rem; margin: 0 0 1rem; }
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+      padding: 0.55rem 0;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      color: var(--accent);
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+    .faq-item[open] summary::after { content: '\2013'; }
+    .faq-item summary:hover { color: var(--uv); }
+    .faq-item p { margin: 0.6rem 0 0.3rem; color: var(--ink-soft); font-size: 0.96rem; }
 
     .see-also {
       margin-top: 2.5rem;

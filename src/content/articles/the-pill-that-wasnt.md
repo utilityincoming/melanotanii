@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/melanotan"
     label: "Melanotan and Melanotan II"
     note: "the molecule's chemistry, on the science hub"
+faq:
+  - q: "Is there an oral Melanotan II pill?"
+    a: "No working one. Melanotan II is a cyclic peptide, and peptides are broken apart by stomach acid and digestive enzymes before they reach the bloodstream. A capsule, gummy, or drink cannot deliver an intact dose, which is why the injectable form exists at all."
+  - q: "What is being sold as 'oral melanotan' then?"
+    a: "Usually one of two things: a peptide that simply won't survive digestion, or an unrelated tanning-pill ingredient like canthaxanthin — a colourant with its own safety history. Neither is an oral version of the injected peptide."
+  - q: "Can nasal sprays or drops work instead?"
+    a: "Absorption across the nasal or oral lining is inconsistent and unmeasured, so the delivered dose is unknown. That uncertainty is a safety problem, not a workaround. This site does not provide usage guidance for any form."
 ---
 
 The gray market has begun selling Melanotan II in forms the needle era

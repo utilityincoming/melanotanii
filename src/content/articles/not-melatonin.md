@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/receptors"
     label: "The melanocortin receptor family"
     note: "the receptors Melanotan actually hits"
+faq:
+  - q: "Are Melanotan and melatonin the same thing?"
+    a: "No. They share four letters and nothing else. Melatonin is a hormone your body makes to regulate sleep, sold widely as a supplement. Melanotan is a lab-made peptide that stimulates skin pigment and is not approved anywhere for any use."
+  - q: "Does melatonin make you tan?"
+    a: "No. Melatonin acts on sleep-timing receptors in the brain, not on the melanocortin receptors that drive pigment. The tanning association comes entirely from the name collision with Melanotan, a different and unapproved compound."
+  - q: "Why do people confuse the two?"
+    a: "The names are one letter apart, both sound clinical, and both are sold online. Search engines and autocomplete blur them further. The confusion matters because one is a regulated supplement and the other is an unapproved injectable with documented harms."
 ---
 
 The names are one letter apart. The molecules are worlds apart, and the

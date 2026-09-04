@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/afamelanotide"
     label: "Afamelanotide (Scenesse)"
     note: "the approved MC1R agonist, in depth"
+faq:
+  - q: "Is there an approved MC1R agonist for photoprotection?"
+    a: "Yes. Afamelanotide, sold as Scenesse, is an approved, MC1R-targeted photoprotective drug — chemically Melanotan I, the original Arizona peptide, developed properly over three decades. The EU approved it in 2014 and the FDA in 2019."
+  - q: "What is afamelanotide (Scenesse)?"
+    a: "A real medicine with real trials behind it, approved for erythropoietic protoporphyria (EPP), a rare disorder in which light causes searing pain. It ships as a subcutaneous implant administered in specialty clinics at rare-disease prices."
+  - q: "Why can't the public get Scenesse for sun protection?"
+    a: "The molecule cleared the bar; the indication is narrow. Going from a rare light-sensitivity disease to general sun protection isn't chemistry — it's trials economics: a slow, expensive cancer-prevention endpoint, a far stricter safety standard for healthy people, and an implant format wrong for mass adoption."
 ---
 
 Here is the fact that reframes the entire Melanotan story: a safe-enough,

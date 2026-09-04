@@ -4,6 +4,13 @@ serpTitle: "Does a tan protect your skin? How eumelanin blocks UV"
 description: "A tan is the body's sunscreen: eumelanin absorbing UV before it reaches DNA. How melanin protects skin — and why that was Melanotan's target."
 pubDate: 2026-08-18
 cluster: science
+faq:
+  - q: "Does a tan actually protect your skin from the sun?"
+    a: "A little. A tan is real protection but a modest one — an induced tan is worth only a low single-digit SPF, nothing like sunscreen. It reduces the UV reaching your DNA; it does not cancel it, and believing it's armor tends to make people stay out longer and fall further behind on damage."
+  - q: "How does melanin protect against UV?"
+    a: "Eumelanin, the brown-black pigment, is one of biology's best broadband UV absorbers. Packaged into granules, it positions itself as little caps over the sun-facing side of each skin cell's nucleus — physically standing between incoming UV and the DNA it must not scramble."
+  - q: "Is a 'base tan' a good idea?"
+    a: "No. The protection a tan gives is small, and getting it means absorbing UV damage first. A base tan buys a low SPF at the cost of the very DNA damage that raises skin-cancer risk — the trade a photoprotective drug was meant to avoid."
 ---
 
 To understand why serious scientists spent years chasing a tanning drug, you

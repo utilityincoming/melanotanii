@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/receptors/mc1r"
     label: "MC1R: the pigment switch"
     note: "the receptor reference in full"
+faq:
+  - q: "Why do redheads burn instead of tan?"
+    a: "It's largely one gene. A cluster of common MC1R variants builds a receptor that answers the α-MSH signal poorly, so the pigment switch can't throw all the way to protective brown-black eumelanin. The cell falls back on red-yellow pheomelanin, which barely shields — hence red hair, fair skin, freckling, and burning."
+  - q: "What is the MC1R gene?"
+    a: "MC1R is the receptor on every melanocyte that, when α-MSH docks, fires the signal switching pigment production toward protective eumelanin. It's literally the switch between tanning and burning, and it was the precise target the Arizona researchers and every Melanotan analog aimed at."
+  - q: "Does Melanotan work on redheads?"
+    a: "Often weakly. People carrying strong loss-of-function MC1R variants may respond poorly even to a melanocortin drug, because the receptor keyhole itself is the malfunction — the people a tanning drug would most help are partly the ones whose receptors answer it least."
 ---
 
 Some people tan; some people burn, freckle, and peel. That difference isn't

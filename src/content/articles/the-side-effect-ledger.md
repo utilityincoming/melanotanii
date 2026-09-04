@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/effects"
     label: "Why the agonists make you queasy and tan"
     note: "the mechanism behind the effects"
+faq:
+  - q: "What are the side effects of Melanotan II?"
+    a: "The consistent, expected ones follow from flooding the melanocortin system: nausea and sometimes vomiting, facial flushing, spontaneous erections in men, appetite suppression, and a yawning-and-stretching reflex. On the skin it darkens and multiplies moles, adds freckles, and can cause dark nail bands."
+  - q: "Is Melanotan II dangerous?"
+    a: "It carries documented risks, and the largest one is what hasn't been studied: the long-term safety of years of use at real-world exposures has never been formally examined. 'No documented harm' there means nobody collected the data, not that it was checked and cleared."
+  - q: "What serious reactions have been reported?"
+    a: "The peer-reviewed literature includes priapism (a urological emergency), systemic toxicity such as rhabdomyolysis with kidney injury after a large overdose, and melanoma diagnosed in users with causation unresolved. These are case reports — they show a thing can happen, not how often."
 ---
 
 Honest accounting cuts both ways. Overstating Melanotan II's dangers is as

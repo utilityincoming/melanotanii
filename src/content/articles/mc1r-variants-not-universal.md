@@ -8,6 +8,13 @@ seeAlso:
   - href: "https://melanocortin.com/receptors/mc1r"
     label: "MC1R: the pigment switch"
     note: "the receptor reference in full"
+faq:
+  - q: "Does everyone respond to a melanocortin tanning drug the same way?"
+    a: "No. MC1R isn't a two-position switch but a dimmer with dozens of stops. Strong 'R' variants (like R151C, R160W, D294H) badly damage the receptor; weaker 'r' variants (V60L, V92M, R163Q) are common and mild. A future photoprotective drug would have to work — or fail — across all of them."
+  - q: "Do you need red hair to carry MC1R variants?"
+    a: "No, and that's the common misconception. Red hair is recessive, but receptor damage isn't. The weak 'r' alleles are carried by many people who aren't redheads — V60L alone sits near 12 percent allele frequency in European samples — so most of the affected population never had red hair."
+  - q: "Would a future tanning drug work for everyone who burns?"
+    a: "Not uniformly. The people with the most sun-damage risk carry a wide spectrum of MC1R genotypes, and those with strong loss-of-function variants may respond weakly even to a melanocortin agonist — the pharmacogenetic ceiling a general-public drug would run into."
 ---
 
 The [redhead article](/articles/why-redheads-burn-mc1r/) tells the clean

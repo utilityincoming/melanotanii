@@ -4,6 +4,13 @@ serpTitle: "The Barbie drug: how Melanotan II built a gray market"
 description: "Never approved anywhere, Melanotan II sold anyway — through forums, gyms, and 'research chemical' sites. How the gray market formed, and what it costs."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+faq:
+  - q: "Why is Melanotan II called the Barbie drug?"
+    a: "Media coverage coined the nickname for its advertised effect profile bundled into one vial: tanning, appetite suppression, and libido effects. The name stuck as the compound spread through tanning and bodybuilding forums."
+  - q: "Is Melanotan II approved anywhere?"
+    a: "No. It may be the most widely self-administered injectable never approved by any regulator on Earth. Health agencies in the UK, Australia, Denmark, Norway and elsewhere have issued warnings and moved to block sales."
+  - q: "Why is there a gray market for Melanotan II?"
+    a: "Its structure was published in scientific literature and patents, so any capable peptide lab could make it. When legitimate development stalled and demand didn't, 'research chemical' sites labelled 'not for human consumption' plus forum injection protocols filled the gap — with no accountability for what's in the vial."
 ---
 
 Melanotan II holds an unusual distinction: it may be the most widely

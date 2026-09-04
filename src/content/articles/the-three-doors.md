@@ -4,6 +4,13 @@ serpTitle: "Is Melanotan II legal in the U.S.? Three regulatory doors"
 description: "Is Melanotan II legal in the U.S.? It's unapproved — but the technology isn't. The three doors: FDA approval, compounding, and the gray market."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "Is Melanotan II legal in the United States?"
+    a: "Melanotan II is not approved by the FDA for any use, and selling it for human use draws warning letters. It is traded only as a 'research chemical.' The technology class isn't banned, though — a different melanocortin agonist is already FDA-approved."
+  - q: "Can you get Melanotan II from a compounding pharmacy?"
+    a: "No. The FDA places Melanotan II in the restricted 'Category 2' of bulk substances that may present significant safety risks, and it is not on the approved compounding list. That door is currently shut, though an FDA advisory committee is scheduled to review it around February 2027."
+  - q: "Is any melanocortin tanning-type drug FDA-approved?"
+    a: "Yes — afamelanotide (SCENESSE), a selective MC1R agonist, was approved on October 8, 2019 to prevent phototoxicity in erythropoietic protoporphyria. It's delivered as a clinician-placed implant, not a self-injected vial, and it proves the class can be a legitimate medicine."
 ---
 
 The gray market makes Melanotan II look like the whole story of melanocortin

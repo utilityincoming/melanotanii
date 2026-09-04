@@ -4,6 +4,13 @@ serpTitle: "The tan without the sun: how Melanotan skips the UV damage"
 description: "A suntan is a wound response: pigment made only after UV has damaged skin DNA. Melanotan's idea was the protection without the damage."
 pubDate: 2026-08-18
 cluster: science
+faq:
+  - q: "How does Melanotan tan you without the sun?"
+    a: "It enters the pigment chain near the end. A UV tan runs DNA damage → p53 alarm → α-MSH → MC1R → eumelanin; Melanotan activates MC1R directly, telling the melanocyte to make pigment without waiting for ultraviolet and without the DNA damage that normally triggers it."
+  - q: "Is a Melanotan tan safer than a UV tan?"
+    a: "The premise — pigment without the wound that normally pays for it — is genuinely clever, but two catches broke it: Melanotan II hits the whole receptor family rather than MC1R alone, and the pigment it installs is still only the modest shield any tan provides. It's an unapproved drug, not a proven safe alternative."
+  - q: "Why is a natural suntan called a damage response?"
+    a: "Because the protective pigment is the final step in the body's reaction to injury that already happened. UV damages skin-cell DNA, which trips the p53 alarm that drives pigment production. Every shade of a tan is a receipt for damage taken — the armor arrives only after the blow lands."
 ---
 
 Here is the fact that turns Melanotan from a tanning-salon gimmick into a real

@@ -11,6 +11,13 @@ seeAlso:
   - href: "https://melanocortin.com/system"
     label: "The melanocortin system"
     note: "how POMC becomes the whole signal"
+faq:
+  - q: "Why does Melanotan II do more than tan?"
+    a: "Because it can't tell its targets apart. The body uses melanocortin signals across at least five receptor types, and MT-II activates four of them with meaningful potency — so it hits pigment, appetite, and arousal circuits at once. The odd bundle of effects is a map of the receptor family."
+  - q: "What receptors does Melanotan II activate?"
+    a: "MC1R (pigment — the tanning receptor), MC3R and MC4R (brain energy-balance and, via central pathways, appetite and libido), and MC5R (exocrine glands). It largely leaves MC2R, the adrenal ACTH receptor, alone."
+  - q: "Why did non-selectivity stop it being a tanning drug?"
+    a: "A tanning medicine for the public needs to touch MC1R and nothing else. A compound that also reaches into the brain's weight and sexual-arousal circuitry can't be a casual lifestyle drug — that off-target profile is the safety problem, independent of any manufacturing or dosing concern."
 ---
 
 The forum lore around Melanotan II always emphasized its odd bundle of

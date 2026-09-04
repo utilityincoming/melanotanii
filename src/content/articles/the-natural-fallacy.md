@@ -11,6 +11,13 @@ seeAlso:
   - href: "https://melanocortin.com/receptors"
     label: "The melanocortin receptor family"
     note: "what each of the five receptors does"
+faq:
+  - q: "Is Melanotan II natural because the body makes α-MSH?"
+    a: "No. Your body makes α-MSH, but Melanotan II is a re-engineered analog — deliberately altered to resist breakdown and act longer and more broadly than the natural signal. 'Based on a natural hormone' is not the same as natural, and the edits are the whole point."
+  - q: "How is Melanotan II different from natural α-MSH?"
+    a: "Natural α-MSH is released locally and cleared within minutes, so its effects are brief and contained. Injected Melanotan II circulates for hours and reaches receptors all over the body, which is why it produces effects — on appetite, arousal, pigment — that the natural signal never would systemically."
+  - q: "Does 'natural' mean it's safe?"
+    a: "No. Safety depends on dose, purity, and how a compound behaves in the body, not on whether a related molecule occurs naturally. An unapproved, unregulated injectable is not made safe by resembling a hormone."
 ---
 
 The most repeated justification in the Melanotan II market is one sentence

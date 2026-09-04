@@ -11,6 +11,13 @@ seeAlso:
   - href: "https://melanocortin.com/afamelanotide"
     label: "Afamelanotide"
     note: "the only tested photoprotective agonist, on the science hub"
+faq:
+  - q: "Does Melanotan II prevent skin cancer?"
+    a: "There is no evidence that it does. Cancer prevention was the original 1980s hypothesis behind the peptide, but it was never tested in a trial. No study has measured whether Melanotan II lowers skin-cancer risk."
+  - q: "Didn't the afamelanotide trials show protection?"
+    a: "They measured pain-free light exposure in a rare photosensitivity disorder — not cancer. A 2024 review concluded melanocortin activation 'may reduce' but 'does not prevent' melanoma. Reduced sun-related discomfort is not the same as reduced cancer risk."
+  - q: "Does a tan protect against skin cancer?"
+    a: "No. Cancer Research UK and dermatology bodies are explicit that a tan is a sign of DNA damage, not protection. A drug-induced tan doesn't change that, and no melanocortin agonist has been shown to prevent skin cancer."
 ---
 
 Scroll the hashtags and the claim arrives as established fact, usually in

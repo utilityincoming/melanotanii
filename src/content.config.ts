@@ -17,6 +17,10 @@ const articles = defineCollection({
     seeAlso: z
       .array(z.object({ href: z.string().url(), label: z.string(), note: z.string().optional() }))
       .optional(),
+    // Direct-answer Q&A for the queries this article captures. Rendered as a
+    // visible FAQ block and emitted as FAQPage JSON-LD (AEO / AI Overviews).
+    // Answers must obey the non-negotiables: no dosing, no sourcing, harms plain.
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).optional(),
   }),
 });
 

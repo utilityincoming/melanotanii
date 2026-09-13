@@ -117,6 +117,35 @@ prevent melanoma"); CRUK's tan-doesn't-protect line; Skin Cancer
 Foundation warning of 7 Jul 2026 (dated catalyst). Do not restamp
 `updatedDate` unless a cancer-endpoint trial is announced or completed.
 
+### `history` — "A drug before its receptor: how the Arizona team built Melanotan in the dark"
+Fills the sixth `history` slot with the discovery chemistry itself — the one
+part of the origin story no live article owns. `where-melanotan-came-from`
+names Hruby and Hadley and the analog program in passing; `who-owned-melanotan`
+follows the patents; `one-hormone-five-receptors` (science) explains the
+receptors. None of them tells *how* a peptide becomes a drug when the target
+hasn't been discovered yet.
+
+The brief: natural α-MSH is a 13-amino-acid linear peptide that is useless as a
+medicine — serum proteases degrade it in minutes. The Arizona team's problem was
+pure medicinal chemistry: stabilize it, potentiate it, keep it from wandering.
+Their instrument was a bioassay, not a receptor — the frog-skin (and lizard-skin)
+melanophore assay, in which α-MSH disperses pigment granules and darkens the skin.
+From that bench came NDP-MSH ([Nle⁴, D-Phe⁷]α-MSH — Sawyer et al., *PNAS* 1980):
+two substitutions (norleucine for methionine at 4, D-phenylalanine for
+L-phenylalanine at 7) that made a "superpotent, ultralong" melanotropin, 26×
+α-MSH in the adenylate-cyclase assay and active at 1/1000 the dose. The
+His–Phe–Arg–Trp message sequence was the pharmacophore being amplified; cyclization
+and further design produced the cyclic analogs that became Melanotan II. Only in
+1992 — Mountjoy et al., *Science* — were the melanocortin receptors (MC1R/MC2R)
+cloned, revealing, a dozen years late, what the bioassay had been reading all along.
+
+Constraints: history, not a tutorial — keep receptor science to what the chemists
+knew at the time (almost nothing). Do not re-explain MC1R signaling (owned by
+`one-hormone-five-receptors`). The erection accident and the gray market are
+downstream chapters other articles already own; reference, don't retell. Do not
+restamp `updatedDate` unless new primary literature on the discovery chemistry
+itself lands.
+
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,

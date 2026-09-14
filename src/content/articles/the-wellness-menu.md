@@ -83,6 +83,79 @@ percent of their body weight in a year.
 Three drugs. Each one narrower than the claim it replaced. That is not
 an accident of history. Selectivity is what got them approved.
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-labelledby="wmt wmd">
+<title id="wmt">Three approved melanocortin drugs versus the wellness-menu vial</title>
+<desc id="wmd">Three cards show the approved melanocortin medicines — afamelanotide (Scenesse), bremelanotide (Vyleesi), and setmelanotide (Imcivree) — each targeting one receptor selectively, approved for one narrow indication, and carrying mandated monitoring. A contrasting band below shows the wellness-menu Melanotan II vial: non-selective across all five receptor families, approved nowhere, and with no dermatologist in the loop. The point: selectivity and monitoring are what got the real drugs approved, and the vial has neither.</desc>
+<rect x="0" y="0" width="820" height="460" fill="#FBFAF7"/>
+<rect x="8" y="8" width="804" height="444" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="36" y="44" font-family="'Spectral',Georgia,serif" font-size="21" font-weight="600" fill="#17130E">Three real melanocortin drugs. And the one on the menu.</text>
+<text x="36" y="66" font-family="'Archivo',sans-serif" font-size="12.5" fill="#5A4F44">Each approved drug is narrow, selective, and monitored. That discipline is what got it approved.</text>
+<!-- CARD 1 -->
+<rect x="36" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
+<rect x="36" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
+<text x="54" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Afamelanotide</text>
+<text x="54" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Scenesse &#183; implant</text>
+<line x1="54" y1="132" x2="256" y2="132" stroke="#EDE7DE"/>
+<text x="54" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
+<text x="54" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC1R-selective</text>
+<text x="54" y="187" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">APPROVED FOR</text>
+<text x="54" y="202" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">A rare light-pain disease</text>
+<text x="54" y="215" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">(EPP) &#183; EU 2014, FDA 2019</text>
+<rect x="48" y="228" width="214" height="30" rx="5" fill="#8A6A3B" fill-opacity="0.10"/>
+<path d="M60 243 l4 5 l9 -12" fill="none" stroke="#6E5327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="80" y="247" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E5327">Baseline + periodic skin exams</text>
+<!-- CARD 2 -->
+<rect x="290" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
+<rect x="290" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
+<text x="308" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Bremelanotide</text>
+<text x="308" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Vyleesi &#183; auto-injector</text>
+<line x1="308" y1="132" x2="510" y2="132" stroke="#EDE7DE"/>
+<text x="308" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
+<text x="308" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC4R &#183; sexual desire</text>
+<text x="308" y="187" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">APPROVED FOR</text>
+<text x="308" y="202" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">Low desire in premenopausal</text>
+<text x="308" y="215" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">women (HSDD) &#183; FDA 2019</text>
+<rect x="302" y="228" width="214" height="30" rx="5" fill="#8A6A3B" fill-opacity="0.10"/>
+<path d="M314 243 l4 5 l9 -12" fill="none" stroke="#6E5327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="334" y="247" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E5327">684 patients watched for pigment</text>
+<!-- CARD 3 -->
+<rect x="544" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
+<rect x="544" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
+<text x="562" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Setmelanotide</text>
+<text x="562" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Imcivree &#183; injection</text>
+<line x1="562" y1="132" x2="764" y2="132" stroke="#EDE7DE"/>
+<text x="562" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
+<text x="562" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC4R &#183; 20&#215; over MC1R</text>
+<text x="562" y="187" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">APPROVED FOR</text>
+<text x="562" y="202" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">Three ultra-rare obesity</text>
+<text x="562" y="215" font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">genes &#183; FDA 2020</text>
+<rect x="556" y="228" width="214" height="30" rx="5" fill="#8A6A3B" fill-opacity="0.10"/>
+<path d="M568 243 l4 5 l9 -12" fill="none" stroke="#6E5327" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="588" y="247" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E5327">Mandated derm surveillance</text>
+<!-- CONTRAST BAND -->
+<rect x="36" y="284" width="746" height="98" rx="6" fill="#A6431F" fill-opacity="0.06" stroke="#A6431F" stroke-opacity="0.5"/>
+<rect x="36" y="284" width="4" height="98" rx="2" fill="#A6431F"/>
+<text x="54" y="306" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.6" fill="#A6431F">THE WELLNESS-MENU VIAL &#183; BORROWS THE LANGUAGE, KEEPS NONE OF IT</text>
+<g font-family="'Archivo',sans-serif" font-size="10.5" fill="#17130E">
+<path d="M56 330 l11 11 M67 330 l-11 11" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
+<text x="78" y="333">Non-selective &#8212; floods all</text>
+<text x="78" y="347">five receptor families at once</text>
+<path d="M296 330 l11 11 M307 330 l-11 11" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
+<text x="318" y="333">Approved nowhere,</text>
+<text x="318" y="347">for anything</text>
+<path d="M536 330 l11 11 M547 330 l-11 11" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
+<text x="558" y="333">No dermatologist in the</text>
+<text x="558" y="347">loop &#8212; because there is no loop</text>
+</g>
+<text x="54" y="371" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">A regulator found bottles labelled one amount holding more than double it &#8212; and no skin exam catches the mole that darkens.</text>
+<!-- punchline -->
+<line x1="36" y1="404" x2="784" y2="404" stroke="#EDE7DE" stroke-width="1"/>
+<text x="410" y="428" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="14" font-weight="600" fill="#17130E">Selectivity and monitoring are what got the real drugs approved. The vial keeps the claim and drops both.</text>
+</svg>
+<figcaption>The melanocortin target has three approved medicines &mdash; each one selective, narrowly indicated, and sold with mandated surveillance. The wellness-menu vial borrows their vocabulary while supplying none of the selectivity, none of the approval, and none of the monitoring that made them drugs.</figcaption>
+</figure>
+
 ## What approval actually buys
 
 The useful part is not the label. It is the machinery.

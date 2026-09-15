@@ -23,7 +23,7 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
-| `cautionary-tale` | 7 | The Cautionary Tale | Strong; enforcement file, longevity-menu rebrand, and protocol-illusion file live |
+| `cautionary-tale` | 8 | The Cautionary Tale | Strong; enforcement file, longevity-menu rebrand, protocol-illusion and attribution-gap files live |
 | `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
 | `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
@@ -91,6 +91,18 @@ cannot survive the label — anchored on Gilhooley et al. 2021 (Dermatology)
 and the TGA 22–54 mg finding. Contains no dosing numbers by design; do not
 "improve" it by adding any. Do not restamp `updatedDate` unless a regulator
 publishes a new quantitative label-variance finding.
+
+### `cautionary-tale` — "The attribution gap: why 'no deaths reported' isn't a safety record"
+**Shipped 14 Sep 2026** as `/articles/safety-by-numbers/`. Off-plan commission
+from the Sep 2026 claim sweep (survival-bias genre: "millions of users, twenty
+years, no deaths"). Anchors: Evans-Brown et al. 2009 BMJ ("the prevalence of
+the use of these drugs is unknown"); the 2013 Bolton inquest (BBC court
+reporting; the pathologist's "insufficient information" quote); Australia's
+89-report adverse-event file, already on `/regulatory`; the 1,247-woman pivotal
+population in the 2019 Vyleesi label. Predecessors `the-side-effect-ledger` and
+`whats-in-the-vial` now forward-link. Do not restamp `updatedDate` unless a
+court or regulator's finding actually attributes a death to MT-II — that would
+materially change the piece's premise.
 
 ### AEO shorts — "One letter, two different molecules" / "The pill that wasn't"
 **Shipped 30 Aug 2026** as `/articles/not-melatonin/` (science) and

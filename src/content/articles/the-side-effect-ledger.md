@@ -64,6 +64,10 @@ stacked combinations, has never been formally studied. "No documented harm" in
 that region doesn't mean it's been checked and cleared. It means nobody
 collected the data. Absence of evidence, not evidence of absence.
 
+Why that blank can never be filled by the market itself — and what "millions
+of users, no deaths reported" actually measures — is
+[the attribution gap](/articles/safety-by-numbers/).
+
 ## Why read it straight
 
 The striking thing about the documented ledger is that it's sobering without a

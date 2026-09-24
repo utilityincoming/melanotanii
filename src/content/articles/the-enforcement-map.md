@@ -98,6 +98,68 @@ Lay the five approaches side by side — letters and site-suspensions (UK), fine
 non-authorisation — and the pattern is unmistakable. Every tool that exists has
 been used by *someone*, and the product is still a search away in all of them.
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 396" role="img" aria-labelledby="emt emd">
+<title id="emt">Four regulators, four weapons, one outcome against Melanotan II</title>
+<desc id="emd">Four cards, one per jurisdiction, each naming the enforcement tool it used and a figure for it. United Kingdom (MHRA): warnings and site takedowns, over 100 sites suspended since 2008. Australia (TGA): fines, A$101,412 across 27 infringement notices, paid 2026. Ireland (HPRA): advertisement takedowns, more than 500 ads removed between 2020 and 2022. United States (FDA): an import wall, with zero approved products and no legal channel. A band below states the shared outcome: the verdict has held for roughly eighteen years while availability has not budged, because every weapon changed the market's shape but not its size — a ban only works where there is a border.</desc>
+<rect x="0" y="0" width="820" height="396" fill="#FBFAF7"/>
+<rect x="8" y="8" width="804" height="380" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="36" y="44" font-family="'Spectral',Georgia,serif" font-size="21" font-weight="600" fill="#17130E">Four regulators. Four weapons. One outcome.</text>
+<text x="36" y="66" font-family="'Archivo',sans-serif" font-size="12.5" fill="#5A4F44">Each agency reached for a different tool against the same unapproved drug. The drug outlasted all of them.</text>
+<g font-family="'Archivo',sans-serif">
+<rect x="36" y="88" width="176" height="176" rx="6" fill="#A6431F" fill-opacity="0.035" stroke="#E4DFD6"/>
+<rect x="36" y="88" width="176" height="4" rx="2" fill="#A6431F"/>
+<text x="54" y="120" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">United Kingdom</text>
+<text x="54" y="136" font-size="10.5" font-style="italic" fill="#8A8275">MHRA</text>
+<line x1="54" y1="146" x2="194" y2="146" stroke="#EDE7DE"/>
+<text x="54" y="166" font-size="9" font-weight="700" letter-spacing="0.5" fill="#A6431F">WARNINGS + TAKEDOWNS</text>
+<text x="54" y="184" font-size="10.5" fill="#17130E">2008 public warning; then</text>
+<text x="54" y="198" font-size="10.5" fill="#17130E">sites pulled via ISPs.</text>
+<rect x="54" y="216" width="140" height="32" rx="5" fill="#A6431F" fill-opacity="0.10"/>
+<text x="124" y="237" font-size="12.5" font-weight="700" fill="#8C3A1B" text-anchor="middle">100+ sites suspended</text>
+<rect x="224" y="88" width="176" height="176" rx="6" fill="#A6431F" fill-opacity="0.035" stroke="#E4DFD6"/>
+<rect x="224" y="88" width="176" height="4" rx="2" fill="#A6431F"/>
+<text x="242" y="120" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Australia</text>
+<text x="242" y="136" font-size="10.5" font-style="italic" fill="#8A8275">TGA</text>
+<line x1="242" y1="146" x2="382" y2="146" stroke="#EDE7DE"/>
+<text x="242" y="166" font-size="9" font-weight="700" letter-spacing="0.5" fill="#A6431F">FINES</text>
+<text x="242" y="184" font-size="10.5" fill="#17130E">Infringement notices to a</text>
+<text x="242" y="198" font-size="10.5" fill="#17130E">single NSW supplier.</text>
+<rect x="242" y="216" width="140" height="32" rx="5" fill="#A6431F" fill-opacity="0.10"/>
+<text x="312" y="232" font-size="12.5" font-weight="700" fill="#8C3A1B" text-anchor="middle">A$101,412</text>
+<text x="312" y="244" font-size="9" fill="#8C3A1B" text-anchor="middle">27 notices &#183; paid 2026</text>
+<rect x="412" y="88" width="176" height="176" rx="6" fill="#A6431F" fill-opacity="0.035" stroke="#E4DFD6"/>
+<rect x="412" y="88" width="176" height="4" rx="2" fill="#A6431F"/>
+<text x="430" y="120" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Ireland</text>
+<text x="430" y="136" font-size="10.5" font-style="italic" fill="#8A8275">HPRA</text>
+<line x1="430" y1="146" x2="570" y2="146" stroke="#EDE7DE"/>
+<text x="430" y="166" font-size="9" font-weight="700" letter-spacing="0.5" fill="#A6431F">AD TAKEDOWNS</text>
+<text x="430" y="184" font-size="10.5" fill="#17130E">Listings ordered removed</text>
+<text x="430" y="198" font-size="10.5" fill="#17130E">from social + shops.</text>
+<rect x="430" y="216" width="140" height="32" rx="5" fill="#A6431F" fill-opacity="0.10"/>
+<text x="500" y="232" font-size="12.5" font-weight="700" fill="#8C3A1B" text-anchor="middle">500+ ads</text>
+<text x="500" y="244" font-size="9" fill="#8C3A1B" text-anchor="middle">2020&#8211;22</text>
+<rect x="600" y="88" width="176" height="176" rx="6" fill="#A6431F" fill-opacity="0.035" stroke="#E4DFD6"/>
+<rect x="600" y="88" width="176" height="4" rx="2" fill="#A6431F"/>
+<text x="618" y="120" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">United States</text>
+<text x="618" y="136" font-size="10.5" font-style="italic" fill="#8A8275">FDA</text>
+<line x1="618" y1="146" x2="758" y2="146" stroke="#EDE7DE"/>
+<text x="618" y="166" font-size="9" font-weight="700" letter-spacing="0.5" fill="#A6431F">THE IMPORT WALL</text>
+<text x="618" y="184" font-size="10.5" fill="#17130E">Unapproved new drug &#8212;</text>
+<text x="618" y="198" font-size="10.5" fill="#17130E">no legal channel at all.</text>
+<rect x="618" y="216" width="140" height="32" rx="5" fill="#A6431F" fill-opacity="0.10"/>
+<text x="688" y="232" font-size="12.5" font-weight="700" fill="#8C3A1B" text-anchor="middle">0 approved</text>
+<text x="688" y="244" font-size="9" fill="#8C3A1B" text-anchor="middle">products, for anything</text>
+</g>
+<rect x="36" y="284" width="740" height="80" rx="6" fill="#A6431F" fill-opacity="0.06" stroke="#A6431F" stroke-opacity="0.5"/>
+<rect x="36" y="284" width="4" height="80" rx="2" fill="#A6431F"/>
+<text x="56" y="308" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#A6431F">ONE OUTCOME, IN EVERY JURISDICTION</text>
+<text x="56" y="332" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#17130E">The verdict has held for ~18 years. Availability hasn&#8217;t budged.</text>
+<text x="56" y="352" font-family="'Archivo',sans-serif" font-size="11" font-style="italic" fill="#5A4F44">Every weapon changed the market&#8217;s shape. None changed its size &#8212; a ban only works where there&#8217;s a border.</text>
+</svg>
+<figcaption>The same unapproved drug, four regulators, four different instruments &#8212; and one shared result. Enforcement reshaped the supply without shrinking it.</figcaption>
+</figure>
+
 The reason isn't regulatory laziness; it's a structural mismatch. Enforcement
 agencies are organised around borders, licensed sellers, and physical supply
 chains. The Melanotan market is organised around none of those things — it is

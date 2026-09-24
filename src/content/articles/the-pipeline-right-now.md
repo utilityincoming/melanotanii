@@ -100,6 +100,45 @@ that a true consumer photoprotective would eventually need.
 Line the two programs up and the shape of the field in 2026 is clearer than it has
 been since the Arizona lab:
 
+<figure class="figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 476" role="img" aria-labelledby="plt pld">
+<title id="plt">The indication ladder for a melanocortin sun drug</title>
+<desc id="pld">A three-rung ladder read from the bottom up. The bottom rung, in green, is approved and under review: erythropoietic protoporphyria and X-linked protoporphyria, where afamelanotide is approved (EU 2014, US 2019) and the oral drug dersimelagon is under FDA priority review with a decision expected around February 2027. The middle rung, in violet, is in trials: vitiligo repigmentation and xeroderma-pigmentosum DNA-repair studies of afamelanotide. The top rung, drawn as a dashed outline with an open ring, is empty: general photoprotection for healthy skin, the large prevention trial nobody has funded. A note reads that delivery is the part being solved — the newest agonist is an oral pill, not an injection.</desc>
+<rect x="0" y="0" width="820" height="476" fill="#FBFAF7"/>
+<rect x="8" y="8" width="804" height="460" rx="10" fill="none" stroke="#E4DFD6"/>
+<text x="36" y="44" font-family="'Spectral',Georgia,serif" font-size="21" font-weight="600" fill="#17130E">One class, three rungs. The top one is still empty.</text>
+<text x="36" y="66" font-family="'Archivo',sans-serif" font-size="12.5" fill="#5A4F44">Every legitimate melanocortin drug is climbing the same ladder &#8212; as medicine, and never yet as a tan.</text>
+<line x1="30" y1="384" x2="30" y2="96" stroke="#8A8275" stroke-width="1.2"/>
+<path d="M30 96 l-4 8 M30 96 l4 8" fill="none" stroke="#8A8275" stroke-width="1.2" stroke-linecap="round"/>
+<text x="22" y="242" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#8A8275" transform="rotate(-90 22 242)" text-anchor="middle">INCREASING AMBITION</text>
+<rect x="52" y="90" width="732" height="84" rx="6" fill="#A6431F" fill-opacity="0.04" stroke="#A6431F" stroke-opacity="0.55" stroke-dasharray="5 4"/>
+<circle cx="92" cy="132" r="13" fill="none" stroke="#A6431F" stroke-width="2.2" stroke-dasharray="4 3.5"/>
+<text x="124" y="118" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#A6431F">NOT STARTED</text>
+<text x="124" y="138" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">General photoprotection for healthy skin</text>
+<text x="124" y="158" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">The large, long prevention trial nobody has funded. Feasible in chemistry; an institutional gap.</text>
+<rect x="52" y="188" width="732" height="84" rx="6" fill="#503296" fill-opacity="0.05" stroke="#503296" stroke-opacity="0.5"/>
+<circle cx="92" cy="230" r="13" fill="none" stroke="#503296" stroke-width="2.2"/>
+<path d="M92 217 a13 13 0 0 1 0 26 z" fill="#503296" fill-opacity="0.85"/>
+<text x="124" y="216" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#503296">IN TRIALS</text>
+<text x="124" y="236" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Vitiligo &#183; xeroderma pigmentosum</text>
+<text x="124" y="256" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">Afamelanotide in Phase III repigmentation (CUV105/107) and DNA-repair studies (CUV156).</text>
+<rect x="52" y="286" width="732" height="88" rx="6" fill="#2F6A52" fill-opacity="0.06" stroke="#2F6A52" stroke-opacity="0.55"/>
+<circle cx="92" cy="330" r="13" fill="#2F6A52" fill-opacity="0.9"/>
+<path d="M85 330 l4.5 5 l9.5 -11" fill="none" stroke="#FBFAF7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="124" y="313" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.6" fill="#2F6A52">APPROVED &#183; UNDER REVIEW</text>
+<text x="124" y="333" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Erythropoietic &amp; X-linked protoporphyria (EPP / XLP)</text>
+<text x="124" y="353" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">Afamelanotide approved EU 2014 / US 2019. Dersimelagon (oral) under FDA priority review &#8212; decision ~Feb 2027.</text>
+<line x1="52" y1="404" x2="784" y2="404" stroke="#EDE7DE"/>
+<g transform="rotate(-32 69 432)"><rect x="55" y="425.5" width="28" height="13" rx="6.5" fill="#2F6A52" fill-opacity="0.85"/><line x1="69" y1="425.5" x2="69" y2="438.5" stroke="#FBFAF7" stroke-width="1.3"/></g>
+<text x="98" y="430" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">Delivery is the part being solved:</text>
+<text x="98" y="444" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">the newest agonist is an oral pill, not an injection.</text>
+<circle cx="566" cy="432" r="7.5" fill="none" stroke="#A6431F" stroke-width="2" stroke-dasharray="3.5 3"/>
+<text x="584" y="430" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#A6431F">The top rung has no</text>
+<text x="584" y="444" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">program on it &#8212; yet.</text>
+</svg>
+<figcaption>The ladder a legitimate melanocortin sun drug has to climb. Two lower rungs are occupied; the top one &#8212; a tan-grade photoprotective for healthy skin &#8212; has no program on it.</figcaption>
+</figure>
+
 - **Delivery is being solved.** Oral MC1R agonism is no longer hypothetical — it
   is under FDA review.
 - **The indication ladder is real.** EPP was the beachhead; vitiligo and

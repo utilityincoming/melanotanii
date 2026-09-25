@@ -22,14 +22,29 @@ normal frontmatter/PR flow (see README "Adding an article").
 
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
-| `history` | 5 | The History | Solid origin story; patent/ownership arc now live |
-| `cautionary-tale` | 8 | The Cautionary Tale | Strong; enforcement file, longevity-menu rebrand, protocol-illusion and attribution-gap files live |
+| `history` | 6 | The History | Origin, patent/ownership arc, and the pre-receptor discovery-chemistry file all live |
+| `cautionary-tale` | 9 | The Cautionary Tale | Strong; enforcement map, longevity-menu rebrand, protocol-illusion and attribution-gap files live |
 | `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
-| `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files now live |
-| `next-agonist` | 6 | The Next Agonist | Deepest cluster; sponsor-economics file now live |
+| `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files live |
+| `next-agonist` | 7 | The Next Agonist | Deepest cluster; sponsor-economics and 2026 pipeline-snapshot files live |
 
-Target: bring each cluster toward 6 substantive articles as topics warrant,
-prioritizing genuine gaps over padding.
+All five clusters have now cleared the original target of ~6 substantive
+articles each (37 live as of 25 Sep 2026). The launch content plan
+(Priority 1 and 2 below) is fully shipped. Further work is now
+gap-driven, not count-driven: commission only where a real reader query
+or a dated regulatory catalyst has no home, and lean on Priority 3
+freshness maintenance for the rest.
+
+**Off-plan commissions since the launch plan** (record, so the plan stays
+the source of truth):
+
+- `/articles/the-pipeline-right-now/` (`next-agonist`, PR #32) — a 2026
+  snapshot of the melanocortin drugs in real development. Restamp
+  `updatedDate` only when a program in the snapshot actually changes phase
+  or status.
+- `/articles/the-enforcement-map/` (`cautionary-tale`, PR #33) —
+  country-by-country enforcement of Melanotan II. Pairs with `/regulatory`;
+  restamp only when a jurisdiction materially changes status.
 
 ## Priority 1 — highest editorial value
 
@@ -130,6 +145,12 @@ Foundation warning of 7 Jul 2026 (dated catalyst). Do not restamp
 `updatedDate` unless a cancer-endpoint trial is announced or completed.
 
 ### `history` — "A drug before its receptor: how the Arizona team built Melanotan in the dark"
+**Shipped 25 Sep 2026** as `/articles/before-the-receptor/` (PR #27) — this
+filled the sixth `history` slot and closed the launch content plan. The
+brief below is preserved as the commissioning record; do not restamp
+`updatedDate` unless new primary literature on the discovery chemistry
+itself lands.
+
 Fills the sixth `history` slot with the discovery chemistry itself — the one
 part of the origin story no live article owns. `where-melanotan-came-from`
 names Hruby and Hadley and the analog program in passing; `who-owned-melanotan`
@@ -157,6 +178,45 @@ knew at the time (almost nothing). Do not re-explain MC1R signaling (owned by
 downstream chapters other articles already own; reference, don't retell. Do not
 restamp `updatedDate` unless new primary literature on the discovery chemistry
 itself lands.
+
+## Next wave — gap-driven briefs (launch plan is complete)
+
+The launch plan (Priority 1–2) is fully shipped and every cluster has
+cleared its target. These are the genuine gaps that remain — a
+high-volume reader query with no dedicated home, and a dated regulatory
+catalyst worth pre-writing. Commission only when a correspondent can
+source the copy; do not pad. Each ships through the normal
+frontmatter/PR flow, obeys every non-negotiable, and forward-links from
+the predecessors named.
+
+### `cautionary-tale` — "The nasal-spray myth: why needle-free isn't safer"
+The one route claim with no dedicated page. `the-pill-that-wasnt` answers
+the oral scam and dismisses sprays/drops in a single FAQ line; the
+nasal-spray route deserves its own direct-answer short because it is a
+distinct, high-volume query and a distinct market pitch ("no needles, so
+it must be gentler"). The site already carries the anchors: the UK DHSC
+nasal-spray answer of 1 Dec 2025 (on `/regulatory`), and the peptide
+chemistry that makes trans-mucosal delivery erratic and the delivered
+dose unknown. The frame is the same as the other route shorts —
+journalism about the claim genre, never a comparison of routes for use.
+The thesis: changing the route changes neither the compound, its
+unapproved status, nor the documented harms; it only removes the one
+thing an injection gives you — a known volume. `the-pill-that-wasnt` and
+`whats-in-the-vial` forward-link. Contains no dosing or delivery guidance
+by design. Do not restamp `updatedDate` unless a regulator publishes a new
+route-specific finding.
+
+### `next-agonist` — "The vitiligo readout: what CUV105 does and doesn't settle"
+Dated catalyst, pre-write and hold. `/regulatory` and `the-pipeline-right-now`
+both flag the CUV105 Phase III vitiligo readout due **Dec 2026**. When it
+lands it is the year's biggest melanocortin-agonist data event, and the
+market will read it as proof a tanning drug is coming. The brief answers
+that misreading in advance: a vitiligo repigmentation endpoint is not a
+photoprotection endpoint and not a general-public tanning indication — it
+is another narrow, reimbursable rare-disease use, exactly the pattern
+`the-beachhead-indications` and `who-would-pay-for-the-trial` describe.
+Companion to both; hold until the readout is public, then ship with the
+actual result and stamp `pubDate` to the readout, not to this brief.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

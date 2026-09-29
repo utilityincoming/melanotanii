@@ -75,4 +75,6 @@ Why the protocols keep being written anyway — and why the math in them
 cannot survive the label — is [the protocol
 illusion](/articles/the-protocol-illusion/). Why the two decades of
 gray-market use behind that label add up to no death count worth reading is
-[the attribution gap](/articles/safety-by-numbers/).
+[the attribution gap](/articles/safety-by-numbers/). And why switching to a
+needle-free bottle only stacks a second unknown on top of the first is
+[the nasal-spray myth](/articles/the-nasal-spray-myth/).

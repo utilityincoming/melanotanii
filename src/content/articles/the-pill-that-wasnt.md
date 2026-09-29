@@ -65,3 +65,10 @@ The market sells the pill because the pill is what a nervous buyer wants
 to exist — the tan without the needle, the needle without the decision.
 The chemistry doesn't care what the buyer wants. An oral Melanotan
 product that appears to work is the proof that it isn't one.
+
+The nasal spray is the same wish with better chemistry behind it — a
+peptide that at least reaches a mucosa instead of being digested outright.
+But it answers the fear of the needle by moving to the one route where the
+delivered dose is least knowable, which is [the nasal-spray
+myth](/articles/the-nasal-spray-myth/): needle-free changes the packaging,
+not the molecule.

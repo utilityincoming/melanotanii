@@ -1,0 +1,80 @@
+---
+/**
+ * Author block — the E-E-A-T surface at the foot of every article.
+ *
+ * Tan Lines publishes under a single masthead, not individual bylines, and
+ * claims no clinical credentials (see /standards/). So the block names the
+ * publication as author of record and says, in one place, how the piece was
+ * reported, who it is independent of, and where the corrections policy lives.
+ * The JSON-LD counterpart is authorLd() in src/data/brand.ts.
+ */
+import { publication, authorBlurb } from '../data/brand';
+
+interface Props {
+  /** The thread label, so the block can say what desk the piece came from. */
+  section: string;
+}
+const { section } = Astro.props;
+---
+<aside class="byline-block" aria-label="About the author">
+  <p class="who">
+    <span class="eyebrow">Written by</span>
+    <a class="name" href="/about/">{publication}</a>
+    <span class="desk">{section}</span>
+  </p>
+  <p class="what">{authorBlurb}</p>
+  <ul class="links">
+    <li><a href="/standards/">Editorial standards</a></li>
+    <li><a href="/standards/#corrections">Corrections</a></li>
+    <li><a href="/about/">About the publication</a></li>
+  </ul>
+</aside>
+<style>
+  .byline-block {
+    margin-top: 3rem;
+    padding: 1.2rem 1.35rem;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent, var(--uv));
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+  .who {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.7rem;
+    margin: 0 0 0.6rem;
+  }
+  .who .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent, var(--uv));
+    margin: 0;
+  }
+  .who .name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .who .name:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
+  .who .desk { font-size: 0.8rem; }
+  .who .desk::before { content: '·'; margin-right: 0.5rem; opacity: 0.6; }
+  .what { margin: 0 0 0.8rem; line-height: 1.6; }
+  .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .links a { font-weight: 500; text-decoration: none; }
+  .links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+</style>

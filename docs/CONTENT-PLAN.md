@@ -222,9 +222,15 @@ actual result and stamp `pubDate` to the readout, not to this brief.
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,
   Australia, Canada, Denmark, Ireland, UK, and carries a "Last reviewed"
-  date (added 26 Aug 2026). Refresh the date only when a jurisdiction
-  actually changes status. This is where real `updatedDate` freshness
-  signals should come from.
+  date (added 26 Aug 2026; **refreshed 4 Oct 2026** to carry the
+  dersimelagon NDA acceptance / ~Feb 2027 decision, the Apr 2026 EMA
+  advice on CUV107, and the enforcement-map figures for the UK and
+  Ireland — all already published in `the-pipeline-right-now` and
+  `the-enforcement-map`). Refresh the date only when a jurisdiction or
+  program actually changes status. This is where real `updatedDate`
+  freshness signals should come from. Next scheduled restamps: CUV107
+  start (Nov 2026), CUV105 readout (Dec 2026), dersimelagon decision
+  (~end Feb 2027), FDA PCAC on MT-II compounding (~Feb 2027).
 - **Timeline extension.** Add entries as afamelanotide indications expand
   and as any MC1R-agonist clinical news lands.
 - **Science-article `updatedDate` passes** only when new primary literature

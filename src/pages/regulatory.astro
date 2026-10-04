@@ -13,7 +13,7 @@ interface Catalyst {
   status: 'upcoming' | 'resolved';
 }
 
-const lastReviewed = 'August 26, 2026';
+const lastReviewed = 'October 4, 2026';
 
 // Add or update entries here; the page re-sorts and re-files them automatically.
 const catalysts: Catalyst[] = [
@@ -23,6 +23,11 @@ const catalysts: Catalyst[] = [
     note: 'The FDA’s Pharmacy Compounding Advisory Committee is due to consider whether MT-II can move off the restricted Category 2 list and become compoundable. The first time its U.S. legitimacy is formally on a calendar — and the single most consequential date here.',
   },
   {
+    sort: '2027-02-28', when: '~ end Feb 2027', org: 'FDA · Tanabe', strand: 'approved', status: 'upcoming',
+    title: 'FDA decision on dersimelagon, the first oral MC1R agonist',
+    note: 'The New Drug Application for dersimelagon (MT-7117) in EPP and X-linked protoporphyria has been accepted under priority review, with a decision expected around the end of February 2027. If approved, melanocortin photoprotection reaches patients as a once-daily pill for the first time — still for a rare disease, not a tan. Context in The pipeline right now.',
+  },
+  {
     sort: '2026-12-01', when: 'Dec 2026', org: 'Clinuvel · CUV105', strand: 'approved', status: 'upcoming',
     title: 'Phase III vitiligo readout for afamelanotide',
     note: 'Topline from the 200-patient CUV105 trial of SCENESSE in vitiligo — the approved MC1R agonist reaching for its second indication. A positive result widens the beachhead.',
@@ -30,7 +35,7 @@ const catalysts: Catalyst[] = [
   {
     sort: '2026-11-01', when: 'Nov 2026', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
     title: 'Pivotal vitiligo trial (CUV107) set to begin',
-    note: 'The confirmatory study meant to underpin regulatory filings across Europe, North America and Africa.',
+    note: 'The confirmatory study of around 300 patients, planned for the second half of 2026, meant to underpin regulatory filings across Europe, North America and Africa. Its design received final EMA scientific advice in April 2026.',
   },
   {
     sort: '2026-08-17', when: '17 Aug 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
@@ -41,6 +46,11 @@ const catalysts: Catalyst[] = [
     sort: '2026-07-13', when: 'Jul 2026', org: 'Health Canada', strand: 'approved', status: 'resolved',
     title: 'SCENESSE approved for EPP in Canada',
     note: 'Afamelanotide adds another country — the first systemic photoprotectant keeps spreading through the front door.',
+  },
+  {
+    sort: '2026-04-15', when: 'Apr 2026', org: 'EMA · Clinuvel', strand: 'approved', status: 'resolved',
+    title: 'EMA signs off on the pivotal vitiligo trial design',
+    note: 'Final scientific advice from the European regulator on the CUV107 pivotal study — the step that turns a vitiligo programme into a filing path. Afamelanotide’s second indication now has a regulator’s fingerprints on its design.',
   },
   {
     sort: '2026-02-27', when: '27 Feb 2026', org: 'HHS · FDA', strand: 'caution', status: 'resolved',
@@ -55,7 +65,7 @@ const catalysts: Catalyst[] = [
   {
     sort: '2026-01-15', when: 'Jan 2026', org: 'Tanabe · MT-7117', strand: 'approved', status: 'resolved',
     title: 'Oral MC1R agonist posts positive Phase 3',
-    note: 'Dersimelagon — a once-daily pill, not an implant — hit its endpoints in EPP and X-linked protoporphyria. Melanocortin photoprotection escaping the needle is the clearest sign yet the class is advancing.',
+    note: 'Dersimelagon — a once-daily pill, not an implant — met its primary endpoint in the 165-patient INSPIRE study in EPP and X-linked protoporphyria. Melanocortin photoprotection escaping the needle is the clearest sign yet the class is advancing; the FDA has since accepted the filing under priority review (see the calendar above).',
   },
   {
     sort: '2025-12-01', when: '1 Dec 2025', org: 'UK · DHSC', strand: 'caution', status: 'resolved',
@@ -105,7 +115,7 @@ const jurisdictions: Jurisdiction[] = [
   },
   {
     place: 'United Kingdom', status: 'Illegal to sell · legal to possess', tone: 'caution',
-    note: 'An unlicensed medicine the MHRA bars from sale — sold instead as a “cosmetic” nasal spray through a gap between the rulebooks. Selling is illegal; using is not.',
+    note: 'An unlicensed medicine the MHRA bars from sale — it warned the public in 2008 and later helped suspend over 100 trading websites. Sold instead as a “cosmetic” nasal spray through a gap between the rulebooks that the DHSC confirmed to Parliament in Dec 2025. Selling is illegal; using is not.',
   },
   {
     place: 'Australia', status: 'Schedule 9 · prohibited', tone: 'danger',
@@ -113,7 +123,7 @@ const jurisdictions: Jurisdiction[] = [
   },
   {
     place: 'EU & Nordics', status: 'Unapproved · banned as cosmetic', tone: 'caution',
-    note: 'No approved indication anywhere in the EU; banned as a cosmetic in Denmark and others; Ireland’s HPRA warns it is not authorised to treat anything.',
+    note: 'No approved indication anywhere in the EU; banned as a cosmetic in Denmark and others. Ireland’s HPRA warns it is not authorised to treat anything and ordered more than 500 online ads removed between 2020 and 2022. Country by country: The enforcement map.',
   },
 ];
 
@@ -125,7 +135,7 @@ const approved: ApprovedDrug[] = [
   },
   {
     drug: 'Dersimelagon (MT-7117)', kind: 'MC1R agonist · once-daily oral pill',
-    where: 'Positive Phase 3 in EPP and X-linked protoporphyria (Jan 2026); regulatory filings expected to follow. The first oral entrant in the class — no needle, no implant.',
+    where: 'Positive Phase 3 (INSPIRE) in EPP and X-linked protoporphyria (Jan 2026); New Drug Application accepted by the FDA under priority review, decision expected around the end of Feb 2027. The first oral entrant in the class — no needle, no implant.',
   },
 ];
 
@@ -135,7 +145,7 @@ const jsonLd = {
   name: 'Regulatory watch — Melanotan II & melanocortin photoprotection',
   description:
     'A living tracker of the U.S. and global regulatory status of Melanotan II and the melanocortin agonists (afamelanotide, dersimelagon) developed for photoprotective use — dated catalysts, settled milestones, and jurisdiction-by-jurisdiction status.',
-  dateModified: '2026-08-18',
+  dateModified: '2026-10-04',
   isPartOf: { '@id': new URL('/#record', Astro.site).href, name: 'The Record' },
 };
 ---
@@ -243,7 +253,9 @@ const jsonLd = {
       legitimate melanocortin sun drug actually reaches Americans, read
       <a href="/articles/the-three-doors/">The three doors</a>; for the gray
       market it competes with, <a href="/articles/barbie-drug-gray-market/">The Barbie drug</a>;
-      for what the warnings actually did, <a href="/articles/what-the-warnings-actually-did/">a decade of enforcement</a>;
+      for what the warnings actually did, <a href="/articles/what-the-warnings-actually-did/">a decade of enforcement</a>
+      and <a href="/articles/the-enforcement-map/">the enforcement map</a>;
+      for where the legitimate programs stand, <a href="/articles/the-pipeline-right-now/">the pipeline right now</a>;
       for the full arc, <a href="/timeline/">the timeline</a>.
     </p>
   </section>

@@ -73,6 +73,6 @@ Analytics only; no other client JS.
 - [x] Branded OG image + favicon/PWA icon pack
 - [x] Per-article JSON-LD + SERP-tuned meta descriptions
 - [x] Reciprocal cross-links into the network (melanocortin.com)
-- [ ] Author byline + credentials block for E-E-A-T (Person schema, `reviewedBy`)
-- [ ] Expand thin clusters toward 6 articles as topics warrant
+- [x] Author block for E-E-A-T — masthead byline card on every article (`src/components/Byline.astro`) + enriched author/`reviewedBy` JSON-LD; organization, not Person, by design (see `/standards/`: single masthead, no borrowed credentials)
+- [x] Expand thin clusters toward 6 articles as topics warrant — all five cleared (38 live)
 - [ ] Cross-links into the wider network (peptidehormone.com)

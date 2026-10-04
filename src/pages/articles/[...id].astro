@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { clusters, clusterLabel, clusterColorVar } from '../../data/clusters';
-import { publication, orgRef, recordRef } from '../../data/brand';
+import { publication, orgRef, recordRef, authorLd } from '../../data/brand';
+import Byline from '../../components/Byline.astro';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -46,7 +47,8 @@ const jsonLd = {
   articleSection: label,
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
   isPartOf: recordRef(Astro.site),
-  author: orgRef(Astro.site),
+  author: authorLd(Astro.site),
+  reviewedBy: orgRef(Astro.site),
   publisher: {
     ...orgRef(Astro.site),
     publishingPrinciples: new URL('/standards/', Astro.site).href,
@@ -104,6 +106,8 @@ const faqLd = faq && faq.length > 0
       )}
     </p>
     <Content />
+
+    <Byline section={label} />
 
     {faq && faq.length > 0 && (
       <section class="faq" aria-labelledby="faq-heading">

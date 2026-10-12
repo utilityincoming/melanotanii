@@ -23,13 +23,15 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 6 | The History | Origin, patent/ownership arc, and the pre-receptor discovery-chemistry file all live |
-| `cautionary-tale` | 9 | The Cautionary Tale | Strong; enforcement map, longevity-menu rebrand, protocol-illusion and attribution-gap files live |
+| `cautionary-tale` | 10 | The Cautionary Tale | Strong; enforcement map, longevity-menu rebrand, protocol-illusion, attribution-gap and nasal-spray-myth files live |
 | `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files live |
 | `next-agonist` | 7 | The Next Agonist | Deepest cluster; sponsor-economics and 2026 pipeline-snapshot files live |
 
 All five clusters have now cleared the original target of ~6 substantive
-articles each (37 live as of 25 Sep 2026). The launch content plan
+articles each (38 live as of 12 Oct 2026; one further `next-agonist` piece,
+the-vitiligo-readout, is drafted and held at `draft: true` pending its
+Dec 2026 catalyst). The launch content plan
 (Priority 1 and 2 below) is fully shipped. Further work is now
 gap-driven, not count-driven: commission only where a real reader query
 or a dated regulatory catalyst has no home, and lean on Priority 3
@@ -190,33 +192,31 @@ frontmatter/PR flow, obeys every non-negotiable, and forward-links from
 the predecessors named.
 
 ### `cautionary-tale` — "The nasal-spray myth: why needle-free isn't safer"
-The one route claim with no dedicated page. `the-pill-that-wasnt` answers
-the oral scam and dismisses sprays/drops in a single FAQ line; the
-nasal-spray route deserves its own direct-answer short because it is a
-distinct, high-volume query and a distinct market pitch ("no needles, so
-it must be gentler"). The site already carries the anchors: the UK DHSC
-nasal-spray answer of 1 Dec 2025 (on `/regulatory`), and the peptide
-chemistry that makes trans-mucosal delivery erratic and the delivered
-dose unknown. The frame is the same as the other route shorts —
-journalism about the claim genre, never a comparison of routes for use.
-The thesis: changing the route changes neither the compound, its
-unapproved status, nor the documented harms; it only removes the one
-thing an injection gives you — a known volume. `the-pill-that-wasnt` and
-`whats-in-the-vial` forward-link. Contains no dosing or delivery guidance
-by design. Do not restamp `updatedDate` unless a regulator publishes a new
-route-specific finding.
+**Shipped 29 Sep 2026** as `/articles/the-nasal-spray-myth/` (PR #35). The one
+route claim that had no dedicated page; `the-pill-that-wasnt` and `whats-in-the-vial`
+now forward-link. Journalism about the claim genre, never a comparison of routes
+for use: changing the route changes neither the compound, its unapproved status,
+nor the documented harms; it only removes the one thing an injection gives you — a
+known volume. Anchored on the UK DHSC nasal-spray answer of 1 Dec 2025 (on
+`/regulatory`) and the peptide chemistry that makes trans-mucosal delivery erratic.
+Contains no dosing or delivery guidance by design. Do not restamp `updatedDate`
+unless a regulator publishes a new route-specific finding.
 
 ### `next-agonist` — "The vitiligo readout: what CUV105 does and doesn't settle"
-Dated catalyst, pre-write and hold. `/regulatory` and `the-pipeline-right-now`
-both flag the CUV105 Phase III vitiligo readout due **Dec 2026**. When it
-lands it is the year's biggest melanocortin-agonist data event, and the
-market will read it as proof a tanning drug is coming. The brief answers
-that misreading in advance: a vitiligo repigmentation endpoint is not a
-photoprotection endpoint and not a general-public tanning indication — it
-is another narrow, reimbursable rare-disease use, exactly the pattern
-`the-beachhead-indications` and `who-would-pay-for-the-trial` describe.
-Companion to both; hold until the readout is public, then ship with the
-actual result and stamp `pubDate` to the readout, not to this brief.
+**Drafted and held** as `/articles/the-vitiligo-readout/` (`draft: true`,
+pre-write). Dated catalyst: `/regulatory` and `the-pipeline-right-now` both flag
+the CUV105 Phase III vitiligo readout due **Dec 2026**. When it lands it is the
+year's biggest melanocortin-agonist data event, and the market will read it as
+proof a tanning drug is coming. The draft answers that misreading in advance: a
+vitiligo repigmentation endpoint is not a photoprotection endpoint and not a
+general-public tanning indication — it is another narrow, reimbursable
+rare-disease use, exactly the pattern `the-beachhead-indications` and
+`who-would-pay-for-the-trial` describe. **To ship:** replace the two
+`[[READOUT: …]]` placeholders in the body with the actual reported result, set
+`pubDate` to the date the readout became public (not the placeholder), flip
+`draft: false`, and restamp `the-pipeline-right-now` / `/regulatory` if the
+program changed phase or status. Companion to both named predecessors, which
+forward-link on ship.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

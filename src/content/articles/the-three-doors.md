@@ -128,7 +128,7 @@ tractable trial with sick patients and a measurable endpoint. So approvals land
 on disease first, and the sunshine case follows behind.
 
 That expansion is happening right now, with the very same molecule. Clinuvel's
-CUV105 is a Phase III trial of afamelanotide in **vitiligo**, fully enrolled at
+[CUV105](/articles/the-vitiligo-readout/) is a Phase III trial of afamelanotide in **vitiligo**, fully enrolled at
 more than 200 patients, with topline results expected in December 2026 and a
 pivotal follow-up trial planned to begin the same year — with regulatory
 engagement that explicitly includes North America. One melanocortin agonist,
@@ -166,8 +166,8 @@ The arc will rhyme with the GLP-1 drugs. Those were approved for a disease
 (diabetes), expanded to a second (obesity), and from that narrow beginning went
 on to reset an entire culture's relationship with a bodily norm — at scale,
 through the front door, as real medicine. A melanocortin agonist is on the first
-rungs of the same ladder: approved for EPP, in Phase III for vitiligo, an oral
-version coming up behind.
+rungs of the same ladder: approved for EPP, in Phase III for vitiligo, [an oral
+version coming up behind](/articles/the-pipeline-right-now/).
 
 The honest near-term is not a mass-market tanning pill. It is disease-by-disease
 expansion into the populations who need photoprotection most and can anchor a

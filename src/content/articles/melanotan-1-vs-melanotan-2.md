@@ -9,16 +9,17 @@ seeAlso:
     label: "Melanotan and Melanotan II"
     note: "the pharmacology on the science hub"
 faq:
-  - q: "What is the difference between Melanotan I and Melanotan II?"
-    a: "Melanotan I (afamelanotide) is a linear peptide that mainly stimulates pigment; it was developed into an approved medicine for a rare light disorder. Melanotan II is a smaller cyclic peptide that hits several melanocortin receptors, which is why it also affects appetite and sexual arousal — and why it stayed in the gray market."
+  - q: "What's the difference between Melanotan 1 and Melanotan 2?"
+    a: "Melanotan 1 (Melanotan I, afamelanotide) is a linear peptide that mainly stimulates pigment; it was developed into an approved medicine for a rare light disorder. Melanotan 2 (Melanotan II) is a smaller cyclic peptide that hits several melanocortin receptors, which is why it also affects appetite and sexual arousal — and why it stayed in the gray market."
   - q: "Is Melanotan I approved and Melanotan II not?"
     a: "Yes. Melanotan I became afamelanotide (Scenesse), approved for erythropoietic protoporphyria. Melanotan II has never been approved for any use in any country and is sold only through unregulated channels."
   - q: "Which one is in gray-market tanning products?"
     a: "Almost always Melanotan II. Its broader receptor activity produced the side effects that got attention, and its structure entered the public domain, making it cheap to synthesise for the unregulated market."
 ---
 
-The two compounds are separated by a single digit in their names and a small
-change in their chemistry. They could hardly have ended up in more different
+The two compounds — Melanotan I and Melanotan II, written as often as not as
+Melanotan 1 and Melanotan 2 — are separated by a single digit in their names
+and a small change in their chemistry. They could hardly have ended up in more different
 places: one is an approved pharmaceutical made under regulatory supervision;
 the other is a powder sold in unlabeled vials. How one number came to mean so
 much is the most instructive story in the Melanotan file.

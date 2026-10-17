@@ -37,7 +37,8 @@ The molecules they made are written into the patent record. US Patent
 5,674,839, *Cyclic Analogs of Alpha-MSH Fragments*, issued in October 1997 to
 Hruby, Hadley, and their colleague Fahad Al-Obeidi — that is the Melanotan II
 family. Its companion, US Patent 5,714,576, *Linear Analogs of Alpha-MSH
-Fragments*, covers the Melanotan I side. Two further patents in Hadley's
+Fragments*, covers the Melanotan I side — [one peptide, two completely
+different fates](/articles/melanotan-1-vs-melanotan-2/). Two further patents in Hadley's
 name — one from 1996 on treating erectile dysfunction, one from 2000 on
 stimulating sexual response in women — staked out the uses the lab's famous
 accident had exposed.

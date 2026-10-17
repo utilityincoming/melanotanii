@@ -24,6 +24,8 @@ the team engineered synthetic analogs: peptides shaped enough like α-MSH to
 activate the same receptors, but stable enough to last. The stabilized
 linear analog became known as Melanotan I. A later, more potent cyclic
 variant — smaller, and active at more receptor types — became Melanotan II.
+From that single fork the two would diverge completely: [one became an
+approved medicine, the other the gray market's favorite](/articles/melanotan-1-vs-melanotan-2/).
 
 ## The idea was photoprotection, not vanity
 

@@ -173,7 +173,7 @@ volunteering that the product was illegal; a seller who, asked what was in
 it, didn't know. The UK's Chartered Trading Standards Institute — the body
 that inherited the problem when the medicines agency said sprays without
 medical claims were [not in its remit](/regulatory/) — put the retail picture
-on the record in May 2025: sprays, drops, and gummies, marketed through
+on the record in May 2025: sprays, drops, and [gummies](/articles/the-pill-that-wasnt/), marketed through
 Facebook and TikTok, in flavours that read like a sweetshop inventory, with
 expert safety assessment "unlikely" and health warnings rare.
 

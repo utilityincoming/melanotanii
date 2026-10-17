@@ -57,8 +57,8 @@ implant manufacturable and shippable.
 **Vitiligo.** This is the live one, and it matters. Clinuvel — the company that
 developed afamelanotide — is running a global Phase III trial (designated
 CUV105) testing afamelanotide alongside narrowband-UVB phototherapy to
-repigment vitiligo, with more than 200 patients enrolled as of 2025 and first
-results expected in the second half of 2026. Vitiligo is another pigment
+repigment vitiligo, with more than 200 patients enrolled as of 2025 and
+[its first results](/articles/the-vitiligo-readout/) expected in the second half of 2026. Vitiligo is another pigment
 indication, in a substantially larger population than EPP, and a genuine test
 of a melanocortin drug doing pigment work in otherwise ordinary skin. It is the
 clearest sign that the molecule is being walked deliberately up the ladder.

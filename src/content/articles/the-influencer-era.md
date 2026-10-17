@@ -30,7 +30,7 @@ appetite-plus-libido profile — got a softer coat of paint for the feed: "the
 vacation peptide," "the Barbie peptide," terms engineered to sound like a treat
 rather than an unlicensed hormone. By 2026, trading-standards bodies were
 flagging something blunter still: flavoured versions — peach, bubblegum, grape,
-strawberry — sold as sprays, drops, and gummies. You do not flavour a product
+strawberry — sold as sprays, drops, and [gummies that cannot actually work](/articles/the-pill-that-wasnt/). You do not flavour a product
 peach for an audience of adults who inject their own peptides. The target
 market of a bubblegum tanning drop is not subtle.
 

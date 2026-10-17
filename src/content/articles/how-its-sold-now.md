@@ -127,7 +127,10 @@ The market's answer was to stop using the name. LegitScript's analysts
 describe the current marketing vocabulary as a set of deliberate
 near-misses: generically packaged "nasal tanning sprays" that never say
 melanotan; references to tanning "strengths"; the abbreviation MT2, or simply
-"2." The images do the selling instead — deep tans, stark tan lines,
+"2." That last near-miss carries an accidental dividend: MT2 is also how
+pharmacologists abbreviate one of the [melatonin receptors](/articles/not-melatonin/),
+so the shorthand borrows a faint whiff of the pharmacy shelf from a molecule
+it has nothing to do with. The images do the selling instead — deep tans, stark tan lines,
 before-and-after comparisons. When the Australian consumer group CHOICE
 investigated the local spray market, it found the videos skew deliberately
 young, because tan-line content performs with the algorithm and because the

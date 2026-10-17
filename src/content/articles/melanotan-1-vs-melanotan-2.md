@@ -23,6 +23,10 @@ places: one is an approved pharmaceutical made under regulatory supervision;
 the other is a powder sold in unlabeled vials. How one number came to mean so
 much is the most instructive story in the Melanotan file.
 
+The digit is not the only confusable thing about the name. Melanotan also
+sits one letter from [melatonin](/articles/not-melatonin/), the pharmacy-shelf
+sleep supplement it otherwise has nothing to do with.
+
 <figure class="figure">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img" aria-labelledby="t5 d5">
 <title id="t5">Melanotan I versus Melanotan II</title>

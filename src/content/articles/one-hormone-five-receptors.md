@@ -18,6 +18,11 @@ effects: tanning plus appetite suppression plus libido changes plus nausea
 and flushing. That bundle isn't a quirk. It's a map of the melanocortin
 receptor family, drawn by a molecule that couldn't tell its targets apart.
 
+Those five are the melanocortin receptors, MC1R through MC5R. They are not
+the MT1 and MT2 melatonin receptors that the sound-alike name keeps getting
+Melanotan [confused with](/articles/not-melatonin/) — melatonin is a different
+molecule entirely, with nothing to do with pigment.
+
 <figure class="figure">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t1 d1">
 <title id="t1">One agonist, the whole melanocortin receptor family</title>

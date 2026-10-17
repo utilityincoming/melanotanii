@@ -15,6 +15,8 @@ faq:
     a: "No. Melatonin acts on sleep-timing receptors in the brain, not on the melanocortin receptors that drive pigment. The tanning association comes entirely from the name collision with Melanotan, a different and unapproved compound."
   - q: "Why do people confuse the two?"
     a: "The names are one letter apart, both sound clinical, and both are sold online. Search engines and autocomplete blur them further. The confusion matters because one is a regulated supplement and the other is an unapproved injectable with documented harms."
+  - q: "Are there melatonin tanning tablets?"
+    a: "No. Melatonin is a sleep supplement and has no tanning effect, so a 'melatonin tanning tablet' or a 'pill that makes you tan' does not exist. The search conflates melatonin with Melanotan, an injectable peptide that is not sold as an approved tablet anywhere. No oral product safely and legally tans the skin."
 ---
 
 The names are one letter apart. The molecules are worlds apart, and the

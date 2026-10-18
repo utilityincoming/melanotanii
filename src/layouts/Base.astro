@@ -4,10 +4,12 @@ import { publication, tagline, organizationLd, websiteLd } from '../data/brand';
 interface Props {
   title: string;
   description: string;
+  /** Per-page social card; falls back to the site-wide og-image.png. */
+  ogImage?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, ogImage: ogImageProp } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/og-image.png', Astro.site).href;
+const ogImage = new URL(ogImageProp ?? '/og-image.png', Astro.site).href;
 const path = Astro.url.pathname;
 const nav = [
   { href: '/timeline/', label: 'Timeline' },

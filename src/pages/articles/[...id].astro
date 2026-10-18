@@ -31,7 +31,8 @@ const others = rest
 const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
 
 const pageUrl = new URL(`/articles/${article.id}/`, Astro.site).href;
-const ogImage = new URL('/og-image.png', Astro.site).href;
+// Per-article social card generated at /og/<id>.png (see src/pages/og/[id].png.ts).
+const ogImage = new URL(`/og/${article.id}.png`, Astro.site).href;
 
 // Query-shaped <title> when a serpTitle exists; the H1 stays the magazine line.
 const pageTitle = `${article.data.serpTitle ?? article.data.title} — ${publication}`;
@@ -83,7 +84,7 @@ const faqLd = faq && faq.length > 0
     }
   : null;
 ---
-<Base title={pageTitle} description={article.data.description}>
+<Base title={pageTitle} description={article.data.description} ogImage={`/og/${article.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} is:inline />}

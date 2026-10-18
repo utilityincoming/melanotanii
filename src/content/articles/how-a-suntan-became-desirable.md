@@ -4,6 +4,11 @@ serpTitle: "How the tan became desirable: Chanel, the Riviera, the sunbed"
 description: "For most of history a tan meant labor; then, in one decade, it flipped. How Chanel, the Riviera, and the sunbed made tanned skin aspirational."
 pubDate: 2026-08-18
 cluster: culture
+faq:
+  - q: "Why did a suntan become fashionable?"
+    a: "The status meaning flipped in the 1920s. Once industrial work moved indoors, a tan stopped signalling outdoor labour and started signalling leisure — the money and time to lie on a beach. Coco Chanel's 1923 Riviera tan hit the press at that moment, and by 1929 Harper's Bazaar was calling it the rage of the moment."
+  - q: "When did tanning become recognised as dangerous?"
+    a: "In 2009 the WHO's cancer agency placed UV-emitting tanning devices in Group 1 — 'carcinogenic to humans,' alongside tobacco and asbestos. Starting sunbed use before age 30 is associated with roughly a 75% increase in melanoma risk. The look became desirable and the danger was proven almost in the same breath."
 ---
 
 A tan is a wound healing in slow motion. Pigment is the skin's response to

@@ -4,6 +4,13 @@ serpTitle: "Melanotan II and moles: what dermatologists actually fear"
 description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic: the case reports, the melanoma question, and the signals you lose."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+faq:
+  - q: "Does Melanotan II affect moles?"
+    a: "Yes. It drives pigment cells throughout the body, so existing moles can darken and enlarge and new ones can appear. The dermatology literature carries repeated case reports, including a man who erupted more than a hundred new moles within weeks of a short course."
+  - q: "Does Melanotan II cause melanoma?"
+    a: "Melanoma has been diagnosed in users and reported in peer-reviewed journals, but these are case reports: they can raise an alarm, not prove cause. Causation is genuinely unresolved — which is not the same as harmless."
+  - q: "Why do dermatologists worry about Melanotan II beyond cancer risk?"
+    a: "Early melanoma is caught by change — the mole that darkens or grows, the 'E' in ABCDE. A drug that darkens and changes every mole raises the noise floor under that signal, so the one dangerous mole hides among dozens. It degrades early detection whether or not it ever causes a cancer."
 ---
 
 Of everything laid at Melanotan II's feet, the concern dermatologists return

@@ -4,6 +4,11 @@ serpTitle: "Who owned Melanotan: the patent trail to Clinuvel and Palatin"
 description: "How a University of Arizona peptide became two FDA drugs and a gray-market staple: the patent trail from Hruby and Hadley to Clinuvel and Palatin."
 pubDate: 2026-08-26
 cluster: history
+faq:
+  - q: "Who owns Melanotan II, and is it still patented?"
+    a: "No one owns the molecule now. It was invented at the University of Arizona (inventors Hruby, Hadley and Al-Obeidi; US Patent 5,674,839 and companions), but the foundational patents were filed in the early 1990s and have long expired, and the structure was published from the start. Melanotan II is in the public domain."
+  - q: "If Melanotan II is public domain, why is selling it illegal?"
+    a: "Because two different bodies of law are in play. Patent law no longer restricts it — making it infringes nothing. But medicines regulators control what may be marketed for human use, and none has approved Melanotan II for anything. The gray market isn't pirating a patent; it's making a public-domain compound and skipping the regulator."
 seeAlso:
   - href: "https://melanocortin.com/afamelanotide"
     label: "Afamelanotide"

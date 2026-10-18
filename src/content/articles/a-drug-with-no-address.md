@@ -4,6 +4,11 @@ serpTitle: "Melanotan II pharmacokinetics: why one dose does everything"
 description: "Why one dose of Melanotan II tans, sickens, and arouses at once: its pharmacokinetics give it no address. It floods the body and outlasts the signal it mimics."
 pubDate: 2026-08-26
 cluster: science
+faq:
+  - q: "Why does one dose of Melanotan II tan, sicken, and arouse at once?"
+    a: "Because of where it goes and how long it lasts. A subcutaneous dose is absorbed into the general circulation and, engineered to resist the enzymes that erase the body's own α-MSH in minutes, it persists for hours — reaching every melanocortin receptor in the body, brain included, more or less at once. The molecule has no address, so it isn't aimed at the skin; it's broadcast everywhere."
+  - q: "Are Melanotan II's side effects caused by bad batches?"
+    a: "No. The nausea, flushing and arousal are not contaminants or dosing mistakes — they are the pharmacology of a stable, systemic, non-selective agonist behaving exactly as it must. A perfectly pure, correctly synthesised vial delivers them just the same."
 seeAlso:
   - href: "https://melanocortin.com/system"
     label: "The melanocortin system"

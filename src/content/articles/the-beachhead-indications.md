@@ -4,6 +4,11 @@ serpTitle: "How a photoprotective melanocortin drug could reach everyone"
 description: "How a photoprotective melanocortin drug could reach everyone: beachhead indications, from approved EPP to a vitiligo trial now in Phase III."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "How could a melanocortin drug ever reach the general public?"
+    a: "Through beachheads — narrow indications where the benefit-risk math already works, each building the safety record, manufacturing base and delivery experience the next step needs. EPP is the first rung (approved); vitiligo is in Phase III now; transplant recipients and inherited high-risk groups are the logical next ones. The path to 'everyone' runs through a series of 'someones.'"
+  - q: "Is afamelanotide being tested for vitiligo?"
+    a: "Yes. Clinuvel, which developed afamelanotide, is running a global Phase III trial (CUV105) of the drug alongside narrowband-UVB phototherapy to repigment vitiligo, with more than 200 patients enrolled and first results expected in the second half of 2026 — a pigment indication in a much larger population than EPP."
 ---
 
 *Analysis — but this one is anchored to trials that are actually running.*

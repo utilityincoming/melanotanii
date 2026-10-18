@@ -93,7 +93,7 @@ an accident of history. Selectivity is what got them approved.
 <rect x="36" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
 <rect x="36" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
 <text x="54" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Afamelanotide</text>
-<text x="54" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Scenesse &#183; implant</text>
+<text x="54" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">Scenesse &#183; implant</text>
 <line x1="54" y1="132" x2="256" y2="132" stroke="#EDE7DE"/>
 <text x="54" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
 <text x="54" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC1R-selective</text>
@@ -107,7 +107,7 @@ an accident of history. Selectivity is what got them approved.
 <rect x="290" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
 <rect x="290" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
 <text x="308" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Bremelanotide</text>
-<text x="308" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Vyleesi &#183; auto-injector</text>
+<text x="308" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">Vyleesi &#183; auto-injector</text>
 <line x1="308" y1="132" x2="510" y2="132" stroke="#EDE7DE"/>
 <text x="308" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
 <text x="308" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC4R &#183; sexual desire</text>
@@ -121,7 +121,7 @@ an accident of history. Selectivity is what got them approved.
 <rect x="544" y="84" width="238" height="184" rx="6" fill="#8A6A3B" fill-opacity="0.05" stroke="#E4DFD6"/>
 <rect x="544" y="84" width="4" height="184" rx="2" fill="#8A6A3B"/>
 <text x="562" y="108" font-family="'Spectral',Georgia,serif" font-size="14.5" font-weight="600" fill="#17130E">Setmelanotide</text>
-<text x="562" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">Imcivree &#183; injection</text>
+<text x="562" y="123" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">Imcivree &#183; injection</text>
 <line x1="562" y1="132" x2="764" y2="132" stroke="#EDE7DE"/>
 <text x="562" y="150" font-family="'Archivo',sans-serif" font-size="9" font-weight="700" letter-spacing="0.5" fill="#8A6A3B">TARGET</text>
 <text x="562" y="165" font-family="'Archivo',sans-serif" font-size="11" fill="#17130E">MC4R &#183; 20&#215; over MC1R</text>
@@ -146,7 +146,7 @@ an accident of history. Selectivity is what got them approved.
 <text x="558" y="333">No dermatologist in the</text>
 <text x="558" y="347">loop &#8212; because there is no loop</text>
 </g>
-<text x="54" y="371" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">A regulator found bottles labelled one amount holding more than double it &#8212; and no skin exam catches the mole that darkens.</text>
+<text x="54" y="371" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">A regulator found bottles labelled one amount holding more than double it &#8212; and no skin exam catches the mole that darkens.</text>
 <!-- punchline -->
 <line x1="36" y1="404" x2="784" y2="404" stroke="#EDE7DE" stroke-width="1"/>
 <text x="410" y="428" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="14" font-weight="600" fill="#17130E">Selectivity and monitoring are what got the real drugs approved. The vial keeps the claim and drops both.</text>

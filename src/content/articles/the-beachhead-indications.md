@@ -42,8 +42,8 @@ the general-public drug, several of its rungs are real and occupied right now.
 <text x="242" y="266" font-family="'Archivo',sans-serif" font-size="11" fill="#5a4f6a">Phase III now (CUV105)</text>
 <text x="242" y="284" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em" fill="#503296">&#9679; IN TRIALS</text>
 <rect x="400" y="180" width="170" height="180" rx="4" fill="none" stroke="#B7AC9C" stroke-width="1.4" stroke-dasharray="5 5"/>
-<text x="412" y="172" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#8A8275">Transplant &amp; high-risk</text>
-<text x="412" y="206" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">a logical next rung</text>
+<text x="412" y="172" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#6E665A">Transplant &amp; high-risk</text>
+<text x="412" y="206" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">a logical next rung</text>
 <rect x="570" y="120" width="150" height="240" rx="4" fill="none" stroke="#C9BEB0" stroke-width="1.4" stroke-dasharray="5 5"/>
 <text x="582" y="112" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#A69C8D">General public</text>
 <text x="582" y="146" font-family="'Archivo',sans-serif" font-size="11" fill="#A69C8D">not yet &#8212; labeled hope</text>

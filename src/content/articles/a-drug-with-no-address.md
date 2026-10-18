@@ -82,14 +82,14 @@ targeting has a cost, and that cost is the rest of this story.
 <text x="112" y="248" font-family="'Archivo',sans-serif" font-size="11.5" fill="#17130E">The tan &#8212; melanin, once it has been made</text>
 <rect x="92" y="254" width="643" height="15" rx="2" fill="url(#pigpk)"/>
 <line x1="90" y1="336" x2="740" y2="336" stroke="#17130E" stroke-width="1.2"/>
-<g font-family="'Archivo',sans-serif" font-size="10" fill="#8A8275">
+<g font-family="'Archivo',sans-serif" font-size="10" fill="#6E665A">
 <text x="230" y="352" text-anchor="middle">10 min</text>
 <text x="339" y="352" text-anchor="middle">1 hour</text>
 <text x="466" y="352" text-anchor="middle">8 hours</text>
 <text x="533" y="352" text-anchor="middle">1 day</text>
 <text x="651" y="352" text-anchor="middle">1 week</text>
 </g>
-<text x="740" y="372" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">time after one dose &#183; logarithmic scale</text>
+<text x="740" y="372" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">time after one dose &#183; logarithmic scale</text>
 </svg>
 <figcaption>The body keeps its own melanocortin signal on a leash of minutes. Melanotan II was engineered to slip that leash &mdash; and the pigment it triggers outlives the drug in the blood by weeks. Durations are approximate and drawn on a log scale to fit minutes and weeks on one axis.</figcaption>
 </figure>

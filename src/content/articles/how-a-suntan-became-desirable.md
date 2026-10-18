@@ -42,19 +42,19 @@ do not have to work in the light.*
 </defs>
 <text x="40" y="46" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">When the status flipped</text>
 <text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">For centuries pale skin signalled wealth. In one decade, a tan did.</text>
-<text x="60" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="#8A8275">WHAT SIGNALS WEALTH</text>
+<text x="60" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.06em" fill="#6E665A">WHAT SIGNALS WEALTH</text>
 <rect x="60" y="122" width="132" height="40" fill="#ECE6DC" stroke="#D8C3AA" stroke-width="1"/>
 <text x="126" y="146" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="600" fill="#7A6F62">PALE</text>
 <rect x="192" y="122" width="528" height="40" fill="url(#pig2)"/>
 <text x="456" y="146" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#FBFAF7">TAN</text>
 <line x1="192" y1="116" x2="192" y2="266" stroke="#503296" stroke-width="1.5" stroke-dasharray="4 3"/>
 <line x1="60" y1="250" x2="720" y2="250" stroke="#17130E" stroke-width="1.2"/>
-<g font-family="'Archivo',sans-serif" font-size="10" fill="#8A8275">
-<line x1="60" y1="250" x2="60" y2="256" stroke="#8A8275"/><text x="60" y="270" text-anchor="middle">1900</text>
-<line x1="203" y1="250" x2="203" y2="256" stroke="#8A8275"/><text x="203" y="270" text-anchor="middle">1925</text>
-<line x1="347" y1="250" x2="347" y2="256" stroke="#8A8275"/><text x="347" y="270" text-anchor="middle">1950</text>
-<line x1="490" y1="250" x2="490" y2="256" stroke="#8A8275"/><text x="490" y="270" text-anchor="middle">1975</text>
-<line x1="634" y1="250" x2="634" y2="256" stroke="#8A8275"/><text x="634" y="270" text-anchor="middle">2000</text>
+<g font-family="'Archivo',sans-serif" font-size="10" fill="#6E665A">
+<line x1="60" y1="250" x2="60" y2="256" stroke="#6E665A"/><text x="60" y="270" text-anchor="middle">1900</text>
+<line x1="203" y1="250" x2="203" y2="256" stroke="#6E665A"/><text x="203" y="270" text-anchor="middle">1925</text>
+<line x1="347" y1="250" x2="347" y2="256" stroke="#6E665A"/><text x="347" y="270" text-anchor="middle">1950</text>
+<line x1="490" y1="250" x2="490" y2="256" stroke="#6E665A"/><text x="490" y="270" text-anchor="middle">1975</text>
+<line x1="634" y1="250" x2="634" y2="256" stroke="#6E665A"/><text x="634" y="270" text-anchor="middle">2000</text>
 </g>
 <g>
 <circle cx="192" cy="250" r="4.5" fill="#503296"/>

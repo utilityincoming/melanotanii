@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
-const { Content } = await render(article);
+const { Content, headings } = await render(article);
 
 // Reading-time estimate. Strip inline SVG figures and markup first so the
 // figure text and link syntax don't inflate the count; ~200 wpm, min 1.
@@ -21,6 +21,12 @@ const readingText = article.body
   .replace(/[#*_>`[\]()]/g, ' ');
 const wordCount = (readingText.match(/\S+/g) ?? []).length;
 const readingMinutes = Math.max(1, Math.round(wordCount / 200));
+
+// Table of contents for long reads only. Astro slugs headings automatically,
+// so this is a no-JS jump-link list built from the H2s; gated to genuinely
+// long pieces (enough sections AND length) so short explainers stay clean.
+const sections = headings.filter((h) => h.depth === 2);
+const showToc = sections.length >= 5 && wordCount >= 1200;
 
 const clusterKey = article.data.cluster;
 const label = clusterLabel(clusterKey);
@@ -117,6 +123,18 @@ const faqLd = faq && faq.length > 0
         <> <span aria-hidden="true">&middot;</span> Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
       )}
     </p>
+
+    {showToc && (
+      <details class="toc">
+        <summary>In this piece</summary>
+        <ol>
+          {sections.map((s) => (
+            <li><a href={`#${s.slug}`}>{s.text}</a></li>
+          ))}
+        </ol>
+      </details>
+    )}
+
     <Content />
 
     <Byline section={label} />
@@ -167,6 +185,35 @@ const faqLd = faq && faq.length > 0
     .crumbs .crumb-thread { color: var(--accent); font-weight: 600; }
     .crumbs span { opacity: 0.6; }
     .accent { color: var(--accent); }
+
+    /* Table of contents — long reads only; no JS, collapsed by default */
+    .toc {
+      margin: 0 0 2rem;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 0.92rem;
+    }
+    .toc summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--ink);
+      list-style: none;
+    }
+    .toc summary::-webkit-details-marker { display: none; }
+    .toc summary::after { content: '+'; float: right; color: var(--accent); font-size: 1.15rem; line-height: 1; }
+    .toc[open] summary::after { content: '\2013'; }
+    .toc ol {
+      margin: 0.8rem 0 0.2rem;
+      padding-left: 1.3rem;
+      display: grid;
+      gap: 0.45rem;
+      color: var(--ink-soft);
+    }
+    .toc a { color: var(--ink); text-decoration: none; }
+    .toc a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
     h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.35rem 0 0.5rem; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
     .meta .byline { color: var(--ink); font-weight: 600; text-decoration: none; }

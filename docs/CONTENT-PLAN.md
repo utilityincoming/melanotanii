@@ -231,6 +231,14 @@ forward-link on ship.
   freshness signals should come from. Next scheduled restamps: CUV107
   start (Nov 2026), CUV105 readout (Dec 2026), dersimelagon decision
   (~end Feb 2027), FDA PCAC on MT-II compounding (~Feb 2027).
+  **Restamp workflow:** the tracker's freshness is driven by a single
+  `lastReviewedISO` constant at the top of `src/pages/regulatory.astro` —
+  change that one ISO date and it updates both the visible "Last reviewed"
+  label and the page's JSON-LD `dateModified`. In the same pass, add/flip
+  the relevant `catalysts[]` entry, and bump the `updatedDate` frontmatter
+  of any article whose body genuinely changed with the news (e.g.
+  `the-pipeline-right-now`, `the-enforcement-map`) so the article-level
+  freshness signal fires too — never as a mechanical refresh.
 - **Timeline extension.** Add entries as afamelanotide indications expand
   and as any MC1R-agonist clinical news lands.
 - **Science-article `updatedDate` passes** only when new primary literature

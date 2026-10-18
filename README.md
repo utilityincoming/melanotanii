@@ -75,4 +75,4 @@ Analytics only; no other client JS.
 - [x] Keep melanotanii.com editorially independent of melanocortin.com — no reciprocal cross-links
 - [x] Author block for E-E-A-T — masthead byline card on every article (`src/components/Byline.astro`) + enriched author/`reviewedBy` JSON-LD; organization, not Person, by design (see `/standards/`: single masthead, no borrowed credentials)
 - [x] Expand thin clusters toward 6 articles as topics warrant — all five cleared (38 live)
-- [ ] Cross-links into the wider network (peptidehormone.com)
+- [x] Keep melanotanii.com editorially independent of peptidehormone.com — no network cross-links

@@ -67,8 +67,8 @@ molecule entirely, with nothing to do with pigment.
 <text x="584" y="331" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#17130E">MC5R</text>
 <text x="584" y="349" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">sebaceous &amp; exocrine glands</text>
 <circle cx="560" cy="410" r="7" fill="#FBFAF7" stroke="#C9BEB0" stroke-width="2"/>
-<text x="584" y="406" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#8A8275">MC2R</text>
-<text x="584" y="424" font-family="'Archivo',sans-serif" font-size="12" fill="#8A8275">adrenal (ACTH) &#8212; largely spared</text>
+<text x="584" y="406" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#6E665A">MC2R</text>
+<text x="584" y="424" font-family="'Archivo',sans-serif" font-size="12" fill="#6E665A">adrenal (ACTH) &#8212; largely spared</text>
 <line x1="250" y1="450" x2="276" y2="450" stroke="#503296" stroke-width="2"/>
 <text x="282" y="454" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">activated by MT-II</text>
 <line x1="430" y1="450" x2="456" y2="450" stroke="#C9BEB0" stroke-width="1.5" stroke-dasharray="3 4"/>

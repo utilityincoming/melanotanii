@@ -39,7 +39,7 @@ dream of a tanning drug for the people who burn.
 <text x="121" y="238" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#2F6A52">Least medical need.</text>
 <text x="121" y="256" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#2F6A52">Drug would work.</text>
 <rect x="218" y="96" width="162" height="188" rx="10" fill="#FFFFFF" stroke="#E4DFD6"/>
-<text x="299" y="128" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" letter-spacing="0.06em" fill="#8A8275">r / r  or  r / +</text>
+<text x="299" y="128" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" letter-spacing="0.06em" fill="#6E665A">r / r  or  r / +</text>
 <text x="299" y="158" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Weak alleles</text>
 <text x="299" y="186" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">V60L, V92M,</text>
 <text x="299" y="204" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">R163Q. Common.</text>

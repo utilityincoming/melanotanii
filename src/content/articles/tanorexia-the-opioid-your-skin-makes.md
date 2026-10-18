@@ -51,7 +51,7 @@ tan is the visible product. The endorphin is the hidden one.
 <line x1="112" y1="150" x2="156" y2="150" stroke="#17130E" stroke-width="1.4" marker-end="url(#ac1)"/>
 <rect x="160" y="126" width="120" height="48" rx="8" fill="#FFFFFF" stroke="#D8C3AA" stroke-width="1"/>
 <text x="220" y="147" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="500" fill="#17130E">skin cell</text>
-<text x="220" y="163" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">keratinocyte</text>
+<text x="220" y="163" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">keratinocyte</text>
 <line x1="280" y1="150" x2="322" y2="150" stroke="#17130E" stroke-width="1.4" marker-end="url(#ac1)"/>
 <rect x="326" y="126" width="96" height="48" rx="8" fill="#17130E"/>
 <text x="374" y="149" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#FBFAF7">POMC</text>

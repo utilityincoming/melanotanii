@@ -55,7 +55,7 @@ Here it is something else: the proof that the front door opens.
 <text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Three ways a melanocortin sun drug reaches Americans &#8212; only one is a real medicine.</text>
 <rect x="60" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#2F6A52" stroke-width="1.5"/>
 <text x="160" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#2F6A52">FDA APPROVAL</text>
-<text x="160" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">NDA / orphan drug</text>
+<text x="160" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">NDA / orphan drug</text>
 <rect x="122" y="166" width="76" height="22" rx="11" fill="#2F6A52"/>
 <text x="160" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#FBFAF7">OPEN</text>
 <text x="160" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">The evidence-heavy</text>
@@ -66,7 +66,7 @@ Here it is something else: the proof that the front door opens.
 <text x="160" y="309" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#2F6A52">through it in 2019</text>
 <rect x="290" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#503296" stroke-width="1.5"/>
 <text x="390" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#503296">COMPOUNDING</text>
-<text x="390" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">503A / 503B pharmacy</text>
+<text x="390" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">503A / 503B pharmacy</text>
 <rect x="326" y="166" width="128" height="22" rx="11" fill="#503296"/>
 <text x="390" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11.5" font-weight="700" fill="#FBFAF7">RESTRICTED</text>
 <text x="390" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Category 2 &#8212; &#8220;serious</text>
@@ -77,7 +77,7 @@ Here it is something else: the proof that the front door opens.
 <text x="390" y="309" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#503296">&#8212; 2027</text>
 <rect x="520" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#A6431F" stroke-width="1.5"/>
 <text x="620" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#A6431F">GRAY MARKET</text>
-<text x="620" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">&#8220;research chemical&#8221;</text>
+<text x="620" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">&#8220;research chemical&#8221;</text>
 <rect x="580" y="166" width="80" height="22" rx="11" fill="#A6431F"/>
 <text x="620" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#FBFAF7">ILLEGAL</text>
 <text x="620" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Unregulated. Where</text>

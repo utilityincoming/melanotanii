@@ -13,7 +13,16 @@ interface Catalyst {
   status: 'upcoming' | 'resolved';
 }
 
-const lastReviewed = 'October 4, 2026';
+// Single source of truth for the tracker's freshness. On a restamp, change
+// ONLY this ISO date — it drives the visible "Last reviewed" label and the
+// JSON-LD dateModified below, so the two can never drift. Restamp when a
+// jurisdiction or program actually changes status (next: CUV107 start Nov 2026,
+// CUV105 readout Dec 2026, dersimelagon decision ~Feb 2027).
+const lastReviewedISO = '2026-10-04';
+const datePublishedISO = '2026-08-26';
+const lastReviewed = new Date(lastReviewedISO).toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
+});
 
 // Add or update entries here; the page re-sorts and re-files them automatically.
 const catalysts: Catalyst[] = [
@@ -145,7 +154,8 @@ const jsonLd = {
   name: 'Regulatory watch — Melanotan II & melanocortin photoprotection',
   description:
     'A living tracker of the U.S. and global regulatory status of Melanotan II and the melanocortin agonists (afamelanotide, dersimelagon) developed for photoprotective use — dated catalysts, settled milestones, and jurisdiction-by-jurisdiction status.',
-  dateModified: '2026-10-04',
+  datePublished: datePublishedISO,
+  dateModified: lastReviewedISO,
   isPartOf: { '@id': new URL('/#record', Astro.site).href, name: 'The Record' },
 };
 ---

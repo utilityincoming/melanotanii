@@ -101,18 +101,18 @@ depends entirely on this result and the one after it.
 <text x="294" y="298" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">general public</text>
 <rect x="294" y="330" width="130" height="26" rx="13" fill="none" stroke="#B7AC9C" stroke-width="1.4"/>
 <text x="359" y="347" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#8A8275">&#8212; UNTESTED</text>
-<!-- Column 3: cosmetic tan (not a medical question) -->
-<rect x="520" y="92" width="220" height="282" rx="4" fill="#9E4A3A" fill-opacity="0.07" stroke="#9E4A3A" stroke-width="1.4" stroke-dasharray="5 5"/>
-<text x="534" y="122" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#8f4234">Tan healthy skin,</text>
-<text x="534" y="142" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#8f4234">cosmetically?</text>
-<text x="534" y="178" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.06em" fill="#9E4A3A">WHAT IT MEASURES</text>
-<text x="534" y="198" font-family="'Archivo',sans-serif" font-size="11.5" fill="#6a473f">Never a clinical</text>
-<text x="534" y="214" font-family="'Archivo',sans-serif" font-size="11.5" fill="#6a473f">endpoint, in any program</text>
-<text x="534" y="262" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.06em" fill="#9E4A3A">IN WHOM</text>
-<text x="534" y="282" font-family="'Archivo',sans-serif" font-size="11.5" fill="#6a473f">The gray market&#8217;s</text>
-<text x="534" y="298" font-family="'Archivo',sans-serif" font-size="11.5" fill="#6a473f">customers</text>
-<rect x="534" y="330" width="190" height="26" rx="13" fill="none" stroke="#9E4A3A" stroke-width="1.4"/>
-<text x="629" y="347" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#9E4A3A">&#10007; NOT A MEDICAL QUESTION</text>
+<!-- Column 3: cosmetic tan (not a medical question) — muted tan, solid border to distinguish from the dashed "untested" column -->
+<rect x="520" y="92" width="220" height="282" rx="4" fill="none" stroke="#B7AC9C" stroke-width="1.4"/>
+<text x="534" y="122" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#6b6456">Tan healthy skin,</text>
+<text x="534" y="142" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#6b6456">cosmetically?</text>
+<text x="534" y="178" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.06em" fill="#8A8275">WHAT IT MEASURES</text>
+<text x="534" y="198" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">Never a clinical</text>
+<text x="534" y="214" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">endpoint, in any program</text>
+<text x="534" y="262" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.06em" fill="#8A8275">IN WHOM</text>
+<text x="534" y="282" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">The gray market&#8217;s</text>
+<text x="534" y="298" font-family="'Archivo',sans-serif" font-size="11.5" fill="#5A4F44">customers</text>
+<rect x="534" y="330" width="190" height="26" rx="13" fill="none" stroke="#B7AC9C" stroke-width="1.4"/>
+<text x="629" y="347" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#8A8275">&#10007; NOT A MEDICAL QUESTION</text>
 <text x="40" y="402" font-family="'Archivo',sans-serif" font-size="11.5" font-style="italic" fill="#5A4F44">A result in the left column is not an answer to the middle or the right one.</text>
 </svg>
 <figcaption>CUV105 measures repigmentation of diseased skin. That is a different question from sun-damage prevention, and a different question again from cosmetic tanning — which was never a clinical endpoint anywhere.</figcaption>

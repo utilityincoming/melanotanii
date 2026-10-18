@@ -12,7 +12,9 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
+    "@resvg/resvg-js": "^2.6.2",
     "@vercel/analytics": "^2.0.1",
-    "astro": "^7.3.2"
+    "astro": "^7.3.2",
+    "satori": "^0.12.1"
   }
 }

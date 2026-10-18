@@ -5,10 +5,6 @@ description: "The CUV105 vitiligo readout is the year's biggest melanocortin dat
 pubDate: 2026-12-15
 draft: true
 cluster: next-agonist
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide (Scenesse)"
-    note: "the approved MC1R agonist, in depth"
 faq:
   - q: "Did the vitiligo trial prove Melanotan works for tanning?"
     a: "No. A vitiligo trial measures whether skin that has lost its pigment can be repigmented in people with an autoimmune depigmenting disease. It does not measure sun-damage prevention, and it does not test cosmetic tanning in healthy people. A positive vitiligo result widens the drug's disease label, not its use as a tan."

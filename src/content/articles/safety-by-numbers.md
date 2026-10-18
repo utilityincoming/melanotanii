@@ -13,10 +13,6 @@ faq:
     a: "Because mandatory adverse-event reporting attaches to licensed medicines, and this product is not one. Harm surfaces only when it is dramatic enough to become a case report or an emergency admission. Australia's entire counted adverse-event file ran to 89 reports across 2022–2025 — which is what triggered its 2026 move to Schedule 9. Eighty-nine reports either proves a benign drug or proves a counting system that barely counts; you cannot tell which, and that is the problem."
   - q: "Does twenty years of gray-market use prove Melanotan II is safe?"
     a: "No. Twenty years of unlicensed use produce years, not data. Compare the closest approved relative: bremelanotide, an FDA-approved melanocortin agonist descended from the same research line, which won approval in 2019 on trials that enrolled 1,247 women — a small number, but every one of them counted, dosed, and watched. Volume and evidence are different things, and only one of them has ever existed for Melanotan II."
-seeAlso:
-  - href: "https://melanocortin.com/effects"
-    label: "Why the agonists make you queasy and tan"
-    note: "the mechanism behind the effects that do get reported"
 ---
 
 Underneath nearly every defense of Melanotan II sits the same load-bearing

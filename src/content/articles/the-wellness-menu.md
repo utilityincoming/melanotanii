@@ -9,13 +9,6 @@ faq:
     a: "No. Wellness clinics now list it among longevity peptides with claims of fat loss, hormone balance and vitality, but it is approved nowhere for anything. The pitch borrows real melanocortin receptor science — a mechanism that exists in a dish — and attaches it to an unmeasured, non-selective vial that is not a medicine."
   - q: "What are the real approved melanocortin drugs?"
     a: "Three: afamelanotide (Scenesse), an MC1R implant for the rare disease EPP; bremelanotide (Vyleesi), for low sexual desire in premenopausal women; and setmelanotide (Imcivree), for three ultra-rare genetic obesity disorders. Each is selective, narrowly indicated and sold with mandated monitoring — the opposite of the wellness-menu vial."
-seeAlso:
-  - href: "https://melanocortin.com/receptors"
-    label: "The melanocortin receptor family"
-    note: "what each receptor actually does"
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide"
-    note: "the approved MC1R-selective drug, on the science hub"
 ---
 
 The market has changed costume before. The forum era sold a vial to the

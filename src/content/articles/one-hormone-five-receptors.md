@@ -9,13 +9,6 @@ faq:
     a: "Because it is a non-selective agonist that hits the whole melanocortin receptor family with real potency: MC1R gave the tan, MC4R the appetite suppression and (via central pathways) the libido effects, and broad central activity the nausea, flushing and yawning. It 'did everything' because it hit everything, largely sparing only MC2R."
   - q: "Are melanocortin receptors the same as melatonin receptors?"
     a: "No. The five melanocortin receptors (MC1R–MC5R) are what Melanotan acts on. They are not the MT1 and MT2 melatonin receptors the sound-alike name gets confused with. Melatonin is a completely different molecule with nothing to do with pigment."
-seeAlso:
-  - href: "https://melanocortin.com/receptors"
-    label: "The five melanocortin receptors"
-    note: "MC1R to MC5R, one receptor at a time"
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "how POMC becomes the whole signal"
 ---
 
 The forum lore around Melanotan II always emphasized its odd bundle of

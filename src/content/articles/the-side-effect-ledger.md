@@ -9,10 +9,6 @@ faq:
     a: "Sorted by evidence: acute effects that follow reliably (nausea and sometimes vomiting, facial flushing, spontaneous erections in men, appetite suppression, a yawning-and-stretching reflex); pigment effects (darkening moles, new freckles, dark nail bands); and rare serious events in the literature (priapism, systemic toxicity after overdose, and melanoma reports with causation unresolved)."
   - q: "Is Melanotan II proven safe for long-term use?"
     a: "No. The formal human trials were small, short and decades old. Years of real-world use, at real exposures, in stacked combinations, has never been formally studied. 'No documented harm' there means nobody collected the data — absence of evidence, not evidence of absence."
-seeAlso:
-  - href: "https://melanocortin.com/effects"
-    label: "Why the agonists make you queasy and tan"
-    note: "the mechanism behind the effects"
 ---
 
 Honest accounting cuts both ways. Overstating Melanotan II's dangers is as

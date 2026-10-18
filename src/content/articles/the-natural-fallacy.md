@@ -4,13 +4,6 @@ serpTitle: "Is Melanotan II natural? What α-MSH actually does"
 description: "Melanotan II is sold as a 'natural' hormone your body already makes. It mimics α-MSH — but your body keeps that signal local and brief for a reason."
 pubDate: 2026-08-30
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "the natural signal, on the science hub"
-  - href: "https://melanocortin.com/receptors"
-    label: "The melanocortin receptor family"
-    note: "what each of the five receptors does"
 faq:
   - q: "Is Melanotan II natural because the body makes α-MSH?"
     a: "No. Your body makes α-MSH, but Melanotan II is a re-engineered analog — deliberately altered to resist breakdown and act longer and more broadly than the natural signal. 'Based on a natural hormone' is not the same as natural, and the edits are the whole point."

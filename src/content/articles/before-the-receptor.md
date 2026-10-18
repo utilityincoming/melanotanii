@@ -4,13 +4,6 @@ serpTitle: "How Melanotan II was designed before its receptors existed"
 description: "Melanotan II was designed before its receptors were discovered — using frog-skin assays and two amino-acid swaps that made a superpotent α-MSH analog."
 pubDate: 2026-09-13
 cluster: history
-seeAlso:
-  - href: "https://melanocortin.com/receptors"
-    label: "The five melanocortin receptors"
-    note: "the family cloned in 1992 — a decade after the chemistry"
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "α-MSH and the signal the Arizona team was amplifying blind"
 faq:
   - q: "Who invented Melanotan II?"
     a: "Melanotan II was designed in the 1980s at the University of Arizona by the chemist Victor Hruby and the biologist Mac Hadley, with colleague Fahad Al-Obeidi among the named inventors. They were building stable, long-acting analogs of α-MSH, the body's own pigment signal."

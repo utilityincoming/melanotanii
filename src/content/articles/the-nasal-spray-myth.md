@@ -4,10 +4,6 @@ serpTitle: "Melanotan II nasal spray: is needle-free safer? No"
 description: "A Melanotan II nasal spray changes the packaging, not the molecule. Why 'needle-free' removes the one thing an injection gives — a known dose."
 pubDate: 2026-09-29
 cluster: cautionary-tale
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the molecule's chemistry, on the science hub"
 faq:
   - q: "Is a Melanotan II nasal spray safer than injecting?"
     a: "No. The nasal spray contains the same unapproved peptide, with the same documented harms and the same lack of any tested product behind it. Removing the needle changes the packaging, not the molecule. It also removes the one thing an injection gives you — a known volume — because absorption across the nasal lining is erratic and unmeasured."
@@ -29,7 +25,7 @@ know least about what you actually received.
 Start with the molecule, because the route never touches it. Melanotan
 II is the same cyclic peptide whether it arrives through a needle or a
 nostril: the same unapproved compound, the same non-selective hit across
-the [melanocortin receptors](https://melanocortin.com/melanotan), the
+the melanocortin receptors, the
 same [documented harms](/articles/the-side-effect-ledger/) — nausea,
 flushing, blood-pressure swings, and the darkening and change of moles
 that gives dermatology its [real objection](/articles/the-mole-problem/).

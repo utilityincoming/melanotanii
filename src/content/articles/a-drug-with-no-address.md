@@ -9,10 +9,6 @@ faq:
     a: "Because of where it goes and how long it lasts. A subcutaneous dose is absorbed into the general circulation and, engineered to resist the enzymes that erase the body's own α-MSH in minutes, it persists for hours — reaching every melanocortin receptor in the body, brain included, more or less at once. The molecule has no address, so it isn't aimed at the skin; it's broadcast everywhere."
   - q: "Are Melanotan II's side effects caused by bad batches?"
     a: "No. The nausea, flushing and arousal are not contaminants or dosing mistakes — they are the pharmacology of a stable, systemic, non-selective agonist behaving exactly as it must. A perfectly pure, correctly synthesised vial delivers them just the same."
-seeAlso:
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "the natural signal this molecule was built to outlast"
 ---
 
 Here is the puzzle at the center of the whole Melanotan story. A single small

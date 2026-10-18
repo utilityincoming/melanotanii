@@ -4,13 +4,6 @@ serpTitle: "Melanocortin drugs in development 2026: dersimelagon & afamelanotide
 description: "A 2026 snapshot of the melanocortin drugs in real development: an oral MC1R agonist near FDA decision, and an approved one expanding into vitiligo and repair."
 pubDate: 2026-09-24
 cluster: next-agonist
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide (Scenesse)"
-    note: "the approved MC1R agonist, in depth"
-  - href: "https://melanocortin.com/dersimelagon"
-    label: "Dersimelagon (MT-7117)"
-    note: "the oral MC1R agonist, in depth"
 faq:
   - q: "Is there an oral Melanotan-type drug in development?"
     a: "Yes. Dersimelagon (MT-7117) is a non-peptide, orally available melanocortin-1 receptor agonist from Tanabe Pharma. It met its primary endpoint in the global Phase 3 INSPIRE study and is under FDA priority review for erythropoietic protoporphyria and X-linked protoporphyria, with a decision expected around the end of February 2027. It is not a tanning product for healthy people."

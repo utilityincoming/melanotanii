@@ -9,10 +9,6 @@ faq:
     a: "Because the molecule and the money live at different addresses. Clinuvel owns the approved photoprotective but runs a rare-disease business — ~$61m a year from EPP implants — and is spending its surplus on a vitiligo trial and a cosmetics line, not a prevention NDA. The firms with outcomes-trial budgets, like the GLP-1 sponsors, don't own the molecule or have a reason to build it."
   - q: "Why doesn't the GLP-1 success story apply here?"
     a: "The analogy holds for beachheads, delivery engineering and the gray market — but it breaks at reimbursement. Obesity became a billable indication, so insurers could be argued into covering the weekly pen. No health system reimburses looking tan: sunscreen is already the cheap standard of care, so a prevention trial has no payer at the far end, which is what funded GLP-1's mountain."
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide (Scenesse)"
-    note: "the approved MC1R agonist, in depth"
 ---
 
 *Analysis. The [prevention-trial piece](/articles/the-prevention-trial-problem/)

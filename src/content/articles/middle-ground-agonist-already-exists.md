@@ -9,10 +9,6 @@ faq:
     a: "Yes — afamelanotide, sold as Scenesse, which is chemically the original Melanotan I. The EU approved it in 2014 and the FDA in 2019. But it is approved only for the rare genetic disorder EPP, shipped as a clinic-administered implant at rare-disease prices, so virtually no one else can get it. The molecule cleared the bar; the indication is what's narrow."
   - q: "Why isn't there a sun-protection drug for the general public?"
     a: "Not because of chemistry — because of trials economics. Proving a drug prevents skin cancer in healthy people needs enormous cohorts followed for years; the safety bar for dosing well people is far stricter; and a clinic implant is the wrong delivery format for mass use. The gap is institutional, not scientific."
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide (Scenesse)"
-    note: "the approved MC1R agonist, in depth"
 ---
 
 Here is the fact that reframes the entire Melanotan story: a safe-enough,

@@ -9,10 +9,6 @@ faq:
     a: "No. A titration schedule is precise arithmetic performed on an unknown quantity. When Australia's regulator tested five nasal-spray bottles labelled 30 mg, the actual content ranged from 22 to 54 mg — so every number computed downstream of the label inherits an error of more than double."
   - q: "Why can't a careful titration schedule make Melanotan II safe?"
     a: "Because a real dosing protocol is a contract between three parties: a verified label, pharmacology measured in patients, and a licensed prescriber. The gray-market guide borrows the vocabulary of all three and supplies none — the label is a disclaimer, the pharmacology is forum anecdote, the prescriber is a stranger in a thread."
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the molecule the protocols pretend to control"
 ---
 
 Every serious Melanotan II guide on the internet has the same shape.

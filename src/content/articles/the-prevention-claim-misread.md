@@ -4,13 +4,6 @@ serpTitle: "Does Melanotan II prevent skin cancer? What the trials showed"
 description: "'Melanotan prevents skin cancer' is a caption-level fact. The trials never tested that. What the evidence shows, what the claim sells, and the gap between."
 pubDate: 2026-08-30
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/receptors/mc1r"
-    label: "MC1R"
-    note: "the receptor at the centre of the claim"
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide"
-    note: "the only tested photoprotective agonist, on the science hub"
 faq:
   - q: "Does Melanotan II prevent skin cancer?"
     a: "There is no evidence that it does. Cancer prevention was the original 1980s hypothesis behind the peptide, but it was never tested in a trial. No study has measured whether Melanotan II lowers skin-cancer risk."

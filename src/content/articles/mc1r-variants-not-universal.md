@@ -9,10 +9,6 @@ faq:
     a: "No. MC1R is not a two-position switch but a dimmer with dozens of variants: strong 'R' red-hair-colour alleles, and common quieter 'r' alleles (V60L, V92M, R163Q) carried by people who are fair but not red-haired. The response runs across a spectrum, and most of the extra melanoma risk sits in the quiet majority, not the redheads."
   - q: "Would a melanocortin tanning drug work for everyone who burns?"
     a: "Not necessarily. The people a photoprotective agonist would most want to help are enriched for genotypes where the assumption fails — some MC1R variants trap the protein inside the cell, others reach the surface but can't couple. An agonist cannot rescue a receptor that never arrived. Need and receptor response partly run in opposite directions."
-seeAlso:
-  - href: "https://melanocortin.com/receptors/mc1r"
-    label: "MC1R: the pigment switch"
-    note: "the receptor reference in full"
 ---
 
 The [redhead article](/articles/why-redheads-burn-mc1r/) tells the clean

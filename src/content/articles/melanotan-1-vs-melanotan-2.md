@@ -4,10 +4,6 @@ serpTitle: "Melanotan I vs Melanotan II: two peptides, two fates"
 description: "Melanotan I vs Melanotan II: near-identical peptides from the same Arizona lab. One became an approved medicine; the other, the gray market's favorite. Why."
 pubDate: 2026-08-18
 cluster: history
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the pharmacology on the science hub"
 faq:
   - q: "What's the difference between Melanotan 1 and Melanotan 2?"
     a: "Melanotan 1 (Melanotan I, afamelanotide) is a linear peptide that mainly stimulates pigment; it was developed into an approved medicine for a rare light disorder. Melanotan 2 (Melanotan II) is a smaller cyclic peptide that hits several melanocortin receptors, which is why it also affects appetite and sexual arousal — and why it stayed in the gray market."

@@ -139,20 +139,6 @@ const faqLd = faq && faq.length > 0
       </nav>
     )}
 
-    {article.data.seeAlso && article.data.seeAlso.length > 0 && (
-      <aside class="see-also">
-        <h2>The underlying science</h2>
-        <p>The receptor-level reference behind this story, on our sister site melanocortin.com.</p>
-        <ul>
-          {article.data.seeAlso.map((s) => (
-            <li>
-              <a href={s.href} rel="noopener">{s.label}</a>
-              {s.note && <span class="note"> - {s.note}</span>}
-            </li>
-          ))}
-        </ul>
-      </aside>
-    )}
   </article>
   <style>
     article { padding-top: 2rem; }
@@ -229,15 +215,5 @@ const faqLd = faq && faq.length > 0
     .faq-item[open] summary::after { content: '\2013'; }
     .faq-item summary:hover { color: var(--uv); }
     .faq-item p { margin: 0.6rem 0 0.3rem; color: var(--ink-soft); font-size: 0.96rem; }
-
-    .see-also {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid color-mix(in srgb, var(--ink-soft) 30%, transparent);
-    }
-    .see-also h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
-    .see-also > p { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 1rem; }
-    .see-also ul { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 0.6rem; }
-    .see-also .note { color: var(--ink-soft); }
   </style>
 </Base>

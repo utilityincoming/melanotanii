@@ -4,6 +4,11 @@ serpTitle: "Why Melanotan II went underground: a want, not a need"
 description: "Why Melanotan II became the most self-injected unapproved drug: it served a want, not a need — and wants don't wait for clinical trials."
 pubDate: 2026-08-18
 cluster: culture
+faq:
+  - q: "Why did Melanotan II become a gray-market drug instead of an approved one?"
+    a: "Because it served a want, not a need. Selling a tan as protection means proving a prevention claim — a decade-long trial in tens of thousands of people — which no company would fund for a cosmetic. The approved route was a commercial dead end, so legitimate supply was zero and the demand filled the vacuum from unregulated sources."
+  - q: "Why is a 'want, not a need' market especially dangerous?"
+    a: "A need-driven gray market (smuggled insulin, generic HIV drugs) recruits people weighing genuine stakes. A want-driven one has no such ballast: the upside is a slightly faster tan, the downside is changing moles and an unresolved melanoma question, a vial nobody has verified, and the rest of the side-effect ledger. The cosmetic framing hides how lopsided that trade is."
 ---
 
 Most drugs that reach people through back channels are treating something.

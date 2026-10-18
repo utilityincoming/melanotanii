@@ -4,6 +4,11 @@ serpTitle: "Melanocortin receptors: why Melanotan II does more than tan"
 description: "Why Melanotan II tans, suppresses appetite, and affects libido at once: one non-selective agonist hitting all five melanocortin receptors."
 pubDate: 2026-08-18
 cluster: science
+faq:
+  - q: "Why did Melanotan II do so much more than tan?"
+    a: "Because it is a non-selective agonist that hits the whole melanocortin receptor family with real potency: MC1R gave the tan, MC4R the appetite suppression and (via central pathways) the libido effects, and broad central activity the nausea, flushing and yawning. It 'did everything' because it hit everything, largely sparing only MC2R."
+  - q: "Are melanocortin receptors the same as melatonin receptors?"
+    a: "No. The five melanocortin receptors (MC1R–MC5R) are what Melanotan acts on. They are not the MT1 and MT2 melatonin receptors the sound-alike name gets confused with. Melatonin is a completely different molecule with nothing to do with pigment."
 seeAlso:
   - href: "https://melanocortin.com/receptors"
     label: "The five melanocortin receptors"

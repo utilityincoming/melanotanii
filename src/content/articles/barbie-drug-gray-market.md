@@ -4,6 +4,13 @@ serpTitle: "The Barbie drug: how Melanotan II built a gray market"
 description: "Never approved anywhere, Melanotan II sold anyway — through forums, gyms, and 'research chemical' sites. How the gray market formed, and what it costs."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+faq:
+  - q: "Is Melanotan II approved or legal?"
+    a: "Melanotan II has never been approved by any regulator, anywhere, for any use. Its legal status varies by country: the UK, Ireland and the US restrict sale and supply, while Australia has gone furthest and made even possession a criminal offence. 'Unapproved' is the one status that holds everywhere."
+  - q: "Why is Melanotan II called the Barbie drug?"
+    a: "It is a media nickname, coined for the combination of effects advertised in a single vial — tanning, appetite suppression and libido effects. The label describes the marketing pitch, not a verified or approved product."
+  - q: "What are the main risks of gray-market Melanotan II?"
+    a: "Three documented ones: nobody verifies what is actually in the vial (purity, content and contamination are unregulated), it darkens and changes moles in ways that can hide early melanoma, and there is no safety data at the doses and durations people actually use."
 ---
 
 Melanotan II holds an unusual distinction: it may be the most widely

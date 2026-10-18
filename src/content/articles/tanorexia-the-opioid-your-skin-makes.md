@@ -4,6 +4,11 @@ serpTitle: "Tanorexia and the opioid your skin makes in the sun"
 description: "UV light makes skin manufacture its own opioid — the hidden reward inside every tan. The science of tanning dependence, and what it says about Melanotan."
 pubDate: 2026-08-18
 cluster: culture
+faq:
+  - q: "Can you really be addicted to tanning?"
+    a: "There is a biological basis for it. UV light drives skin cells to make POMC, which is cut into α-MSH (the tan) and β-endorphin (an opioid in morphine's family). In a 2014 Cell study, UV-habituated mice went into opioid withdrawal when given naloxone; a small 2006 human trial of the blocker naltrexone pointed the same way. 'Tanorexia' is not a settled diagnosis, but the reward is real."
+  - q: "Does Melanotan II give the same reward as sunbathing?"
+    a: "No. Melanotan II mimics α-MSH and drives the pigment half of the circuit, but it is a receptor agonist, not a dose of UV, so it does not release the β-endorphin reward directly. It didn't need to — it arrived into a demand the sun's reward loop and a century of fashion had already built."
 ---
 
 Every other section of this site can tell you what Melanotan II *is*, where it

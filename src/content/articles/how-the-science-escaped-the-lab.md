@@ -4,6 +4,11 @@ serpTitle: "How Melanotan II escaped the lab: patents and the gray market"
 description: "Melanotan II's recipe was published in journals and patents, then orphaned by its developers. Public structure plus real demand made the gray market inevitable."
 pubDate: 2026-08-18
 cluster: history
+faq:
+  - q: "How did Melanotan II end up on the gray market?"
+    a: "Not through any single bad actor. Its structure was published in journals and patents — which for a peptide doubles as manufacturing instructions — while its developers narrowed to a rare disease and a libido drug. A public recipe, a real demand, and an empty legitimate shelf were enough on their own."
+  - q: "Can a published drug molecule ever be taken back?"
+    a: "No. Once the sequence and cyclization are in the literature, any competent peptide-synthesis lab can make the compound, and there is no way to un-publish a molecule. The same disclosure that lets a company develop a drug lets an unregulated supplier copy it."
 ---
 
 Gray markets don't appear because a substance is evil. They appear because a

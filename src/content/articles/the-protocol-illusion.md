@@ -4,6 +4,11 @@ serpTitle: "Melanotan II dosing guides: why the protocols can't work"
 description: "Online Melanotan II guides carry titration schedules, reconstitution math, maintenance plans. The numbers are theatre — arithmetic on an unknown vial."
 pubDate: 2026-08-30
 cluster: cautionary-tale
+faq:
+  - q: "Are online Melanotan II dosing protocols reliable?"
+    a: "No. A titration schedule is precise arithmetic performed on an unknown quantity. When Australia's regulator tested five nasal-spray bottles labelled 30 mg, the actual content ranged from 22 to 54 mg — so every number computed downstream of the label inherits an error of more than double."
+  - q: "Why can't a careful titration schedule make Melanotan II safe?"
+    a: "Because a real dosing protocol is a contract between three parties: a verified label, pharmacology measured in patients, and a licensed prescriber. The gray-market guide borrows the vocabulary of all three and supplies none — the label is a disclaimer, the pharmacology is forum anecdote, the prescriber is a stranger in a thread."
 seeAlso:
   - href: "https://melanocortin.com/melanotan"
     label: "Melanotan and Melanotan II"

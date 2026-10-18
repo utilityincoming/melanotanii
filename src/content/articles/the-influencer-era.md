@@ -4,6 +4,11 @@ serpTitle: "Melanotan nasal sprays on TikTok: the influencer era"
 description: "How Melanotan II went viral: nasal sprays, flavored drops, and the TikTok 'vacation peptide' re-packaged an unregulated injectable for the open market."
 pubDate: 2026-08-18
 cluster: culture
+faq:
+  - q: "Why are Melanotan nasal sprays all over TikTok, and are they safe?"
+    a: "Social media restyled a bodybuilding-forum injectable as a scrollable wellness treat — nasal sprays and flavoured drops ('vacation peptide,' peach and bubblegum), aimed at a far younger audience than the forums reached. The pharmacology didn't change: every documented harm rode along, and the inhaled sprays added respiratory irritation serious enough to hospitalise some users."
+  - q: "How can an unapproved drug be advertised so openly?"
+    a: "In the UK it falls through a gap between two rulebooks. It is illegal to sell as a medicine, so sellers market it as a cosmetic — but cosmetics law doesn't cover it either, so it skips the checks real cosmetics face. And while selling is illegal, using is not, so the buyer breaks no law. The product lives in the gap."
 ---
 
 The [forum era](/articles/barbie-drug-gray-market/) sold Melanotan II to a

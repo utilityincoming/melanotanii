@@ -4,6 +4,11 @@ serpTitle: "Tanorexia and the opioid your skin makes in the sun"
 description: "UV light makes skin manufacture its own opioid — the hidden reward inside every tan. The science of tanning dependence, and what it says about Melanotan."
 pubDate: 2026-08-18
 cluster: culture
+faq:
+  - q: "Can you really be addicted to tanning?"
+    a: "There is a biological basis for it. UV light drives skin cells to make POMC, which is cut into α-MSH (the tan) and β-endorphin (an opioid in morphine's family). In a 2014 Cell study, UV-habituated mice went into opioid withdrawal when given naloxone; a small 2006 human trial of the blocker naltrexone pointed the same way. 'Tanorexia' is not a settled diagnosis, but the reward is real."
+  - q: "Does Melanotan II give the same reward as sunbathing?"
+    a: "No. Melanotan II mimics α-MSH and drives the pigment half of the circuit, but it is a receptor agonist, not a dose of UV, so it does not release the β-endorphin reward directly. It didn't need to — it arrived into a demand the sun's reward loop and a century of fashion had already built."
 ---
 
 Every other section of this site can tell you what Melanotan II *is*, where it
@@ -46,7 +51,7 @@ tan is the visible product. The endorphin is the hidden one.
 <line x1="112" y1="150" x2="156" y2="150" stroke="#17130E" stroke-width="1.4" marker-end="url(#ac1)"/>
 <rect x="160" y="126" width="120" height="48" rx="8" fill="#FFFFFF" stroke="#D8C3AA" stroke-width="1"/>
 <text x="220" y="147" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="500" fill="#17130E">skin cell</text>
-<text x="220" y="163" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">keratinocyte</text>
+<text x="220" y="163" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">keratinocyte</text>
 <line x1="280" y1="150" x2="322" y2="150" stroke="#17130E" stroke-width="1.4" marker-end="url(#ac1)"/>
 <rect x="326" y="126" width="96" height="48" rx="8" fill="#17130E"/>
 <text x="374" y="149" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#FBFAF7">POMC</text>

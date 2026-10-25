@@ -4,10 +4,11 @@ serpTitle: "Melanotan II dosing guides: why the protocols can't work"
 description: "Online Melanotan II guides carry titration schedules, reconstitution math, maintenance plans. The numbers are theatre — arithmetic on an unknown vial."
 pubDate: 2026-08-30
 cluster: cautionary-tale
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the molecule the protocols pretend to control"
+faq:
+  - q: "Are online Melanotan II dosing protocols reliable?"
+    a: "No. A titration schedule is precise arithmetic performed on an unknown quantity. When Australia's regulator tested five nasal-spray bottles labelled 30 mg, the actual content ranged from 22 to 54 mg — so every number computed downstream of the label inherits an error of more than double."
+  - q: "Why can't a careful titration schedule make Melanotan II safe?"
+    a: "Because a real dosing protocol is a contract between three parties: a verified label, pharmacology measured in patients, and a licensed prescriber. The gray-market guide borrows the vocabulary of all three and supplies none — the label is a disclaimer, the pharmacology is forum anecdote, the prescriber is a stranger in a thread."
 ---
 
 Every serious Melanotan II guide on the internet has the same shape.
@@ -76,7 +77,7 @@ guess.
 <rect x="498" y="112" width="286" height="62" rx="5" fill="#A6431F" fill-opacity="0.06"/>
 <rect x="498" y="112" width="4" height="62" rx="2" fill="#A6431F"/>
 <text x="36" y="140" font-family="'Archivo',sans-serif" font-size="12.5" font-weight="600" fill="#17130E">The label</text>
-<text x="36" y="157" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">what&#8217;s in the vial</text>
+<text x="36" y="157" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">what&#8217;s in the vial</text>
 <path d="M212 143 l4 5 l9 -12" fill="none" stroke="#8A6A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="234" y="147" font-family="'Archivo',sans-serif" font-size="11.5" fill="#17130E">Verified contents, audited</text>
 <path d="M514 137 l12 12 M526 137 l-12 12" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
@@ -87,7 +88,7 @@ guess.
 <rect x="498" y="182" width="286" height="62" rx="5" fill="#A6431F" fill-opacity="0.06"/>
 <rect x="498" y="182" width="4" height="62" rx="2" fill="#A6431F"/>
 <text x="36" y="210" font-family="'Archivo',sans-serif" font-size="12.5" font-weight="600" fill="#17130E">The pharmacology</text>
-<text x="36" y="227" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">how the dose was derived</text>
+<text x="36" y="227" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">how the dose was derived</text>
 <path d="M212 213 l4 5 l9 -12" fill="none" stroke="#8A6A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="234" y="217" font-family="'Archivo',sans-serif" font-size="11.5" fill="#17130E">Measured in real patients</text>
 <path d="M514 207 l12 12 M526 207 l-12 12" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
@@ -98,7 +99,7 @@ guess.
 <rect x="498" y="252" width="286" height="62" rx="5" fill="#A6431F" fill-opacity="0.06"/>
 <rect x="498" y="252" width="4" height="62" rx="2" fill="#A6431F"/>
 <text x="36" y="280" font-family="'Archivo',sans-serif" font-size="12.5" font-weight="600" fill="#17130E">The prescriber</text>
-<text x="36" y="297" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">who adjusts the contract</text>
+<text x="36" y="297" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">who adjusts the contract</text>
 <path d="M212 283 l4 5 l9 -12" fill="none" stroke="#8A6A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="234" y="287" font-family="'Archivo',sans-serif" font-size="11.5" fill="#17130E">A licensed clinician</text>
 <path d="M514 277 l12 12 M526 277 l-12 12" stroke="#A6431F" stroke-width="2" stroke-linecap="round"/>
@@ -108,7 +109,7 @@ guess.
 <text x="410" y="359" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#17130E">The arithmetic is real. The premises are fiction.</text>
 <!-- TGA note -->
 <line x1="36" y1="398" x2="784" y2="398" stroke="#EDE7DE" stroke-width="1"/>
-<text x="410" y="420" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">When a regulator tested five labelled bottles, the real content varied by more than double. &#8212; TGA, Aug 2026</text>
+<text x="410" y="420" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">When a regulator tested five labelled bottles, the real content varied by more than double. &#8212; TGA, Aug 2026</text>
 </svg>
 <figcaption>A dosing protocol is not a number; it is a contract between a verified label, a measured pharmacology, and a licensed prescriber. The gray-market guide keeps the format and supplies none of the three &mdash; which is why the titration math is precision applied to a guess.</figcaption>
 </figure>

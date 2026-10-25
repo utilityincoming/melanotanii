@@ -4,6 +4,11 @@ serpTitle: "Is Melanotan II legal in the U.S.? Three regulatory doors"
 description: "Is Melanotan II legal in the U.S.? It's unapproved — but the technology isn't. The three doors: FDA approval, compounding, and the gray market."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "Is Melanotan II legal in the United States?"
+    a: "Melanotan II is not approved by the FDA for any use. There are three regulatory doors: FDA approval (open — SCENESSE walked through it in 2019), pharmacy compounding (shut for Melanotan II, placed in restricted 'Category 2,' with an FDA advisory-committee review due around February 2027), and the gray market (illegal). Melanotan II flows only through the third."
+  - q: "Has the FDA ever approved a melanocortin sun drug?"
+    a: "Yes. In October 2019 the FDA approved SCENESSE (afamelanotide), a selective MC1R agonist that protects skin by driving it to make more eumelanin, for the rare disease EPP. That settles the existential question — a melanocortin agonist which protects skin by increasing pigment is approvable. The front door opens."
 ---
 
 The gray market makes Melanotan II look like the whole story of melanocortin
@@ -50,7 +55,7 @@ Here it is something else: the proof that the front door opens.
 <text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Three ways a melanocortin sun drug reaches Americans &#8212; only one is a real medicine.</text>
 <rect x="60" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#2F6A52" stroke-width="1.5"/>
 <text x="160" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#2F6A52">FDA APPROVAL</text>
-<text x="160" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">NDA / orphan drug</text>
+<text x="160" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">NDA / orphan drug</text>
 <rect x="122" y="166" width="76" height="22" rx="11" fill="#2F6A52"/>
 <text x="160" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#FBFAF7">OPEN</text>
 <text x="160" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">The evidence-heavy</text>
@@ -61,7 +66,7 @@ Here it is something else: the proof that the front door opens.
 <text x="160" y="309" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#2F6A52">through it in 2019</text>
 <rect x="290" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#503296" stroke-width="1.5"/>
 <text x="390" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#503296">COMPOUNDING</text>
-<text x="390" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">503A / 503B pharmacy</text>
+<text x="390" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">503A / 503B pharmacy</text>
 <rect x="326" y="166" width="128" height="22" rx="11" fill="#503296"/>
 <text x="390" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11.5" font-weight="700" fill="#FBFAF7">RESTRICTED</text>
 <text x="390" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Category 2 &#8212; &#8220;serious</text>
@@ -72,7 +77,7 @@ Here it is something else: the proof that the front door opens.
 <text x="390" y="309" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#503296">&#8212; 2027</text>
 <rect x="520" y="100" width="200" height="230" rx="14" fill="#FFFFFF" stroke="#A6431F" stroke-width="1.5"/>
 <text x="620" y="132" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" font-weight="700" letter-spacing="0.04em" fill="#A6431F">GRAY MARKET</text>
-<text x="620" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">&#8220;research chemical&#8221;</text>
+<text x="620" y="150" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">&#8220;research chemical&#8221;</text>
 <rect x="580" y="166" width="80" height="22" rx="11" fill="#A6431F"/>
 <text x="620" y="181" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#FBFAF7">ILLEGAL</text>
 <text x="620" y="216" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Unregulated. Where</text>
@@ -128,7 +133,7 @@ tractable trial with sick patients and a measurable endpoint. So approvals land
 on disease first, and the sunshine case follows behind.
 
 That expansion is happening right now, with the very same molecule. Clinuvel's
-[CUV105](/articles/the-vitiligo-readout/) is a Phase III trial of afamelanotide in **vitiligo**, fully enrolled at
+CUV105 is a Phase III trial of afamelanotide in **vitiligo**, fully enrolled at
 more than 200 patients, with topline results expected in December 2026 and a
 pivotal follow-up trial planned to begin the same year — with regulatory
 engagement that explicitly includes North America. One melanocortin agonist,

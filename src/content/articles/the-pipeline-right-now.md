@@ -5,13 +5,6 @@ description: "A 2026 snapshot of the melanocortin drugs in real development: an 
 pubDate: 2026-09-24
 updatedDate: 2026-10-25
 cluster: next-agonist
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide (Scenesse)"
-    note: "the approved MC1R agonist, in depth"
-  - href: "https://melanocortin.com/dersimelagon"
-    label: "Dersimelagon (MT-7117)"
-    note: "the oral MC1R agonist, in depth"
 faq:
   - q: "Is there an oral Melanotan-type drug in development?"
     a: "Yes. Dersimelagon (MT-7117) is an investigational once-daily oral MC1R agonist. Tanabe ran the program; LEO Pharma said on 18 September 2026 that it had acquired worldwide rights and that the FDA had accepted the application under priority review for erythropoietic protoporphyria and X-linked protoporphyria, with a decision by the end of February 2027. It is not approved, and it is not a tanning product."

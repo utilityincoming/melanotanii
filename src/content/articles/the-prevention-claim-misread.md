@@ -4,13 +4,6 @@ serpTitle: "Does Melanotan II prevent skin cancer? What the trials showed"
 description: "'Melanotan prevents skin cancer' is a caption-level fact. The trials never tested that. What the evidence shows, what the claim sells, and the gap between."
 pubDate: 2026-08-30
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/receptors/mc1r"
-    label: "MC1R"
-    note: "the receptor at the centre of the claim"
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide"
-    note: "the only tested photoprotective agonist, on the science hub"
 faq:
   - q: "Does Melanotan II prevent skin cancer?"
     a: "There is no evidence that it does. Cancer prevention was the original 1980s hypothesis behind the peptide, but it was never tested in a trial. No study has measured whether Melanotan II lowers skin-cancer risk."
@@ -173,21 +166,21 @@ research into the present tense of fact. What remains is the caption.
 <!-- chips -->
 <g font-family="'Archivo',sans-serif" font-size="11.5">
 <rect x="36" y="226" width="175" height="38" rx="6" fill="#FBFAF7" stroke="#E4DFD6"/>
-<text x="123" y="250" text-anchor="middle" fill="#8A8275">may reduce</text>
+<text x="123" y="250" text-anchor="middle" fill="#6E665A">may reduce</text>
 <line x1="60" y1="246" x2="187" y2="246" stroke="#A6431F" stroke-width="1.4"/>
 <rect x="227" y="226" width="175" height="38" rx="6" fill="#FBFAF7" stroke="#E4DFD6"/>
-<text x="314" y="250" text-anchor="middle" fill="#8A8275">does not prevent</text>
+<text x="314" y="250" text-anchor="middle" fill="#6E665A">does not prevent</text>
 <line x1="251" y1="246" x2="378" y2="246" stroke="#A6431F" stroke-width="1.4"/>
 <rect x="418" y="226" width="175" height="38" rx="6" fill="#FBFAF7" stroke="#E4DFD6"/>
-<text x="505" y="250" text-anchor="middle" fill="#8A8275">only in the lab</text>
+<text x="505" y="250" text-anchor="middle" fill="#6E665A">only in the lab</text>
 <line x1="442" y1="246" x2="569" y2="246" stroke="#A6431F" stroke-width="1.4"/>
 <rect x="609" y="226" width="175" height="38" rx="6" fill="#FBFAF7" stroke="#E4DFD6"/>
-<text x="696" y="250" text-anchor="middle" fill="#8A8275">never tested in people</text>
+<text x="696" y="250" text-anchor="middle" fill="#6E665A">never tested in people</text>
 <line x1="633" y1="246" x2="760" y2="246" stroke="#A6431F" stroke-width="1.4"/>
 </g>
 <!-- arrow + tense label -->
-<line x1="410" y1="276" x2="410" y2="306" stroke="#8A8275" stroke-width="1.4"/>
-<path d="M405 302 L410 312 L415 302 Z" fill="#8A8275"/>
+<line x1="410" y1="276" x2="410" y2="306" stroke="#6E665A" stroke-width="1.4"/>
+<path d="M405 302 L410 312 L415 302 Z" fill="#6E665A"/>
 <text x="410" y="330" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-style="italic" fill="#5A4F44">then shift the tense &#8212; the future of research becomes the present of fact</text>
 <!-- caption card -->
 <rect x="36" y="344" width="748" height="96" rx="6" fill="#A6431F" fill-opacity="0.08" stroke="#A6431F" stroke-opacity="0.55"/>
@@ -195,7 +188,7 @@ research into the present tense of fact. What remains is the caption.
 <text x="410" y="410" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="26" font-weight="600" fill="#A6431F">&#8220;Melanotan prevents skin cancer&#8221;</text>
 <!-- footer -->
 <line x1="36" y1="454" x2="784" y2="454" stroke="#EDE7DE" stroke-width="1"/>
-<text x="36" y="470" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">Every deleted phrase is a real finding of the literature. The caption keeps none of them.</text>
+<text x="36" y="470" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">Every deleted phrase is a real finding of the literature. The caption keeps none of them.</text>
 </svg>
 <figcaption>The prevention claim is the 2024 evidence with its qualifiers stripped and its tense changed. Each hedge the caption drops &mdash; <em>may reduce</em>, <em>does not prevent</em>, <em>only in the lab</em>, <em>never tested in people</em> &mdash; is the part that was actually established.</figcaption>
 </figure>

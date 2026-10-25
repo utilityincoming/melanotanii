@@ -4,10 +4,11 @@ serpTitle: "Melanotan II enforcement: what the warnings actually did"
 description: "Regulators seized sites, parcels, and sellers. Australia made possession a crime. The market moved to nasal sprays. Why enforcement keeps losing."
 pubDate: 2026-08-26
 cluster: cautionary-tale
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the pharmacology on the science hub"
+faq:
+  - q: "Is Melanotan II illegal?"
+    a: "It is approved nowhere, and sale or supply is restricted in the UK, Ireland and the US. Australia went furthest, moving it to Schedule 9 in February 2026 so that possession without a research licence is itself a crime. In the UK, nasal sprays sold without medical claims fall outside medicines law entirely."
+  - q: "Why hasn't enforcement stopped Melanotan II being sold?"
+    a: "Regulators can raise the cost of being a named seller — takedowns, border seizures, fines, one US felony — but they cannot invent the missing approved drug, and they cannot easily police a product that changes costume. When the injectable was restyled as a cosmetic nasal spray, it slipped out of the rulebook written for medicines."
 ---
 
 The [gray-market article](/articles/barbie-drug-gray-market/) ends on a sentence

@@ -4,10 +4,11 @@ serpTitle: "Melanotan II pharmacokinetics: why one dose does everything"
 description: "Why one dose of Melanotan II tans, sickens, and arouses at once: its pharmacokinetics give it no address. It floods the body and outlasts the signal it mimics."
 pubDate: 2026-08-26
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "the natural signal this molecule was built to outlast"
+faq:
+  - q: "Why does one dose of Melanotan II tan, sicken, and arouse at once?"
+    a: "Because of where it goes and how long it lasts. A subcutaneous dose is absorbed into the general circulation and, engineered to resist the enzymes that erase the body's own α-MSH in minutes, it persists for hours — reaching every melanocortin receptor in the body, brain included, more or less at once. The molecule has no address, so it isn't aimed at the skin; it's broadcast everywhere."
+  - q: "Are Melanotan II's side effects caused by bad batches?"
+    a: "No. The nausea, flushing and arousal are not contaminants or dosing mistakes — they are the pharmacology of a stable, systemic, non-selective agonist behaving exactly as it must. A perfectly pure, correctly synthesised vial delivers them just the same."
 ---
 
 Here is the puzzle at the center of the whole Melanotan story. A single small
@@ -81,14 +82,14 @@ targeting has a cost, and that cost is the rest of this story.
 <text x="112" y="248" font-family="'Archivo',sans-serif" font-size="11.5" fill="#17130E">The tan &#8212; melanin, once it has been made</text>
 <rect x="92" y="254" width="643" height="15" rx="2" fill="url(#pigpk)"/>
 <line x1="90" y1="336" x2="740" y2="336" stroke="#17130E" stroke-width="1.2"/>
-<g font-family="'Archivo',sans-serif" font-size="10" fill="#8A8275">
+<g font-family="'Archivo',sans-serif" font-size="10" fill="#6E665A">
 <text x="230" y="352" text-anchor="middle">10 min</text>
 <text x="339" y="352" text-anchor="middle">1 hour</text>
 <text x="466" y="352" text-anchor="middle">8 hours</text>
 <text x="533" y="352" text-anchor="middle">1 day</text>
 <text x="651" y="352" text-anchor="middle">1 week</text>
 </g>
-<text x="740" y="372" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">time after one dose &#183; logarithmic scale</text>
+<text x="740" y="372" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">time after one dose &#183; logarithmic scale</text>
 </svg>
 <figcaption>The body keeps its own melanocortin signal on a leash of minutes. Melanotan II was engineered to slip that leash &mdash; and the pigment it triggers outlives the drug in the blood by weeks. Durations are approximate and drawn on a log scale to fit minutes and weeks on one axis.</figcaption>
 </figure>

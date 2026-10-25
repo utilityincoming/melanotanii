@@ -4,6 +4,11 @@ serpTitle: "What a safe tanning drug would actually have to be"
 description: "The four requirements a general-public photoprotective drug must clear — and how far today's science already is toward each. Analysis, labeled as such."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "What would a genuinely safe tanning drug have to be?"
+    a: "Four things. It would need to be MC1R-selective (hitting the pigment receptor and nothing else), carry a safety profile built for healthy people — answering, not inheriting, the melanoma-and-mole question — use a delivery format people would actually accept, and prove it protects, not merely tans. The first three are tractable; the fourth is the wall."
+  - q: "Does a safe tanning drug exist yet?"
+    a: "No. No approved, general-public photoprotective tanning drug is on the market or announced. The specification is now clear enough to write down, and most of it is buildable with today's chemistry and engineering — but the decisive long prevention trial has not been funded. That is a more hopeful obstacle than 'it can't be done,' but it is still an obstacle."
 ---
 
 *This is an analysis piece, not a report of something that exists. No

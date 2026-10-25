@@ -4,10 +4,11 @@ serpTitle: "Who owned Melanotan: the patent trail to Clinuvel and Palatin"
 description: "How a University of Arizona peptide became two FDA drugs and a gray-market staple: the patent trail from Hruby and Hadley to Clinuvel and Palatin."
 pubDate: 2026-08-26
 cluster: history
-seeAlso:
-  - href: "https://melanocortin.com/afamelanotide"
-    label: "Afamelanotide"
-    note: "the licensed sibling, told through the melanocortin system"
+faq:
+  - q: "Who owns Melanotan II, and is it still patented?"
+    a: "No one owns the molecule now. It was invented at the University of Arizona (inventors Hruby, Hadley and Al-Obeidi; US Patent 5,674,839 and companions), but the foundational patents were filed in the early 1990s and have long expired, and the structure was published from the start. Melanotan II is in the public domain."
+  - q: "If Melanotan II is public domain, why is selling it illegal?"
+    a: "Because two different bodies of law are in play. Patent law no longer restricts it — making it infringes nothing. But medicines regulators control what may be marketed for human use, and none has approved Melanotan II for anything. The gray market isn't pirating a patent; it's making a public-domain compound and skipping the regulator."
 ---
 
 A gray-market vial of Melanotan II is, in the eyes of intellectual-property
@@ -93,7 +94,7 @@ exactly how it split in two.
 <text x="170" y="322" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" fill="#5A4F44">(SCENESSE implant)</text>
 <rect x="104" y="336" width="132" height="22" rx="4" fill="#E7EFE9" stroke="#2F6A52"/>
 <text x="170" y="351" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.02em" fill="#2F6A52">FDA-APPROVED 2019</text>
-<text x="170" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#8A8275">for EPP, a rare light disease</text>
+<text x="170" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#6E665A">for EPP, a rare light disease</text>
 <text x="390" y="196" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11.5" font-weight="600" fill="#17130E">Competitive Technologies</text>
 <text x="390" y="210" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" fill="#5A4F44">licenses MT-II rights</text>
 <line x1="390" y1="216" x2="390" y2="230" stroke="#503296" stroke-width="1.2"/>
@@ -106,7 +107,7 @@ exactly how it split in two.
 <text x="390" y="322" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" fill="#5A4F44">(Vyleesi)</text>
 <rect x="324" y="336" width="132" height="22" rx="4" fill="#E7EFE9" stroke="#2F6A52"/>
 <text x="390" y="351" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.02em" fill="#2F6A52">FDA-APPROVED 2019</text>
-<text x="390" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#8A8275">for HSDD, not tanning</text>
+<text x="390" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#6E665A">for HSDD, not tanning</text>
 <text x="610" y="196" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11.5" font-weight="600" fill="#17130E">patents expire</text>
 <text x="610" y="210" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" fill="#5A4F44">structure long public</text>
 <line x1="610" y1="216" x2="610" y2="230" stroke="#A6431F" stroke-width="1.2" stroke-dasharray="4 3"/>
@@ -119,7 +120,7 @@ exactly how it split in two.
 <text x="610" y="322" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" fill="#5A4F44">synthesis</text>
 <rect x="544" y="336" width="132" height="22" rx="4" fill="#F3E4DD" stroke="#A6431F"/>
 <text x="610" y="351" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.02em" fill="#A6431F">PUBLIC DOMAIN</text>
-<text x="610" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#8A8275">illegal to sell for human use</text>
+<text x="610" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#6E665A">illegal to sell for human use</text>
 </svg>
 <figcaption>The paper trail in one view: every licensed path led to an approved, owned drug; only the unlicensed molecule reached the public. Patent numbers and dates are in the text above.</figcaption>
 </figure>

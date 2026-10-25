@@ -4,10 +4,6 @@ serpTitle: "Oral Melanotan II capsules and gummies: why they can't work"
 description: "Melanotan II sold as a capsule, gummy, or drink can't work: a cyclic peptide doesn't survive digestion. What 'oral melanotan' actually is."
 pubDate: 2026-08-30
 cluster: culture
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the molecule's chemistry, on the science hub"
 faq:
   - q: "Is there an oral Melanotan II pill?"
     a: "No working one. Melanotan II is a cyclic peptide, and peptides are broken apart by stomach acid and digestive enzymes before they reach the bloodstream. A capsule, gummy, or drink cannot deliver an intact dose, which is why the injectable form exists at all."

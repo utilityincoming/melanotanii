@@ -11,7 +11,22 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
-const { Content } = await render(article);
+const { Content, headings } = await render(article);
+
+// Reading-time estimate. Strip inline SVG figures and markup first so the
+// figure text and link syntax don't inflate the count; ~200 wpm, min 1.
+const readingText = article.body
+  .replace(/<svg[\s\S]*?<\/svg>/g, ' ')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/[#*_>`[\]()]/g, ' ');
+const wordCount = (readingText.match(/\S+/g) ?? []).length;
+const readingMinutes = Math.max(1, Math.round(wordCount / 200));
+
+// Table of contents for long reads only. Astro slugs headings automatically,
+// so this is a no-JS jump-link list built from the H2s; gated to genuinely
+// long pieces (enough sections AND length) so short explainers stay clean.
+const sections = headings.filter((h) => h.depth === 2);
+const showToc = sections.length >= 5 && wordCount >= 1200;
 
 const clusterKey = article.data.cluster;
 const label = clusterLabel(clusterKey);
@@ -31,7 +46,8 @@ const others = rest
 const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
 
 const pageUrl = new URL(`/articles/${article.id}/`, Astro.site).href;
-const ogImage = new URL('/og-image.png', Astro.site).href;
+// Per-article social card generated at /og/<id>.png (see src/pages/og/[id].png.ts).
+const ogImage = new URL(`/og/${article.id}.png`, Astro.site).href;
 
 // Query-shaped <title> when a serpTitle exists; the H1 stays the magazine line.
 const pageTitle = `${article.data.serpTitle ?? article.data.title} — ${publication}`;
@@ -45,6 +61,10 @@ const jsonLd = {
   ...(article.data.updatedDate && { dateModified: article.data.updatedDate.toISOString() }),
   image: ogImage,
   articleSection: label,
+  inLanguage: 'en',
+  isAccessibleForFree: true,
+  wordCount,
+  timeRequired: `PT${readingMinutes}M`,
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
   isPartOf: recordRef(Astro.site),
   author: authorLd(Astro.site),
@@ -83,7 +103,7 @@ const faqLd = faq && faq.length > 0
     }
   : null;
 ---
-<Base title={pageTitle} description={article.data.description}>
+<Base title={pageTitle} description={article.data.description} ogImage={`/og/${article.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} is:inline />}
@@ -101,10 +121,24 @@ const faqLd = faq && faq.length > 0
       By <a class="byline" href="/about/">{publication}</a>
       <span aria-hidden="true">&middot;</span>
       Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+      <span aria-hidden="true">&middot;</span>
+      {readingMinutes} min read
       {article.data.updatedDate && (
         <> <span aria-hidden="true">&middot;</span> Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
       )}
     </p>
+
+    {showToc && (
+      <details class="toc">
+        <summary>In this piece</summary>
+        <ol>
+          {sections.map((s) => (
+            <li><a href={`#${s.slug}`}>{s.text}</a></li>
+          ))}
+        </ol>
+      </details>
+    )}
+
     <Content />
 
     <Byline section={label} />
@@ -138,20 +172,6 @@ const faqLd = faq && faq.length > 0
       </nav>
     )}
 
-    {article.data.seeAlso && article.data.seeAlso.length > 0 && (
-      <aside class="see-also">
-        <h2>The underlying science</h2>
-        <p>The receptor-level reference behind this story, on our sister site melanocortin.com.</p>
-        <ul>
-          {article.data.seeAlso.map((s) => (
-            <li>
-              <a href={s.href} rel="noopener">{s.label}</a>
-              {s.note && <span class="note"> - {s.note}</span>}
-            </li>
-          ))}
-        </ul>
-      </aside>
-    )}
   </article>
   <style>
     article { padding-top: 2rem; }
@@ -169,6 +189,35 @@ const faqLd = faq && faq.length > 0
     .crumbs .crumb-thread { color: var(--accent); font-weight: 600; }
     .crumbs span { opacity: 0.6; }
     .accent { color: var(--accent); }
+
+    /* Table of contents — long reads only; no JS, collapsed by default */
+    .toc {
+      margin: 0 0 2rem;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 0.92rem;
+    }
+    .toc summary {
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--ink);
+      list-style: none;
+    }
+    .toc summary::-webkit-details-marker { display: none; }
+    .toc summary::after { content: '+'; float: right; color: var(--accent); font-size: 1.15rem; line-height: 1; }
+    .toc[open] summary::after { content: '\2013'; }
+    .toc ol {
+      margin: 0.8rem 0 0.2rem;
+      padding-left: 1.3rem;
+      display: grid;
+      gap: 0.45rem;
+      color: var(--ink-soft);
+    }
+    .toc a { color: var(--ink); text-decoration: none; }
+    .toc a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
     h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.35rem 0 0.5rem; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
     .meta .byline { color: var(--ink); font-weight: 600; text-decoration: none; }
@@ -228,15 +277,5 @@ const faqLd = faq && faq.length > 0
     .faq-item[open] summary::after { content: '\2013'; }
     .faq-item summary:hover { color: var(--uv); }
     .faq-item p { margin: 0.6rem 0 0.3rem; color: var(--ink-soft); font-size: 0.96rem; }
-
-    .see-also {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid color-mix(in srgb, var(--ink-soft) 30%, transparent);
-    }
-    .see-also h2 { font-size: 1.05rem; margin: 0 0 0.35rem; }
-    .see-also > p { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 1rem; }
-    .see-also ul { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 0.6rem; }
-    .see-also .note { color: var(--ink-soft); }
   </style>
 </Base>

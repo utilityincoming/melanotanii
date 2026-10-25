@@ -4,13 +4,6 @@ serpTitle: "How Melanotan II was designed before its receptors existed"
 description: "Melanotan II was designed before its receptors were discovered — using frog-skin assays and two amino-acid swaps that made a superpotent α-MSH analog."
 pubDate: 2026-09-13
 cluster: history
-seeAlso:
-  - href: "https://melanocortin.com/receptors"
-    label: "The five melanocortin receptors"
-    note: "the family cloned in 1992 — a decade after the chemistry"
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "α-MSH and the signal the Arizona team was amplifying blind"
 faq:
   - q: "Who invented Melanotan II?"
     a: "Melanotan II was designed in the 1980s at the University of Arizona by the chemist Victor Hruby and the biologist Mac Hadley, with colleague Fahad Al-Obeidi among the named inventors. They were building stable, long-acting analogs of α-MSH, the body's own pigment signal."
@@ -88,7 +81,7 @@ to the enzymes that had made the natural hormone a non-starter.
 <line x1="225" y1="156" x2="225" y2="187" stroke="#A6431F" stroke-width="1.2"/>
 <line x1="384" y1="233" x2="384" y2="284" stroke="#A6431F" stroke-width="1.2"/>
 <text x="384" y="300" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#A6431F">Phe &#8594; D-Phe</text>
-<g font-family="'Archivo',sans-serif" font-size="10" fill="#8A8275" text-anchor="middle">
+<g font-family="'Archivo',sans-serif" font-size="10" fill="#6E665A" text-anchor="middle">
 <text x="66" y="168">1</text><text x="119" y="168">2</text><text x="172" y="168">3</text><text x="225" y="168">4</text><text x="278" y="168">5</text><text x="331" y="168">6</text><text x="384" y="168">7</text><text x="437" y="168">8</text><text x="490" y="168">9</text><text x="543" y="168">10</text><text x="596" y="168">11</text><text x="649" y="168">12</text><text x="702" y="168">13</text>
 </g>
 <g fill="#FBFAF7" stroke="#C9BEB0" stroke-width="1.4" font-family="'Archivo',sans-serif" font-size="11" text-anchor="middle">

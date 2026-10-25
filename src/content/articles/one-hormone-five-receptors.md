@@ -4,13 +4,11 @@ serpTitle: "Melanocortin receptors: why Melanotan II does more than tan"
 description: "Why Melanotan II tans, suppresses appetite, and affects libido at once: one non-selective agonist hitting all five melanocortin receptors."
 pubDate: 2026-08-18
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/receptors"
-    label: "The five melanocortin receptors"
-    note: "MC1R to MC5R, one receptor at a time"
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "how POMC becomes the whole signal"
+faq:
+  - q: "Why did Melanotan II do so much more than tan?"
+    a: "Because it is a non-selective agonist that hits the whole melanocortin receptor family with real potency: MC1R gave the tan, MC4R the appetite suppression and (via central pathways) the libido effects, and broad central activity the nausea, flushing and yawning. It 'did everything' because it hit everything, largely sparing only MC2R."
+  - q: "Are melanocortin receptors the same as melatonin receptors?"
+    a: "No. The five melanocortin receptors (MC1R–MC5R) are what Melanotan acts on. They are not the MT1 and MT2 melatonin receptors the sound-alike name gets confused with. Melatonin is a completely different molecule with nothing to do with pigment."
 ---
 
 The forum lore around Melanotan II always emphasized its odd bundle of
@@ -69,8 +67,8 @@ molecule entirely, with nothing to do with pigment.
 <text x="584" y="331" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#17130E">MC5R</text>
 <text x="584" y="349" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">sebaceous &amp; exocrine glands</text>
 <circle cx="560" cy="410" r="7" fill="#FBFAF7" stroke="#C9BEB0" stroke-width="2"/>
-<text x="584" y="406" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#8A8275">MC2R</text>
-<text x="584" y="424" font-family="'Archivo',sans-serif" font-size="12" fill="#8A8275">adrenal (ACTH) &#8212; largely spared</text>
+<text x="584" y="406" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#6E665A">MC2R</text>
+<text x="584" y="424" font-family="'Archivo',sans-serif" font-size="12" fill="#6E665A">adrenal (ACTH) &#8212; largely spared</text>
 <line x1="250" y1="450" x2="276" y2="450" stroke="#503296" stroke-width="2"/>
 <text x="282" y="454" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">activated by MT-II</text>
 <line x1="430" y1="450" x2="456" y2="450" stroke="#C9BEB0" stroke-width="1.5" stroke-dasharray="3 4"/>

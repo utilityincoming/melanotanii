@@ -4,6 +4,11 @@ serpTitle: "Why 'prevents skin cancer' is the hardest claim to prove"
 description: "Proving a drug prevents skin cancer needs one of the longest, largest trials in medicine. Why the evidence bar — not the chemistry — is the real wall."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "Why is 'prevents skin cancer' so hard to prove?"
+    a: "Because prevention means demonstrating the absence of an event — a cancer that never appeared — in enormous numbers of healthy people followed for years. Big cohort, long horizon, a rare-ish endpoint: it's one of the most expensive shapes a trial can take. By contrast, afamelanotide cleared trials for a rare disease where the endpoint showed up in weeks."
+  - q: "Couldn't surrogate endpoints make the trial faster?"
+    a: "Proxies like reduced UV-induced DNA damage or slower burning could de-risk the early phases, but regulators are rightly wary of surrogates for cancer prevention — a drug can move a proxy without moving the outcome that matters. The shortcut can start the journey; it can't finish it. Someone still has to run the long, real study."
 ---
 
 *Analysis. Assume, for this piece, that the chemistry problem is already

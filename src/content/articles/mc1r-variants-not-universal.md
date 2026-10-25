@@ -4,10 +4,11 @@ serpTitle: "MC1R variants: why not everyone can tan the same way"
 description: "Red hair is the loud end. Most MC1R variants are quieter: r alleles, heterozygotes, East Asian R163Q. A future agonist would not reach everyone who burns."
 pubDate: 2026-08-26
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/receptors/mc1r"
-    label: "MC1R: the pigment switch"
-    note: "the receptor reference in full"
+faq:
+  - q: "Can everyone tan the same way?"
+    a: "No. MC1R is not a two-position switch but a dimmer with dozens of variants: strong 'R' red-hair-colour alleles, and common quieter 'r' alleles (V60L, V92M, R163Q) carried by people who are fair but not red-haired. The response runs across a spectrum, and most of the extra melanoma risk sits in the quiet majority, not the redheads."
+  - q: "Would a melanocortin tanning drug work for everyone who burns?"
+    a: "Not necessarily. The people a photoprotective agonist would most want to help are enriched for genotypes where the assumption fails — some MC1R variants trap the protein inside the cell, others reach the surface but can't couple. An agonist cannot rescue a receptor that never arrived. Need and receptor response partly run in opposite directions."
 ---
 
 The [redhead article](/articles/why-redheads-burn-mc1r/) tells the clean
@@ -38,7 +39,7 @@ dream of a tanning drug for the people who burn.
 <text x="121" y="238" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#2F6A52">Least medical need.</text>
 <text x="121" y="256" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#2F6A52">Drug would work.</text>
 <rect x="218" y="96" width="162" height="188" rx="10" fill="#FFFFFF" stroke="#E4DFD6"/>
-<text x="299" y="128" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" letter-spacing="0.06em" fill="#8A8275">r / r  or  r / +</text>
+<text x="299" y="128" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" letter-spacing="0.06em" fill="#6E665A">r / r  or  r / +</text>
 <text x="299" y="158" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Weak alleles</text>
 <text x="299" y="186" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">V60L, V92M,</text>
 <text x="299" y="204" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">R163Q. Common.</text>

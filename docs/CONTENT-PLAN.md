@@ -252,6 +252,14 @@ It is a correction plus a pitch, not another article.
   (~end Feb 2027 — a dated correction on `/articles/dersimelagon/`,
   not a new essay; procedure in `docs/DISTRIBUTION-FEB-2027.md`),
   FDA PCAC on MT-II compounding (~Feb 2027).
+  **Restamp workflow:** the tracker's freshness is driven by a single
+  `lastReviewedISO` constant at the top of `src/pages/regulatory.astro` —
+  change that one ISO date and it updates both the visible "Last reviewed"
+  label and the page's JSON-LD `dateModified`. In the same pass, add/flip
+  the relevant `catalysts[]` entry, and bump the `updatedDate` frontmatter
+  of any article whose body genuinely changed with the news (e.g.
+  `the-pipeline-right-now`, `dersimelagon`) so the article-level
+  freshness signal fires too — never as a mechanical refresh.
 - **Timeline extension.** Add entries as afamelanotide indications expand
   and as any MC1R-agonist clinical news lands.
 - **Science-article `updatedDate` passes** only when new primary literature
@@ -261,8 +269,8 @@ It is a correction plus a pitch, not another article.
 
 1. Frontmatter: `title`, SERP-written `description` (≤160 chars), `pubDate`,
    correct `cluster`, `draft: false` when ready.
-2. Add `seeAlso` cross-links to melanocortin.com where a receptor-level
-   reference exists.
+2. No cross-links to melanocortin.com or peptidehormone.com. This domain
+   stays editorially independent.
 3. Meta description fits the SERP snippet window (verify built output).
 4. One original inline-SVG figure where it earns its place (house style —
    site fonts, no JS).

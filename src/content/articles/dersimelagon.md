@@ -4,10 +4,6 @@ serpTitle: "Dersimelagon (MT-7117): the oral MC1R drug, not a tan"
 description: "Dersimelagon is an oral MC1R agonist under FDA priority review for two rare light disorders. A decision is due by the end of February 2027. It is not a tan."
 pubDate: 2026-10-25
 cluster: next-agonist
-seeAlso:
-  - href: "https://melanocortin.com/dersimelagon"
-    label: "Dersimelagon (MT-7117)"
-    note: "the oral MC1R agonist, in depth"
 faq:
   - q: "What is dersimelagon?"
     a: "Dersimelagon (MT-7117) is an investigational, once-daily oral small-molecule agonist of the melanocortin-1 receptor. It is under FDA priority review for two rare genetic light-pain disorders, erythropoietic protoporphyria and X-linked protoporphyria. It is not approved anywhere, and it is not a tanning product."

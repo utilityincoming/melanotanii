@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Page not found — Tan Lines"
+  description="That page isn't in The Record. Start from the timeline, browse all articles, or check the regulatory watch."
+>
+  <section class="notfound">
+    <p class="eyebrow">Error 404</p>
+    <h1>That page isn&rsquo;t in The Record.</h1>
+    <p class="lede">
+      The link may be out of date, or the page may never have existed. Nothing
+      is lost &mdash; the whole Melanotan II story is a few steps away.
+    </p>
+    <nav class="nf-links" aria-label="Where to go next">
+      <a class="cta-primary" href="/timeline/">Start with the timeline&nbsp;&rarr;</a>
+      <a class="cta-secondary" href="/articles/">Browse all articles</a>
+      <a class="cta-secondary" href="/regulatory/">Regulatory watch</a>
+      <a class="cta-secondary" href="/">Home</a>
+    </nav>
+  </section>
+
+  <style>
+    .notfound { padding: 4rem 0 3rem; max-width: 40rem; }
+    .notfound h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0.5rem 0 1rem; }
+    .notfound .lede { font-size: 1.1rem; color: var(--ink-soft); }
+    .nf-links {
+      margin: 1.9rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.9rem 1.4rem;
+    }
+    .cta-primary {
+      display: inline-block;
+      background: var(--ink);
+      color: var(--paper);
+      font-weight: 600;
+      padding: 0.7rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .cta-primary:hover { background: var(--uv); }
+    .cta-secondary { font-weight: 500; color: var(--uv); text-decoration: none; }
+    .cta-secondary:hover { text-decoration: underline; text-underline-offset: 3px; }
+  </style>
+</Base>

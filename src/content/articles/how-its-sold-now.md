@@ -4,10 +4,11 @@ serpTitle: "How Melanotan II is sold now: the DTC supply stack"
 description: "Research-chemical storefronts, banned hashtags, influencer commissions, salon shelves, disguised payments — the supply machine that sells Melanotan II now."
 pubDate: 2026-08-26
 cluster: culture
-seeAlso:
-  - href: "https://melanocortin.com/melanotan"
-    label: "Melanotan and Melanotan II"
-    note: "the pharmacology on the science hub"
+faq:
+  - q: "How is Melanotan II sold today?"
+    a: "Through a complete direct-to-consumer stack: 'research chemical' storefronts, hashtag word-games after platform bans, a commissioned influencer salesforce on affiliate codes, salon and gym counters, and increasingly disguised payments. Every layer runs the same reflex — when pressure lands, the molecule stays and the costume changes."
+  - q: "Is the Melanotan II market shrinking under enforcement?"
+    a: "No. LegitScript's 2025 dataset, the first to track the trade across ads, social media and e-commerce at once, found the opposite: advertisements for problematic peptides up 208% from 2023 to 2024, marketplace sales up 276% over five years, social postings up 75% in a year. This is a growth business, not a residual black market."
 ---
 
 The [forum era](/articles/barbie-drug-gray-market/) had a shape you could

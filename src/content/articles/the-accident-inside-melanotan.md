@@ -4,10 +4,11 @@ serpTitle: "The Melanotan II self-experiment that found a libido drug"
 description: "A University of Arizona self-experiment with Melanotan II produced an eight-hour erection — and pointed the way to an FDA-approved libido drug."
 pubDate: 2026-08-18
 cluster: history
-seeAlso:
-  - href: "https://melanocortin.com/bremelanotide"
-    label: "Bremelanotide (PT-141)"
-    note: "the same accident, told through the melanocortin system"
+faq:
+  - q: "What was the Melanotan II self-experiment?"
+    a: "In the late 1980s, University of Arizona researchers testing whether their peptide tanned humans injected it themselves. As the story is told, the biologist Mac Hadley received roughly double the intended amount and developed severe nausea and an erection lasting about eight hours — revealing the drug was reaching the brain's melanocortin receptors, not staying in the skin."
+  - q: "What drug came out of the Melanotan II accident?"
+    a: "Bremelanotide, sold as Vyleesi — a close relative tuned toward the central receptors and away from tanning. Palatin Technologies developed it, and the FDA approved it in 2019 for hypoactive sexual desire disorder in premenopausal women. A tanning peptide's overdose became a purpose-built desire drug."
 ---
 
 The most consequential thing anyone ever discovered about Melanotan II

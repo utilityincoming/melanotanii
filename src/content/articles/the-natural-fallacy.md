@@ -4,13 +4,6 @@ serpTitle: "Is Melanotan II natural? What α-MSH actually does"
 description: "Melanotan II is sold as a 'natural' hormone your body already makes. It mimics α-MSH — but your body keeps that signal local and brief for a reason."
 pubDate: 2026-08-30
 cluster: science
-seeAlso:
-  - href: "https://melanocortin.com/system"
-    label: "The melanocortin system"
-    note: "the natural signal, on the science hub"
-  - href: "https://melanocortin.com/receptors"
-    label: "The melanocortin receptor family"
-    note: "what each of the five receptors does"
 faq:
   - q: "Is Melanotan II natural because the body makes α-MSH?"
     a: "No. Your body makes α-MSH, but Melanotan II is a re-engineered analog — deliberately altered to resist breakdown and act longer and more broadly than the natural signal. 'Based on a natural hormone' is not the same as natural, and the edits are the whole point."
@@ -113,14 +106,14 @@ sells you the fifth.
 <text x="36" y="66" font-family="'Archivo',sans-serif" font-size="12.5" fill="#5A4F44">&#8220;It&#8217;s natural &#8212; your body makes this hormone&#8221; describes one row of five. The market sells you that row.</text>
 <!-- column headers -->
 <text x="182" y="98" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.6" fill="#8A6A3B">YOUR BODY&#8217;S &#945;-MSH</text>
-<text x="182" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">a local whisper</text>
+<text x="182" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">a local whisper</text>
 <text x="480" y="98" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.6" fill="#503296">MELANOTAN II</text>
-<text x="480" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#8A8275">a body-wide broadcast</text>
+<text x="480" y="112" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">a body-wide broadcast</text>
 <!-- ROW 1: natural -->
 <rect x="462" y="126" width="246" height="56" rx="4" fill="#A9754C" fill-opacity="0.08"/>
 <rect x="462" y="126" width="4" height="56" rx="2" fill="#A9754C"/>
 <text x="36" y="150" font-family="'Archivo',sans-serif" font-size="12.5" font-weight="600" fill="#17130E">The signal it copies</text>
-<text x="36" y="167" font-family="'Archivo',sans-serif" font-size="10.5" fill="#8A8275">what it is based on</text>
+<text x="36" y="167" font-family="'Archivo',sans-serif" font-size="10.5" fill="#6E665A">what it is based on</text>
 <text x="182" y="159" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">&#945;-MSH, a 13-amino-acid hormone</text>
 <text x="480" y="159" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">The same &#945;-MSH, as its template</text>
 <text x="800" y="158" text-anchor="end" font-family="'Archivo',sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.4" fill="#8A6A3B">NATURAL</text>
@@ -154,7 +147,7 @@ sells you the fifth.
 <!-- footer -->
 <line x1="36" y1="452" x2="784" y2="452" stroke="#EDE7DE" stroke-width="1"/>
 <text x="36" y="470" font-family="'Spectral',Georgia,serif" font-size="13" font-weight="600" fill="#17130E">4 of 5 engineered</text>
-<text x="784" y="470" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#8A8275">warm = the body&#8217;s design &#183; purple = the lab&#8217;s</text>
+<text x="784" y="470" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">warm = the body&#8217;s design &#183; purple = the lab&#8217;s</text>
 </svg>
 <figcaption>Five things decide what the molecule does in a body; only the first &mdash; the hormone it is patterned on &mdash; is natural. The molecule, the route, the duration, and the reach were each engineered away from the signal the market says it merely supplements.</figcaption>
 </figure>

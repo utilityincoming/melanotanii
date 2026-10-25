@@ -4,6 +4,11 @@ serpTitle: "How a photoprotective melanocortin drug could reach everyone"
 description: "How a photoprotective melanocortin drug could reach everyone: beachhead indications, from approved EPP to a vitiligo trial now in Phase III."
 pubDate: 2026-08-18
 cluster: next-agonist
+faq:
+  - q: "How could a melanocortin drug ever reach the general public?"
+    a: "Through beachheads — narrow indications where the benefit-risk math already works, each building the safety record, manufacturing base and delivery experience the next step needs. EPP is the first rung (approved); vitiligo is in Phase III now; transplant recipients and inherited high-risk groups are the logical next ones. The path to 'everyone' runs through a series of 'someones.'"
+  - q: "Is afamelanotide being tested for vitiligo?"
+    a: "Yes. Clinuvel, which developed afamelanotide, is running a global Phase III trial (CUV105) of the drug alongside narrowband-UVB phototherapy to repigment vitiligo, with more than 200 patients enrolled and first results expected in the second half of 2026 — a pigment indication in a much larger population than EPP."
 ---
 
 *Analysis — but this one is anchored to trials that are actually running.*
@@ -37,8 +42,8 @@ the general-public drug, several of its rungs are real and occupied right now.
 <text x="242" y="266" font-family="'Archivo',sans-serif" font-size="11" fill="#5a4f6a">Phase III now (CUV105)</text>
 <text x="242" y="284" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em" fill="#503296">&#9679; IN TRIALS</text>
 <rect x="400" y="180" width="170" height="180" rx="4" fill="none" stroke="#B7AC9C" stroke-width="1.4" stroke-dasharray="5 5"/>
-<text x="412" y="172" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#8A8275">Transplant &amp; high-risk</text>
-<text x="412" y="206" font-family="'Archivo',sans-serif" font-size="11" fill="#8A8275">a logical next rung</text>
+<text x="412" y="172" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#6E665A">Transplant &amp; high-risk</text>
+<text x="412" y="206" font-family="'Archivo',sans-serif" font-size="11" fill="#6E665A">a logical next rung</text>
 <rect x="570" y="120" width="150" height="240" rx="4" fill="none" stroke="#C9BEB0" stroke-width="1.4" stroke-dasharray="5 5"/>
 <text x="582" y="112" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#A69C8D">General public</text>
 <text x="582" y="146" font-family="'Archivo',sans-serif" font-size="11" fill="#A69C8D">not yet &#8212; labeled hope</text>
@@ -58,7 +63,7 @@ implant manufacturable and shippable.
 developed afamelanotide — is running a global Phase III trial (designated
 CUV105) testing afamelanotide alongside narrowband-UVB phototherapy to
 repigment vitiligo, with more than 200 patients enrolled as of 2025 and
-[its first results](/articles/the-vitiligo-readout/) expected in the second half of 2026. Vitiligo is another pigment
+its first results expected in the second half of 2026. Vitiligo is another pigment
 indication, in a substantially larger population than EPP, and a genuine test
 of a melanocortin drug doing pigment work in otherwise ordinary skin. It is the
 clearest sign that the molecule is being walked deliberately up the ladder.

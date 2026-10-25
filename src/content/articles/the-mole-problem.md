@@ -4,6 +4,13 @@ serpTitle: "Melanotan II and moles: what dermatologists actually fear"
 description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic: the case reports, the melanoma question, and the signals you lose."
 pubDate: 2026-08-18
 cluster: cautionary-tale
+faq:
+  - q: "Does Melanotan II affect moles?"
+    a: "Yes. It drives pigment cells throughout the body, so existing moles can darken and enlarge and new ones can appear. The dermatology literature carries repeated case reports, including a man who erupted more than a hundred new moles within weeks of a short course."
+  - q: "Does Melanotan II cause melanoma?"
+    a: "Melanoma has been diagnosed in users and reported in peer-reviewed journals, but these are case reports: they can raise an alarm, not prove cause. Causation is genuinely unresolved — which is not the same as harmless."
+  - q: "Why do dermatologists worry about Melanotan II beyond cancer risk?"
+    a: "Early melanoma is caught by change — the mole that darkens or grows, the 'E' in ABCDE. A drug that darkens and changes every mole raises the noise floor under that signal, so the one dangerous mole hides among dozens. It degrades early detection whether or not it ever causes a cancer."
 ---
 
 Of everything laid at Melanotan II's feet, the concern dermatologists return
@@ -22,7 +29,7 @@ metaphorically. Visibly, and sometimes dramatically.
 <text x="40" y="46" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">The warning sign, buried</text>
 <text x="40" y="70" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Early melanoma is caught by change &#8212; so a drug that changes every mole hides the one that matters.</text>
 <line x1="392" y1="104" x2="392" y2="332" stroke="#E4DFD6" stroke-width="1"/>
-<text x="60" y="126" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.06em" fill="#8A8275">NORMAL SKIN</text>
+<text x="60" y="126" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.06em" fill="#6E665A">NORMAL SKIN</text>
 <g fill="#E9D4BE" stroke="#D8C3AA" stroke-width="1">
 <circle cx="75" cy="160" r="14"/><circle cx="127" cy="160" r="14"/><circle cx="231" cy="160" r="14"/><circle cx="283" cy="160" r="14"/>
 <circle cx="75" cy="215" r="14"/><circle cx="127" cy="215" r="14"/><circle cx="283" cy="215" r="14"/>
@@ -34,7 +41,7 @@ metaphorically. Visibly, and sometimes dramatically.
 <circle cx="179" cy="215" r="22" fill="none" stroke="#503296" stroke-width="2"/>
 <line x1="179" y1="300" x2="179" y2="245" stroke="#503296" stroke-width="1.4" marker-end="url(#a6)"/>
 <text x="179" y="318" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#503296">one changing mole stands out</text>
-<text x="432" y="126" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.06em" fill="#8A8275">ON A MOLE-DARKENING DRUG</text>
+<text x="432" y="126" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.06em" fill="#6E665A">ON A MOLE-DARKENING DRUG</text>
 <circle cx="447" cy="160" r="14" fill="#C9A57E" stroke="#B5906A" stroke-width="1"/>
 <circle cx="499" cy="160" r="14" fill="#8A6440" stroke="#75512F" stroke-width="1"/>
 <circle cx="551" cy="160" r="14" fill="#6B4A2A" stroke="#573A20" stroke-width="1"/>

@@ -47,7 +47,8 @@ likely a metabolite of MT-II, carrying a hydroxyl group where MT-II carries
 an amide) deliberately tuned toward the central receptors and away from the
 MC1R tanning action of its parent. Bremelanotide became Vyleesi, approved by
 the FDA in 2019 for hypoactive sexual desire disorder in premenopausal
-women.
+women. The two names are not interchangeable:
+[PT-141 is not Melanotan II](/articles/pt-141-vs-melanotan-ii/).
 
 A tanning peptide's overdose, in other words, became a purpose-built drug
 for female sexual desire. That is not a metaphor for the Melanotan story.

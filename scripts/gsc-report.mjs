@@ -1,10 +1,13 @@
 // Google Search Console — organic query report for melanotanii.com.
 //
 // Pulls Search Analytics data for the verified property and writes a prioritized
-// worklist: striking-distance queries (positions 5-20, one nudge from the top),
-// low-CTR high-impression queries (title/meta rewrite candidates), emerging
-// queries (rising in the last window), intent clusters (content-brief seeds), and
-// a full ranked query dump as CSV.
+// worklist in two halves. By query: striking-distance queries (positions 5-20,
+// one nudge from the top), low-CTR high-impression queries (title/meta rewrite
+// candidates), emerging queries (rising in the last window), and intent clusters
+// (content-brief seeds). By page (the content audit): top content (proven
+// winners to expand and link from), decaying content (impressions down vs the
+// prior window — refresh candidates), and underperforming content (seen but not
+// clicked). Plus a full ranked query dump and a full ranked page dump as CSV.
 //
 // Designed for a NEW / SPARSE site: thresholds are low and relative, so even a
 // handful of impressions surfaces. If there's barely any data yet, it says so
@@ -264,10 +267,14 @@ async function main() {
   const priorStart = ymd(new Date(end.getTime() - third * 2 * 86400_000))
   const priorEnd = ymd(new Date(end.getTime() - third * 86400_000))
 
-  const [recentRows, priorRows] = await Promise.all([
+  const [recentRows, priorRows, pageRows, recentPageRows, priorPageRows] = await Promise.all([
     fetchQueries(token, recentStart, endDate),
     fetchQueries(token, priorStart, priorEnd),
+    fetchQueries(token, startDate, endDate, ['page']),
+    fetchQueries(token, recentStart, endDate, ['page']),
+    fetchQueries(token, priorStart, priorEnd, ['page']),
   ])
+  console.log(`✓ Pulled ${pageRows.length} page rows`)
   const priorMap = new Map(priorRows.map((r) => [r.keys[0], r.impressions]))
   const emerging = recentRows
     .map((r) => ({
@@ -279,6 +286,55 @@ async function main() {
     .map((r) => ({ ...r, delta: r.recent - r.prior }))
     .filter((r) => r.delta > 0)
     .sort((a, b) => b.delta - a.delta)
+    .slice(0, 30)
+
+  // ── Page-level content audit — "which articles win, fade, or go unseen" ─────
+  // Strip the property origin so the tables show just the path; keep the full
+  // URL in the CSV. GSC page keys are absolute URLs.
+  const relPath = (url) => {
+    try {
+      return new URL(url).pathname || url
+    } catch {
+      return url
+    }
+  }
+  const pages = pageRows.map((r) => ({
+    url: r.keys[0],
+    path: relPath(r.keys[0]),
+    clicks: r.clicks,
+    impressions: r.impressions,
+    ctr: r.ctr,
+    position: r.position,
+  }))
+
+  // Top content — the pages actually earning clicks (then impressions as the
+  // tiebreaker). These are the ones to expand into clusters and link FROM.
+  const topPages = [...pages].sort(
+    (a, b) => b.clicks - a.clicks || b.impressions - a.impressions,
+  )
+
+  // Decaying content — impressions down in the recent third vs the prior third.
+  // Refresh candidates: update the piece, re-date, add internal links.
+  const recentPageMap = new Map(recentPageRows.map((r) => [r.keys[0], r.impressions]))
+  const priorPageMap = new Map(priorPageRows.map((r) => [r.keys[0], r.impressions]))
+  const decaying = [...new Set([...recentPageMap.keys(), ...priorPageMap.keys()])]
+    .map((url) => {
+      const recent = recentPageMap.get(url) || 0
+      const prior = priorPageMap.get(url) || 0
+      return { url, path: relPath(url), recent, prior, delta: recent - prior }
+    })
+    // Only flag a real drop off a base worth caring about (avoids 1→0 noise).
+    .filter((r) => r.delta < 0 && r.prior >= (totals.impressions > 500 ? 10 : 3))
+    .sort((a, b) => a.delta - b.delta)
+    .slice(0, 30)
+
+  // Underperformers — pages that are indexed and seen but barely clicked:
+  // thin content, weak titles, or internal-link starvation. Ordered by the
+  // most impressions wasted (seen a lot, clicked little), then by poorest CTR.
+  const underMinImpr = totals.impressions > 500 ? 20 : 3
+  const underperformers = pages
+    .filter((r) => r.impressions >= underMinImpr && r.clicks === 0)
+    .sort((a, b) => b.impressions - a.impressions)
     .slice(0, 30)
 
   // 4. Question / intent clusters — split the full list by intent marker.
@@ -298,6 +354,7 @@ async function main() {
   const slug = SITE_URL.replace(/^sc-domain:/, '').replace(/[^a-z0-9]+/gi, '-').replace(/-+$/, '')
   const mdPath = resolve(outDir, `${slug}-${stamp}.md`)
   const csvPath = resolve(outDir, `${slug}-${stamp}.csv`)
+  const pagesCsvPath = resolve(outDir, `${slug}-${stamp}-pages.csv`)
 
   // Full ranked dump → CSV
   const csv = [
@@ -311,6 +368,17 @@ async function main() {
       ),
   ].join('\n')
   await writeFile(csvPath, csv, 'utf8')
+
+  // Full ranked dump by page → CSV
+  const pagesCsv = [
+    'url,clicks,impressions,ctr,position',
+    ...topPages.map((r) =>
+      [r.url, r.clicks, r.impressions, round(r.ctr * 100), round(r.position)]
+        .map(csvEscape)
+        .join(','),
+    ),
+  ].join('\n')
+  await writeFile(pagesCsvPath, pagesCsv, 'utf8')
 
   const md = `# GSC query report — ${SITE_URL}
 
@@ -358,18 +426,47 @@ ${mdTable(
     .map(([k, v]) => [k, v]),
 )}
 
+## 5. Top content (by page)
+The articles actually earning clicks — your proven winners. Expand these into fuller clusters, keep them fresh, and link *from* them to striking-distance pages to pass authority. Ordered by clicks, then impressions.
+
+${mdTable(
+  ['Page', 'Clicks', 'Impr.', 'CTR', 'Pos.'],
+  topPages
+    .slice(0, 25)
+    .map((r) => [r.path, r.clicks, r.impressions, pct(r.ctr), round(r.position)]),
+)}
+
+## 6. Decaying content (recent ${third}d vs prior ${third}d)
+Pages losing impressions versus the prior window — refresh candidates. Update the piece, re-date it, add internal links, check for lost rankings or a competitor that overtook it. (Only pages with a prior base ≥${totals.impressions > 500 ? 10 : 3} impressions are flagged, to skip 1→0 noise.)
+
+${mdTable(
+  ['Page', 'Recent impr.', 'Prior impr.', 'Δ'],
+  decaying.map((r) => [r.path, r.recent, r.prior, r.delta]),
+)}
+
+## 7. Underperforming content (seen, not clicked)
+Indexed pages with ≥${underMinImpr} impressions but **zero** clicks — thin content, a weak title/meta, or internal-link starvation. Rewrite the title to match intent, deepen the piece, or point internal links at it. Ordered by impressions wasted.
+
+${mdTable(
+  ['Page', 'Impr.', 'CTR', 'Pos.'],
+  underperformers.map((r) => [r.path, r.impressions, pct(r.ctr), round(r.position)]),
+)}
+
 ---
 Full ranked query list: [\`${slug}-${stamp}.csv\`](./${slug}-${stamp}.csv)
+Full ranked page list: [\`${slug}-${stamp}-pages.csv\`](./${slug}-${stamp}-pages.csv)
 _Generated ${new Date().toISOString()} · dataState=all (includes fresh data)_
 `
 
   await writeFile(mdPath, md, 'utf8')
 
-  console.log(`\n✓ Report:  ${mdPath}`)
-  console.log(`✓ Full CSV: ${csvPath}`)
+  console.log(`\n✓ Report:    ${mdPath}`)
+  console.log(`✓ Query CSV: ${csvPath}`)
+  console.log(`✓ Pages CSV: ${pagesCsvPath}`)
   console.log(
     `\nSummary: ${totals.clicks} clicks / ${totals.impressions} impr · ` +
-      `${strikingDistance.length} striking-distance · ${lowCtr.length} low-CTR · ${emerging.length} emerging\n`,
+      `${strikingDistance.length} striking-distance · ${lowCtr.length} low-CTR · ${emerging.length} emerging · ` +
+      `${pages.length} pages (${decaying.length} decaying · ${underperformers.length} underperforming)\n`,
   )
 }
 

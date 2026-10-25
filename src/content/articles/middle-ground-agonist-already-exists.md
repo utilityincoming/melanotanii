@@ -18,6 +18,8 @@ the original Arizona peptide, developed properly over three decades.
 
 The EU approved it in 2014 and the FDA followed in 2019. It's a real
 medicine with real trials behind it. And virtually no one can get it.
+The direct answer to the search — can you get it to tan — is
+[Scenesse is a medicine, not a tan](/articles/scenesse/).
 
 ## Why it's locked away
 

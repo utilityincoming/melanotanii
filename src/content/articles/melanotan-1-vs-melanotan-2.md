@@ -86,7 +86,8 @@ here the paths split for good.
 Melanotan I went to an Australian company, Epitan — which renamed itself
 Clinuvel in 2006 — and was developed slowly, properly, over decades. It
 became SCENESSE, approved in Europe in 2014 and by the FDA in 2019, for a
-rare light-sensitivity disease ([the middle-ground agonist already exists](/articles/middle-ground-agonist-already-exists/)).
+rare light-sensitivity disease ([the middle-ground agonist already exists](/articles/middle-ground-agonist-already-exists/);
+the query answer is [Scenesse is not a tan](/articles/scenesse/)).
 
 Melanotan II went to Palatin Technologies, which soon abandoned the tan
 entirely to chase the arousal side effect and build bremelanotide ([the

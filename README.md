@@ -53,6 +53,8 @@ draft: false
 ## Content rules (non-negotiable)
 
 - No sourcing, dosing, or usage guidance for unapproved compounds — ever.
+- No affiliate links, vendor referrals, discount codes, or researcher
+  gates on this domain, whatever they are called.
 - Harms reported plainly; uncertainty stated, not smoothed over.
 - The future-agonist thesis is opinion and is labeled as such in-article.
 - Every article should survive a regulator, a dermatologist, and a

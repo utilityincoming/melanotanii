@@ -3,10 +3,11 @@ title: "The class is moving: the melanocortin sun drugs actually in trials now"
 serpTitle: "Melanocortin drugs in development 2026: dersimelagon & afamelanotide"
 description: "A 2026 snapshot of the melanocortin drugs in real development: an oral MC1R agonist near FDA decision, and an approved one expanding into vitiligo and repair."
 pubDate: 2026-09-24
+updatedDate: 2026-10-25
 cluster: next-agonist
 faq:
   - q: "Is there an oral Melanotan-type drug in development?"
-    a: "Yes. Dersimelagon (MT-7117) is a non-peptide, orally available melanocortin-1 receptor agonist from Tanabe Pharma. It met its primary endpoint in the global Phase 3 INSPIRE study and is under FDA priority review for erythropoietic protoporphyria and X-linked protoporphyria, with a decision expected around the end of February 2027. It is not a tanning product for healthy people."
+    a: "Yes. Dersimelagon (MT-7117) is an investigational once-daily oral MC1R agonist. Tanabe ran the program; LEO Pharma said on 18 September 2026 that it had acquired worldwide rights and that the FDA had accepted the application under priority review for erythropoietic protoporphyria and X-linked protoporphyria, with a decision by the end of February 2027. It is not approved, and it is not a tanning product."
   - q: "What new uses is afamelanotide (Scenesse) being tested for?"
     a: "Beyond its approved rare-disease label, afamelanotide is in clinical studies for non-segmental vitiligo, xeroderma pigmentosum (as a way to assist DNA repair after UV damage), variegate porphyria, and arterial ischaemic stroke. None of these is a cosmetic tan."
   - q: "Can I get any of these drugs to tan?"
@@ -33,14 +34,17 @@ gray market wanted.
 For the entire gray-market era the technology had one shape — a peptide you had to
 inject, because peptides don't survive the gut. That constraint is breaking.
 
-**Dersimelagon (MT-7117)**, developed by Tanabe Pharma, is a non-peptide,
-orally available selective agonist of the melanocortin-1 receptor — the same
-receptor at the center of [how the tanning signal works](/articles/one-hormone-five-receptors/).
-A pill, not a needle. In 2026 its global, double-blind Phase 3 study — INSPIRE,
-165 patients — met its primary endpoint with a safety profile the sponsor
-described as favourable, most adverse events mild to moderate. The FDA accepted
-the New Drug Application, granted it **priority review**, and a decision is
-expected around the end of February 2027.
+**Dersimelagon (MT-7117)** is a non-peptide, orally available selective
+agonist of the melanocortin-1 receptor — the same receptor at the center of
+[how the tanning signal works](/articles/one-hormone-five-receptors/).
+A pill, not a needle. Tanabe Pharma ran the program; on 18 September 2026
+LEO Pharma said it had closed the acquisition of worldwide rights and that
+the FDA had accepted the application under priority review, with a decision
+by the end of February 2027. The dedicated file is
+[dersimelagon](/articles/dersimelagon/) — including what the filing
+announcement did not publish. The January sponsor announcement, recorded on
+the [regulatory file](/regulatory/), put INSPIRE at 165 patients and said
+the primary endpoint was met. That figure is not re-proven here.
 
 Read that carefully, because it is both more and less than it sounds.
 
@@ -63,7 +67,8 @@ describing, now repeating with an oral drug instead of an implant.
 
 The other live program belongs to the drug that already made it:
 **afamelanotide (Scenesse)**, approved for EPP in the EU in 2014 and by the FDA
-in 2019. What's changed is that its maker is no longer treating EPP as the
+in 2019. The query page — [Scenesse is a medicine, not a tan](/articles/scenesse/) —
+is the direct answer; this section is the program. What's changed is that its maker is no longer treating EPP as the
 ceiling. Afamelanotide is now in clinical study across a spread of indications
 that, taken together, sketch the outline of a general photomedicine:
 
@@ -112,4 +117,5 @@ selling you *that* today, in a vial, from a website, is still the
 [cautionary tale](/articles/barbie-drug-gray-market/), not this page.
 
 We'll update this snapshot as the programs move. The next real marker is the
-dersimelagon decision in early 2027.
+dersimelagon decision by the end of February 2027, and it lands as a dated
+correction on [that page](/articles/dersimelagon/), not as a second essay.

@@ -11,6 +11,10 @@ normal frontmatter/PR flow (see README "Adding an article").
 ## Non-negotiables (carry over from README)
 
 - No sourcing, dosing, or usage guidance for unapproved compounds — ever.
+- No affiliate links, vendor referrals, discount codes, or "researcher
+  verification" gates on this domain. A reader looking for a source is
+  not a reader this site serves. Commerce stays off, including when it
+  is framed as help.
 - Harms reported plainly; uncertainty stated, not smoothed over.
 - The future-agonist thesis is opinion and is labeled as such in-article.
 - Every article should survive a regulator, a dermatologist, and a
@@ -218,26 +222,43 @@ rare-disease use, exactly the pattern `the-beachhead-indications` and
 program changed phase or status. Companion to both named predecessors, which
 forward-link on ship.
 
+## Next wave — shipped query pages (25 Oct 2026)
+
+Three direct-answer pages for legitimate-drug queries the essays
+already covered but did not title for. No commerce on any of them.
+
+- `/articles/dersimelagon/` (`next-agonist`) — the oral MC1R agonist
+  under FDA priority review. This is the page the February 2027
+  decision updates. Do not publish an outcome before it is public.
+- `/articles/scenesse/` (`next-agonist`) — Scenesse is the approved
+  implant, not a tan. The economics stay in
+  `middle-ground-agonist-already-exists`.
+- `/articles/pt-141-vs-melanotan-ii/` (`next-agonist`) — Vyleesi is
+  the prescription; Melanotan II is not a substitute. No dose, no
+  source.
+
+Distribution for the decision week is `docs/DISTRIBUTION-FEB-2027.md`.
+It is a correction plus a pitch, not another article.
+
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,
   Australia, Canada, Denmark, Ireland, UK, and carries a "Last reviewed"
-  date (added 26 Aug 2026; **refreshed 4 Oct 2026** to carry the
-  dersimelagon NDA acceptance / ~Feb 2027 decision, the Apr 2026 EMA
-  advice on CUV107, and the enforcement-map figures for the UK and
-  Ireland — all already published in `the-pipeline-right-now` and
-  `the-enforcement-map`). Refresh the date only when a jurisdiction or
-  program actually changes status. This is where real `updatedDate`
-  freshness signals should come from. Next scheduled restamps: CUV107
+  date (added 26 Aug 2026; refreshed 4 Oct 2026; **refreshed 25 Oct 2026**
+  to record LEO Pharma's 18 September 2026 close of the dersimelagon
+  acquisition and to point at the new query pages). Refresh the date only when a jurisdiction or
+  program actually changes status. Next scheduled restamps: CUV107
   start (Nov 2026), CUV105 readout (Dec 2026), dersimelagon decision
-  (~end Feb 2027), FDA PCAC on MT-II compounding (~Feb 2027).
+  (~end Feb 2027 — a dated correction on `/articles/dersimelagon/`,
+  not a new essay; procedure in `docs/DISTRIBUTION-FEB-2027.md`),
+  FDA PCAC on MT-II compounding (~Feb 2027).
   **Restamp workflow:** the tracker's freshness is driven by a single
   `lastReviewedISO` constant at the top of `src/pages/regulatory.astro` —
   change that one ISO date and it updates both the visible "Last reviewed"
   label and the page's JSON-LD `dateModified`. In the same pass, add/flip
   the relevant `catalysts[]` entry, and bump the `updatedDate` frontmatter
   of any article whose body genuinely changed with the news (e.g.
-  `the-pipeline-right-now`, `the-enforcement-map`) so the article-level
+  `the-pipeline-right-now`, `dersimelagon`) so the article-level
   freshness signal fires too — never as a mechanical refresh.
 - **Timeline extension.** Add entries as afamelanotide indications expand
   and as any MC1R-agonist clinical news lands.
@@ -248,8 +269,8 @@ forward-link on ship.
 
 1. Frontmatter: `title`, SERP-written `description` (≤160 chars), `pubDate`,
    correct `cluster`, `draft: false` when ready.
-2. Add `seeAlso` cross-links to melanocortin.com where a receptor-level
-   reference exists.
+2. No cross-links to melanocortin.com or peptidehormone.com. This domain
+   stays editorially independent.
 3. Meta description fits the SERP snippet window (verify built output).
 4. One original inline-SVG figure where it earns its place (house style —
    site fonts, no JS).

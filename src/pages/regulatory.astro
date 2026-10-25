@@ -17,8 +17,8 @@ interface Catalyst {
 // ONLY this ISO date — it drives the visible "Last reviewed" label and the
 // JSON-LD dateModified below, so the two can never drift. Restamp when a
 // jurisdiction or program actually changes status (next: CUV107 start Nov 2026,
-// CUV105 readout Dec 2026, dersimelagon decision ~Feb 2027).
-const lastReviewedISO = '2026-10-04';
+// CUV105 readout Dec 2026, dersimelagon decision ~end Feb 2027).
+const lastReviewedISO = '2026-10-25';
 const datePublishedISO = '2026-08-26';
 const lastReviewed = new Date(lastReviewedISO).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -32,9 +32,9 @@ const catalysts: Catalyst[] = [
     note: 'The FDA’s Pharmacy Compounding Advisory Committee is due to consider whether MT-II can move off the restricted Category 2 list and become compoundable. The first time its U.S. legitimacy is formally on a calendar — and the single most consequential date here.',
   },
   {
-    sort: '2027-02-28', when: '~ end Feb 2027', org: 'FDA · Tanabe', strand: 'approved', status: 'upcoming',
+    sort: '2027-02-28', when: '~ end Feb 2027', org: 'FDA · LEO Pharma', strand: 'approved', status: 'upcoming',
     title: 'FDA decision on dersimelagon, the first oral MC1R agonist',
-    note: 'The New Drug Application for dersimelagon (MT-7117) in EPP and X-linked protoporphyria has been accepted under priority review, with a decision expected around the end of February 2027. If approved, melanocortin photoprotection reaches patients as a once-daily pill for the first time — still for a rare disease, not a tan. Context in The pipeline right now.',
+    note: 'LEO Pharma said on 18 September 2026 that it had closed the acquisition of worldwide rights from Tanabe and that the FDA had accepted the NDA under priority review, with a PDUFA date by the end of February 2027. If approved, it is still a rare-disease pill, not a tan. The query page is Dersimelagon; the class snapshot is The pipeline right now.',
   },
   {
     sort: '2026-12-01', when: 'Dec 2026', org: 'Clinuvel · CUV105', strand: 'approved', status: 'upcoming',
@@ -144,7 +144,7 @@ const approved: ApprovedDrug[] = [
   },
   {
     drug: 'Dersimelagon (MT-7117)', kind: 'MC1R agonist · once-daily oral pill',
-    where: 'Positive Phase 3 (INSPIRE) in EPP and X-linked protoporphyria (Jan 2026); New Drug Application accepted by the FDA under priority review, decision expected around the end of Feb 2027. The first oral entrant in the class — no needle, no implant.',
+    where: 'Positive Phase 3 (INSPIRE) in EPP and X-linked protoporphyria (Jan 2026). LEO Pharma closed the acquisition of worldwide rights from Tanabe on 18 September 2026; NDA accepted under priority review, decision expected by the end of Feb 2027. Not approved. Not a tan.',
   },
 ];
 
@@ -266,6 +266,9 @@ const jsonLd = {
       for what the warnings actually did, <a href="/articles/what-the-warnings-actually-did/">a decade of enforcement</a>
       and <a href="/articles/the-enforcement-map/">the enforcement map</a>;
       for where the legitimate programs stand, <a href="/articles/the-pipeline-right-now/">the pipeline right now</a>;
+      for the oral drug itself, <a href="/articles/dersimelagon/">dersimelagon</a>;
+      for the approved implant, <a href="/articles/scenesse/">Scenesse is not a tan</a>;
+      for the libido spinoff, <a href="/articles/pt-141-vs-melanotan-ii/">PT-141 is not Melanotan II</a>;
       for the full arc, <a href="/timeline/">the timeline</a>.
     </p>
   </section>

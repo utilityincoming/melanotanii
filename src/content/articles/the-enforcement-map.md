@@ -15,6 +15,8 @@ faq:
 
 Ask "is Melanotan II legal?" and you get a lawyer's answer: it depends where you
 stand, and on which verb — *making*, *selling*, *advertising*, *buying*, *holding*.
+(The short answer without the lawyer's framing lives on its own page:
+[is Melanotan legal?](/articles/is-melanotan-legal/).)
 What doesn't depend on geography is the underlying fact. In no major market is the
 peptide an approved medicine. Every regulator that has looked at it reached the
 same verdict. What differed — and what makes the story worth mapping — is the

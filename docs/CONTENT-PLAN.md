@@ -51,6 +51,16 @@ the source of truth):
 - `/articles/the-enforcement-map/` (`cautionary-tale`, PR #33) —
   country-by-country enforcement of Melanotan II. Pairs with `/regulatory`;
   restamp only when a jurisdiction materially changes status.
+- `/articles/is-melanotan-legal/` (`cautionary-tale`, 9 Nov 2026) — direct
+  answer to the site's largest emerging query family ("is melanotan legal",
+  "melanotan 2 legal", Deutschland variants; GSC week of 9 Nov 2026: ~90 new
+  impressions at positions 56–88). Approved-nowhere headline, verbs by
+  country, Schedule 9 possession note, afamelanotide exception, pointers to
+  `/regulatory` and `the-enforcement-map` (which forward-links). Restamp only
+  when a jurisdiction materially changes status. Same-pass serpTitle fix:
+  `not-melatonin` now leads with the query's word order ("Melatonin vs
+  Melanotan: …"). Restamp `updatedDate` on neither page — title/meta only,
+  no new body substance.
 
 ## Priority 1 — highest editorial value
 

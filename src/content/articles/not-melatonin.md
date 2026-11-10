@@ -1,7 +1,7 @@
 ---
 title: "One letter, two different molecules"
-serpTitle: "Melanotan vs melatonin: one letter, completely different"
-description: "Melanotan and melatonin are one letter apart and nothing else alike: a sleep supplement versus an unapproved tanning peptide. Why the mix-up matters."
+serpTitle: "Melatonin vs Melanotan: one letter apart, nothing else alike"
+description: "Melatonin is a sleep supplement; Melanotan is an unapproved tanning peptide. One letter apart, nothing else alike — and the mix-up matters."
 pubDate: 2026-08-30
 cluster: science
 faq:

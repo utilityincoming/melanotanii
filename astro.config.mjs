@@ -3,5 +3,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://melanotanii.com',
+  trailingSlash: 'always',
   integrations: [sitemap()],
 });

@@ -30,3 +30,4 @@ pnpm-debug.log*
 reports/
 *gsc-sa*.json
 AppData/
+.vercel

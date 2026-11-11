@@ -5,7 +5,7 @@ description: "Melatonin is a sleep supplement; Melanotan is an unapproved tannin
 pubDate: 2026-08-30
 cluster: science
 faq:
-  - q: "Are Melanotan and melatonin the same thing?"
+  - q: "Melatonin vs Melanotan: are they the same thing?"
     a: "No. They share four letters and nothing else. Melatonin is a hormone your body makes to regulate sleep, sold widely as a supplement. Melanotan is a lab-made peptide that stimulates skin pigment and is not approved anywhere for any use."
   - q: "Does melatonin make you tan?"
     a: "No. Melatonin acts on sleep-timing receptors in the brain, not on the melanocortin receptors that drive pigment. The tanning association comes entirely from the name collision with Melanotan, a different and unapproved compound."

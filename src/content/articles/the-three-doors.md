@@ -1,11 +1,11 @@
 ---
 title: "The three doors: the U.S. regulatory map for a melanocortin sun drug"
-serpTitle: "Is Melanotan II legal in the U.S.? Three regulatory doors"
-description: "Is Melanotan II legal in the U.S.? It's unapproved — but the technology isn't. The three doors: FDA approval, compounding, and the gray market."
+serpTitle: "Three U.S. doors for Melanotan II: FDA, compounding, gray market"
+description: "The U.S. map for Melanotan II: FDA approval, compounding, and the gray market. Not the country-by-country legal verdict."
 pubDate: 2026-08-18
 cluster: next-agonist
 faq:
-  - q: "Is Melanotan II legal in the United States?"
+  - q: "What are the three U.S. regulatory doors for Melanotan II?"
     a: "Melanotan II is not approved by the FDA for any use. There are three regulatory doors: FDA approval (open — SCENESSE walked through it in 2019), pharmacy compounding (shut for Melanotan II, placed in restricted 'Category 2,' with an FDA advisory-committee review due around February 2027), and the gray market (illegal). Melanotan II flows only through the third."
   - q: "Has the FDA ever approved a melanocortin sun drug?"
     a: "Yes. In October 2019 the FDA approved SCENESSE (afamelanotide), a selective MC1R agonist that protects skin by driving it to make more eumelanin, for the rare disease EPP. That settles the existential question — a melanocortin agonist which protects skin by increasing pigment is approvable. The front door opens."
@@ -20,6 +20,10 @@ question was never *whether* this class of drug can be legal. It is *which door
 a legitimate one comes through, and how far that door can open.* This is that
 map — a primer for a technology that is arriving whether or not the gray market
 ever tidies itself up.
+
+The country-by-country verdict — approved nowhere, illegal to sell,
+possession murkier — is [Is Melanotan legal?](/articles/is-melanotan-legal/).
+This page is only the American map.
 
 ## The door marked "approved" is already open
 

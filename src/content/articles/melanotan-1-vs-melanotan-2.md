@@ -1,7 +1,7 @@
 ---
 title: "Melanotan I and Melanotan II: one number, two completely different fates"
-serpTitle: "Melanotan I vs Melanotan II: two peptides, two fates"
-description: "Melanotan I vs Melanotan II: near-identical peptides from the same Arizona lab. One became an approved medicine; the other, the gray market's favorite. Why."
+serpTitle: "Melanotan 1 vs 2: two peptides, two fates"
+description: "Melanotan 1 vs 2: near-identical peptides from the same Arizona lab. One became an approved medicine; the other, the gray market's favorite. Why."
 pubDate: 2026-08-18
 cluster: history
 faq:

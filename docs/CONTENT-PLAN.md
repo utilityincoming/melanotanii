@@ -232,6 +232,109 @@ rare-disease use, exactly the pattern `the-beachhead-indications` and
 program changed phase or status. Companion to both named predecessors, which
 forward-link on ship.
 
+## Next wave — the α-MSH understanding cluster (briefs, 13 Nov 2026)
+
+Audit finding (13 Nov 2026): α-MSH is named in ~15 live articles but is at
+home in none. It appears only as the foil for Melanotan II — the natural
+signal the analog was built to out-do — and no page explains the hormone on
+its own terms. The science-cluster blurb promises "Melanocortin receptors,
+α-MSH, and how the tanning signal really works," yet the gateway
+(`one-hormone-five-receptors`) names α-MSH once. The analog is better
+explained than the original: `before-the-receptor` covers what the chemists
+did *to* α-MSH, `a-drug-with-no-address` covers how the copy misbehaves, but
+nothing covers the molecule they started from.
+
+The through-line for all three briefs is **potency, and why potency is the
+whole story of tanning pharmacology**. Natural α-MSH is a weak, short-lived,
+locally-released signal — the body's design, not a flaw. The Arizona program's
+achievement was *super-potency*: NDP-MSH ran ~26× α-MSH in the
+adenylate-cyclase assay and was active at ~1/1000 the dose
+(Sawyer et al., *PNAS* 1980), and the cyclic analogs that became Melanotan II
+carried that potency into a molecule that resists breakdown. So "a tan from a
+peptide" is not a story about a new signal — it is a story about taking the
+body's deliberately-feeble signal and making it relentless. That reframing is
+what these three pieces teach, and it reinforces every cautionary page from the
+biology side: the harms are not a side effect of potency, they *are* the
+potency, arriving at receptors the local signal was never meant to reach.
+
+Commission only when a correspondent can source the copy; each claim below
+needs a primary citation (the pharmacology here is editorial recall, not
+sourced in the audit). Each ships through the normal frontmatter/PR flow,
+obeys every non-negotiable (physiology only, no compound to dose or source),
+and forward-links from the predecessors named.
+
+### `science` — "The misnamed hormone: what α-MSH actually is" (pillar)
+The entity page the cluster lacks. Target the "what is α-MSH / alpha-MSH /
+melanocyte-stimulating hormone" query family head-on (serpTitle candidate:
+"What is α-MSH? Alpha-melanocyte-stimulating hormone, explained").
+
+The teaching insight: **the name misleads, and the potency gap is why.**
+"Melanocyte-stimulating hormone" was named for what pituitary extract did to
+frog and lizard skin in the assay era — a dramatic, visible pigment response
+in cold-blooded skin. In adult humans the same peptide behaves less like a
+circulating hormone and more like a *local* message: keratinocytes and
+melanocytes make α-MSH on the spot after UV damage (POMC cleavage, driven by
+p53), it acts over microns, and plasma enzymes clear it within minutes. It is
+a 13-amino-acid linear peptide built around the His-Phe-Arg-Trp message
+sequence — the pharmacophore every Melanotan amplified. The body keeps this
+signal weak and brief *on purpose*; that is the control system, not a
+limitation to be engineered away. Set up the potency frame the whole cluster
+pays off: a natural agonist this transient is why a super-potent, protease-
+resistant analog does "everything at once" — same keyhole, incomparable key.
+Keep receptor-signalling detail light (owned by `one-hormone-five-receptors`,
+which should forward-link) and the analog chemistry light (owned by
+`before-the-receptor`). This is the hub: retrofit the ~15 passing α-MSH
+mentions to link here instead of re-defining the hormone each time.
+
+### `science` — "Potent, super-potent, relentless: the three words that explain a peptide tan"
+The pharmacology explainer that makes "super-potent agonist" legible to a lay
+reader — the concept the audit found the site uses (`before-the-receptor`
+says "superpotent") but never defines. Target the comprehension gap behind
+"how does Melanotan work / why is it so strong."
+
+The teaching insight: tanning pharmacology turns on three distinct levers,
+and the gray-market pitch blurs them. **Potency** — how little it takes to
+fire MC1R (the His-Phe-Arg-Trp message, and why D-Phe⁷ locks the active
+shape). **Super-potency** — NDP-MSH's ~26× / ~1000× jump over α-MSH, what an
+EC₅₀ and an adenylate-cyclase readout actually mean, and why the frog-skin
+bioassay could measure this a decade before the receptor was cloned
+(Mountjoy et al., *Science* 1992). **Duration/relentlessness** — the swaps
+(Nle⁴ for the oxidation-prone methionine; D-Phe⁷ against proteases) and
+cyclization that convert a minutes-long signal into an hours-long one, so the
+real variable isn't strength per dose but *exposure over time*. Land the
+point that for human tanning, selectivity — not raw potency — is the property
+a real drug would need and the gray-market compound conspicuously lacks;
+hand that baton to `a-drug-with-no-address` and `what-a-safe-tanning-drug-
+requires`, both of which forward-link. No kinetics a reader could turn into a
+protocol; concepts, not numbers to act on.
+
+### `science` — "Too much, too little: what α-MSH does when the dial is stuck"
+The human-evidence companion — what the melanocortin signal does with no drug
+involved, read off natural experiments. Pairs with and forward-links from the
+pillar and from `why-redheads-burn-mc1r` / `mc1r-variants-not-universal`.
+
+The teaching insight: you can see the signal's real job by watching bodies
+where it is stuck high or absent. **Too much upstream:** in Addison's disease
+and other high-ACTH states the shared POMC precursor runs high and skin
+*darkens* — proof that melanocortin drive alone tans human skin, exactly the
+effect the peptide borrows. **Too little:** congenital POMC deficiency
+produces red hair, pale skin, and early-onset obesity — the same MC1R/MC4R
+axis the cluster describes, failing from the other direction, and the clinical
+reason setmelanotide (Imcivree) exists (already mentioned in 3 articles; this
+gives those mentions their physiology). Close the potency loop: these
+experiments show the system is built to be *tuned*, not maximized — the body
+pairs the α-MSH accelerator with brakes (agouti/ASIP as the endogenous MC1R
+antagonist is worth a paragraph), which is the one design principle a
+"more agonist, longer" gray-market compound throws away. Physiology and named
+clinical conditions only; no treatment guidance.
+
+**Sequencing note:** ship the pillar first so the other two have a hub to
+link to. One hook to verify at commissioning: Aaron Lerner, who isolated
+melatonin, also did foundational MSH characterization — if the sourcing holds
+it ties the cluster to `not-melatonin`. Do not restamp any predecessor's
+`updatedDate` for the forward-link retrofit alone; a one-line internal link is
+not new body substance.
+
 ## Next wave — shipped query pages (25 Oct 2026)
 
 Three direct-answer pages for legitimate-drug queries the essays

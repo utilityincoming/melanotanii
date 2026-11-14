@@ -264,6 +264,16 @@ obeys every non-negotiable (physiology only, no compound to dose or source),
 and forward-links from the predecessors named.
 
 ### `science` — "The misnamed hormone: what α-MSH actually is" (pillar)
+**Shipped 14 Nov 2026** as `/articles/the-misnamed-hormone/`. The hub is
+live; `the-natural-fallacy` and `one-hormone-five-receptors` now forward-link
+to it (one-line inbound links only — no `updatedDate` restamp). Sourced to
+Lerner & Lee (hog-pituitary MSH isolation, 1956), the *Rana pipiens* frog-skin
+message-sequence work (His-Phe-Arg-Trp), the p53→POMC→α-MSH UV pathway
+(Cui/Fisher lab), and Mountjoy et al. (*Science* 1992, receptor cloning).
+The remaining two briefs (potency explainer, "too much, too little") still link
+here as their hub. Do not restamp `updatedDate` unless new primary literature
+materially changes a claim. The brief below is kept as the commissioning record.
+
 The entity page the cluster lacks. Target the "what is α-MSH / alpha-MSH /
 melanocyte-stimulating hormone" query family head-on (serpTitle candidate:
 "What is α-MSH? Alpha-melanocyte-stimulating hormone, explained").

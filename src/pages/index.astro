@@ -89,13 +89,20 @@ function articlesFor(key: keyof typeof clusters) {
             <h2 class="cluster-label">{meta.label}</h2>
             <p class="blurb">{meta.blurb}</p>
             <ul>
-              {items.map((a, i) => (
+              {items.slice(0, 3).map((a, i) => (
                 <li class={i === 0 ? 'lead' : ''}>
                   <a href={`/articles/${a.id}/`}>{a.data.title}</a>
                   <p>{a.data.description}</p>
                 </li>
               ))}
               {items.length === 0 && <li class="soon">Articles coming soon.</li>}
+              {items.length > 3 && (
+                <li class="more">
+                  <a href={`/articles/#thread-${key}`}>
+                    {items.length - 3} more in this thread&nbsp;&rarr;
+                  </a>
+                </li>
+              )}
             </ul>
           </article>
         );
@@ -217,6 +224,8 @@ function articlesFor(key: keyof typeof clusters) {
     .cluster a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .cluster li.lead { border-left: 2px solid var(--accent); padding-left: 0.8rem; }
     .cluster li.lead a { font-size: 1.06rem; font-family: var(--font-display); }
+    .cluster li.more { margin-bottom: 0; padding-top: 0.15rem; }
+    .cluster li.more a { font-size: 0.9rem; color: var(--uv); }
     .soon { color: var(--ink-soft); font-size: 0.9rem; }
 
     /* Closer — the mission strand, still open; bookended by the pigment signature */

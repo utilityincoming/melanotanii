@@ -28,7 +28,7 @@ function articlesFor(key: keyof typeof clusters) {
     const items = articlesFor(key);
     if (items.length === 0) return null;
     return (
-      <section class="thread" style={`--accent: ${strands[meta.strand].colorVar}`}>
+      <section class="thread" id={`thread-${key}`} style={`--accent: ${strands[meta.strand].colorVar}`}>
         <h2 class="thread-label">{meta.label}</h2>
         <p class="thread-blurb">{meta.blurb}</p>
         <ul class="list">
@@ -53,6 +53,7 @@ function articlesFor(key: keyof typeof clusters) {
       margin-top: 2.75rem;
       border-top: 3px solid var(--accent);
       padding-top: 1rem;
+      scroll-margin-top: 1.5rem;
     }
     .thread-label { font-size: 1.2rem; margin: 0; color: var(--accent); }
     .thread-blurb { color: var(--ink-soft); font-size: 0.9rem; margin: 0.35rem 0 0.5rem; }

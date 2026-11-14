@@ -79,7 +79,7 @@ molecule entirely, with nothing to do with pigment.
 
 ## The receptor family
 
-The body uses melanocortin peptides — α-MSH chief among them — as signals
+The body uses melanocortin peptides — [α-MSH](/articles/the-misnamed-hormone/) chief among them — as signals
 across at least five receptor types, each doing different work:
 
 **MC1R** sits on melanocytes and drives pigment production. This is the

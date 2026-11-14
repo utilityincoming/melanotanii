@@ -32,7 +32,8 @@ is the entire design.
 
 ## Your body's version is a whisper, by design
 
-The natural hormone is α-MSH — alpha-melanocyte-stimulating hormone,
+The natural hormone is [α-MSH](/articles/the-misnamed-hormone/) —
+alpha-melanocyte-stimulating hormone,
 thirteen amino acids cleaved from a larger precursor protein. The body
 makes it locally, where it is needed. When ultraviolet light lands on
 the skin, the cells of the epidermis manufacture their own α-MSH right

@@ -71,10 +71,7 @@ peer-reviewed literature, not the rumor mill.
 
 - **Priapism** — an erection that will not resolve and can become a urological
   emergency requiring intervention — has been [reported](https://pmc.ncbi.nlm.nih.gov/articles/PMC6388891/).
-  A person with an erection lasting **3 to 4 hours** needs emergency hospital
-  assessment, not another day of waiting; the [NHS's
-  threshold](https://www.nhs.uk/conditions/priapism/) reflects the risk of
-  lasting tissue damage.
+  Its escalation threshold is in the safety guidance below.
 - **Systemic toxicity**, including the [rhabdomyolysis-and-kidney-injury
   case](https://pubmed.ncbi.nlm.nih.gov/23121206/) that followed a large
   overdose ([you can't know what's in the vial](/articles/whats-in-the-vial/)).
@@ -85,10 +82,10 @@ tell you a thing *can* happen; they don't tell you how often. That cuts against
 panic and against complacency at the same time.
 
 The user who feels fine cannot use them to calculate personal risk, either.
-**Urgent help is not a protocol adjustment.** An erection that persists past
-the [NHS's 3-to-4-hour
-threshold](https://www.nhs.uk/conditions/priapism/) needs immediate hospital
-assessment. The [CDC's
+**Urgent help is not a protocol adjustment.** An erection lasting **3 to 4
+hours** needs immediate hospital assessment; the [NHS
+threshold](https://www.nhs.uk/conditions/priapism/) reflects the risk of
+lasting tissue damage. The [CDC's
 advice](https://www.cdc.gov/niosh/rhabdo/signs-symptoms/) for the muscle
 breakdown in the toxicity case is not to wait: seek medical treatment right
 away for unexpected muscle cramps, aches or pain, dark urine, or unusual

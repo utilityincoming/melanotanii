@@ -429,10 +429,9 @@ to a seller, coupon, certificate marketplace or dosage calculator.
   Explosive pigment case reports vs. proof of cancer causation, with the
   surveillance loss — not a melanoma diagnosis — as the lead. Toward a
   dermatology case-report read-through, not a repeat of `the-mole-problem`.
-- **"'Lab Tested' — Tested for What, Exactly? A Chromatogram Is Not a Car
-  Seatbelt."** The chain-of-custody gap in gray-market quality language.
-  Commission only with testing-science sourcing and named primary records;
-  absolutely no vendor evaluations or vendor-verification links.
+- **“Lab Tested” — Tested for What, Exactly? (published).**
+  Ship as `/articles/lab-tested-is-not-safe/`; see the live article rather than
+  a duplicate pitch here.
 - **"The Gummy Bear Is Digesting Your Peptide."** Sequence, acid, peptidases
   and the psychological appeal of the needle-free product. Should be an
   additional oral-scam angle only if new products/regulatory testing make it
@@ -451,8 +450,7 @@ to a seller, coupon, certificate marketplace or dosage calculator.
   documented agency event; never imply the FDA regulates the gray market's
   beach aesthetics.
 
-**Suggested next commission, if any:** “Lab Tested — Tested for What,
-Exactly?” is drafted as
+**Commission status:** “Lab Tested — Tested for What, Exactly?” is published as
 `/articles/lab-tested-is-not-safe/`. See the live file, not this pitch; it
 anchors to ICH Q6A, TGA measured-content testing, and clearly labelled analog
 studies of different falsified peptide products.

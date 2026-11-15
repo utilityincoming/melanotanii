@@ -137,7 +137,7 @@ the drug changes the background against which a concerning change is noticed.
 
 There is a second, more alarming case in the mouth-focused literature. A
 [peer-reviewed report indexed in 2025](https://pubmed.ncbi.nlm.nih.gov/40210573/)
-(DOI: 10.1016/j.ijom.2025.04.002) described a 22-year-old woman who used a
+(DOI: 10.1016/j.ijom.2025.03.014) described a 22-year-old woman who used a
 Melanotan II nasal spray and subsequently developed a mass in the upper jaw.
 Histological examination diagnosed mucosal malignant melanoma; the abstract
 reports surgical removal and ongoing immunotherapy.
@@ -195,7 +195,7 @@ examined, with the whole history on the record.
   relevant because appearance alone may not distinguish them.
 - **Alsabbagh ASM et al. (2025).** [Melanotan II nasal spray: a possible risk
   factor for oral mucosal malignant melanoma?](https://pubmed.ncbi.nlm.nih.gov/40210573/).
-  *International Journal of Oral and Maxillofacial Surgery*, 54(8):1043–1047.
+  *International Journal of Oral and Maxillofacial Surgery*, 54(9):806–808.
   Case report of a diagnosed oral mucosal melanoma in a young woman after
   nasal-spray use. It reports the case and the need for awareness, not a
   causal rate or proof that Melanotan II caused that tumour.

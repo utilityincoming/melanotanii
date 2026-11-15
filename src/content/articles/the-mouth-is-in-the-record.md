@@ -1,6 +1,6 @@
 ---
 title: "When the tan reaches your mouth: the side effect no mirror warned you about"
-serpTitle: "Melanotan II dark gums and mouth patches: what cases show"
+serpTitle: "Melanotan II dark gums and mouth pigmentation: what cases show"
 description: "Melanotan II and brown gums or inner-cheek patches: the case reports, what a separate oral melanoma means, and what to tell a clinician."
 pubDate: 2026-11-14
 cluster: cautionary-tale

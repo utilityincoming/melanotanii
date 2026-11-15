@@ -33,7 +33,7 @@ dated and searchable.
 The chemistry came out of the University of Arizona, where, as the origin of
 this whole story records ([where Melanotan came
 from](/articles/where-melanotan-came-from/)), the chemist Victor J. Hruby and
-the biologist Mac E. Hadley spent the 1980s building stable analogs of α-MSH.
+the biologist Mac E. Hadley spent the 1980s building stable analogs of [α-MSH](/articles/the-misnamed-hormone/).
 The molecules they made are written into the patent record. US Patent
 5,674,839, *Cyclic Analogs of Alpha-MSH Fragments*, issued in October 1997 to
 Hruby, Hadley, and their colleague Fahad Al-Obeidi — that is the Melanotan II

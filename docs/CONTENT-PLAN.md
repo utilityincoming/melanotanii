@@ -27,13 +27,13 @@ normal frontmatter/PR flow (see README "Adding an article").
 | Cluster | Live | Site label | Depth read |
 | --- | --- | --- | --- |
 | `history` | 6 | The History | Origin, patent/ownership arc, and the pre-receptor discovery-chemistry file all live |
-| `cautionary-tale` | 10 | The Cautionary Tale | Strong; enforcement map, longevity-menu rebrand, protocol-illusion, attribution-gap and nasal-spray-myth files live |
-| `science` | 9 | The Science | Receptor grounding, PK, variant spectrum, name-confusion explainer, natural-fallacy and prevention-claim files |
+| `cautionary-tale` | 13 | The Cautionary Tale | Enforcement, legality, vial, lab-test, oral-pigment and nasal-spray files live |
+| `science` | 12 | The Science | α-MSH hub, potency levers, and the stuck-dial natural experiments are live |
 | `culture` | 6 | The Demand | Well-drawn; supply-mechanics and oral-scam files live |
-| `next-agonist` | 7 | The Next Agonist | Deepest cluster; sponsor-economics and 2026 pipeline-snapshot files live |
+| `next-agonist` | 10 | The Next Agonist | Query pages plus the pipeline snapshot; CUV105 readout still held as a draft |
 
-All five clusters have now cleared the original target of ~6 substantive
-articles each (38 live as of 12 Oct 2026; one further `next-agonist` piece,
+All five clusters have cleared the original target of ~6 substantive
+articles each (46 live as of 15 Nov 2026; one further `next-agonist` piece,
 the-vitiligo-readout, is drafted and held at `draft: true` pending its
 Dec 2026 catalyst). The launch content plan
 (Priority 1 and 2 below) is fully shipped. Further work is now
@@ -297,6 +297,13 @@ which should forward-link) and the analog chemistry light (owned by
 mentions to link here instead of re-defining the hormone each time.
 
 ### `science` — "Potent, super-potent, relentless: the three words that explain a peptide tan"
+**Shipped 15 Nov 2026** as `/articles/potent-superpotent-relentless/`.
+Assay comparisons only (Sawyer et al., *PNAS* 1980; Mountjoy et al.,
+*Science* 1992). No human dose. `a-drug-with-no-address`,
+`what-a-safe-tanning-drug-requires`, and `the-misnamed-hormone` forward-link.
+Do not restamp `updatedDate` unless a primary potency paper materially
+changes the 26× cyclase comparison. The brief below is the commissioning record.
+
 The pharmacology explainer that makes "super-potent agonist" legible to a lay
 reader — the concept the audit found the site uses (`before-the-receptor`
 says "superpotent") but never defines. Target the comprehension gap behind
@@ -319,6 +326,14 @@ requires`, both of which forward-link. No kinetics a reader could turn into a
 protocol; concepts, not numbers to act on.
 
 ### `science` — "Too much, too little: what α-MSH does when the dial is stuck"
+**Shipped 15 Nov 2026** as `/articles/too-much-too-little/`. Addison’s
+(high ACTH), Krude et al. 1998 (POMC deficiency), ASIP as the MC1R
+antagonist (Lu et al., *Nature* 1994). Setmelanotide stays a pointer to
+`the-wellness-menu`. `the-misnamed-hormone`, `why-redheads-burn-mc1r`, and
+`mc1r-variants-not-universal` forward-link. No treatment guidance. Do not
+restamp `updatedDate` unless a primary paper changes one of those natural
+experiments. The brief below is the commissioning record.
+
 The human-evidence companion — what the melanocortin signal does with no drug
 involved, read off natural experiments. Pairs with and forward-links from the
 pillar and from `why-redheads-burn-mc1r` / `mc1r-variants-not-universal`.
@@ -493,8 +508,12 @@ to `the-side-effect-ledger` and `the-nasal-spray-myth`.
   date (added 26 Aug 2026; refreshed 4 Oct 2026; **refreshed 25 Oct 2026**
   to record LEO Pharma's 18 September 2026 close of the dersimelagon
   acquisition and to point at the new query pages). Refresh the date only when a jurisdiction or
-  program actually changes status. Next scheduled restamps: CUV107
-  start (Nov 2026), CUV105 readout (Dec 2026), dersimelagon decision
+  program actually changes status. **15 Nov 2026:** CUV107 did not start.
+  The 6 November 2026 AGM (managing director’s address) moved first-patient
+  treatment to February 2027 after a three-month protocol-validation delay.
+  `/regulatory` and `the-pipeline-right-now` record that; the study is still
+  upcoming. Next scheduled restamps: CUV105 readout (Dec 2026), CUV107
+  first patient (Feb 2027), dersimelagon decision
   (~end Feb 2027 — a dated correction on `/articles/dersimelagon/`,
   not a new essay; procedure in `docs/DISTRIBUTION-FEB-2027.md`),
   FDA PCAC on MT-II compounding (~Feb 2027).

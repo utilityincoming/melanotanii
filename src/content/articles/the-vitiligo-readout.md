@@ -117,9 +117,10 @@ depends entirely on this result and the one after it.
 [[READOUT: on ship, state the actual result here — whether the T-VASI50 primary
 endpoint was met, the reported repigmentation figures (T-VASI50 and the F-VASI75
 secondary), the safety summary, the sponsor's characterisation, and the regulatory
-next step (the CUV107 pivotal program, ~300 patients, Fitzpatrick IV–VI, begun
-Nov 2026, and any filing timeline). Keep to what the sponsor and registry actually
-report.]]
+next step (the CUV107 pivotal program, ~300 patients, Fitzpatrick IV–VI; as of
+the 6 November 2026 AGM the first patient is expected in February 2027 and the
+study had not started — update that clause if the readout names a new date).
+Keep to what the sponsor and registry actually report.]]
 
 ## Why "it repigments skin" is not "it's a tanning drug"
 

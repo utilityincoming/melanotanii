@@ -23,7 +23,7 @@ circuit, and the sun knows how to work it.
 When ultraviolet light hits the skin, it damages DNA in keratinocytes — the
 outer skin cells — and that damage switches on a gene called *POMC*,
 pro-opiomelanocortin. POMC is a precursor: a long protein the cell snips into
-several smaller ones. Two of those pieces matter here. One is α-MSH, the
+several smaller ones. Two of those pieces matter here. One is [α-MSH](/articles/the-misnamed-hormone/), the
 melanocyte-stimulating hormone that is the entire subject of
 [how the tanning signal really works](/articles/one-hormone-five-receptors/) —
 it tells pigment cells to make melanin. The other is β-endorphin, an

@@ -21,7 +21,7 @@ the dark, on a target no one could yet name.
 
 ## The hormone was never going to be a drug
 
-α-MSH — alpha-melanocyte-stimulating hormone — is the body's own tanning
+[α-MSH](/articles/the-misnamed-hormone/) — alpha-melanocyte-stimulating hormone — is the body's own tanning
 signal. It is a small linear peptide, thirteen amino acids long, and it is
 biologically brilliant and pharmaceutically useless. Serum proteases chew a
 linear peptide to fragments within minutes. Inject it and it would never

@@ -38,7 +38,7 @@ makes them durable.
 
 The melanocortin system is real and does the work the menus allude to.
 MC3R and MC4R in the hypothalamus regulate hunger and energy expenditure.
-α-MSH, the hormone Melanotan II imitates, shows anti-inflammatory effects
+[α-MSH](/articles/the-misnamed-hormone/), the hormone Melanotan II imitates, shows anti-inflammatory effects
 in laboratory studies — it suppresses pro-inflammatory cytokines and
 supports the pathways that repair UV-damaged DNA. A 2024 review in the
 *Journal of the European Academy of Dermatology and Venereology*, by

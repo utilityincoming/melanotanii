@@ -20,7 +20,7 @@ could protect entire populations from skin cancer.
 The research emerged where the problem was sharpest. Arizona has some of the
 most intense UV exposure in the United States, and researchers at the
 University of Arizona in the 1980s — most prominently the chemist Victor
-Hruby and the biologist Mac Hadley — were studying α-MSH,
+Hruby and the biologist Mac Hadley — were studying [α-MSH](/articles/the-misnamed-hormone/),
 alpha-melanocyte-stimulating hormone, the body's own signal telling
 melanocytes to produce pigment.
 

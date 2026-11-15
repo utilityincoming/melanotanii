@@ -452,9 +452,10 @@ to a seller, coupon, certificate marketplace or dosage calculator.
   beach aesthetics.
 
 **Suggested next commission, if any:** “Lab Tested — Tested for What,
-Exactly?” as a testing-limits/chain-of-custody explainer, not a buyer's
-checklist. It is genuinely adjacent rather than a rewriting of an existing
-receptor essay, and it has a measurable regulatory anchor already in-house.
+Exactly?” is drafted as
+`/articles/lab-tested-is-not-safe/`. See the live file, not this pitch; it
+anchors to ICH Q6A, TGA measured-content testing, and clearly labelled analog
+studies of different falsified peptide products.
 
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 

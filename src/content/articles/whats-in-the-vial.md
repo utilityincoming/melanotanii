@@ -55,6 +55,9 @@ That is not a claim that no laboratory can ever measure peptide purity. It is
 the narrower, more useful distinction: **a measurement about a sample is not
 a guarantee about your product, and product quality is not clinical safety.**
 
+When a certificate appears, what it actually tested — and what it cannot — is
+the subject of [“99% pure”: the lab number that became the whole sales pitch](/articles/lab-tested-is-not-safe/).
+
 **Sterility.** This is an injection. Sterile manufacture of an injectable is a
 demanding, heavily regulated discipline precisely because contamination
 introduced this way bypasses every defense the skin provides and goes straight

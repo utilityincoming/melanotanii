@@ -67,7 +67,9 @@ The pigmentation can also reach the mouth. A
 [2026 dental case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC12942211/)
 described brown pigment on both the upper and lower gums and irregular patches
 on the inner cheeks; some gum pigmentation still remained at three months after
-stopping. [What the mouth cases actually show](/articles/the-mouth-is-in-the-record/)
+stopping. He had pre-existing gum pigment and reported tobacco and sunbed use,
+so this is an observed association rather than proof of the whole cause.
+[What the mouth cases actually show](/articles/the-mouth-is-in-the-record/)
 includes a separate oral-melanoma report without treating a single case as
 cancer causation. A new dark patch inside the mouth is neither automatically
 cancer nor automatically "just the drug" — it needs clinical assessment with

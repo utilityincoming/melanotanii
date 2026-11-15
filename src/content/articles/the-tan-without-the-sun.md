@@ -80,7 +80,7 @@ up *after* the damage has already been done.
 
 The chain that produces a UV tan begins with injury. Ultraviolet light damages
 the DNA in your skin cells. That damage trips a cellular alarm — the guardian
-protein p53 — which switches on the skin's local production of α-MSH. α-MSH
+protein p53 — which switches on the skin's local production of [α-MSH](/articles/the-misnamed-hormone/). α-MSH
 activates the MC1R receptor, and MC1R orders up eumelanin
 ([why redheads burn](/articles/why-redheads-burn-mc1r/)).
 

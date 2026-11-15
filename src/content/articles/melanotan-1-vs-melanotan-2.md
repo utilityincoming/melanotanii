@@ -63,7 +63,7 @@ sleep supplement it otherwise has nothing to do with.
 ## The same idea, built twice
 
 Both peptides came out of the same University of Arizona program and the same
-goal — a stable analog of the body's pigment hormone, α-MSH, that could
+goal — a stable analog of the body's pigment hormone, [α-MSH](/articles/the-misnamed-hormone/), that could
 induce a protective tan. Natural α-MSH degrades within minutes; the whole
 exercise was engineering durability into it.
 

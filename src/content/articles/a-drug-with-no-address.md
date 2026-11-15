@@ -27,7 +27,7 @@ character before the molecule ever touched a receptor.
 
 ## The natural signal is built to vanish
 
-The body's own version of this molecule, α-MSH, is a disposable messenger. It
+The body's own version of this molecule, [α-MSH](/articles/the-misnamed-hormone/), is a disposable messenger. It
 is released, it acts locally, and it is destroyed &mdash; chewed up by plasma
 enzymes within minutes. Its measured serum half-life is on the order of ten
 minutes; give animals a dose and it is essentially undetectable a couple of
@@ -163,3 +163,6 @@ before the chemistry ever reached a receptor.
 That gap — a body that whispers this signal, a vial that broadcasts it — is
 why the market's favourite word doesn't survive contact with the
 pharmacology. That is [the natural fallacy](/articles/the-natural-fallacy/).
+The three levers that produce the broadcast — potency, super-potency, and
+duration — are separated in
+[potent, super-potent, relentless](/articles/potent-superpotent-relentless/).

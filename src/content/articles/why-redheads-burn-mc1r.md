@@ -52,7 +52,7 @@ Melanotan story.
 ## The switch
 
 On the surface of every melanocyte sits a receptor called MC1R. When the
-hormone α-MSH docks onto it, MC1R fires a signal — carried by a messenger
+hormone [α-MSH](/articles/the-misnamed-hormone/) docks onto it, MC1R fires a signal — carried by a messenger
 molecule called cyclic AMP — that flips the cell's pigment production toward
 protective eumelanin.
 
@@ -105,4 +105,6 @@ means both a thinner shield and a slower repair crew.
 The gene that makes a person burn is, independently, a gene that makes melanoma
 more likely — a double burden carried by the same fair-skinned population the
 whole photoprotection dream was ultimately meant to serve. That overlap is why
-the dream mattered, and why getting the drug right mattered even more.
+the dream mattered, and why getting the drug right mattered even more. The
+same axis, stuck high or missing entirely, is the subject of
+[too much, too little](/articles/too-much-too-little/).

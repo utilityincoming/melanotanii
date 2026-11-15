@@ -12,7 +12,7 @@ faq:
 ---
 
 The [redhead article](/articles/why-redheads-burn-mc1r/) tells the clean
-version: MC1R is a switch, α-MSH throws it toward protective eumelanin, and
+version: MC1R is a switch, [α-MSH](/articles/the-misnamed-hormone/) throws it toward protective eumelanin, and
 a cluster of "red-hair-colour" variants leave it stuck. That version is true
 and incomplete. The gene is not a switch with two positions. It is a dimmer
 with a few dozen stops, most of them occupied by people who do not have red
@@ -166,6 +166,9 @@ double burden. The spectrum version is worse, because the burden is not
 confined to the people you can pick out of a crowd. Freckling, fair
 skin without red hair, a family that "just burns" — those are r and
 R/+ genotypes, and they are where most of the extra risk actually lives.
+The natural experiments at either end of the same signal — too much ACTH,
+no POMC at all — are in
+[too much, too little](/articles/too-much-too-little/).
 
 ## What this does to a future agonist
 

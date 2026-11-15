@@ -36,7 +36,9 @@ receptor, and nothing else.
 This is the most tractable of the four. Receptor-selective medicinal chemistry
 has advanced enormously since the 1980s, and selective melanocortin ligands
 are an active area of drug design. The shotgun was a product of its era, not a
-law of nature.
+law of nature. What the unselective peptide actually maximises — potency,
+super-potency, and duration, without selectivity — is separated in
+[potent, super-potent, relentless](/articles/potent-superpotent-relentless/).
 
 ## Two — a safety profile built for healthy people
 

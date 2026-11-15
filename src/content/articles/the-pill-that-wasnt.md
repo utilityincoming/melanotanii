@@ -20,7 +20,7 @@ impossibility.
 
 Melanotan II is a cyclic peptide — seven amino acids locked into a ring.
 That ring was engineered in the 1980s precisely so the molecule could
-survive long enough, *once injected*, to outlast the body's own α-MSH,
+survive long enough, *once injected*, to outlast the body's own [α-MSH](/articles/the-misnamed-hormone/),
 which is destroyed within minutes. The digestive tract is a different
 problem from plasma enzymes. A swallowed peptide meets stomach acid and a
 battery of proteases whose entire job is dismantling proteins into single

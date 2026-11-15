@@ -16,9 +16,9 @@ interface Catalyst {
 // Single source of truth for the tracker's freshness. On a restamp, change
 // ONLY this ISO date — it drives the visible "Last reviewed" label and the
 // JSON-LD dateModified below, so the two can never drift. Restamp when a
-// jurisdiction or program actually changes status (next: CUV107 start Nov 2026,
-// CUV105 readout Dec 2026, dersimelagon decision ~end Feb 2027).
-const lastReviewedISO = '2026-10-25';
+// jurisdiction or program actually changes status (next: CUV105 readout Dec 2026,
+// CUV107 first patient Feb 2027, dersimelagon decision ~end Feb 2027).
+const lastReviewedISO = '2026-11-15';
 const datePublishedISO = '2026-08-26';
 const lastReviewed = new Date(lastReviewedISO).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -42,9 +42,9 @@ const catalysts: Catalyst[] = [
     note: 'Topline from the 200-patient CUV105 trial of SCENESSE in vitiligo — the approved MC1R agonist reaching for its second indication. A positive result widens the beachhead.',
   },
   {
-    sort: '2026-11-01', when: 'Nov 2026', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
-    title: 'Pivotal vitiligo trial (CUV107) set to begin',
-    note: 'The confirmatory study of around 300 patients, planned for the second half of 2026, meant to underpin regulatory filings across Europe, North America and Africa. Its design received final EMA scientific advice in April 2026.',
+    sort: '2027-02-15', when: 'Feb 2027', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
+    title: 'Pivotal vitiligo trial (CUV107): first patient now expected in February',
+    note: 'On 6 November 2026 the sponsor said protocol validation had taken three extra months. The first patient is now expected in February 2027, not November 2026. The study has not started. The design is unchanged from the April 2026 EMA advice: about 300 patients, Fitzpatrick IV–VI.',
   },
   {
     sort: '2026-08-17', when: '17 Aug 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',

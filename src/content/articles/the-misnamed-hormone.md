@@ -184,6 +184,9 @@ reading the same receptor, but [now circulating for hours and reaching every
 melanocortin receptor in the body](/articles/a-drug-with-no-address/) — the
 appetite ones, the arousal ones, the ones in the brain.
 
+The three levers in that rebuild — potency, super-potency, and duration —
+are separated in
+[potent, super-potent, relentless](/articles/potent-superpotent-relentless/).
 That is why a single peptide [tans, sickens, and arouses at
 once](/articles/one-hormone-five-receptors/). It is not a mysterious property
 of the molecule. It is what happens when you take a whisper the body meant to
@@ -196,5 +199,8 @@ original safe to have.
 And pigment, finally, is only one of α-MSH's jobs. The same peptide family is
 woven into inflammation, energy balance, and more — which is another way of
 saying the body never built this signal to be a tanning switch you could leave
-on. It built a brief, local message and gave it a name, seventy years ago, for
-the one thing it did to a frog.
+on. The human evidence for that — skin that darkens when the signal is stuck
+high, and stays pale when it is missing — is
+[too much, too little](/articles/too-much-too-little/). The body built a brief,
+local message and gave it a name, seventy years ago, for the one thing it did
+to a frog.

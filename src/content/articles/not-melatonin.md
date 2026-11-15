@@ -26,7 +26,7 @@ works through melatonin receptors, which pharmacologists abbreviate MT1
 and MT2.
 
 **Melanotan** — Melanotan I and Melanotan II — are synthetic peptides
-modeled on α-MSH, the body's pigment hormone. Melanotan II is a ring of
+modeled on [α-MSH](/articles/the-misnamed-hormone/), the body's pigment hormone. Melanotan II is a ring of
 seven amino acids, not approved by any regulator for any use, sold on
 the gray market as an injection or nasal spray for tanning. It works
 through the [melanocortin receptor

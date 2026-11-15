@@ -3,7 +3,7 @@ title: "The class is moving: the melanocortin sun drugs actually in trials now"
 serpTitle: "Melanocortin drugs in development 2026: dersimelagon & afamelanotide"
 description: "A 2026 snapshot of the melanocortin drugs in real development: an oral MC1R agonist near FDA decision, and an approved one expanding into vitiligo and repair."
 pubDate: 2026-09-24
-updatedDate: 2026-10-25
+updatedDate: 2026-11-15
 cluster: next-agonist
 faq:
   - q: "Is there an oral Melanotan-type drug in development?"
@@ -73,11 +73,14 @@ ceiling. Afamelanotide is now in clinical study across a spread of indications
 that, taken together, sketch the outline of a general photomedicine:
 
 - **Non-segmental vitiligo** — a Phase III program (CUV105, with a pivotal
-  CUV107 study of around 300 patients planned to begin in the second half of
-  2026) testing whether driving eumelanin can *repigment* skin that has lost its
-  colour. In April 2026 the sponsor secured final EMA scientific advice on the
-  pivotal design. This is the mirror image of tanning: the same pigment
-  machinery, pointed at restoring colour rather than adding it.
+  CUV107 study of around 300 patients) testing whether driving eumelanin can
+  *repigment* skin that has lost its colour. In April 2026 the sponsor secured
+  final EMA scientific advice on the pivotal design. On 6 November 2026 it said
+  protocol validation had slipped three months: the first CUV107 patient is now
+  expected in February 2027, and the study has not started. Topline from the
+  earlier CUV105 study is still expected in December 2026. This is the mirror
+  image of tanning: the same pigment machinery, pointed at restoring colour
+  rather than adding it.
 - **Xeroderma pigmentosum (XP)** — a study (CUV156) evaluating safety in XP-C
   patients and, tellingly, the drug's ability to *assist reparative processes*
   after UV-provoked DNA damage. This is the frontier claim: not just pigment as

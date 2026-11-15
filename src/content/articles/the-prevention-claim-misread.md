@@ -3,6 +3,7 @@ title: "The prevention claim, misread: what the trials showed, what the captions
 serpTitle: "Does Melanotan II prevent skin cancer? What the trials showed"
 description: "'Melanotan prevents skin cancer' is a caption-level fact. The trials never tested that. What the evidence shows, what the claim sells, and the gap between."
 pubDate: 2026-08-30
+updatedDate: 2026-11-14
 cluster: science
 faq:
   - q: "Does Melanotan II prevent skin cancer?"
@@ -11,6 +12,8 @@ faq:
     a: "They measured pain-free light exposure in a rare photosensitivity disorder — not cancer. A 2024 review concluded melanocortin activation 'may reduce' but 'does not prevent' melanoma. Reduced sun-related discomfort is not the same as reduced cancer risk."
   - q: "Does a tan protect against skin cancer?"
     a: "No. Cancer Research UK and dermatology bodies are explicit that a tan is a sign of DNA damage, not protection. A drug-induced tan doesn't change that, and no melanocortin agonist has been shown to prevent skin cancer."
+  - q: "If my skin is darker, can I spend longer in the sun safely?"
+    a: "No safe extension has been established from drug-induced colour. Melanotan II has not been shown in a clinical trial to prevent UV injury or skin cancer, and looking darker does not prove that protection occurred. The TGA says melanotan-induced pigmentation will not protect against UV exposure the way a suitable sunscreen will."
 ---
 
 Scroll the hashtags and the claim arrives as established fact, usually in
@@ -34,8 +37,8 @@ Hruby's lab engineered the analogs precisely because a sunscreen you
 wear can be forgotten, but a photoprotective signal you carry cannot.
 
 That was the hypothesis. Hypotheses do not become drug claims by
-intention. They become drug claims through prevention trials — and no
-Melanotan has ever had one. The molecule's developers abandoned MT-II
+intention. They become drug claims through prevention trials with a cancer
+endpoint — and MT-II has never had one. The molecule's developers abandoned it
 as a general-use candidate decades ago. No company ever filed for a
 prevention indication. No regulator anywhere has ever assessed, let
 alone approved, Melanotan II for any use, which means the claim
@@ -43,6 +46,17 @@ alone approved, Melanotan II for any use, which means the claim
 endpoint — that has never taken place.
 
 The caption is citing a result that does not exist.
+
+For the reader who has already used it: **new colour is not an all-clear for
+more UV.** The mirror can show pigment; it cannot show DNA injury that has
+been avoided. There is no validated way to translate that colour into extra
+safe minutes in the sun. The practical implication runs in the opposite
+direction: darker skin can create false confidence, while UV exposure and
+mole changes still need the attention they needed before. Australia's TGA
+states that [no tan, fake or real, protects skin against sun
+damage](https://www.tga.gov.au/news/blog/dont-risk-using-tanning-products-containing-melanotan),
+and that artificially increasing pigmentation is not a substitute for a
+suitable sunscreen.
 
 ## What the tested cousin actually showed
 

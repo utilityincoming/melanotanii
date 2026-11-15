@@ -3,12 +3,15 @@ title: "The mole problem: what dermatologists actually fear about Melanotan II"
 serpTitle: "Melanotan II and moles: what dermatologists actually fear"
 description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic: the case reports, the melanoma question, and the signals you lose."
 pubDate: 2026-08-18
+updatedDate: 2026-11-14
 cluster: cautionary-tale
 faq:
   - q: "Does Melanotan II affect moles?"
     a: "Yes. It drives pigment cells throughout the body, so existing moles can darken and enlarge and new ones can appear. The dermatology literature carries repeated case reports, including a man who erupted more than a hundred new moles within weeks of a short course."
   - q: "Does Melanotan II cause melanoma?"
     a: "Melanoma has been diagnosed in users and reported in peer-reviewed journals, but these are case reports: they can raise an alarm, not prove cause. Causation is genuinely unresolved — which is not the same as harmless."
+  - q: "What should I do about a mole that changed after Melanotan?"
+    a: "Have a dermatologist assess it promptly, especially if one lesion is changing, bleeding, itching, ulcerated, or stands out from your other moles. Tell them when you used the product and when you noticed the change. Do not diagnose a 'normal MT-II mole' from a photo or assume a new darker spot is harmless because the whole tan came from a drug."
   - q: "Why do dermatologists worry about Melanotan II beyond cancer risk?"
     a: "Early melanoma is caught by change — the mole that darkens or grows, the 'E' in ABCDE. A drug that darkens and changes every mole raises the noise floor under that signal, so the one dangerous mole hides among dozens. It degrades early detection whether or not it ever causes a cancer."
 ---
@@ -74,6 +77,24 @@ enlarging and new ones appearing over a span of months.
 
 This is not fringe or disputed. A compound that tells pigment cells to switch
 on will switch on the pigment cells in your moles too.
+
+The practical translation is not “all new pigment is cancer,” which the case
+reports cannot establish. It is that a photograph of your old self is not a
+diagnosis, and a blanket explanation — “the peptide darkens everything” —
+cannot clear an individual lesion. A dermatologist should assess new or
+changing moles, particularly one that is changing faster than the surrounding
+skin, bleeding, itching, ulcerated or noticeably different from the others.
+Tell them the actual product name and when the exposure and change happened.
+Bring older photographs if you have them; do not wait for a new dark spot to
+declare itself against a background the drug has also changed. A fresh dark
+nail band deserves the same honesty rather than an assumption that it is
+bruising.
+
+The Skin Cancer Foundation's [July 2026
+warning](https://www.skincancer.org/press/the-skin-cancer-foundation-issues-warning-regarding-melanotan-ii/)
+makes precisely this surveillance point: rapid changes in moles and pigmented
+lesions can make detection more difficult. The safe response to an open
+causation question is not to self-exempt a lesion from examination.
 
 ## The melanoma question, held honestly
 

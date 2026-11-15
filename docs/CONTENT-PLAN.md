@@ -363,6 +363,99 @@ already covered but did not title for. No commerce on any of them.
 Distribution for the decision week is `docs/DISTRIBUTION-FEB-2027.md`.
 It is a correction plus a pitch, not another article.
 
+## Next wave — reader-facing translation and adjacent pitches (14 Nov 2026)
+
+Audit finding: the user arriving with an existing vial and a recent symptom
+mostly encountered mechanism or enforcement prose. The additions below put the
+useful distinction on the page that already owns the question, rather than
+creating a duplicate "Melanotan 2 guide." Reader-facing does not mean a usage
+guide. No routes, amounts, mixing instructions, supplier comparisons or
+claim-checking services.
+
+### `science` — `/articles/the-misnamed-hormone/`
+**Revised 14 Nov 2026** on `feat/user-insights`. Add the translation between
+"α-MSH agonist" and a "protective beautiful tan": activation → pigmentation →
+protection are different propositions. A non-selective systemic agonist does
+not target an aesthetic pattern or prove UV benefit. Leans on the TGA's
+explicit sunscreen distinction; forward-links to
+`what-a-safe-tanning-drug-requires`. Revisit only with new photoprotection
+evidence, not for ordinary prose tuning.
+
+### `science` — `/articles/the-prevention-claim-misread/`
+**Revised 14 Nov 2026** on `feat/user-insights`. New FAQ and body translation
+for the assumption "my colour is darker, therefore I can stay out longer."
+No study-derived safe UV extension exists; colour cannot show avoided DNA
+damage. Primary anchor: TGA's fake-or-real-tan and sunscreen paragraph.
+
+### `cautionary-tale` — `/articles/the-side-effect-ledger/`
+**Revised 14 Nov 2026** on `feat/user-insights`. Adds the actual size and
+limits of Dorr et al. 1996 (three healthy men; do not add dosing levels), the
+difference between a familiar effect and a tolerance/all-clear, specific
+escalation guidance, and the pregnancy/breastfeeding/interactions evidence blanks.
+DermNet, NHS priapism guidance, Dorr 1996, Dreyer et al. 2019 (PMC) and Nelson
+et al. 2012 (PubMed). Keep the distinction between case reports and a causal
+rate; do not assemble novel symptom algorithms from case reports.
+
+### `cautionary-tale` — `/articles/the-mole-problem/`
+**Revised 14 Nov 2026** on `feat/user-insights`. The non-alarmist next step for
+a changing mole: prompt dermatology assessment and an honest timeline, not
+photo self-clearance as "just peptide pigment." Nail-band changes get the same
+treatment. Anchored to The Skin Cancer Foundation's July 2026 surveillance
+warning. No promise that a changing mole is or is not malignant.
+
+### `cautionary-tale` — `/articles/whats-in-the-vial/`
+**Revised 14 Nov 2026** on `feat/user-insights`. Replaces the categorical
+"no laboratory certificate can be trusted" framing with a stronger claim that
+survives scrutiny: an assay can apply to a submitted sample; it does not supply
+batch-wide identity, content, sterility, sealing and handling for the buyer's
+container, and it does not answer the compound's clinical safety. August 2026
+TGA seized-bottle finding is used as a specific measurement, not universalized
+into "every vial is off by double." `updatedDate` is set only because the body
+actually gains substance.
+
+## Loud packaging, restrained bodies — adjacent pitches, not approved articles
+
+These are deliberately provocative **working headlines**. They punch at the
+seller's rhetorical magic trick, never at users' bodies, fertility, trauma or
+appearance. Commission only the ones a correspondent can ground in a primary
+source; if the provocative framing outruns the evidence spin, change the
+headline rather than laundering the claim. None should be an article adjacent
+to a seller, coupon, certificate marketplace or dosage calculator.
+
+- **"Your Tan Has No Address: the Peptide That Can't Find Your Beach Body."**
+  The whole-body signal story, expanded from `a-drug-with-no-address`. Fix:
+  this is a sharper distribution entrance, not a new dosing kinetics claim.
+- **"The Mole Raid: a Hundred New Freckles, One Vanishing Warning Sign."**
+  Explosive pigment case reports vs. proof of cancer causation, with the
+  surveillance loss — not a melanoma diagnosis — as the lead. Toward a
+  dermatology case-report read-through, not a repeat of `the-mole-problem`.
+- **"'Lab Tested' — Tested for What, Exactly? A Chromatogram Is Not a Car
+  Seatbelt."** The chain-of-custody gap in gray-market quality language.
+  Commission only with testing-science sourcing and named primary records;
+  absolutely no vendor evaluations or vendor-verification links.
+- **"The Gummy Bear Is Digesting Your Peptide."** Sequence, acid, peptidases
+  and the psychological appeal of the needle-free product. Should be an
+  additional oral-scam angle only if new products/regulatory testing make it
+  distinct from `the-pill-that-wasnt`.
+- **"A Yawn, a Stretch, an Eight-Hour Problem: the Tan's Receptor Family
+  Reunion."** An authored history of the recorded reflex, from Dorr's three-man
+  pilot through the case-report priapism record. Do not inflate an eight-hour
+  self-experiment anecdote into a formal outcome or repeat anonymous anecdotes
+  as clinical rates.
+- **"Peach-Flavoured Pharmacology: the Vial Got a Cartoon."** How sweetness,
+  emoji palettes and wellness fonts mediate risk perception. Should be anchored
+  in platform listings and trading-standards records, not fabricate a flavor as
+  evidence of legal noncompliance.
+- **"The Agency Never Approved the Beach Episode."** Contrast FDA-medicine
+  pages with the market's appropriation of regulatory vibes. Only with a
+  documented agency event; never imply the FDA regulates the gray market's
+  beach aesthetics.
+
+**Suggested next commission, if any:** “Lab Tested — Tested for What,
+Exactly?” as a testing-limits/chain-of-custody explainer, not a buyer's
+checklist. It is genuinely adjacent rather than a rewriting of an existing
+receptor essay, and it has a measurable regulatory anchor already in-house.
+
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,

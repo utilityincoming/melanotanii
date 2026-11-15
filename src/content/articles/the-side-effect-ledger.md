@@ -63,9 +63,10 @@ medical weight than any other entry here, for reasons that get their own
 article ([the mole problem](/articles/the-mole-problem/)): they collide
 directly with how melanoma is caught early.
 
-The pigmentation can also reach the mouth. A 2026 dental case report described
-brown pigment on both the upper and lower gums and irregular patches on the
-inner cheeks; some gum pigmentation still remained at three months after
+The pigmentation can also reach the mouth. A
+[2026 dental case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC12942211/)
+described brown pigment on both the upper and lower gums and irregular patches
+on the inner cheeks; some gum pigmentation still remained at three months after
 stopping. [What the mouth cases actually show](/articles/the-mouth-is-in-the-record/)
 includes a separate oral-melanoma report without treating a single case as
 cancer causation. A new dark patch inside the mouth is neither automatically

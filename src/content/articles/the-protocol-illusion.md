@@ -3,6 +3,7 @@ title: "The protocol illusion: why dosing math can't fix a vial nobody tested"
 serpTitle: "Melanotan II dosing guides: why the protocols can't work"
 description: "Online Melanotan II guides carry titration schedules, reconstitution math, maintenance plans. The numbers are theatre — arithmetic on an unknown vial."
 pubDate: 2026-08-30
+updatedDate: 2026-11-14
 cluster: cautionary-tale
 faq:
   - q: "Are online Melanotan II dosing protocols reliable?"
@@ -135,9 +136,13 @@ the error it was computed from.
 
 The vial problem is usually told as a purity story
 ([you can't know what's in the vial](/articles/whats-in-the-vial/)).
-The TGA finding makes it a *quantity* story too. Even the buyers who got
-pure product got an unknown dose of it. The protocol is a dial attached
-to nothing.
+The TGA finding makes it a *quantity* story too. Its five tested containers
+carried Melanotan II and still varied widely in measured content. A certificate
+covering a particular container could narrow that specific quantity question;
+what it cannot do is extend a single result to the whole market ([what “99%
+pure” actually measures](/articles/lab-tested-is-not-safe/)).
+The protocol is a label-based routine, not a course issued against a verified
+label, established clinical exposure and medical oversight.
 
 ## The developers ran a protocol. They stopped.
 

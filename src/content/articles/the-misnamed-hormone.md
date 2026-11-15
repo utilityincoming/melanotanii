@@ -3,6 +3,7 @@ title: "The misnamed hormone: what α-MSH actually is"
 serpTitle: "What is α-MSH? Alpha-melanocyte-stimulating hormone, explained"
 description: "α-MSH, or alpha-melanocyte-stimulating hormone, was named for darkening frog skin. In humans it is a local, short-lived signal the skin makes after UV."
 pubDate: 2026-11-14
+updatedDate: 2026-11-14
 cluster: science
 faq:
   - q: "What is α-MSH?"
@@ -130,6 +131,44 @@ Those are not shortcomings. They are the control system. The body tunes
 pigment with a signal it can start and stop fast, in one small patch of skin,
 because unbounded pigment-making everywhere, all the time, is not something a
 body wants. The feebleness is the feature.
+
+## If you came here looking for an agonist
+
+An agonist is a key that turns a receptor on. For the colour and limited UV
+defence the original researchers wanted, the address is **MC1R on a
+melanocyte**. α-MSH is the body's key. Melanotan II is a synthetic, longer-
+lasting key that also turns other melanocortin locks. It is not the body's own
+α-MSH, and it is not a supply of melanin. It changes a signal; the melanocyte
+still has to make, package and transfer the pigment.
+
+That distinction separates three outcomes the phrase "protective tan" collapses:
+
+- **Agonism:** the receptor was switched on.
+- **Pigmentation:** skin became darker because cells made melanin.
+- **Protection:** a meaningful reduction in UV injury or skin cancer was
+  measured in people.
+
+The first two do not establish the third. Eumelanin absorbs and scatters UV,
+but pigment is not a force field. Australia's medicines regulator says
+explicitly that melanotan-induced pigmentation [will not protect against UV
+exposure the way a suitable sunscreen
+will](https://www.tga.gov.au/news/blog/dont-risk-using-tanning-products-containing-melanotan),
+and no trial has shown that Melanotan II prevents skin cancer. A darker
+appearance therefore cannot be used as permission for more sun or less
+protection.
+
+The beauty part is not programmable either. A systemic signal reaches pigment
+cells indiscriminately; it does not read cheekbones, symmetry, a photograph or
+a preferred shade. The same biology can mean a tan, conspicuous freckles,
+changing moles and dark nail bands. The desired colour and the unwanted
+pigment are both the receptor being activated.
+
+So the useful question is not "how do I get more agonist?" It is "can a drug
+activate the right receptor, in the right tissue, with a measured benefit and
+an acceptable safety record?" For Melanotan II, those answers have not been
+established. For the research goal, see
+[what a safe tanning drug would actually have to
+be](/articles/what-a-safe-tanning-drug-requires/).
 
 ## Why this is the whole story
 

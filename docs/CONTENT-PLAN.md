@@ -455,6 +455,37 @@ to a seller, coupon, certificate marketplace or dosage calculator.
 anchors to ICH Q6A, TGA measured-content testing, and clearly labelled analog
 studies of different falsified peptide products.
 
+### Shipped investigation — oral pigmentation (14 Nov 2026)
+
+**On `feat/oral-pigmentation`:** `/articles/the-mouth-is-in-the-record/`.
+A reader arriving for protective, attractive melanin may also find pigment
+where the tan was never meant to go. This is the dedicated case-led record for
+"Melanotan II dark gums / mouth pigmentation / dark lips", not a repeat of the
+side-effect ledger or the mole article. Inbound links are substantive additions
+to `the-side-effect-ledger` and `the-nasal-spray-myth`.
+
+- Primary case: Bonchev A, *Life* 2026, DOI `10.3390/life16020265`, PMC
+  `PMC12942211`. Gum and inner-cheek pigmentation, follow-up after stopping,
+  with partial rather than uniform resolution. Keep the existing earlier
+  pigment, tobacco use and sunbed exposure in view. This is one observed
+  patient, not a general recovery timeline.
+- That case explicitly found no lip, tongue or palate pigmentation. "Dark
+  lips" is a search phrase, not an MT-II effect created by this paper. A new
+  lip or oral mark still merits an appropriate clinical assessment.
+- Separate case: PMID `40210573`, oral mucosal melanoma in a young woman after
+  an MT-II nasal spray. It is a documented case, not proof of causation, an
+  incidence rate or evidence of comparative route safety. Brown
+  drug-associated pigmentation is not itself a tumour diagnosis.
+- Wolk et al. 2025 (PMID `40369390`) supports the broad oral-pigment
+  differential and biopsy when indicated. NHS mouth-symptom guidance gives
+  explicit escalation wording while noting that common symptoms usually have
+  other explanations.
+- Accessible SVG timeline, no reproduced patient photographs. No removal
+  treatments; the new report explicitly lacks MT-II-specific treatment
+  evidence. Route evidence is not compositional or causal evidence: a nasal
+  spray-associated mouth mass does not prove a local mechanism; an
+  injection-associated pigmentation case does not make injection safer.
+
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,

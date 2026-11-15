@@ -3,6 +3,7 @@ title: "The nasal-spray myth: why needle-free isn't safer"
 serpTitle: "Melanotan II nasal spray: is needle-free safer? No"
 description: "A Melanotan II nasal spray changes the packaging, not the molecule. Why 'needle-free' removes the one thing an injection gives — a known dose."
 pubDate: 2026-09-29
+updatedDate: 2026-11-14
 cluster: cautionary-tale
 faq:
   - q: "Is a Melanotan II nasal spray safer than injecting?"
@@ -78,6 +79,16 @@ shifts from one application to the next.
 <figcaption>Same compound, same harms, same unapproved status. The route
 that feels gentlest is the one that erases the measurement.</figcaption>
 </figure>
+
+A different question follows a mouth change: "if it came from a spray, was it
+only a local effect?" The published record cannot isolate a mechanism that
+way. It includes a [2025 case of oral mucosal
+melanoma](https://pubmed.ncbi.nlm.nih.gov/40210573/) in a young woman who had
+used a nasal spray, and a separate 2026 case of new and intensified **gum and
+inner-cheek pigmentation with injected Melanotan II**. Both are case reports,
+not estimates of incidence, proof of causation or evidence that one format is
+safer than the other. The details and diagnostic limits belong to [the
+mouth-pigmentation record](/articles/the-mouth-is-in-the-record/).
 
 A dose you cannot measure is not a gentle dose. It is an unmonitored one.
 "Slow and even" is a description a buyer applies afterward to whatever

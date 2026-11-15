@@ -7,7 +7,7 @@ updatedDate: 2026-11-14
 cluster: cautionary-tale
 faq:
   - q: "What are the documented side effects of Melanotan II?"
-    a: "Sorted by evidence: acute effects that follow reliably (nausea and sometimes vomiting, facial flushing, spontaneous erections in men, appetite suppression, a yawning-and-stretching reflex); pigment effects (darkening moles, new freckles, dark nail bands); and rare serious events in the literature (priapism, systemic toxicity after overdose, and melanoma reports with causation unresolved)."
+    a: "Sorted by evidence: acute effects that follow reliably (nausea and sometimes vomiting, facial flushing, spontaneous erections in men, appetite suppression, a yawning-and-stretching reflex); pigment effects (darkening moles, new freckles, dark nail bands, and brown oral patches in case reports); and rare serious events in the literature (priapism, systemic toxicity after overdose, and melanoma reports with causation unresolved)."
   - q: "Is Melanotan II proven safe for long-term use?"
     a: "No. The formal human evidence is small and old. Years of real-world use, at real exposures, in stacked combinations, has never been formally studied. 'No documented harm' there means nobody collected the data — absence of evidence, not evidence of absence."
   - q: "Could gray-market Melanotan II affect a baby during pregnancy or breastfeeding?"
@@ -62,6 +62,16 @@ nails. Most of this is cosmetic. The mole changes are not, and they carry more
 medical weight than any other entry here, for reasons that get their own
 article ([the mole problem](/articles/the-mole-problem/)): they collide
 directly with how melanoma is caught early.
+
+The pigmentation can also reach the mouth. A
+[2026 dental case report](https://pmc.ncbi.nlm.nih.gov/articles/PMC12942211/)
+described brown pigment on both the upper and lower gums and irregular patches
+on the inner cheeks; some gum pigmentation still remained at three months after
+stopping. [What the mouth cases actually show](/articles/the-mouth-is-in-the-record/)
+includes a separate oral-melanoma report without treating a single case as
+cancer causation. A new dark patch inside the mouth is neither automatically
+cancer nor automatically "just the drug" — it needs clinical assessment with
+an accurate exposure history.
 
 ## The serious and rare — real, but read the conditions
 

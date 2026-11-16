@@ -15,13 +15,17 @@ guide to it.
 
 ## Editorial pillars
 
-| Cluster           | Site label         | Story                                                        |
-| ----------------- | ------------------ | ----------------------------------------------------------- |
-| `history`         | The History        | Origin at U. of Arizona, α-MSH analogs, the original mission |
-| `cautionary-tale` | The Cautionary Tale| The gray market, documented harms, regulator warnings        |
-| `science`         | The Science        | Melanocortin receptors, why MT-II "did everything"           |
-| `culture`         | The Demand         | The reward loop, a century of tanning fashion, the market desire built |
-| `next-agonist`    | The Next Agonist   | Afamelanotide, trial economics, the GLP-1-style breakout     |
+One origin, three strands. Clusters are filing inside a strand.
+
+| Strand | Cluster | Site label | Story |
+| ------ | ------- | ---------- | ----- |
+| mission | `history` | The History | Origin at U. of Arizona, α-MSH analogs, the original mission |
+| mission | `science` | The Science | Melanocortin receptors, why MT-II "did everything" |
+| market | `culture` | The Demand | The reward loop, a century of tanning fashion, the market desire built |
+| market | `cautionary-tale` | The Cautionary Tale | The gray market, documented harms, regulator warnings |
+| approval | `next-agonist` | The Next Agonist | Afamelanotide, trial economics, the GLP-1-style breakout |
+
+Legitimate-drug and status queries get a `kind: query` page (FAQ first, `serpTitle` is the query). Essays keep the economics and the history.
 
 ## Stack
 
@@ -44,8 +48,10 @@ npm run build    # static output in dist/
 ---
 title: "..."
 description: "..."        # written for the SERP
+serpTitle: "..."          # optional; required in spirit for kind: query (max 70)
 pubDate: 2026-08-18
 cluster: history           # history | cautionary-tale | science | culture | next-agonist
+kind: essay                # essay | query  (query pages need an faq)
 draft: false
 ---
 ```

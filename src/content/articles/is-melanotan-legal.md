@@ -4,6 +4,7 @@ serpTitle: "Is Melanotan legal? The status by country, without the fine print"
 description: "Melanotan II is approved nowhere. Selling it is illegal in the US, UK, Australia, Ireland and the EU. Possession is murkier. The short answer, by country."
 pubDate: 2026-11-09
 cluster: cautionary-tale
+kind: query
 faq:
   - q: "Is Melanotan legal in the US?"
     a: "No, not as a product. Melanotan II is an unapproved new drug, which makes its sale and marketing unlawful under federal law and subjects it to import controls. There is no approved Melanotan product for tanning, and personal possession, while rarely prosecuted, is not a legal category the FDA recognises."

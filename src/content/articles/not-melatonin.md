@@ -4,6 +4,7 @@ serpTitle: "Melatonin vs Melanotan: one letter apart, nothing else alike"
 description: "Melatonin vs Melanotan: a sleep supplement and an unapproved tanning peptide. The names are one letter apart; the molecules are not related."
 pubDate: 2026-08-30
 cluster: science
+kind: query
 faq:
   - q: "Melatonin vs Melanotan: are they the same thing?"
     a: "No. They share four letters and nothing else. Melatonin is a hormone your body makes to regulate sleep, sold widely as a supplement. Melanotan is a lab-made peptide that stimulates skin pigment and is not approved anywhere for any use."

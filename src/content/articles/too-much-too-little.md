@@ -29,7 +29,8 @@ answer. Cortisol stays low, feedback fails, and the pituitary keeps releasing
 ACTH. ACTH is itself a melanocortin peptide. At the concentrations this
 disease produces, it activates MC1R, the same pigment receptor α-MSH uses.
 Skin darkens: creases, scars, gums, sun-exposed skin, sometimes a new
-photograph that no longer matches the old one. Physicians have used that
+photograph that no longer matches the old one. Those sites are drawn, not
+photographed, in the [skin visual record](/skin-record/). Physicians have used that
 darkening as a clue for generations. It is not a tan anyone ordered. It is
 melanocortin drive, unopposed, writing itself on the skin.
 

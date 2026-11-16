@@ -1,0 +1,172 @@
+---
+import Base from '../layouts/Base.astro';
+import { skinRecord, recordKinds } from '../data/skin-record';
+
+const lastReviewedISO = '2026-11-15';
+const lastReviewed = new Date(lastReviewedISO).toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
+});
+
+const groups = recordKinds.map((kind) => ({
+  ...kind,
+  entries: skinRecord.filter((entry) => entry.kind === kind.id),
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'The skin visual record',
+  dateModified: lastReviewedISO,
+  description:
+    'Citations for published skin photographs that bear on melanocortin pigment, mole change, and approved-drug endpoints. Journal figures are not hosted.',
+};
+---
+<Base
+  title="The skin visual record — Tan Lines"
+  description="Which published skin photographs belong in the record: mole change, Addisonian pigment, approved-drug endpoints, and a Fitzpatrick reference. Gray-market before-and-afters are excluded."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <article class="prose record">
+    <p class="eyebrow">The Record</p>
+    <h1>The skin visual record</h1>
+    <p class="lede">
+      A photograph helps this site only when a reader can say what it shows,
+      who published it, and what it is not allowed to prove. The entries below
+      are that list. The pixels of identifiable patients stay with the journals.
+    </p>
+    <p class="reviewed">Last reviewed {lastReviewed}.</p>
+
+    <h2>What a pair has to carry</h2>
+    <ul>
+      <li>The same person, the same site, and two dates.</li>
+      <li>Lighting and distance close enough that a darker pixel is the skin, not the room.</li>
+      <li>A citation, a license note, and one sentence on the claim the picture supports.</li>
+      <li>For a mole: whether anyone biopsied it, and what the slide said.</li>
+    </ul>
+    <p>
+      A forum “after” with no interval and a product name in the caption fails
+      every line. Those images are not collected.
+    </p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 168" role="img" aria-labelledby="tfit dfit">
+        <title id="tfit">Fitzpatrick types I through VI as a schematic scale</title>
+        <desc id="dfit">Six labeled color chips from very light to very dark. They are a vocabulary for the photoprotection brief, not photographs and not a before-and-after.</desc>
+        <rect width="780" height="168" fill="#FBFAF7"/>
+        <rect x="8" y="8" width="764" height="152" rx="10" fill="none" stroke="#E4DFD6"/>
+        <text x="28" y="36" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#17130E">Fitzpatrick I–VI, drawn, not photographed</text>
+        <g>
+          <rect x="28" y="52" width="108" height="64" rx="6" fill="#F3D7C3"/>
+          <text x="82" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">I</text>
+          <rect x="150" y="52" width="108" height="64" rx="6" fill="#E4B894"/>
+          <text x="204" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">II</text>
+          <rect x="272" y="52" width="108" height="64" rx="6" fill="#C99262"/>
+          <text x="326" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">III</text>
+          <rect x="394" y="52" width="108" height="64" rx="6" fill="#A06A3C"/>
+          <text x="448" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#FBFAF7">IV</text>
+          <rect x="516" y="52" width="108" height="64" rx="6" fill="#6E4228"/>
+          <text x="570" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#FBFAF7">V</text>
+          <rect x="638" y="52" width="108" height="64" rx="6" fill="#3C2418"/>
+          <text x="692" y="140" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#FBFAF7">VI</text>
+        </g>
+      </svg>
+      <figcaption>
+        A reference scale, not a result. Type I burns and does not tan; type VI
+        rarely burns. The original melanocortin photoprotection brief was written
+        for the light end of this scale. These chips are not spectrophotometry
+        and they are not anyone’s skin.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 220" role="img" aria-labelledby="tadd dadd">
+        <title id="tadd">Sites of Addisonian pigmentation, as a diagram</title>
+        <desc id="dadd">A schematic marks creases, scars, gums, and sun-exposed skin as the places excess ACTH darkens. No patient is depicted.</desc>
+        <rect width="780" height="220" fill="#FBFAF7"/>
+        <rect x="8" y="8" width="764" height="204" rx="10" fill="none" stroke="#E4DFD6"/>
+        <text x="28" y="40" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#17130E">Where the high melanocortin state writes itself</text>
+        <text x="28" y="64" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Addison’s. No drug. The diagram names sites; it is not a portrait.</text>
+        <g font-family="'Archivo',sans-serif" font-size="13" fill="#17130E">
+          <rect x="28" y="92" width="166" height="78" rx="8" fill="#F4EFE6" stroke="#E4DFD6"/>
+          <text x="111" y="136" text-anchor="middle">Palmar creases</text>
+          <rect x="214" y="92" width="166" height="78" rx="8" fill="#F4EFE6" stroke="#E4DFD6"/>
+          <text x="297" y="136" text-anchor="middle">Scars</text>
+          <rect x="400" y="92" width="166" height="78" rx="8" fill="#F4EFE6" stroke="#E4DFD6"/>
+          <text x="483" y="136" text-anchor="middle">Gums and mucosa</text>
+          <rect x="586" y="92" width="166" height="78" rx="8" fill="#F4EFE6" stroke="#E4DFD6"/>
+          <text x="669" y="136" text-anchor="middle">Sun-exposed skin</text>
+        </g>
+      </svg>
+      <figcaption>
+        Pigment from an unopposed melanocortin signal, in a disease. See
+        <a href="/articles/too-much-too-little/">Too much, too little</a>.
+        Teaching photographs of patients are not hosted.
+      </figcaption>
+    </figure>
+
+    {groups.map((group) => (
+      <section>
+        <h2>{group.label}</h2>
+        {group.entries.length === 0 && group.id === 'reference-scale' && (
+          <p>
+            The Fitzpatrick figure above is the reference. It is original to
+            this page. It is not a before-and-after, and it is not a photograph.
+          </p>
+        )}
+        <ul class="entries">
+          {group.entries.map((entry) => (
+            <li id={entry.id}>
+              <h3>{entry.title}</h3>
+              <p>{entry.claim}</p>
+              <p><strong>Not a claim.</strong> {entry.notAClaim}</p>
+              <p class="cite">
+                {entry.href ? <a href={entry.href}>{entry.citation}</a> : entry.citation}
+              </p>
+              <p class="host">{entry.hosting}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <h2>Left out on purpose</h2>
+    <p>
+      Influencer before-and-afters, forum progress threads, nasal-spray
+      diaries, and any pair that implies a dose, a schedule, or a seller.
+      Lighting is uncontrolled, the interval is whatever the caption says,
+      and on this domain those pictures would work as advertising. The rule
+      is journalism about the gray market, never a guide to it.
+    </p>
+    <p>
+      The mole entries are the ones that change a clinical argument. Read
+      them next to <a href="/articles/the-mole-problem/">The mole problem</a>.
+      A new or changing mole is a reason to see a dermatologist, not a reason
+      to compare yourself with a case report.
+    </p>
+  </article>
+</Base>
+
+<style>
+  .record { max-width: 46rem; }
+  .reviewed {
+    font-family: var(--font-sans, 'Archivo', sans-serif);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+  .entries { list-style: none; padding: 0; }
+  .entries li {
+    margin: 0 0 1.5rem;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--line, #E4DFD6);
+  }
+  .entries h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+  }
+  .cite { font-size: 0.92rem; }
+  .host {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+</style>

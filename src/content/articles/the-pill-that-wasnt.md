@@ -11,7 +11,7 @@ faq:
   - q: "What is being sold as 'oral melanotan' then?"
     a: "Usually one of two things: a peptide that simply won't survive digestion, or an unrelated tanning-pill ingredient like canthaxanthin — a colourant with its own safety history. Neither is an oral version of the injected peptide."
   - q: "Can nasal sprays or drops work instead?"
-    a: "Absorption across the nasal or oral lining is inconsistent and unmeasured, so the delivered dose is unknown. That uncertainty is a safety problem, not a workaround. This site does not provide usage guidance for any form."
+    a: "Absorption across the nasal or oral lining is inconsistent and unmeasured, so the delivered dose is unknown. That uncertainty is a safety problem, not a workaround."
 ---
 
 The gray market has begun selling Melanotan II in forms the needle era

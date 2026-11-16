@@ -15,8 +15,11 @@ export async function GET(context) {
       description: a.data.description,
       pubDate: a.data.pubDate,
       link: `/articles/${a.id}/`,
+      // Full markdown body — machines and feed readers get the article, not a teaser.
+      content: a.body ?? a.data.description,
       categories: [a.data.cluster],
     })),
     customData: '<language>en-us</language>',
+    trailingSlash: true,
   });
 }

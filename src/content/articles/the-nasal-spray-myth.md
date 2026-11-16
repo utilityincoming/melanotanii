@@ -11,7 +11,7 @@ faq:
   - q: "Does a spray give a gentler, more gradual tan?"
     a: "That is a marketing frame, not a pharmacology. 'Gentle' and 'gradual' describe a dose you can control; a nasal spray is the route where the delivered amount is least knowable, because how much crosses the mucosa versus drips away or is swallowed varies dose to dose. Less control is not more safety."
   - q: "Is the nasal spray legal or approved?"
-    a: "No. No medicines regulator has approved a Melanotan II product in any form for tanning. The UK's health department confirmed in December 2025 that nasal sprays containing it are unlicensed and unlawful to sell for human use. This site does not provide usage guidance for any form."
+    a: "No. No medicines regulator has approved a Melanotan II product in any form for tanning. The UK's health department confirmed in December 2025 that nasal sprays containing it are unlicensed and unlawful to sell for human use."
 ---
 
 Of all the costumes the gray market has stitched for Melanotan II, the

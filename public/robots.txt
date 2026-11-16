@@ -32,4 +32,8 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+# Machine-readable record
+# https://melanotanii.com/llms.txt
+# https://melanotanii.com/rss.xml
+
 Sitemap: https://melanotanii.com/sitemap-index.xml

@@ -11,7 +11,7 @@ faq:
   - q: "Is PT-141 FDA approved?"
     a: "The prescription drug is. Vyleesi (bremelanotide) is FDA-approved for acquired, generalized hypoactive sexual desire disorder in premenopausal women. A peptide sold online under the old code PT-141, with a research-only disclaimer, is not that prescription. It is the same costume the gray market uses for Melanotan II."
   - q: "Can Melanotan II replace Vyleesi?"
-    a: "No. Melanotan II is an unapproved peptide. It is not a substitute for a prescription drug, and this site does not publish sourcing, dosing, or usage guidance for it. The approved drug has a label, a manufacturer, and a narrow indication. The vial has none of those."
+    a: "No. Melanotan II is an unapproved peptide. It is not a substitute for a prescription drug. The approved drug has a label, a manufacturer, and a narrow indication. The vial has none of those."
 ---
 
 The search that pairs these two names is usually looking for a substitute.
@@ -87,9 +87,7 @@ the Melanotan bottles were not.
 Melanotan II has never been approved for sexual desire, for tanning, or for
 anything else. It is not a cheaper Vyleesi. It is not "the same peptide,
 basically." Using an unapproved compound because it shares an ancestor with
-an approved one is how the gray market launders a substitution. This site
-does not publish sourcing, suppliers, or usage guidance for that
-substitution — not as comparison, not as harm reduction, not as history.
+an approved one is how the gray market launders a substitution.
 
 The approved drug is the one with the label. The unapproved peptide is the
 [cautionary tale](/articles/barbie-drug-gray-market/). If a future

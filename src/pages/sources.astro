@@ -1,0 +1,134 @@
+---
+/**
+ * /sources/ — the open sourcing page.
+ *
+ * Every external citation in The Record, gathered at build time from the
+ * article markdown, plus the hand-kept oral-pigmentation citation ledger
+ * (src/data/oral-citations.json). The point of the page: any claim on this
+ * site can be checked against a primary source a reader can open.
+ */
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { clusterStrand, strandLabel } from '../data/clusters';
+import oralLedger from '../data/oral-citations.json';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// External citations straight out of the markdown body, in order of first
+// appearance. SVG namespace URIs and internal links are not citations.
+const URL_RE = /https?:\/\/[^\s)>\]"'`]+/g;
+interface CitedArticle {
+  id: string;
+  title: string;
+  strand: string;
+  urls: string[];
+}
+const cited: CitedArticle[] = [];
+for (const a of articles) {
+  const seen = new Set<string>();
+  const urls: string[] = [];
+  for (const m of a.body?.match(URL_RE) ?? []) {
+    const url = m.replace(/[.,;:]+$/, '');
+    if (url.includes('w3.org')) continue;
+    if (!seen.has(url)) {
+      seen.add(url);
+      urls.push(url);
+    }
+  }
+  if (urls.length > 0) {
+    cited.push({ id: a.id, title: a.data.title, strand: strandLabel(clusterStrand(a.data.cluster)), urls });
+  }
+}
+const totalUrls = cited.reduce((n, c) => n + c.urls.length, 0);
+
+const ledger = (oralLedger as { oral: string[][] }).oral;
+---
+<Base
+  title="Sources — Tan Lines"
+  description="Every external citation in The Record: primary sources, regulatory documents, and peer-reviewed literature behind each Tan Lines article, open for anyone to check."
+>
+  <header class="page-head">
+    <p class="eyebrow">The Record</p>
+    <h1 class="page-title">Sources</h1>
+    <p class="page-sub">
+      {totalUrls} citations across {cited.length} articles, gathered from the article files
+      themselves &mdash; plus the oral-pigmentation citation ledger below. Every claim on this
+      site is meant to be checkable against a source you can open. Our reporting method is
+      on the <a href="/standards/">editorial standards</a> page.
+    </p>
+  </header>
+
+  <section class="cited" aria-label="Citations by article">
+    {cited.map((c) => (
+      <article class="cited-article">
+        <h2>
+          <a href={`/articles/${c.id}/`}>{c.title}</a>
+          <span class="strand">{c.strand}</span>
+        </h2>
+        <ul>
+          {c.urls.map((u) => (
+            <li><a href={u} rel="noopener noreferrer nofollow">{u}</a></li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+
+  <section class="ledger" aria-label="Oral pigmentation citation ledger">
+    <h2 class="ledger-title">Oral-pigmentation citation ledger</h2>
+    <p class="ledger-sub">
+      The working ledger behind
+      <a href="/articles/the-mouth-is-in-the-record/">The mouth is in the record</a>:
+      each source, what it shows, and the limits of what this site draws from it.
+    </p>
+    {ledger.map((row) => (
+      <article class="ledger-entry">
+        <h3>
+          <a href={row[2]} rel="noopener noreferrer nofollow">{row[0]} {row[1]}</a>
+          <span class="kind">{row[5]}</span>
+        </h3>
+        <dl>
+          <dt>The source reports</dt>
+          <dd>{row[7]}</dd>
+          <dt>Findings used</dt>
+          <dd>{row[8]}</dd>
+          <dt>Limits observed</dt>
+          <dd>{row[9]}</dd>
+          <dt>Dates</dt>
+          <dd>Checked {row[3]} &middot; source dated {row[4]}</dd>
+        </dl>
+      </article>
+    ))}
+  </section>
+
+  <style>
+    .page-head { margin-top: 3rem; max-width: 46rem; }
+    .page-head .eyebrow { margin: 0 0 0.35rem; }
+    .page-title { font-size: 2.2rem; margin: 0; }
+    .page-sub { color: var(--ink-soft); margin: 0.5rem 0 0; }
+    .cited { max-width: 52rem; margin-top: 2.5rem; }
+    .cited-article { border-top: 1px solid var(--line); padding: 1.3rem 0; }
+    .cited-article h2 { font-size: 1.15rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+    .cited-article h2 a { text-decoration: none; }
+    .cited-article h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .cited-article .strand { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--uv); font-family: var(--font-body); }
+    .cited-article ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.3rem; }
+    .cited-article li { font-size: 0.88rem; word-break: break-all; }
+    .ledger { max-width: 52rem; margin-top: 3rem; padding-top: 1.6rem; border-top: 3px solid var(--uv); }
+    .ledger-title { font-size: 1.5rem; margin: 0; }
+    .ledger-sub { color: var(--ink-soft); margin: 0.4rem 0 1.4rem; }
+    .ledger-entry { border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 1rem 1.2rem; margin-bottom: 1rem; }
+    .ledger-entry h3 { font-size: 1.02rem; margin: 0 0 0.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: baseline; }
+    .ledger-entry h3 a { text-decoration: none; word-break: break-all; }
+    .ledger-entry h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .ledger-entry .kind { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); font-family: var(--font-body); }
+    .ledger-entry dl { margin: 0; display: grid; grid-template-columns: 9rem 1fr; gap: 0.3rem 1rem; font-size: 0.9rem; }
+    .ledger-entry dt { color: var(--ink-soft); font-weight: 600; }
+    .ledger-entry dd { margin: 0; }
+    @media (max-width: 40rem) {
+      .ledger-entry dl { grid-template-columns: 1fr; }
+      .ledger-entry dt { margin-top: 0.4rem; }
+    }
+  </style>
+</Base>

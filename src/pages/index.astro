@@ -1,17 +1,21 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { clusters, clusterOrder, strands, strandOrder } from '../data/clusters';
+import { clusters, clustersByStrand, clusterStrand, strands, strandOrder } from '../data/clusters';
+import type { Strand } from '../data/clusters';
 
 const all = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-// Articles for a thread: the curated lead first, then the rest newest-first.
-function articlesFor(key: keyof typeof clusters) {
-  const inCluster = all.filter((a) => a.data.cluster === key);
-  const lead = inCluster.find((a) => a.id === clusters[key].lead);
-  const rest = inCluster.filter((a) => a.id !== clusters[key].lead);
-  return lead ? [lead, ...rest] : inCluster;
+// Articles for a strand: each cluster's curated lead first, then the rest newest-first.
+function articlesForStrand(key: Strand) {
+  const leadIds = clustersByStrand[key].map((c) => clusters[c].lead);
+  const leads = leadIds
+    .map((id) => all.find((a) => a.id === id))
+    .filter((a): a is (typeof all)[number] => a !== undefined);
+  const seen = new Set(leads.map((a) => a.id));
+  const rest = all.filter((a) => clusterStrand(a.data.cluster) === key && !seen.has(a.id));
+  return [...leads, ...rest];
 }
 ---
 <Base
@@ -74,32 +78,31 @@ function articlesFor(key: keyof typeof clusters) {
     </ul>
   </section>
 
-  <section class="threads" aria-label="Browse by topic">
+  <section class="threads" aria-label="Browse by strand">
     <div class="section-head">
-      <p class="eyebrow">Follow a thread</p>
-      <p class="section-line">One story in five threads &mdash; from the lab that built it to the drug that still hasn&rsquo;t come.</p>
+      <p class="eyebrow">Follow a strand</p>
+      <p class="section-line">One origin, three strands &mdash; the mission, the market, the medicines. Clusters are the filing inside each strand.</p>
     </div>
     <div class="clusters">
-      {clusterOrder.map((key) => {
-        const meta = clusters[key];
-        const items = articlesFor(key);
+      {strandOrder.map((key) => {
+        const meta = strands[key];
+        const items = articlesForStrand(key);
         return (
-          <article class="cluster" id={`thread-${key}`} style={`--accent: ${strands[meta.strand].colorVar}`}>
-            <p class="strand-tag">{strands[meta.strand].label}</p>
+          <article class="cluster" id={`strand-${key}`} style={`--accent: ${meta.colorVar}`}>
             <h2 class="cluster-label">{meta.label}</h2>
-            <p class="blurb">{meta.blurb}</p>
+            <p class="blurb">{meta.caption}</p>
             <ul>
-              {items.slice(0, 3).map((a, i) => (
+              {items.slice(0, 4).map((a, i) => (
                 <li class={i === 0 ? 'lead' : ''}>
                   <a href={`/articles/${a.id}/`}>{a.data.title}</a>
                   <p>{a.data.description}</p>
                 </li>
               ))}
               {items.length === 0 && <li class="soon">Articles coming soon.</li>}
-              {items.length > 3 && (
+              {items.length > 4 && (
                 <li class="more">
-                  <a href={`/articles/#thread-${key}`}>
-                    {items.length - 3} more in this thread&nbsp;&rarr;
+                  <a href={`/articles/#strand-${key}`}>
+                    {items.length - 4} more in this strand&nbsp;&rarr;
                   </a>
                 </li>
               )}

@@ -79,6 +79,13 @@ export interface StrandMeta {
 
 export const strandOrder: Strand[] = ['mission', 'market', 'approval'];
 
+/** Clusters that live inside each strand, in reading order. Filing, not the argument. */
+export const clustersByStrand: Record<Strand, Cluster[]> = {
+  mission: ['history', 'science'],
+  market: ['culture', 'cautionary-tale'],
+  approval: ['next-agonist'],
+};
+
 export const strands: Record<Strand, StrandMeta> = {
   mission: {
     label: 'The mission',
@@ -110,4 +117,9 @@ export function clusterStrand(key: string): Strand {
 /** CSS color-var reference for a cluster's strand. */
 export function clusterColorVar(key: string): string {
   return strands[clusterStrand(key)].colorVar;
+}
+
+/** Human label for a strand key. */
+export function strandLabel(key: Strand): string {
+  return strands[key].label;
 }

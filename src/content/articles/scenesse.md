@@ -4,6 +4,7 @@ serpTitle: "Scenesse (afamelanotide): the approved drug, not a tan"
 description: "Scenesse is afamelanotide, an approved implant for a rare light-pain disease. It is not a cosmetic tan, and it is not gray-market Melanotan."
 pubDate: 2026-10-25
 cluster: next-agonist
+kind: query
 faq:
   - q: "Can I get Scenesse to tan?"
     a: "No. Scenesse (afamelanotide) is approved to increase pain-free light exposure in adults with erythropoietic protoporphyria, a rare disease in which light causes severe pain. It is a clinic-administered implant, not a cosmetic, and it is not sold for tanning in healthy people."

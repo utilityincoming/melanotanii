@@ -428,6 +428,26 @@ TGA seized-bottle finding is used as a specific measurement, not universalized
 into "every vial is off by double." `updatedDate` is set only because the body
 actually gains substance.
 
+## Next wave — the SPF tier list (brief, 19 Nov 2026)
+
+Working headline, deliberately a joke: **"The SPF tier list, ranked by how fast people betray them (SPF 100 is dead last)."** Commission as a `culture` essay. The ranking is a teaching device about feedback speed, not a protection ranking and not a shopping list. If a correspondent cannot hold both of those in the same piece, change the headline.
+
+The teaching insight: **a sunscreen number is a teacher, and the higher the number, the slower the lesson.** People do not betray a bottle by choosing a low factor. They betray it the way the site already describes sunscreen failing — thin film, missed ears and scalp, no reapplication after water, a longer afternoon because the skin has not complained yet. Erythema is the only grade most people ever get. A modest factor hands that grade back the same day, so the habit can be corrected before the holiday is over. SPF 100 suppresses the grade. The user goes home unburned, decides the bottle worked, and repeats the thin coat. Dead last means last to be found out, not least protective.
+
+What the piece has to say out loud, or it does not survive a dermatologist:
+
+- Labeled SPF is a laboratory multiplier measured at 2 mg/cm². Everyday coats are much thinner, and protection does not fall in proportion to how little was put on, so the number on the front is not the number on the skin. Keep this conceptual; no application tutorial and no "use X pumps" arithmetic.
+- The filtered-UVB curve is flat at the top. SPF 15, 30, 50, and 100 are separated by a few percentage points of UVB, not by a different kind of product. The jump from 50 to 100 is about one more percent of UVB blocked. That percent is real.
+- Say the counter-result in the same breath: Williams et al., *JAAD* 2018, a randomized split-face study in actual outdoor use, found SPF 100+ sunscreens produced less sunburn than SPF 50+. The tier list does not claim high SPF protects less. It claims high SPF is a worse informant.
+- The behavioral half is Autier et al., *J Natl Cancer Inst* 1999: in a double-blind trial, people given the higher factor stayed in the sun longer. That is the betrayal the ranking is measuring — duration and skipped reapplication, not the factor itself. FDA's February 2019 proposed sunscreen rule is the regulatory version of the same worry (high labeled values, small incremental benefit, a number that can be read as permission). Quote the proposal; do not narrate it as a final ban on SPF 100.
+- Water-resistance times (40 or 80 minutes) are the other clock people ignore. Mention them as the moment the label already admits it will fail. No reapplication protocol.
+
+Shape: five or six tiers, S down to last place, each one a speed. Suggested spine, to be checked against the papers rather than invented around them — a low factor or no product at all (lesson by lunch), SPF 15 (lesson by evening if it was treated as all-day), SPF 30 (the missed stripe), SPF 50 / 50+ (the number people treat as finished; the lesson is the second day), SPF 100 (no lesson at all; the damage that matters is cumulative and invisible). UVA and broad-spectrum belong in the SPF 100 tier: a UVB number can be enormous while the failure mode that does not show as a burn was never on the label.
+
+Where it sits on this site: the Arizona origin (`where-melanotan-came-from`) is the attempt to build the sunscreen you would not have to reapply, precisely because this compliance failure is constant. `how-a-tan-protects-skin` already says an induced tan is low-single-digit SPF and that believing a tan is armor extends exposure. `the-prevention-claim-misread` owns "darker, therefore I can stay out longer." `tanorexia-the-opioid-your-skin-makes` owns why "just wear sunscreen" loses. This essay is the missing page that makes those asides a single argument: the bottle's number and the tan's color fail the same way, by delaying the burn that would have made the person stop. Forward-link from those four. Do not restamp their `updatedDate` for a one-line link.
+
+Constraints: no brand ranking, no "best sunscreen," no affiliate, no instruction a reader could use as a day-at-the-beach protocol. Melanotan appears once, as the historical wrong answer to a real compliance problem, and links out. The joke punches at the number, never at the person who burned.
+
 ## Loud packaging, restrained bodies — adjacent pitches, not approved articles
 
 These are deliberately provocative **working headlines**. They punch at the
@@ -460,6 +480,7 @@ to a seller, coupon, certificate marketplace or dosage calculator.
   emoji palettes and wellness fonts mediate risk perception. Should be anchored
   in platform listings and trading-standards records, not fabricate a flavor as
   evidence of legal noncompliance.
+- **"The SPF tier list, ranked by how fast people betray them."** SPF 100 is last because it is last to be found out. Full brief above; culture cluster; not a protection ranking.
 - **"The Agency Never Approved the Beach Episode."** Contrast FDA-medicine
   pages with the market's appropriation of regulatory vibes. Only with a
   documented agency event; never imply the FDA regulates the gray market's

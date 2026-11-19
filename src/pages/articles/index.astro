@@ -22,13 +22,13 @@ function articlesFor(key: keyof typeof clusters) {
   <header class="page-head">
     <p class="eyebrow">The Record</p>
     <h1 class="page-title">All articles</h1>
-    <p class="page-sub">{all.length} pieces in three strands. Direct answers sit up top; clusters are the filing inside each strand.</p>
+    <p class="page-sub">{all.length} pieces, three strands. The short answers are first. The essays are filed under the strand they belong to.</p>
   </header>
 
   {answers.length > 0 && (
     <section class="answers" id="answers">
       <h2 class="answers-label">Direct answers</h2>
-      <p class="answers-blurb">Query pages. The essays below keep the economics and the history.</p>
+      <p class="answers-blurb">The question in the title, answered on the page. The essays below keep the history and the economics.</p>
       <ul class="list">
         {answers.map((a) => (
           <li>

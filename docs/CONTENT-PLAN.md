@@ -448,6 +448,24 @@ Where it sits on this site: the Arizona origin (`where-melanotan-came-from`) is 
 
 Constraints: no brand ranking, no "best sunscreen," no affiliate, no instruction a reader could use as a day-at-the-beach protocol. Melanotan appears once, as the historical wrong answer to a real compliance problem, and links out. The joke punches at the number, never at the person who burned.
 
+## Next wave — ancient tan mythology, American heirs (brief, 19 Nov 2026)
+
+Working headline: **"Oil, sand, and a room that faced the sun."** Commission as a `culture` essay. The internet tells three ancient tanning rituals. Each one is a misreading, and each misreading has a living American product. Stateside on purpose: `how-a-suntan-became-desirable` already owns Chanel, the Riviera, and the 1920s flip. This piece starts earlier, then lands in Florida, Wisconsin, Cincinnati, and the salon. One sentence may point at that article. Do not retell it.
+
+The teaching insight: **the rituals people cite as ancient beauty strategy were mostly hygiene, architecture, or a later medical fad wearing a classical costume.** Modern beauty keeps the costume and sells the wish — a tan without the burn, a glow without the ultraviolet, sun as a therapy you can buy.
+
+Three movements. A correspondent confirms every ancient passage before it is quoted. If a tidy "Greeks tanned with olive oil and sand" line cannot be sourced to a primary text, the essay says so. That absence is the finding.
+
+1. **The Greek scrape.** Athletes at the gymnasium anointed with olive oil, dusted with sand (*konis*), and had the mixture scraped off with a strigil. The scrapings (*gloios*) were sold as a remedy; Pliny is the usual witness — confirm the passage, do not paraphrase from a beauty blog. This was a bath. It was not a tanning protocol, and it was not sunscreen. Culinary oil is not a filter; the piece must not repeat blog SPF numbers for olive oil, and it must not give anyone a beach recipe. The American heir is the baby-oil tan: oil on the skin as a way to darken faster, sold for decades beside actual sunscreen, now revived as "glowy" body oil in the same aisle. The strategy is identical. Oil changes how skin looks in the sun. It does not do the job of the bottle next to it.
+
+2. **The Roman sun room.** *Solarium* and *heliocaminus* are architecture — a terrace, a room built to catch winter light. Pliny the Younger on his Laurentine villa is the set piece, if the letter checks out (Epistles 2.17 is the usual citation; verify before quoting). Romans also sorted complexion by status and sex, and elite pallor had its own toxic technology (cerussa). They did not run a tanning clinic. Keep Hippocrates and Celsus to a clause. The medical fad people mean by "Roman sun therapy" is two thousand years later: Finsen's concentrated-light work (Nobel, 1903) and Rollier's alpine tuberculosis terraces. Name them as modern, then leave Europe. The stateside translation is the point — John Harvey Kellogg's electric light baths at Battle Creek, and Harry Steenbock at Wisconsin irradiating food to make vitamin D (the mid-1920s patent that went to the Wisconsin Alumni Research Foundation). That is sun-as-medicine turned into an American industry. Today's heir is the red-light panel sold as sunshine: a device marketed for skin and "vitamin D" that does not emit the UVB vitamin D requires. Source an FDA page for the distinction. Describe the category. Do not build the section around a single brand.
+
+3. **The tan you can buy without a burn.** The third ritual is American from the start, which is why it belongs in the mythology rather than as a product roundup. Eva Wittgenstein's observation of dihydroxyacetone staining skin, at Cincinnati Children's in the 1950s, is the origin of the self-tanner — a chemical browning, not a melanin tan, and not photoprotection. Coppertone's Florida advertising taught the other half of the same wish: go out, get the colour, let the lotion ration the burn. Then the indoor lamp, imported at the end of the 1970s, industrialised the exposure, and the Affordable Care Act's 10 percent indoor-tanning excise tax (IRC 5000B, from 2010) is the uniquely American policy reply. Pair it with the Surgeon General's 2014 Call to Action to Prevent Skin Cancer. The salon did not end. It changed costume: spray tan, "clean" Mediterranean oils, a peptide. Melanotan appears once, as the latest costume for this wish, and links to `how-a-suntan-became-desirable` and `where-melanotan-came-from`. No dose, no source, no route.
+
+What a dermatologist has to be able to read without flinching: nothing in the ancient kit is protective; a self-tan and a red lamp are not sunscreens; vitamin D is not a reason to burn; heliotherapy for tuberculosis is not evidence for a beach strategy. What a journalist has to be able to read: every ancient sentence has a text, and every modern sentence has a date.
+
+Forward-link from `how-a-suntan-became-desirable` only. Do not restamp `updatedDate` for that one line. No affiliate, no "ancient routine you can try," no lead-cosmetic how-to, no brand ranking.
+
 ## Loud packaging, restrained bodies — adjacent pitches, not approved articles
 
 These are deliberately provocative **working headlines**. They punch at the
@@ -481,6 +499,7 @@ to a seller, coupon, certificate marketplace or dosage calculator.
   in platform listings and trading-standards records, not fabricate a flavor as
   evidence of legal noncompliance.
 - **"The SPF tier list, ranked by how fast people betray them."** SPF 100 is last because it is last to be found out. Full brief above; culture cluster; not a protection ranking.
+- **"Oil, sand, and a room that faced the sun."** Greek scrape, Roman sun room, American heirs. Full brief above. The ancient line is a misreading; do not launder it into a routine.
 - **"The Agency Never Approved the Beach Episode."** Contrast FDA-medicine
   pages with the market's appropriation of regulatory vibes. Only with a
   documented agency event; never imply the FDA regulates the gray market's

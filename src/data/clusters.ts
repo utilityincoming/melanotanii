@@ -37,32 +37,32 @@ export const clusterOrder: Cluster[] = [
 export const clusters: Record<Cluster, ClusterMeta> = {
   history: {
     label: 'The History',
-    blurb: 'Where Melanotan II came from, and what it was actually meant to do.',
+    blurb: 'The Arizona lab, the patent trail, and the job the peptide was built to do.',
     strand: 'mission',
     lead: 'where-melanotan-came-from',
   },
   science: {
     label: 'The Science',
-    blurb: 'Melanocortin receptors, α-MSH, and how the tanning signal really works.',
+    blurb: 'Five receptors, one hormone, and why a tan is the least of what this signal does.',
     strand: 'mission',
     lead: 'one-hormone-five-receptors',
   },
   culture: {
     label: 'The Demand',
     blurb:
-      'Why anyone wanted it in the first place — the reward loop the sun wired in, a century of fashion, and the market that desire built.',
+      'The want came first: a reward the sun wired in, a century of fashion, then a market.',
     strand: 'market',
     lead: 'how-a-suntan-became-desirable',
   },
   'cautionary-tale': {
     label: 'The Cautionary Tale',
-    blurb: 'How a lab compound became a gray-market phenomenon, and what it cost.',
+    blurb: 'The vials, the warnings, and the harms that were written down.',
     strand: 'market',
     lead: 'barbie-drug-gray-market',
   },
   'next-agonist': {
     label: 'The Next Agonist',
-    blurb: 'What it would take for a safe photoprotective drug to reach everyone.',
+    blurb: 'The approved drugs, the trials still running, and the sun drug that is not here.',
     strand: 'approval',
     lead: 'middle-ground-agonist-already-exists',
   },
@@ -89,17 +89,17 @@ export const clustersByStrand: Record<Strand, Cluster[]> = {
 export const strands: Record<Strand, StrandMeta> = {
   mission: {
     label: 'The mission',
-    caption: 'Lasting protection from the sun — still unproven, still open.',
+    caption: 'A drug that protects skin from the sun. Still unproven.',
     colorVar: 'var(--strand-mission)',
   },
   market: {
     label: 'The gray market',
-    caption: 'The vials that filled the vacuum when no approved drug came.',
+    caption: 'The demand, then the vials that showed up when no drug did.',
     colorVar: 'var(--caution)',
   },
   approval: {
     label: 'The spinoffs',
-    caption: 'Two approved medicines drawn from its side effects — neither a tan.',
+    caption: 'Approved medicines from the same chemistry. None of them a cosmetic tan.',
     colorVar: 'var(--approved)',
   },
 };

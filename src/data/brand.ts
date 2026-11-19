@@ -1,6 +1,6 @@
 /** Public brand stack. One speaker, one file, one address — never mixed. */
 export const publication = 'Tan Lines';
-export const tagline = 'the unvarnished history of Melanotan II';
+export const tagline = 'the peptide that never shipped';
 export const record = 'The Record';
 export const domain = 'melanotanii.com';
 export const siteUrl = 'https://melanotanii.com';

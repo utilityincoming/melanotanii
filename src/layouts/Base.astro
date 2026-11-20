@@ -1,5 +1,5 @@
 ---
-import { inject } from '@vercel/analytics';
+import Analytics from '@vercel/analytics/astro';
 import { publication, tagline, organizationLd, websiteLd } from '../data/brand';
 interface Props {
   title: string;
@@ -21,7 +21,6 @@ const nav = [
 const isActive = (href: string) => path === href || path.startsWith(href);
 const orgLd = organizationLd(Astro.site);
 const siteLd = websiteLd(Astro.site);
-inject();
 ---
 <!doctype html>
 <html lang="en">
@@ -58,6 +57,7 @@ inject();
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify(orgLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(siteLd)} is:inline />
+  <Analytics />
   <style is:global>
     :root {
       /* Palette: eumelanin ink, porcelain paper, UV violet accent */

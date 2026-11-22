@@ -11,6 +11,9 @@ import { clusters, clustersByStrand, strandOrder, strands } from '../data/cluste
 export async function GET() {
   const all = (await getCollection('articles', ({ data }) => !data.draft))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const records = (await getCollection('records')).sort(
+    (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
+  );
 
   const lines = [];
   lines.push(`# ${publication}`);
@@ -21,6 +24,11 @@ export async function GET() {
   lines.push('');
   lines.push(`- [Timeline](${siteUrl}/timeline/): one origin, three strands — the mission, the gray market, the approved spinoffs, dated 1960s to now.`);
   lines.push(`- [Regulatory watch](${siteUrl}/regulatory/): every regulator action and upcoming catalyst on the melanocortin class, dated and sourced.`);
+  lines.push(`- [Record entries](${siteUrl}/record/): the dated file — one entry per regulator action, court finding, enforcement number or disclosure, each with a single primary source.`);
+  for (const r of records) {
+    const suffix = r.data.status === 'scheduled' ? ' (scheduled)' : '';
+    lines.push(`- [${r.data.title}](${siteUrl}/record/${r.id}/): ${r.data.when} — ${r.data.authority}${suffix}.`);
+  }
   lines.push(`- [All articles](${siteUrl}/articles/): every piece in The Record, grouped by strand.`);
   lines.push(`- [Sources](${siteUrl}/sources/): every external citation behind the articles.`);
   lines.push(`- [Editorial standards](${siteUrl}/standards/): how ${publication} reports, and what it never publishes.`);

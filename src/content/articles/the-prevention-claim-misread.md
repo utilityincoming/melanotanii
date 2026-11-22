@@ -3,7 +3,7 @@ title: "The prevention claim, misread: what the trials showed, what the captions
 serpTitle: "Does Melanotan II prevent skin cancer? What the trials showed"
 description: "'Melanotan prevents skin cancer' is a caption-level fact. The trials never tested that. What the evidence shows, what the claim sells, and the gap between."
 pubDate: 2026-08-30
-updatedDate: 2026-11-14
+updatedDate: 2026-11-22
 cluster: science
 faq:
   - q: "Does Melanotan II prevent skin cancer?"
@@ -135,8 +135,9 @@ finds cancer early — while being sold, on social platforms, as
 prevention.
 
 The regulatory position follows from all of it. In the UK, injectable
-Melanotan is illegal to sell and supply. In Australia, possession is a
-Schedule 9 offence. In the United States, it has never been approved for
+Melanotan is illegal to sell and supply. In Australia, it is
+prescription-only with no approved product — every vial sold is unlawful
+supply. In the United States, it has never been approved for
 anything. The [tracker](/regulatory/) keeps the dates; no jurisdiction's
 file contains a prevention finding, because no jurisdiction has ever
 seen the evidence for one.
@@ -216,3 +217,5 @@ explains is among the hardest in medicine. Until that result exists,
 "prevents skin cancer" on a Melanotan listing is not a summary of
 evidence. It is the 1980s mission statement, forty years orphaned from
 its hypothesis, still doing sales work in a caption.
+
+*Corrected 22 November 2026: melanotan is prescription-only (Schedule 4) in Australia, not a Schedule 9 possession offence. See the [correction log](/standards/#corrections).*

@@ -3,6 +3,7 @@ title: "One letter, two different molecules"
 serpTitle: "Melatonin vs Melanotan: one letter apart, nothing else alike"
 description: "Melatonin vs Melanotan: a sleep supplement and an unapproved tanning peptide. The names are one letter apart; the molecules are not related."
 pubDate: 2026-08-30
+updatedDate: 2026-11-22
 cluster: science
 kind: query
 faq:
@@ -58,11 +59,13 @@ pharmacy shelf — while carrying none of its testing history.
 The regulatory status is the cleanest tell. Melatonin is a legal,
 labelled, dosed product wherever it is sold. Melanotan II is approved
 nowhere, for anything — it is the subject of warnings from the FDA, TGA,
-MHRA, and HPRA, and in Australia possession itself is a Schedule 9
-offence.
+MHRA, and HPRA, and in Australia every vial sold is unlawful: melanotan is
+prescription-only in Schedule 4, with no approved product.
 
 If you arrived at this site looking for the sleep hormone, the answer is
 short: it is a different molecule, and the similar name is doing work on
 you. If you arrived looking for the tanning peptide, the rest of this
 publication is the file on what that search leads to — starting with
 [what's actually in the vial](/articles/whats-in-the-vial/).
+
+*Corrected 22 November 2026: melanotan is not a Schedule 9 possession offence in Australia; it is prescription-only (Schedule 4) with no approved product. See the [correction log](/standards/#corrections).*

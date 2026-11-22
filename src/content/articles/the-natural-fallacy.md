@@ -3,6 +3,7 @@ title: "The natural fallacy: what your body actually does with α-MSH"
 serpTitle: "Is Melanotan II natural? What α-MSH actually does"
 description: "Melanotan II is sold as a 'natural' hormone your body already makes. It mimics α-MSH — but your body keeps that signal local and brief for a reason."
 pubDate: 2026-08-30
+updatedDate: 2026-11-22
 cluster: science
 faq:
   - q: "Is Melanotan II natural because the body makes α-MSH?"
@@ -167,8 +168,9 @@ rather than prescribed. Melanotan II fits none of those categories. It is
 a synthetic cyclic peptide, approved nowhere, for anything, sold by
 vendors who cannot say what it is in them. The TGA's January 2025 warning
 is explicit that there is no way of knowing what is in these products no
-matter what the label says — and Australia has since made possession
-itself a Schedule 9 offence.
+matter what the label says — and Australia has listed melanotan in
+Schedule 4 since 2018: prescription-only, no approved product, no lawful
+supply.
 
 There is also a quieter contradiction in how the market deploys the word.
 In the UK, nasal Melanotan sprays are sold precisely *as cosmetics* —
@@ -198,3 +200,5 @@ exists](/articles/middle-ground-agonist-already-exists/)). It will work
 "natural" on a Melanotan listing is not a description of the product. It
 is a description of the feeling the seller wants you to have while buying
 it.
+
+*Corrected 22 November 2026: melanotan has been listed in Schedule 4 (prescription-only) since 2018 — not Schedule 9; no possession offence was created. See the [correction log](/standards/#corrections).*

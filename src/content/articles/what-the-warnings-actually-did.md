@@ -1,12 +1,13 @@
 ---
 title: "What the warnings actually did: a decade of Melanotan II enforcement"
 serpTitle: "Melanotan II enforcement: what the warnings actually did"
-description: "Regulators seized sites, parcels, and sellers. Australia made possession a crime. The market moved to nasal sprays. Why enforcement keeps losing."
+description: "Regulators seized sites, parcels, and sellers. Australia walled off lawful supply. The market moved to nasal sprays. Why enforcement keeps losing."
 pubDate: 2026-08-26
+updatedDate: 2026-11-22
 cluster: cautionary-tale
 faq:
   - q: "Is Melanotan II illegal?"
-    a: "It is approved nowhere, and sale or supply is restricted in the UK, Ireland and the US. Australia went furthest, moving it to Schedule 9 in February 2026 so that possession without a research licence is itself a crime. In the UK, nasal sprays sold without medical claims fall outside medicines law entirely."
+    a: "It is approved nowhere, and sale or supply is restricted in the UK, Ireland and the US. Australia lists it in Schedule 4 — prescription-only, with no approved product on the register — so every vial sold there is already unlawful supply, and the TGA has fined a supplier six figures. In the UK, nasal sprays sold without medical claims fall outside medicines law entirely."
   - q: "Why hasn't enforcement stopped Melanotan II being sold?"
     a: "Regulators can raise the cost of being a named seller — takedowns, border seizures, fines, one US felony — but they cannot invent the missing approved drug, and they cannot easily police a product that changes costume. When the injectable was restyled as a cosmetic nasal spray, it slipped out of the rulebook written for medicines."
 ---
@@ -54,18 +55,18 @@ changing costume.
 <text x="484" y="250" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">Then the name changes.</text>
 <rect x="580" y="96" width="160" height="168" rx="10" fill="#FBEEE8" stroke="#A6431F" stroke-width="1.4"/>
 <text x="660" y="128" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" letter-spacing="0.08em" fill="#A6431F">THE WALL</text>
-<text x="660" y="160" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Schedule 9.</text>
-<text x="660" y="190" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">Australia, Feb 2026.</text>
-<text x="660" y="208" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">Possession itself</text>
-<text x="660" y="226" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">becomes the crime.</text>
-<text x="660" y="244" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">Nobody else has.</text>
+<text x="660" y="160" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">Prescription-only.</text>
+<text x="660" y="190" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">Australia, since 2018.</text>
+<text x="660" y="208" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">No approved product:</text>
+<text x="660" y="226" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">every vial in circulation</text>
+<text x="660" y="244" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">is unlawful supply.</text>
 <line x1="40" y1="292" x2="740" y2="292" stroke="#E4DFD6" stroke-width="1"/>
 <rect x="40" y="312" width="700" height="88" rx="10" fill="#FFFFFF" stroke="#503296" stroke-width="1.4" stroke-dasharray="5 4"/>
 <text x="390" y="348" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="16" font-weight="600" fill="#503296">The form-factor change sits underneath all four</text>
 <text x="390" y="374" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#17130E">An injectable is a medicine. A nasal spray, sold as a cosmetic, often is not.</text>
 <text x="390" y="394" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">That is why the 2010s playbook stopped working on the 2020s product.</text>
 </svg>
-<figcaption>Four things a regulator can actually do. Listings and parcels are cheap to replace. Named sellers can be fined or, once, imprisoned. Australia walled off possession. Underneath all of it: a spray that no longer counts as a medicine.</figcaption>
+<figcaption>Four things a regulator can actually do. Listings and parcels are cheap to replace. Named sellers can be fined or, once, imprisoned. Australia walled off lawful supply. Underneath all of it: a spray that no longer counts as a medicine.</figcaption>
 </figure>
 
 ## The 2010s playbook worked on websites
@@ -98,7 +99,8 @@ The [influencer-era piece](/articles/the-influencer-era/) is the mechanism.
 Nasal sprays and flavoured drops restyled an injectable as a beauty product.
 In the UK that was not only marketing. It was a jurisdictional event.
 
-On 1 December 2025, answering a written question about who is responsible for
+On 15 December 2025, answering a written question tabled on 3 December about
+who is responsible for
 keeping tan-enhancing Melanotan II products off the market, the Department of
 Health and Social Care put the split on the record. Injectable products
 containing Melanotan I or Melanotan II are medicinal, the minister said,
@@ -144,15 +146,17 @@ label was not a specification. It was a suggestion. That is the
 [vial problem](/articles/whats-in-the-vial/), measured, on a regulator's
 letterhead.
 
-In February 2026, as the [regulatory tracker](/regulatory/) records, Australia
-had already done what no other country has: moved Melanotan II to Schedule 9,
-the prohibited list, so that possession without a research licence is itself
-a criminal offence. The fine, the lab result, and the scheduling decision are
-the same story at three resolutions. Raise the cost of selling. Prove the
-label is fiction. Then criminalise holding the bottle.
+Long before the fine, as the [regulatory tracker](/regulatory/) records,
+Australia had already closed the door no other country has: in April 2018 the
+scheduling delegate's final decision listed Melanotan II in Schedule 4 of the
+Poisons Standard — prescription-only — and no product has ever reached the
+ARTG, so every vial in circulation is unlawful supply by definition. The
+prescription wall, the fine, and the lab result are the same story at three
+resolutions. Close off lawful supply. Raise the cost of selling it anyway.
+Prove the label is fiction.
 
 The bottles are still there. The August advisory exists because the TGA was
-still seizing them six months after Schedule 9.
+still seizing them eight years after the wall went up.
 
 ## What a border actually sees
 
@@ -242,3 +246,5 @@ cannot. That remains the open question, and it is labeled as one.
 The [middle-ground agonist](/articles/middle-ground-agonist-already-exists/)
 is the file on that. This one is the file on everything that was tried
 instead.
+
+*Corrected 22 November 2026: Australia did not move Melanotan II to Schedule 9 in February 2026; melanotan II has been listed in Schedule 4 (prescription-only) since the April 2018 scheduling decision, and the DHSC written answer is dated 15 December 2025, not 1 December. See the [correction log](/standards/#corrections).*

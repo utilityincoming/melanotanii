@@ -18,7 +18,7 @@ interface Catalyst {
 // JSON-LD dateModified below, so the two can never drift. Restamp when a
 // jurisdiction or program actually changes status (next: CUV105 readout Dec 2026,
 // CUV107 first patient Feb 2027, dersimelagon decision ~end Feb 2027).
-const lastReviewedISO = '2026-11-15';
+const lastReviewedISO = '2026-11-22';
 const datePublishedISO = '2026-08-26';
 const lastReviewed = new Date(lastReviewedISO).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -29,7 +29,7 @@ const catalysts: Catalyst[] = [
   {
     sort: '2027-02-01', when: '~ Feb 2027', org: 'FDA · PCAC', strand: 'mission', status: 'upcoming',
     title: 'Advisory committee weighs Melanotan II for the compounding list',
-    note: 'The FDA’s Pharmacy Compounding Advisory Committee is due to consider whether MT-II can move off the restricted Category 2 list and become compoundable. The first time its U.S. legitimacy is formally on a calendar — and the single most consequential date here.',
+    note: 'The FDA’s Pharmacy Compounding Advisory Committee is due to reconsider MT-II — deferred in July 2026 for insufficient safety, efficacy and chemical-characterisation data — for the 503A bulk list, alongside GHK-Cu, Dihexa acetate, Cathelicidin LL-37 and PEG-MGF. The first time its U.S. legitimacy is formally on a calendar — and the single most consequential date here.',
   },
   {
     sort: '2027-02-28', when: '~ end Feb 2027', org: 'FDA · LEO Pharma', strand: 'approved', status: 'upcoming',
@@ -39,7 +39,7 @@ const catalysts: Catalyst[] = [
   {
     sort: '2026-12-01', when: 'Dec 2026', org: 'Clinuvel · CUV105', strand: 'approved', status: 'upcoming',
     title: 'Phase III vitiligo readout for afamelanotide',
-    note: 'Topline from the 200-patient CUV105 trial of SCENESSE in vitiligo — the approved MC1R agonist reaching for its second indication. A positive result widens the beachhead.',
+    note: 'Topline from the 210-patient CUV105 trial of SCENESSE in vitiligo — the approved MC1R agonist reaching for its second indication. A positive result widens the beachhead.',
   },
   {
     sort: '2027-02-15', when: 'Feb 2027', org: 'Clinuvel · CUV107', strand: 'approved', status: 'upcoming',
@@ -57,29 +57,29 @@ const catalysts: Catalyst[] = [
     note: 'Afamelanotide adds another country — the first systemic photoprotectant keeps spreading through the front door.',
   },
   {
-    sort: '2026-04-15', when: 'Apr 2026', org: 'EMA · Clinuvel', strand: 'approved', status: 'resolved',
+    sort: '2026-04-24', when: 'Apr 2026', org: 'EMA · Clinuvel', strand: 'approved', status: 'resolved',
     title: 'EMA signs off on the pivotal vitiligo trial design',
     note: 'Final scientific advice from the European regulator on the CUV107 pivotal study — the step that turns a vitiligo programme into a filing path. Afamelanotide’s second indication now has a regulator’s fingerprints on its design.',
   },
   {
-    sort: '2026-02-27', when: '27 Feb 2026', org: 'HHS · FDA', strand: 'caution', status: 'resolved',
-    title: 'Peptide reshuffle — Melanotan II stays restricted',
-    note: 'HHS moved roughly 14 of 19 restricted peptides back toward the compoundable Category 1; Melanotan II was among the ~5 held back. The door stayed shut.',
+    sort: '2026-04-15', when: '15 Apr 2026', org: 'FDA · HHS', strand: 'caution', status: 'resolved',
+    title: 'Twelve peptides come off the restricted Category 2 list — MT-II among them',
+    note: 'Nominators withdrew their petitions and the FDA confirmed the removals on 15 April 2026. Removal is not permission: coming off Category 2 does not place a substance on the 503A bulk list. That question went to the July advisory committee, which deferred MT-II — and to the October interim policy, which excludes it.',
   },
   {
-    sort: '2026-02-14', when: 'Feb 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
-    title: 'Australia reclassifies MT-II to Schedule 9 — the strictest in the world',
-    note: 'Placed alongside heroin and LSD; possession without a research licence becomes a criminal offence. Triggered by 89 adverse-event reports (2022–25), including two melanoma cases within 18 months of use.',
+    sort: '2026-07-06', when: '6 Jul 2026', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
+    title: 'Australia’s adverse-event file goes public, case by case',
+    note: 'Under freedom-of-information request 26-3029 the TGA released case-level melanotan adverse-event detail — individual reports, causality rated “possible”. The counted pool behind the warnings: 89 reports (2022–2025), two of them melanoma. The attribution gap, in primary documents.',
   },
   {
-    sort: '2026-01-15', when: 'Jan 2026', org: 'Tanabe · MT-7117', strand: 'approved', status: 'resolved',
+    sort: '2026-01-20', when: '20 Jan 2026', org: 'Tanabe · MT-7117', strand: 'approved', status: 'resolved',
     title: 'Oral MC1R agonist posts positive Phase 3',
     note: 'Dersimelagon — a once-daily pill, not an implant — met its primary endpoint in the 165-patient INSPIRE study in EPP and X-linked protoporphyria. Melanocortin photoprotection escaping the needle is the clearest sign yet the class is advancing; the FDA has since accepted the filing under priority review (see the calendar above).',
   },
   {
-    sort: '2025-12-01', when: '1 Dec 2025', org: 'UK · DHSC', strand: 'caution', status: 'resolved',
+    sort: '2025-12-15', when: '15 Dec 2025', org: 'UK · DHSC', strand: 'caution', status: 'resolved',
     title: 'Parliament told: nasal tanners sit outside medicines law',
-    note: 'A written answer: injectables are unlicensed medicines; nasal sprays without medical claims are not regarded as medicinal products, so they are not in the MHRA’s remit. The gap, on the record.',
+    note: 'A written answer of 15 December 2025, to a question tabled on 3 December: injectables are unlicensed medicines; nasal sprays without medical claims are not regarded as medicinal products, so they are not in the MHRA’s remit. The gap, on the record.',
   },
   {
     sort: '2025-09-23', when: '23 Sep 2025', org: 'EMA · EU', strand: 'approved', status: 'resolved',
@@ -95,6 +95,11 @@ const catalysts: Catalyst[] = [
     sort: '2019-10-08', when: '8 Oct 2019', org: 'FDA', strand: 'approved', status: 'resolved',
     title: 'FDA approves SCENESSE (afamelanotide) for EPP',
     note: 'The first melanocortin agonist approved in the U.S. for a photoprotective use. Proof the approval door opens.',
+  },
+  {
+    sort: '2018-04-10', when: 'Apr 2018', org: 'TGA · Australia', strand: 'caution', status: 'resolved',
+    title: 'Melanotan II listed in Schedule 4 — prescription-only',
+    note: 'The scheduling delegate’s final decision (April 2018, following the November 2017 joint ACCS/ACMS meeting) put melanotan II into Schedule 4 of the Poisons Standard. No product has ever been listed on the ARTG — so lawful supply has never existed. Current editions of the Standard still list it there.',
   },
   {
     sort: '2014-12-22', when: '22 Dec 2014', org: 'European Commission', strand: 'approved', status: 'resolved',
@@ -120,15 +125,15 @@ interface Jurisdiction { place: string; status: string; tone: 'danger' | 'cautio
 const jurisdictions: Jurisdiction[] = [
   {
     place: 'United States', status: 'Unapproved · not compoundable', tone: 'caution',
-    note: 'No approved indication; Category 2, so licensed pharmacies can’t compound it; illegal to market for human use. The FDA has sent warning letters to distributors. Compounding status under review in 2027.',
+    note: 'No approved indication; removed from the restricted Category 2 list in April 2026 but on no compounding list — the October 2026 interim policy excludes it; illegal to market for human use. The FDA has sent warning letters to distributors. The advisory committee returns to it by the end of February 2027.',
   },
   {
     place: 'United Kingdom', status: 'Illegal to sell · legal to possess', tone: 'caution',
     note: 'An unlicensed medicine the MHRA bars from sale — it warned the public in 2008 and later helped suspend over 100 trading websites. Sold instead as a “cosmetic” nasal spray through a gap between the rulebooks that the DHSC confirmed to Parliament in Dec 2025. Selling is illegal; using is not.',
   },
   {
-    place: 'Australia', status: 'Schedule 9 · prohibited', tone: 'danger',
-    note: 'Since Feb 2026, the strictest classification there is — the same schedule as heroin and LSD. Possession without a research licence is a criminal offence. The toughest market in the world for MT-II.',
+    place: 'Australia', status: 'Schedule 4 · prescription-only', tone: 'caution',
+    note: 'Listed in Schedule 4 of the Poisons Standard since the April 2018 scheduling decision — prescription-only, with no product on the ARTG, so no lawful supply channel exists. Suppliers have been fined six figures ($101,412, paid May 2026) and seized bottles have been lab-tested. The toughest enforcement file in the world for MT-II — without a prohibition-grade schedule.',
   },
   {
     place: 'EU & Nordics', status: 'Unapproved · banned as cosmetic', tone: 'caution',
@@ -179,6 +184,7 @@ const jsonLd = {
       medical advice. Dates are targets and can slip. The short answer by country
       is <a href="/articles/is-melanotan-legal/">Is Melanotan legal?</a>. For how
       these routes fit together, read <a href="/articles/the-three-doors/">The three doors</a>.
+      Major actions carry a dated <a href="/record/">record entry</a> anchored to one primary source.
     </p>
   </section>
 

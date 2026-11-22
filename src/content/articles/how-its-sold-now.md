@@ -3,12 +3,13 @@ title: "How it's sold now: the market that can't say its own name"
 serpTitle: "How Melanotan II is sold now: the DTC supply stack"
 description: "Research-chemical storefronts, banned hashtags, influencer commissions, salon shelves, disguised payments — the supply machine that sells Melanotan II now."
 pubDate: 2026-08-26
+updatedDate: 2026-11-22
 cluster: culture
 faq:
   - q: "How is Melanotan II sold today?"
     a: "Through a complete direct-to-consumer stack: 'research chemical' storefronts, hashtag word-games after platform bans, a commissioned influencer salesforce on affiliate codes, salon and gym counters, and increasingly disguised payments. Every layer runs the same reflex — when pressure lands, the molecule stays and the costume changes."
   - q: "Is the Melanotan II market shrinking under enforcement?"
-    a: "No. LegitScript's 2025 dataset, the first to track the trade across ads, social media and e-commerce at once, found the opposite: advertisements for problematic peptides up 208% from 2023 to 2024, marketplace sales up 276% over five years, social postings up 75% in a year. This is a growth business, not a residual black market."
+    a: "No. LegitScript's 2025 dataset, the first to track the trade across ads, social media and e-commerce at once, found the opposite: advertisements for problematic peptides up 308% from 2023 to 2024, marketplace sales up 276% over five years, social postings up 75% in a year. This is a growth business, not a residual black market."
 ---
 
 The [forum era](/articles/barbie-drug-gray-market/) had a shape you could
@@ -112,7 +113,7 @@ the first dataset to track this market across ads, social media, and
 e-commerce at once, covering 2020 through 2025 and naming Melanotan alongside
 BPC-157, TB-500, PT-141, and the gray-market GLP-1 peptides. The numbers do
 not describe a niche under pressure. Advertisements for problematic peptides
-grew 208 percent from 2023 to 2024 — 678 percent from 2022. E-commerce
+grew 308 percent from 2023 to 2024 — 678 percent from 2022. E-commerce
 marketplace sales grew 276 percent over five years. Social postings rose 75
 percent in a year. The research-chemical costume is not a relic of the forum
 era. It is the storefront of a market in rapid expansion.
@@ -228,3 +229,5 @@ remains this site's stated opinion, and it is labeled as one.
 The newest costume so far borrows a language the molecule never earned:
 the longevity menu. That one is
 [its own file](/articles/the-wellness-menu/).
+
+*Corrected 22 November 2026: LegitScript melanotan-related advertising grew 308 percent from 2023 to 2024, not 208. See the [correction log](/standards/#corrections).*

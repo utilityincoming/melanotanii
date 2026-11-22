@@ -3,13 +3,14 @@ title: "The verdict is unanimous; the verbs are not"
 serpTitle: "Is Melanotan legal? The status by country, without the fine print"
 description: "Melanotan II is approved nowhere. Selling it is illegal in the US, UK, Australia, Ireland and the EU. Possession is murkier. The short answer, by country."
 pubDate: 2026-11-09
+updatedDate: 2026-11-22
 cluster: cautionary-tale
 kind: query
 faq:
   - q: "Is Melanotan legal in the US?"
     a: "No, not as a product. Melanotan II is an unapproved new drug, which makes its sale and marketing unlawful under federal law and subjects it to import controls. There is no approved Melanotan product for tanning, and personal possession, while rarely prosecuted, is not a legal category the FDA recognises."
   - q: "Is Melanotan legal in Australia?"
-    a: "No — and Australia goes furthest on possession. Melanotan peptides are listed in Schedule 9 of the Poisons Standard, the prohibited-substance schedule, so possession without authority is itself an offence, not just sale. The TGA has fined suppliers six figures and runs recurring public warnings."
+    a: "Selling and supplying it are illegal — melanotan peptides are listed in Schedule 4 of the Poisons Standard (prescription-only), and no Melanotan II product is on the ARTG, so no lawful channel to obtain one exists. Possession is not criminalised the way a prohibited-substance listing would; the TGA's enforcement targets supply — six-figure fines, lab tests on seized bottles, and recurring public warnings."
   - q: "Is any melanotan legal anywhere?"
     a: "One related drug is: afamelanotide, the compound once called Melanotan I, is approved as the prescription implant Scenesse — but only for a rare genetic light-pain disease (EPP), only by specialist prescription, and only in some countries. Melanotan II, the peptide sold online for tanning, is approved nowhere for anything."
 ---
@@ -25,15 +26,16 @@ in the US, UK, EU, Australia, Canada, or anywhere else. *Is selling it
 illegal?* Yes, in every major market: unapproved new drug in the US,
 unauthorised medicinal product in the UK and Ireland and across the EU,
 and prohibited supply under Australia's Therapeutic Goods Act. *Is having
-it illegal?* Mostly grey, with one hard exception — Australia, where
-melanotan sits in Schedule 9 of the Poisons Standard, the schedule
-reserved for prohibited substances, which makes possession itself an
-offence.
+it illegal?* Grey almost everywhere, Australia included: melanotan sits in
+Schedule 4 of the Poisons Standard — prescription-only, with no approved
+product on the register. That closes off every lawful route to a vial;
+what it does not do is criminalise possession the way a
+prohibited-substance listing would.
 
 <figure class="figure">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img" aria-labelledby="lgtt lgtd">
 <title id="lgtt">The status by jurisdiction</title>
-<desc id="lgtd">Five jurisdictions. Selling is illegal in all five. Possession is criminalised in Australia and inconsistently treated elsewhere. Approved nowhere.</desc>
+<desc id="lgtd">Five jurisdictions. Selling is illegal in all five. Australia lists melanotan prescription-only with no approved product; possession is treated inconsistently everywhere. Approved nowhere.</desc>
 <rect x="0" y="0" width="780" height="300" fill="#FBFAF7"/>
 <rect x="8" y="8" width="764" height="284" rx="10" fill="none" stroke="#E4DFD6"/>
 <text x="40" y="44" font-family="'Spectral',Georgia,serif" font-size="23" font-weight="600" fill="#17130E">Approved nowhere. Illegal to sell everywhere.</text>
@@ -43,7 +45,7 @@ offence.
 <text x="40" y="160" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#5A4F44">UNITED KINGDOM &amp; IRELAND</text>
 <text x="40" y="180" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Unauthorised product · supply and advertising illegal · sites suspended, ads removed</text>
 <text x="40" y="208" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#5A4F44">AUSTRALIA</text>
-<text x="40" y="228" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Schedule 9 · possession an offence · six-figure supplier fines, paid 2026</text>
+<text x="40" y="228" font-family="'Archivo',sans-serif" font-size="12" fill="#17130E">Schedule 4 · prescription-only · no approved product · six-figure supplier fines, paid 2026</text>
 <rect x="40" y="252" width="700" height="1" fill="#E4DFD6"/>
 <text x="40" y="276" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#A6431F">EU · CANADA · DENMARK — not authorised. Where it is sold, it is sold outside the law.</text>
 </svg>
@@ -90,3 +92,5 @@ enforcement capacity is what lags. For the jurisdiction-by-jurisdiction
 detail, kept current as agencies act, the standing reference is the
 [regulatory tracker](/regulatory/). For how the market holds anyway,
 start with [how it's sold now](/articles/how-its-sold-now/).
+
+*Corrected 22 November 2026: melanotan sits in Schedule 4 of the Australian Poisons Standard — prescription-only since the April 2018 scheduling decision — not Schedule 9; the listing does not criminalise possession. See the [correction log](/standards/#corrections).*

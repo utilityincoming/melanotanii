@@ -1,0 +1,135 @@
+---
+// The Record's dated corpus: wire-service entries, not essays. Filed entries
+// record what happened; scheduled entries record what is on the calendar and
+// are replaced by filed ones when the event lands.
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const entries = (await getCollection('records')).sort(
+  (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
+);
+const filed = entries.filter((e) => e.data.status === 'filed');
+const scheduled = entries.filter((e) => e.data.status === 'scheduled');
+
+const jur: Record<string, string> = {
+  au: 'Australia',
+  us: 'United States',
+  uk: 'United Kingdom',
+  eu: 'European Union',
+  ca: 'Canada',
+  global: 'Global',
+};
+---
+
+<Base
+  title="Record entries: the dated file on Melanotan II — Tan Lines"
+  description="One entry per regulator action, coroner's finding, enforcement number or company disclosure on the melanocortin file — dated and anchored to a single primary source."
+>
+  <section class="head">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>Record entries</span>
+    </nav>
+    <p class="eyebrow">The Record</p>
+    <h1>Record entries</h1>
+    <p class="lede">
+      Wire-service entries, not essays. Each records one dated event &mdash; a
+      regulator action, a coroner&rsquo;s finding, an enforcement number, a
+      company disclosure &mdash; anchored to a single primary source.
+      {filed.length} filed, {scheduled.length} on the calendar. When a
+      scheduled event lands, its entry is replaced by a filed one.
+    </p>
+  </section>
+
+  <section class="group" aria-label="Filed entries">
+    <h2>Filed <span class="count">{filed.length}</span></h2>
+    <p class="group-note">What happened, in reverse date order. Every entry cites its document.</p>
+    <ol class="entries">
+      {
+        filed.map((e) => (
+          <li>
+            <a class="entry-link" href={`/record/${e.id}/`}>
+              <span class="when">{e.data.when}</span>
+              <span class="entry-title">{e.data.title}</span>
+              <span class="meta">
+                {e.data.authority} &middot; {jur[e.data.jurisdiction]}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="group" aria-label="Scheduled entries">
+    <h2>On the calendar <span class="count">{scheduled.length}</span></h2>
+    <p class="group-note">What is coming, and the document that will settle it.</p>
+    <ol class="entries">
+      {
+        scheduled.map((e) => (
+          <li class="scheduled">
+            <a class="entry-link" href={`/record/${e.id}/`}>
+              <span class="when">{e.data.when}</span>
+              <span class="entry-title">{e.data.title}</span>
+              <span class="meta">
+                {e.data.authority} &middot; {jur[e.data.jurisdiction]}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <style>
+    .head { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 0; }
+    .crumbs {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--body); display: flex; gap: 0.4rem; margin-bottom: 1.25rem;
+    }
+    .crumbs a { color: inherit; text-decoration: none; }
+    .crumbs a:hover { color: var(--ink); text-decoration: underline; }
+    .eyebrow {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent, #a6431f); margin: 0;
+    }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 0.35rem 0 0.75rem; }
+    .lede { font-size: 1.05rem; color: var(--ink); margin: 0 0 1rem; line-height: 1.6; }
+    .group { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 0; }
+    .group h2 {
+      font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase;
+      margin: 0 0 0.25rem; display: flex; align-items: baseline; gap: 0.5rem;
+    }
+    .count {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 12px; color: var(--body); font-weight: 400;
+    }
+    .group-note { font-size: 13px; color: var(--body); margin: 0 0 1rem; }
+    .entries { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+    .entry-link {
+      display: grid; grid-template-columns: 9.5rem 1fr; grid-template-areas:
+        'when title'
+        '. meta';
+      gap: 0.15rem 1rem; padding: 0.8rem 1rem;
+      border: 1px solid var(--line); border-radius: 6px;
+      text-decoration: none; color: inherit; background: var(--card, transparent);
+    }
+    .entry-link:hover { border-color: var(--accent, #a6431f); }
+    .when {
+      grid-area: when; align-self: center;
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 12px; letter-spacing: 0.04em; color: var(--accent, #a6431f);
+      white-space: nowrap;
+    }
+    .entry-title { grid-area: title; font-weight: 600; color: var(--ink); font-size: 15px; line-height: 1.4; }
+    .meta { grid-area: meta; font-size: 12.5px; color: var(--body); }
+    .scheduled .when { color: var(--body); }
+    .scheduled .entry-link { border-style: dashed; }
+    @media (max-width: 640px) {
+      .entry-link { grid-template-columns: 1fr; grid-template-areas: 'when' 'title' 'meta'; }
+    }
+  </style>
+</Base>

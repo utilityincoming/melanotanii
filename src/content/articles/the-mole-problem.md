@@ -147,4 +147,6 @@ The tan fades. The surveillance problem is what lingers — in the charts of the
 people whose whole job is to catch the thing early, on skin that a drug has
 made harder to read. It's the most important entry in the whole
 [side-effect ledger](/articles/the-side-effect-ledger/), and the one least
-visible to the person in the mirror.
+visible to the person in the mirror. The full file — every published mole case
+in melanotan users, read in order against the literature that exists for
+watching moles — is [The Mole Raid](/articles/the-mole-raid/).

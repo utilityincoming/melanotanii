@@ -26,4 +26,28 @@ const articles = defineCollection({
   ),
 });
 
-export const collections = { articles };
+// The Record's dated corpus: short wire-service entries — regulator actions,
+// court findings, enforcement numbers, company disclosures — each anchored to
+// one primary source. Entries are not essays: they carry no argument, only a
+// date, an authority, and what the document says. Filed entries record what
+// happened; scheduled entries record what is on a calendar, and move to filed
+// (with a date) when the event lands.
+const records = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/records' }),
+  schema: z.object({
+    title: z.string(),
+    // Human date phrasing ("by end of February 2027"); eventDate drives sorting.
+    when: z.string(),
+    eventDate: z.coerce.date(),
+    status: z.enum(['filed', 'scheduled']).default('filed'),
+    authority: z.string(),
+    jurisdiction: z.enum(['au', 'us', 'uk', 'eu', 'ca', 'global']),
+    sourceUrl: z.string().url(),
+    sourceLabel: z.string(),
+    // Optional cross-links into the article file (article collection ids).
+    related: z.array(z.string()).optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { articles, records };

@@ -14,6 +14,7 @@ const path = Astro.url.pathname;
 const nav = [
   { href: '/timeline/', label: 'Timeline' },
   { href: '/regulatory/', label: 'Regulatory' },
+  { href: '/record/', label: 'Record entries' },
   { href: '/skin-record/', label: 'Skin record' },
   { href: '/articles/', label: 'Articles' },
   { href: '/about/', label: 'About' },
@@ -225,6 +226,7 @@ const siteLd = websiteLd(Astro.site);
         <span class="foot-kicker">The Record</span>
         <a href="/timeline/">Timeline</a>
         <a href="/regulatory/">Regulatory</a>
+        <a href="/record/">Record entries</a>
         <a href="/skin-record/">Skin record</a>
         <a href="/articles/">Articles</a>
         <a href="/sources/">Sources</a>

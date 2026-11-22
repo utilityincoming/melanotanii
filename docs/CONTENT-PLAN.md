@@ -541,6 +541,26 @@ to `the-side-effect-ledger` and `the-nasal-spray-myth`.
   spray-associated mouth mass does not prove a local mechanism; an
   injection-associated pigmentation case does not make injection safer.
 
+## Priority 2.5 — Record format + The Mole Raid (SHIPPED 22 Nov 2026, branch feat/record-format)
+
+- **Record entries — `/record/`.** Deviation 2 shipped: a dedicated `records`
+  content collection (title, human-readable date, event date, filed/scheduled
+  status, authority, jurisdiction, one primary source). 19 entries — 15 filed,
+  4 scheduled — feeding `/record/` (index + entry pages), the RSS feed,
+  `llms.txt`, and the `/sources/` page. The tracker cards now point at entries;
+  the entries carry the primary source the cards never could.
+- **The Mole Raid — `/articles/the-mole-raid/`.** Deviation 3 shipped: the
+  flagship investigation — every published mole case in melanotan users, read
+  in order against the literature for watching moles (Dorr 1996 → case reports
+  → ugly duckling → total-body photography), anchored to `the-mole-problem`.
+- **Corrections pass (logged on `/standards#corrections`).** The Schedule 9
+  claim removed across 7 articles + the tracker (melanotan II is Schedule 4
+  since Apr 2018 — both 2026 Poisons Standard editions confirm); LegitScript
+  208% → 308%; DHSC answer dated 15 Dec 2025 (question tabled 3 Dec);
+  CUV105 200 → 210 patients; unverified Feb-2026 HHS reshuffle card replaced
+  with the verified 15 Apr 2026 Category-2 removals; Feb-2026 S9 card replaced
+  with the 6 Jul 2026 FOI 26-3029 release; Apr 2018 Schedule 4 milestone added.
+
 ## Priority 3 — freshness & maintenance (ongoing, no new pages)
 
 - **Regulatory tracker upkeep.** `/regulatory` currently maps FDA, EU,

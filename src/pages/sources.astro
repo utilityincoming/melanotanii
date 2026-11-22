@@ -41,6 +41,9 @@ for (const a of articles) {
   }
 }
 const totalUrls = cited.reduce((n, c) => n + c.urls.length, 0);
+const recordEntries = (await getCollection('records')).sort(
+  (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
+);
 
 const ledger = (oralLedger as { oral: string[][] }).oral;
 ---
@@ -52,7 +55,8 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
     <p class="eyebrow">The Record</p>
     <h1 class="page-title">Sources</h1>
     <p class="page-sub">
-      {totalUrls} citations across {cited.length} articles, pulled from the files,
+      {totalUrls} citations across {cited.length} articles and the primary
+      sources of {recordEntries.length} record entries, pulled from the files,
       plus the oral-pigmentation ledger. A claim on this site should be
       checkable against a source you can open. The method is on the
       <a href="/standards/">editorial standards</a> page.
@@ -70,6 +74,20 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
           {c.urls.map((u) => (
             <li><a href={u} rel="noopener noreferrer nofollow">{u}</a></li>
           ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+
+  <section class="cited" aria-label="Record entry primary sources">
+    {recordEntries.map((r) => (
+      <article class="cited-article">
+        <h2>
+          <a href={`/record/${r.id}/`}>{r.data.title}</a>
+          <span class="strand">{r.data.when} · {r.data.status === 'scheduled' ? 'scheduled' : 'filed'}</span>
+        </h2>
+        <ul>
+          <li><a href={r.data.sourceUrl} rel="noopener noreferrer nofollow">{r.data.sourceLabel}: {r.data.sourceUrl}</a></li>
         </ul>
       </article>
     ))}

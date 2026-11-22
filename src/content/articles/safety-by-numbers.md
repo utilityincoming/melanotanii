@@ -3,6 +3,7 @@ title: "The attribution gap: why 'no deaths reported' isn't a safety record"
 serpTitle: "Has anyone died from Melanotan II? Why nobody can count"
 description: "Millions of users, no deaths — the gray market's core safety claim fails at both numbers. A BMJ editorial, a Bolton inquest, and 89 counted reports explain why."
 pubDate: 2026-09-14
+updatedDate: 2026-11-22
 cluster: cautionary-tale
 faq:
   - q: "Has anyone died from Melanotan II?"
@@ -10,7 +11,7 @@ faq:
   - q: "How many people use Melanotan II?"
     a: "Nobody knows, and the uncertainty is on the record. A 2009 BMJ editorial by the researchers who first tracked the drug through England's needle-and-syringe programmes stated plainly that the prevalence of its use is unknown. There are no prescriptions, no sales records, and no registry — so the 'millions of users' figure sellers quote has never had a source. It is the claim's load-bearing number, and it was never counted."
   - q: "Why aren't Melanotan II side effects reported to regulators?"
-    a: "Because mandatory adverse-event reporting attaches to licensed medicines, and this product is not one. Harm surfaces only when it is dramatic enough to become a case report or an emergency admission. Australia's entire counted adverse-event file ran to 89 reports across 2022–2025 — which is what triggered its 2026 move to Schedule 9. Eighty-nine reports either proves a benign drug or proves a counting system that barely counts; you cannot tell which, and that is the problem."
+    a: "Because mandatory adverse-event reporting attaches to licensed medicines, and this product is not one. Harm surfaces only when it is dramatic enough to become a case report or an emergency admission. Australia's entire counted adverse-event file ran to 89 reports across 2022–2025, released case by case under a freedom-of-information request. Eighty-nine reports either proves a benign drug or proves a counting system that barely counts; you cannot tell which, and that is the problem."
   - q: "Does twenty years of gray-market use prove Melanotan II is safe?"
     a: "No. Twenty years of unlicensed use produce years, not data. Compare the closest approved relative: bremelanotide, an FDA-approved melanocortin agonist descended from the same research line, which won approval in 2019 on trials that enrolled 1,247 women — a small number, but every one of them counted, dosed, and watched. Volume and evidence are different things, and only one of them has ever existed for Melanotan II."
 ---
@@ -75,8 +76,9 @@ what has been dramatic enough to force its way into print, one case at a time:
 Those are leaks through the floor of the counting system, not measurements of
 it. And the system's actual output — the complete Australian adverse-event
 file the regulator could point to — is small enough to hold in one sentence.
-According to [The Record](/regulatory/), the entire pool that moved the TGA to
-reclassify Melanotan II alongside heroin in February 2026 was 89 reports,
+According to [The Record](/regulatory/), the entire pool the TGA has counted —
+released case by case under
+freedom-of-information request 26-3029 — was 89 reports,
 over four years (2022–2025), including two melanoma diagnoses within eighteen
 months of use.
 
@@ -220,3 +222,5 @@ evidence, wearing the costume of evidence — and every year of "no deaths
 reported" adds nothing to count. This publication will keep counting what can
 be counted: the 89, the case reports, the label percentages, the jury words.
 Harms plain; uncertainty not smoothed.
+
+*Corrected 22 November 2026: the 89-report adverse-event file was released case by case under freedom-of-information request 26-3029; it did not accompany any Schedule 9 reclassification — melanotan II remains in Schedule 4. See the [correction log](/standards/#corrections).*

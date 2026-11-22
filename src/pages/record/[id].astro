@@ -1,0 +1,137 @@
+---
+// One record entry: date, authority, what the document says, and the document
+// itself. No argument, no advice — the file speaks through its primary source.
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('records');
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const jur: Record<string, string> = {
+  au: 'Australia',
+  us: 'United States',
+  uk: 'United Kingdom',
+  eu: 'European Union',
+  ca: 'Canada',
+  global: 'Global',
+};
+
+const relatedIds: string[] = entry.data.related ?? [];
+const relatedArticles = relatedIds.length
+  ? (await getCollection('articles')).filter((a) => relatedIds.includes(a.id))
+  : [];
+
+const pageTitle = `${entry.data.title} — record entry, ${entry.data.when} — Tan Lines`;
+const description = `${entry.data.when} — ${entry.data.authority} (${jur[entry.data.jurisdiction]}). ${entry.data.title}.`;
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Record entries', item: '/record/' },
+    { '@type': 'ListItem', position: 3, name: entry.data.title, item: `/record/${entry.id}/` },
+  ],
+};
+---
+
+<Base title={pageTitle} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  <article class="entry-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">&rsaquo;</span>
+        <a href="/record/">Record entries</a>
+        <span aria-hidden="true">&rsaquo;</span>
+        <span>{entry.data.when}</span>
+      </nav>
+
+      <p class="eyebrow">
+        {entry.data.status === 'filed' ? 'Filed' : 'Scheduled'}
+        &middot; {jur[entry.data.jurisdiction]}
+      </p>
+      <h1>{entry.data.title}</h1>
+      <p class="meta-line">
+        <strong>{entry.data.when}</strong> &middot; {entry.data.authority}
+      </p>
+
+      <div class="prose entry-body">
+        <Content />
+      </div>
+
+      <aside class="source-box">
+        <p class="box-label">Primary source</p>
+        <a href={entry.data.sourceUrl} target="_blank" rel="noopener noreferrer">
+          {entry.data.sourceLabel}
+        </a>
+      </aside>
+
+      {
+        relatedArticles.length > 0 && (
+          <aside class="source-box">
+            <p class="box-label">Related reading</p>
+            <ul class="related-list">
+              {relatedArticles.map((a) => (
+                <li>
+                  <a href={`/articles/${a.id}/`}>{a.data.title}</a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )
+      }
+
+      <p class="back"><a href="/record/">&larr; All record entries</a></p>
+    </div>
+  </article>
+
+  <style>
+    .wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+    .crumbs {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--body); display: flex; gap: 0.4rem; flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .crumbs a { color: inherit; text-decoration: none; }
+    .crumbs a:hover { color: var(--ink); text-decoration: underline; }
+    .eyebrow {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent, #a6431f); margin: 0;
+    }
+    h1 { font-size: clamp(1.6rem, 3.6vw, 2.1rem); margin: 0.4rem 0 0.6rem; line-height: 1.25; }
+    .meta-line {
+      font-size: 13.5px; color: var(--body); margin: 0 0 1.75rem;
+      padding-bottom: 1.25rem; border-bottom: 1px solid var(--line);
+    }
+    .meta-line strong { color: var(--ink); font-weight: 600; }
+    .entry-body { font-size: 1.02rem; line-height: 1.7; }
+    .entry-body :global(p) { margin: 0 0 1.1rem; }
+    .entry-body :global(a) { color: inherit; text-decoration: underline; text-decoration-color: rgba(166, 67, 31, 0.4); text-underline-offset: 3px; }
+    .entry-body :global(em) { color: var(--body); }
+    .source-box {
+      margin-top: 1.75rem; padding: 1rem 1.25rem;
+      border: 1px solid var(--line); border-left: 3px solid var(--accent, #a6431f);
+      border-radius: 6px;
+    }
+    .box-label {
+      font-family: var(--font-mono, ui-monospace, monospace);
+      font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--body); margin: 0 0 0.5rem;
+    }
+    .source-box > a { font-size: 14px; color: var(--ink); word-break: break-word; }
+    .related-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+    .related-list a { font-size: 14px; color: var(--ink); text-decoration: none; }
+    .related-list a:hover { text-decoration: underline; text-decoration-color: rgba(166, 67, 31, 0.4); }
+    .back { margin-top: 2rem; font-size: 13.5px; }
+    .back a { color: var(--body); text-decoration: none; }
+    .back a:hover { color: var(--ink); text-decoration: underline; }
+  </style>
+</Base>

@@ -3,7 +3,7 @@ title: "The nasal-spray myth: why needle-free isn't safer"
 serpTitle: "Melanotan II nasal spray: is needle-free safer? No"
 description: "A Melanotan II nasal spray changes the packaging, not the molecule. Why 'needle-free' removes the one thing an injection gives — a known dose."
 pubDate: 2026-09-29
-updatedDate: 2026-11-14
+updatedDate: 2026-11-23
 cluster: cautionary-tale
 faq:
   - q: "Is a Melanotan II nasal spray safer than injecting?"
@@ -11,7 +11,9 @@ faq:
   - q: "Does a spray give a gentler, more gradual tan?"
     a: "That is a marketing frame, not a pharmacology. 'Gentle' and 'gradual' describe a dose you can control; a nasal spray is the route where the delivered amount is least knowable, because how much crosses the mucosa versus drips away or is swallowed varies dose to dose. Less control is not more safety."
   - q: "Is the nasal spray legal or approved?"
-    a: "No. No medicines regulator has approved a Melanotan II product in any form for tanning. The UK's health department confirmed in December 2025 that nasal sprays containing it are unlicensed and unlawful to sell for human use."
+    a: "No. No medicines regulator has approved a Melanotan II product in any form for tanning. In the UK it is illegal to sell medicinal products containing it; sprays sold cosmetically fall outside medicines regulation, as the health department set out in December 2025 — a gap, not an approval."
+  - q: "How much Melanotan II is in a nasal spray dose?"
+    a: "No one has measured that. No published study has established an intranasal dose or absorption figure for Melanotan II — the human dosing record is entirely subcutaneous, 0.025 mg/kg in the trials. The only assayed spray line, tested by Australia's regulator in 2026, held 22 to 54 mg in bottles labelled 30 mg, so even a per-bottle figure cannot be computed from the label: the label was wrong."
 ---
 
 Of all the costumes the gray market has stitched for Melanotan II, the
@@ -32,10 +34,10 @@ flushing, blood-pressure swings, and the darkening and change of moles
 that gives dermatology its [real objection](/articles/the-mole-problem/).
 Changing the packaging changes none of that. A regulator's view follows
 the compound, not the delivery: in December 2025 the UK's Department of
-Health and Social Care confirmed to Parliament that nasal sprays
-containing Melanotan II are unlicensed and unlawful to sell for human
-use — the same status the injectable vials carry on
-[the regulatory record](/regulatory/).
+Health and Social Care set the boundary out to Parliament — injectable
+Melanotan II is an unlicensed medicine, while nasal sprays sold without
+medicinal claims fall outside medicines regulation, a gap rather than an
+exemption — as [the regulatory record](/regulatory/) holds.
 
 ## "Gentle" is a claim about dose, and the spray can't make it
 
@@ -98,6 +100,36 @@ mole-darkening and uneven pigmentation the market files under "developing
 in time" are the compound doing to melanocytes what it does regardless of
 route; the spray simply removes the buyer's ability to say how much drove
 it.
+
+## The dosing record, by route
+
+Every number on this question that has a document behind it is in the
+table below, attributed to its source. None of it is this site's
+recommendation — there is no recommended dose of an unapproved compound,
+and on one of these two routes there is no dose at all.
+
+| Route | What the record documents | Figure | Source |
+| --- | --- | --- | --- |
+| Subcutaneous | Formal trial dosing — recommended for Phase I work; roughly 1.75 mg for a 70-kg adult | 0.025 mg/kg/day | [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Subcutaneous | Severe nausea at the trial dose, in 12.9% of subjects | 0.025 mg/kg | [Wessells et al. 2000](https://pubmed.ncbi.nlm.nih.gov/11035391/) |
+| Subcutaneous | The gray-market starting baseline — a reported 6 mg overdose was "six times the recommended starting dose per the patient" | 1 mg | [Nelson et al. 2012](https://pubmed.ncbi.nlm.nih.gov/23121206/) |
+| Nasal | No published dose, absorption, or bioavailability figure exists; the human record is entirely subcutaneous | none | [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/); [Wessells et al. 2000](https://pubmed.ncbi.nlm.nih.gov/11035391/) |
+| Nasal | Content of the only assayed product line — bottles labelled "30 mg" per 20 mL | 22–54 mg (1.1–2.7 mg/mL) | [TGA, 17 Aug 2026](https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/melanotan-ii-tanning-peptide-products-found-be-inconsistently-dosed) |
+| Nasal | A documented spray outcome — a 22-year-old woman, tanning use, oral mucosal malignant melanoma; the report records no dose | no dose recorded | [Alsabbagh et al. 2025](https://pubmed.ncbi.nlm.nih.gov/40210573/) |
+
+The nasal rows are the table's finding. On the route marketed as the
+gentler, more gradual option, no trial, regulator, or laboratory has
+ever published how much of a sprayed dose reaches the bloodstream —
+nasal absorption of this compound is unquantified, in the strict sense
+that the quantity has never been measured even once. An injection at
+least hands its user a volume they can state and a vial someone could
+assay. A spray count gives neither: the sprays-per-day figure a user
+manages has never corresponded to a milligram figure in any study, and
+cannot, because the delivered amount per spray does not exist as data.
+And the one assayed spray line varied by more than a factor of two
+between identically labelled bottles — so even the bottle's *contents*
+cannot be counted on before the unmeasured absorption removes everything
+else.
 
 ## The vial problem doesn't stay behind with the needle
 

@@ -1,15 +1,17 @@
 ---
 title: "The protocol illusion: why dosing math can't fix a vial nobody tested"
 serpTitle: "Melanotan II dosing guides: why the protocols can't work"
-description: "Online Melanotan II guides carry titration schedules, reconstitution math, maintenance plans. The numbers are theatre — arithmetic on an unknown vial."
+description: "Melanotan II dosing guides carry titration schedules and maintenance plans. The dosing record — trial doses, assayed vials — every number to its source."
 pubDate: 2026-08-30
-updatedDate: 2026-11-14
+updatedDate: 2026-11-23
 cluster: cautionary-tale
 faq:
   - q: "Are online Melanotan II dosing protocols reliable?"
     a: "No. A titration schedule is precise arithmetic performed on an unknown quantity. When Australia's regulator tested five nasal-spray bottles labelled 30 mg, the actual content ranged from 22 to 54 mg — so every number computed downstream of the label inherits an error of more than double."
   - q: "Why can't a careful titration schedule make Melanotan II safe?"
     a: "Because a real dosing protocol is a contract between three parties: a verified label, pharmacology measured in patients, and a licensed prescriber. The gray-market guide borrows the vocabulary of all three and supplies none — the label is a disclaimer, the pharmacology is forum anecdote, the prescriber is a stranger in a thread."
+  - q: "What dose do people actually take?"
+    a: "The formal record is clinical: 0.025 mg/kg per day subcutaneously, recommended by the 1996 Arizona pilot and used in the 20-man study that followed, where 12.9 percent of subjects had severe nausea at that dose. The gray market's 1 mg baseline exists in the literature only through a case report — a 6 mg overdose described as \"six times the recommended starting dose per the patient.\" No regulator has ever set a dose, and assayed vials have never matched their labels: 4.32–8.84 mg in vials sold as 10 mg, 22–54 mg in bottles sold as 30 mg."
 ---
 
 Every serious Melanotan II guide on the internet has the same shape.
@@ -20,8 +22,11 @@ tables are aligned. The whole artefact reads like something a
 pharmacologist signed off on.
 
 None of them were. This file is about what the genre is, and what it
-cannot be. The numbers are not reproduced here — that would turn a story
-about the guides into a guide — but their structure is the story.
+cannot be. The dosing record — the numbers people actually took, each
+attached to the document it came from — is set out below. None of it is
+a recommendation, because no regulator, manufacturer, or prescriber
+stands behind any of it. The structure, not the arithmetic, is still
+the story.
 
 ## The genre is real, and it has been studied
 
@@ -143,6 +148,68 @@ what it cannot do is extend a single result to the whole market ([what “99%
 pure” actually measures](/articles/lab-tested-is-not-safe/)).
 The protocol is a label-based routine, not a course issued against a verified
 label, established clinical exposure and medical oversight.
+
+## What people actually do — the dosing record
+
+The dosing record of this compound can be stated in full, because every
+number in it has a document behind it. None of what follows is this
+site's recommendation; it is the record.
+
+The only humans who ever received Melanotan II under a monitored
+protocol were clinical subjects. The 1996 Arizona pilot — three healthy
+men, saline alternating with drug across two weeks — started at 0.01 mg
+per kilogram of body weight and escalated in 0.005 mg/kg steps to a
+maximum of 0.03; the dose its own authors recommended for future Phase I
+work was **0.025 mg/kg per day**
+([Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/)). The study
+that followed — twenty men with erectile dysfunction, double-blind,
+placebo-controlled crossover — used that same 0.025 mg/kg and recorded
+what it bought: **severe nausea in 12.9 percent of subjects**
+([Wessells et al. 2000](https://pubmed.ncbi.nlm.nih.gov/11035391/)).
+That is the entire formal dosing record of Melanotan II in humans:
+twenty-three men, monitored, in studies built to find the boundary and
+stop at it.
+
+The gray market's round 1 mg baseline exists in the literature only as
+the shadow of an emergency. A 39-year-old arrived at a Chicago emergency
+department having injected **6 mg in a single dose** — which, by his own
+account, was six times the starting dose his instructions recommended
+([Nelson et al. 2012](https://pubmed.ncbi.nlm.nih.gov/23121206/)). The
+physicians recorded the mass-spectrometry confirmation that the vial
+really was Melanotan II, and the outcome: a sympathomimetic toxidrome,
+rhabdomyolysis, creatine kinase peaking at 17,773 IU/L. One documented
+baseline, one documented consequence, and nothing in between.
+
+Around that number sits practice, documented the way practice gets
+documented. The forum study — 623 entries, 205 participants — found
+dosing regimens, titration advice, and users policing one another's
+protocols among its central themes
+([Gilhooley et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34464955/)).
+The case-record literature puts the same practice in the flesh: a
+three-to-four-week self-injection course taken to deepen a sunbed tan,
+with a melanoma excised three months later
+([PMID 24355990](https://pubmed.ncbi.nlm.nih.gov/24355990/)); eruptive
+naevi within 24 hours of a single dose
+([Schulze et al. 2014](https://pubmed.ncbi.nlm.nih.gov/24334249/)); and
+one documented user's routine in full — first injection given with a
+friend's help, sites rotated, vials refrigerated and dissolved in
+sterilised water, nausea managed with benzodiazepines and by injecting
+before sleep ([Van Hout & Brennan
+2014](https://pubmed.ncbi.nlm.nih.gov/24280586/)).
+
+Why is the range the guides quote so wide, and why do no two of them
+agree? Because there is no manufacturer, no summary of product
+characteristics, no pharmacopoeial standard — nothing for a dose to be
+*of*. Every circulating number is arithmetic descended from a three-man
+pilot, rounded and re-copied from guide to guide. And the one quantity
+anyone has measured at scale is the input itself: vials sold as "10 mg"
+held **4.32 to 8.84 mg** when three online shops were assayed
+([Breindahl et al. 2015](https://pubmed.ncbi.nlm.nih.gov/24771717/));
+bottles sold as "30 mg" held 22 to 54 mg in the regulator's own
+laboratory — the finding above, now with company. A range that wide is
+not a dosing range. It is a distribution of guesses about an
+uncharacterised powder — which is the finding, and the reason this file
+records numbers instead of recommending any.
 
 ## The developers ran a protocol. They stopped.
 

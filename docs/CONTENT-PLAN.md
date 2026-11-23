@@ -64,6 +64,25 @@ the source of truth):
   Melanotan: …"). Restamp `updatedDate` on neither page — title/meta only,
   no new body substance.
 
+- **The dosing record (23 Nov 2026, `feat/dosing-record`).** Shipped after
+  the docs pass on the same branch: a "What people actually do" dosing
+  record section in `/articles/the-protocol-illusion/` (Dorr 1996
+  0.01–0.03 mg/kg, 0.025 mg/kg/day recommended; Wessells 2000 severe
+  nausea 12.9% at 0.025 mg/kg; Nelson 2012 1 mg baseline + 6 mg outcome;
+  Gilhooley 2021 regimen genre; Van Hout 2014 practice; Schulze 2014;
+  PMID 24355990; Breindahl 2015 vials 4.32–8.84 mg vs "10 mg"; TGA
+  22–54 mg); a route dosing table in `/articles/the-nasal-spray-myth/`
+  whose finding is that nasal absorption is unquantified — no published
+  intranasal dose or bioavailability figure exists; and "Where people
+  actually buy it" market sections in `/articles/the-enforcement-map/`
+  (UK/US/AU by seller category, no vendors named, no links — BBC 2025
+  retail test, CTSI May 2025, CHOICE March 2025, LegitScript Dec 2025,
+  Category 2 + PCAC records). New inline citations surface on
+  `/sources/` automatically; the nasal page's DHSC claim was corrected
+  to the written answer's actual split (injectable = unlicensed
+  medicine; claim-free spray outside medicines remit). Affiliate and
+  commerce rules unchanged.
+
 ## Priority 1 — highest editorial value
 
 ### `history` — "The two men and the molecule: Hruby, Hadley, and the patent trail"

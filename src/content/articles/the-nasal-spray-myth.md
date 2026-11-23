@@ -104,9 +104,9 @@ it.
 ## The dosing record, by route
 
 Every number on this question that has a document behind it is in the
-table below, attributed to its source. None of it is this site's
-recommendation — there is no recommended dose of an unapproved compound,
-and on one of these two routes there is no dose at all.
+table below, attributed to its source. There is no recommended dose of
+an unapproved compound — and on one of these two routes there is no dose
+at all.
 
 | Route | What the record documents | Figure | Source |
 | --- | --- | --- | --- |

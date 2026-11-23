@@ -152,8 +152,7 @@ label, established clinical exposure and medical oversight.
 ## What people actually do — the dosing record
 
 The dosing record of this compound can be stated in full, because every
-number in it has a document behind it. None of what follows is this
-site's recommendation; it is the record.
+number in it has a document behind it.
 
 The only humans who ever received Melanotan II under a monitored
 protocol were clinical subjects. The 1996 Arizona pilot — three healthy

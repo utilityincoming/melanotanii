@@ -10,7 +10,9 @@ normal frontmatter/PR flow (see README "Adding an article").
 
 ## Non-negotiables (carry over from README)
 
-- No sourcing, dosing, or usage guidance for unapproved compounds — ever.
+- Dosing and sourcing may appear, but only where the article says plainly
+  that it is a summary of what people do, not a prescription. The site
+  still takes no position on which vendor to buy from.
 - No affiliate links, vendor referrals, discount codes, or "researcher
   verification" gates on this domain. A reader looking for a source is
   not a reader this site serves. Commerce stays off, including when it
@@ -119,8 +121,7 @@ changes the record on chronic melanocortin agonism.
 `whats-in-the-vial` (which now forward-links). Journalism about the forum
 dosing-guide genre itself — structure, conventions, why the arithmetic
 cannot survive the label — anchored on Gilhooley et al. 2021 (Dermatology)
-and the TGA 22–54 mg finding. Contains no dosing numbers by design; do not
-"improve" it by adding any. Do not restamp `updatedDate` unless a regulator
+and the TGA 22–54 mg finding. Do not restamp `updatedDate` unless a regulator
 publishes a new quantitative label-variance finding.
 
 ### `cautionary-tale` — "The attribution gap: why 'no deaths reported' isn't a safety record"
@@ -323,7 +324,7 @@ point that for human tanning, selectivity — not raw potency — is the propert
 a real drug would need and the gray-market compound conspicuously lacks;
 hand that baton to `a-drug-with-no-address` and `what-a-safe-tanning-drug-
 requires`, both of which forward-link. No kinetics a reader could turn into a
-protocol; concepts, not numbers to act on.
+protocol.
 
 ### `science` — "Too much, too little: what α-MSH does when the dial is stuck"
 **Shipped 15 Nov 2026** as `/articles/too-much-too-little/`. Addison’s

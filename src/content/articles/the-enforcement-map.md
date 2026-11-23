@@ -3,6 +3,7 @@ title: "A ban with no borders: how each country tried to stop Melanotan II"
 serpTitle: "Is Melanotan II illegal? UK, Australia, Ireland & US enforcement"
 description: "Melanotan II is unapproved almost everywhere. A country-by-country map of how the UK, Australia, Ireland and US fought the gray market — and why it held."
 pubDate: 2026-09-24
+updatedDate: 2026-11-23
 cluster: cautionary-tale
 faq:
   - q: "Is Melanotan II legal?"
@@ -11,6 +12,8 @@ faq:
     a: "Because enforcement targets sellers and advertisements, not the molecule's popularity. Regulators can fine suppliers, order ads removed, and suspend websites — the UK, Ireland and Australia have all done exactly this — but the cross-border, social-media nature of the market means new listings replace old ones faster than any single agency can act."
   - q: "What have regulators actually done about Melanotan II?"
     a: "The UK MHRA warned the public in 2008 and later helped suspend over 100 trading websites; Ireland's HPRA ordered more than 500 online ads removed between 2020 and 2022; and Australia's TGA issued 27 infringement notices totalling over A$100,000 to a single supplier, paid in 2026. The US FDA treats it as an unapproved new drug subject to import controls."
+  - q: "Where do people actually buy Melanotan II?"
+    a: "By category: research-chemical storefronts online in every market; social-media and marketplace sellers, the fastest-growing layer in LegitScript's monitoring; physical counters in the UK — salons, sunbed shops, gyms — where the BBC's 2025 test found Melanotan II in six of ten sprays bought; and direct online sellers in Australia at roughly A$100 a bottle. No regulator has closed any category. This site names no vendors and takes no position on where to buy."
 ---
 
 Ask "is Melanotan II legal?" and you get a lawyer's answer: it depends where you
@@ -92,6 +95,67 @@ The American wall is passive but high: no approval means no legitimate channel a
 all. Yet the same cross-border e-commerce reality that defeated the UK's takedowns
 routes around a border-control posture too, which is why "unapproved" and "widely
 available" have coexisted in the US for the entire period.
+
+## Where people actually buy it
+
+The sections above are what the regulators did to the supply. This is
+the supply itself — by market, by category of seller. No vendor is named
+here and none is linked: this site takes no position on where to buy an
+unapproved compound, and this is a record, not a shortcut. It answers
+the question the map forces: what exactly is it that none of these
+agencies managed to switch off?
+
+**United Kingdom.** The injectable still moves through research-chemical
+storefronts — the direct descendants of the sites the MHRA began
+suspending in 2008. The spray has gone physical: when the BBC bought ten
+sprays across online shops, beauty salons, and sunbed stores in 2025,
+six contained Melanotan II in varying strengths
+([BBC, May 2025](https://www.bbc.com/news/articles/cwy37d0nwy9o)).
+Trading Standards put the retail picture on the record the same month —
+flavoured sprays sold through social platforms, expert safety assessment
+"unlikely," health warnings rare
+([CTSI, May 2025](https://www.tradingstandards.uk/news-policy-campaigns/news-room/2025/nasal-tanning-sprays-linked-with-skin-cancer-and-serious-respiratory-problems/))
+— and the category survives because it sits in a documented gap: sold
+cosmetically, a spray is outside medicines regulation and outside
+cosmetics regulation too, as the CTSI's own warning and the health
+department's [written answer](/record/2025-12-15-dhsc-wran/) both state.
+
+**United States.** The storefront layer is the measured one:
+LegitScript's 2025 dataset — the first to track the trade across
+advertising, social media, and e-commerce at once — found marketplace
+listings up 276 percent over five years and social-media content up 75
+percent in a year, with melanotan first among the most-observed product
+names
+([LegitScript, Dec 2025](https://www.businesswire.com/news/home/20251209572056/en/Problematic-Peptides-Market-LegitScript-Data-Reveals-Multi-Year-Surge-Across-Social-Media-E-Commerce-and-Advertisements)).
+The second category is the border: because the compound is an unapproved
+new drug, orders shipped in from overseas sellers are the channel the
+FDA's import controls were built for — the one enforcement posture that
+applies to every seller at once, foreign or domestic. The third is
+closed rather than open: there is no lawful compounding channel, the
+peptide's nomination having been withdrawn from the FDA's Category 2
+list in April 2026
+([the record](/record/2026-04-15-category-2/)), with the agency's own
+advisory committee scheduled to revisit the peptide in February 2027.
+
+**Australia.** The documented channel is direct-to-consumer online
+selling — CHOICE's investigation found multiple sites selling melanotan
+sprays without a prescription, at roughly a hundred dollars a bottle,
+and watched one seller quietly delete its "MT2 Powder" claim after being
+asked for comment
+([CHOICE, March 2025](https://www.choice.com.au/health-and-body/beauty-and-personal-care/skin-care-and-cosmetics/articles/tanning-nasal-sprays)).
+Both supply and advertising are unlawful there, influencer promotion
+included; possession is not criminalised. What marks Australia out is
+that its enforcement has a name and a receipt — the NSW seller fined
+A$101,412 whose products, three months after the fines were paid, were
+seized again and found in the regulator's laboratory to hold 22 to 54 mg
+in bottles labelled 30 mg
+([the lab record](/record/2026-08-17-tga-dosing-alert/)).
+
+Three markets, one shape: a storefront layer that re-hosts faster than
+it is suspended, a social or physical layer that regulation reaches
+slowly if at all, and a border that was never really a border. That is
+what the sections above were aimed at — and what every one of them is
+still aimed at.
 
 ## Why the map has no borders
 

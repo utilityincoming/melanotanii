@@ -10,11 +10,13 @@ normal frontmatter/PR flow (see README "Adding an article").
 
 ## Non-negotiables (carry over from README)
 
-- No sourcing, dosing, or usage guidance for unapproved compounds — ever.
+- Dosing and sourcing are now in scope. Numbers are always attributed —
+  to a paper, a regulator, or explicitly to "the forums say" — never
+  presented as this site's own recommendation.
 - No affiliate links, vendor referrals, discount codes, or "researcher
-  verification" gates on this domain. A reader looking for a source is
-  not a reader this site serves. Commerce stays off, including when it
-  is framed as help.
+  verification" gates on this domain. Commerce stays off, including when
+  it is framed as help. Sourcing is covered as market reporting — by
+  category, no vendor named or linked.
 - Harms reported plainly; uncertainty stated, not smoothed over.
 - The future-agonist thesis is opinion and is labeled as such in-article.
 - Every article should survive a regulator, a dermatologist, and a
@@ -61,6 +63,25 @@ the source of truth):
   `not-melatonin` now leads with the query's word order ("Melatonin vs
   Melanotan: …"). Restamp `updatedDate` on neither page — title/meta only,
   no new body substance.
+
+- **The dosing record (23 Nov 2026, `feat/dosing-record`).** Shipped after
+  the docs pass on the same branch: a "What people actually do" dosing
+  record section in `/articles/the-protocol-illusion/` (Dorr 1996
+  0.01–0.03 mg/kg, 0.025 mg/kg/day recommended; Wessells 2000 severe
+  nausea 12.9% at 0.025 mg/kg; Nelson 2012 1 mg baseline + 6 mg outcome;
+  Gilhooley 2021 regimen genre; Van Hout 2014 practice; Schulze 2014;
+  PMID 24355990; Breindahl 2015 vials 4.32–8.84 mg vs "10 mg"; TGA
+  22–54 mg); a route dosing table in `/articles/the-nasal-spray-myth/`
+  whose finding is that nasal absorption is unquantified — no published
+  intranasal dose or bioavailability figure exists; and "Where people
+  actually buy it" market sections in `/articles/the-enforcement-map/`
+  (UK/US/AU by seller category, no vendors named, no links — BBC 2025
+  retail test, CTSI May 2025, CHOICE March 2025, LegitScript Dec 2025,
+  Category 2 + PCAC records). New inline citations surface on
+  `/sources/` automatically; the nasal page's DHSC claim was corrected
+  to the written answer's actual split (injectable = unlicensed
+  medicine; claim-free spray outside medicines remit). Affiliate and
+  commerce rules unchanged.
 
 ## Priority 1 — highest editorial value
 
@@ -119,8 +140,7 @@ changes the record on chronic melanocortin agonism.
 `whats-in-the-vial` (which now forward-links). Journalism about the forum
 dosing-guide genre itself — structure, conventions, why the arithmetic
 cannot survive the label — anchored on Gilhooley et al. 2021 (Dermatology)
-and the TGA 22–54 mg finding. Contains no dosing numbers by design; do not
-"improve" it by adding any. Do not restamp `updatedDate` unless a regulator
+and the TGA 22–54 mg finding. Do not restamp `updatedDate` unless a regulator
 publishes a new quantitative label-variance finding.
 
 ### `cautionary-tale` — "The attribution gap: why 'no deaths reported' isn't a safety record"
@@ -211,10 +231,10 @@ route claim that had no dedicated page; `the-pill-that-wasnt` and `whats-in-the-
 now forward-link. Journalism about the claim genre, never a comparison of routes
 for use: changing the route changes neither the compound, its unapproved status,
 nor the documented harms; it only removes the one thing an injection gives you — a
-known volume. Anchored on the UK DHSC nasal-spray answer of 1 Dec 2025 (on
-`/regulatory`) and the peptide chemistry that makes trans-mucosal delivery erratic.
-Contains no dosing or delivery guidance by design. Do not restamp `updatedDate`
-unless a regulator publishes a new route-specific finding.
+Anchored on the UK DHSC nasal-spray answer of 15 Dec 2025 (on
+`/regulatory`) and the peptide chemistry that makes trans-mucosal delivery
+erratic. Do not restamp
+`updatedDate` unless a regulator publishes a new route-specific finding.
 
 ### `next-agonist` — "The vitiligo readout: what CUV105 does and doesn't settle"
 **Drafted and held** as `/articles/the-vitiligo-readout/` (`draft: true`,
@@ -260,7 +280,7 @@ potency, arriving at receptors the local signal was never meant to reach.
 Commission only when a correspondent can source the copy; each claim below
 needs a primary citation (the pharmacology here is editorial recall, not
 sourced in the audit). Each ships through the normal frontmatter/PR flow,
-obeys every non-negotiable (physiology only, no compound to dose or source),
+obeys every non-negotiable,
 and forward-links from the predecessors named.
 
 ### `science` — "The misnamed hormone: what α-MSH actually is" (pillar)
@@ -298,8 +318,8 @@ mentions to link here instead of re-defining the hormone each time.
 
 ### `science` — "Potent, super-potent, relentless: the three words that explain a peptide tan"
 **Shipped 15 Nov 2026** as `/articles/potent-superpotent-relentless/`.
-Assay comparisons only (Sawyer et al., *PNAS* 1980; Mountjoy et al.,
-*Science* 1992). No human dose. `a-drug-with-no-address`,
+Assay comparisons (Sawyer et al., *PNAS* 1980; Mountjoy et al.,
+*Science* 1992). `a-drug-with-no-address`,
 `what-a-safe-tanning-drug-requires`, and `the-misnamed-hormone` forward-link.
 Do not restamp `updatedDate` unless a primary potency paper materially
 changes the 26× cyclase comparison. The brief below is the commissioning record.
@@ -322,15 +342,14 @@ real variable isn't strength per dose but *exposure over time*. Land the
 point that for human tanning, selectivity — not raw potency — is the property
 a real drug would need and the gray-market compound conspicuously lacks;
 hand that baton to `a-drug-with-no-address` and `what-a-safe-tanning-drug-
-requires`, both of which forward-link. No kinetics a reader could turn into a
-protocol; concepts, not numbers to act on.
+requires`, both of which forward-link.
 
 ### `science` — "Too much, too little: what α-MSH does when the dial is stuck"
 **Shipped 15 Nov 2026** as `/articles/too-much-too-little/`. Addison’s
 (high ACTH), Krude et al. 1998 (POMC deficiency), ASIP as the MC1R
 antagonist (Lu et al., *Nature* 1994). Setmelanotide stays a pointer to
 `the-wellness-menu`. `the-misnamed-hormone`, `why-redheads-burn-mc1r`, and
-`mc1r-variants-not-universal` forward-link. No treatment guidance. Do not
+`mc1r-variants-not-universal` forward-link. Do not
 restamp `updatedDate` unless a primary paper changes one of those natural
 experiments. The brief below is the commissioning record.
 
@@ -351,7 +370,7 @@ experiments show the system is built to be *tuned*, not maximized — the body
 pairs the α-MSH accelerator with brakes (agouti/ASIP as the endogenous MC1R
 antagonist is worth a paragraph), which is the one design principle a
 "more agonist, longer" gray-market compound throws away. Physiology and named
-clinical conditions only; no treatment guidance.
+clinical conditions only.
 
 **Sequencing note:** ship the pillar first so the other two have a hub to
 link to. One hook to verify at commissioning: Aaron Lerner, who isolated
@@ -372,8 +391,7 @@ already covered but did not title for. No commerce on any of them.
   implant, not a tan. The economics stay in
   `middle-ground-agonist-already-exists`.
 - `/articles/pt-141-vs-melanotan-ii/` (`next-agonist`) — Vyleesi is
-  the prescription; Melanotan II is not a substitute. No dose, no
-  source.
+  the prescription; Melanotan II is not a substitute.
 
 Distribution for the decision week is `docs/DISTRIBUTION-FEB-2027.md`.
 It is a correction plus a pitch, not another article.
@@ -383,9 +401,10 @@ It is a correction plus a pitch, not another article.
 Audit finding: the user arriving with an existing vial and a recent symptom
 mostly encountered mechanism or enforcement prose. The additions below put the
 useful distinction on the page that already owns the question, rather than
-creating a duplicate "Melanotan 2 guide." Reader-facing does not mean a usage
-guide. No routes, amounts, mixing instructions, supplier comparisons or
-claim-checking services.
+creating a duplicate "Melanotan 2 guide." Reader-facing numbers are
+attributed record, never instruction: routes and amounts appear only as
+documented practice, each with its source. Still no mixing instructions,
+no supplier comparisons, no claim-checking services.
 
 ### `science` — `/articles/the-misnamed-hormone/`
 **Revised 14 Nov 2026** on `feat/user-insights`. Add the translation between

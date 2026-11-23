@@ -9,10 +9,11 @@ formed around it, the receptor science that explains it, and the open
 question of whether a legitimate photoprotective agonist ever reaches the
 general public (the GLP-1 parallel).
 
-No commerce on this domain. Dosing and sourcing may appear, but only where
-the article says plainly that it is a summary of what people do, not a
-prescription. The site still takes no position on which vendor to buy
-from. Journalism about the gray market, never a guide to it.
+No commerce on this domain. Dosing and sourcing are now in scope. Numbers
+are always attributed — to a paper, a regulator, or explicitly to "the
+forums say" — never presented as this site's own recommendation, and the
+site takes no position on which vendor to buy from. Journalism about the
+gray market, never a guide to it.
 
 ## Editorial pillars
 
@@ -59,9 +60,9 @@ draft: false
 
 ## Content rules (non-negotiable)
 
-- Dosing and sourcing may appear, but only where the article says plainly
-  that it is a summary of what people do, not a prescription. The site
-  still takes no position on which vendor to buy from.
+- Dosing and sourcing are now in scope. Numbers are always attributed —
+  to a paper, a regulator, or explicitly to "the forums say" — never
+  presented as this site's own recommendation.
 - No affiliate links, vendor referrals, discount codes, or researcher
   gates on this domain, whatever they are called.
 - Harms reported plainly; uncertainty stated, not smoothed over.

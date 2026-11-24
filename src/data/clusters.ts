@@ -1,8 +1,8 @@
 // The five content threads and the three story strands they belong to.
 //
 // The whole site turns on one thesis — "one origin, three strands" (see the
-// timeline). The three strands each have a color, defined once in Base.astro:
-//   mission  -> --strand-mission (UV violet)  the original photoprotection goal
+// timeline). The three strands each have a color, defined in editorial.css:
+//   mission  -> --strand-mission (indigo)  the original photoprotection goal
 //   market   -> --caution        (rust)       the gray market that filled the void
 //   approval -> --approved        (green)      the approved drugs spun off from it
 // This module is the single source of truth that lets the homepage, the article

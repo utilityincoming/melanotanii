@@ -1,4 +1,5 @@
 ---
+import '../styles/editorial.css';
 import Analytics from '@vercel/analytics/astro';
 import { publication, tagline, organizationLd, websiteLd } from '../data/brand';
 interface Props {
@@ -39,7 +40,8 @@ const siteLd = websiteLd(Astro.site);
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <meta name="theme-color" content="#FBFAF7" />
+  <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#191823" media="(prefers-color-scheme: dark)" />
   <!-- Open Graph / social share -->
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -60,170 +62,9 @@ const siteLd = websiteLd(Astro.site);
   <script type="application/ld+json" set:html={JSON.stringify(orgLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(siteLd)} is:inline />
   <Analytics />
-  <style is:global>
-    :root {
-      /* Palette: eumelanin ink, porcelain paper, UV violet accent */
-      --paper: #FBFAF7;
-      --ink: #17130E;
-      --ink-soft: #5A4F44;
-      --line: #E4DFD6;
-      --uv: #503296;
-      /* Story strands (used on the timeline) */
-      --strand-mission: #503296;  /* the photoprotection goal — same as --uv */
-      --caution: #A6431F;         /* the gray market */
-      --approved: #2F6A52;        /* the approved spinoffs */
-      /* Pigment scale — the brand device */
-      --pigment-scale: linear-gradient(90deg,
-        #F3DCC8 0%, #E4B98F 20%, #C08A5A 40%,
-        #8A5A34 60%, #55351D 80%, #241A12 100%);
-      --font-display: 'Spectral', Georgia, serif;
-      --font-body: 'Archivo', system-ui, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { animation: none !important; transition: none !important; }
-    }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--font-body);
-      font-size: 1.0625rem;
-      line-height: 1.65;
-    }
-    a { color: var(--uv); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:focus-visible, button:focus-visible {
-      outline: 2px solid var(--uv);
-      outline-offset: 3px;
-      border-radius: 2px;
-    }
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.01em;
-    }
-    .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
-    .prose { max-width: 42rem; }
-    .prose h2 { margin-top: 2.5rem; font-size: 1.6rem; }
-    .prose p { color: var(--ink); }
-    /* Inline scientific figures */
-    .prose figure { margin: 2.75rem 0; }
-    .prose figure svg { width: 100%; height: auto; display: block; }
-    .prose figcaption {
-      margin-top: 0.7rem;
-      font-size: 0.85rem;
-      line-height: 1.5;
-      color: var(--ink-soft);
-      max-width: 40rem;
-    }
-    /* Markdown tables (the dosing-record tables) */
-    .prose table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 2.25rem 0 2.5rem;
-      font-size: 0.88rem;
-      line-height: 1.55;
-    }
-    .prose th, .prose td {
-      text-align: left;
-      vertical-align: top;
-      padding: 0.55rem 0.8rem 0.55rem 0;
-      border-bottom: 1px solid var(--line);
-    }
-    .prose th {
-      font-family: var(--font-body);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      border-bottom: 2px solid var(--ink);
-    }
-    .prose tbody tr:last-child td { border-bottom: none; }
-    .eyebrow {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--uv);
-    }
-    /* Signature: the pigment scale bar */
-    .pigment-bar { height: 6px; background: var(--pigment-scale); border: 0; }
-    .site-header .wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding-top: 1.1rem;
-      padding-bottom: 1.1rem;
-    }
-    .site-header nav { display: flex; gap: 1.4rem; flex-wrap: wrap; }
-    .site-header nav a {
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      padding-bottom: 2px;
-      border-bottom: 2px solid transparent;
-    }
-    .site-header nav a:hover { color: var(--uv); }
-    .site-header nav a.is-active { color: var(--uv); border-bottom-color: var(--uv); }
-    .brand {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 0.1rem;
-      text-decoration: none;
-      line-height: 1.15;
-    }
-    .brand-name {
-      font-family: var(--font-display);
-      font-weight: 600;
-      font-size: 1.2rem;
-      color: var(--ink);
-    }
-    .brand-tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.02em;
-      color: var(--ink-soft);
-    }
-    @media (max-width: 30rem) { .brand-tag { display: none; } }
-    .site-footer {
-      margin-top: 5rem;
-      border-top: 1px solid var(--line);
-      color: var(--ink-soft);
-      font-size: 0.875rem;
-    }
-    .site-footer .wrap { padding-top: 2rem; padding-bottom: 3rem; }
-    .site-footer p { max-width: 46rem; }
-    .site-footer .foot-record,
-    .site-footer .foot-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.1rem;
-      margin-bottom: 1.1rem;
-      align-items: baseline;
-    }
-    .site-footer .foot-kicker {
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      margin-right: 0.3rem;
-    }
-    .site-footer .foot-record a,
-    .site-footer .foot-links a {
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .site-footer .foot-record a:hover,
-    .site-footer .foot-links a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
-  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="pigment-bar" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
@@ -242,7 +83,7 @@ const siteLd = websiteLd(Astro.site);
       </nav>
     </div>
   </header>
-  <main class="wrap">
+  <main class="wrap" id="main-content" tabindex="-1">
     <slot />
   </main>
   <footer class="site-footer">

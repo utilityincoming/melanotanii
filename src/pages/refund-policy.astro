@@ -1,0 +1,29 @@
+---
+import ReaderGuide from '../layouts/ReaderGuide.astro';
+
+const sections = [
+  { id: 'merchant', label: 'Find the merchant' },
+  { id: 'record', label: 'Build a record' },
+  { id: 'escalate', label: 'Escalate the dispute' },
+  { id: 'safety', label: 'Handle product concerns' },
+];
+---
+<ReaderGuide
+  title="Refund and order dispute help | Tan Lines"
+  description="Looking for a refund on an online peptide order? Identify the merchant, document the issue and find the right dispute or safety reporting channel."
+  heading="Refunds and order disputes"
+  intro="Tan Lines is an independent publication. It has no checkout, takes no payments and cannot access orders or issue refunds. Start with the receipt or payment statement for the purchase."
+  {sections}
+>
+  <h2 id="merchant">Find the merchant that took payment</h2>
+  <p>Check the order confirmation, invoice and payment statement. The billing name can differ from the storefront name. If it is unclear, contact your payment provider through its official app or the number on your card and ask for help identifying the transaction.</p>
+
+  <h2 id="record">Build a record and ask for a resolution</h2>
+  <p>Save the listing and return terms from the time of purchase if available. Keep the order number, amount, tracking history and dated messages. Describe what happened and request a specific resolution using the merchant or marketplace’s official support channel. Keep payment credentials and personal information out of public posts.</p>
+
+  <h2 id="escalate">Escalate through the right channel</h2>
+  <p>If the merchant is unreachable or the issue remains unresolved, ask the marketplace or payment provider what dispute options apply and when the filing window closes. Describe the transaction accurately. An unrecognized charge, a missing delivery and a misrepresented product can follow different processes. Rights and deadlines vary by location and payment method. <a href="https://consumer.ftc.gov/articles/solving-problems-business-returns-refunds-and-other-resolutions">U.S. FTC guidance on refunds and complaints</a>.</p>
+
+  <h2 id="safety">Handle product concerns alongside the dispute</h2>
+  <p>If the package leaks, the label is unclear or you suspect contamination, avoid using or sharing the product. Ask a pharmacist or local waste authority about safe handling before mailing or discarding it. If somebody has symptoms after exposure, seek healthcare guidance promptly while the dispute is pending. <a href="/peptide-stewardship/#after">See what to document and where to report a suspected reaction</a>.</p>
+</ReaderGuide>

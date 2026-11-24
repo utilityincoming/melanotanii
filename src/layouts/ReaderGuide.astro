@@ -1,0 +1,44 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  intro: string;
+  sections: { id: string; label: string }[];
+}
+
+const { title, description, heading, intro, sections } = Astro.props;
+---
+<Base {title} {description}>
+  <header class="guide-header">
+    <h1>{heading}</h1>
+    <p>{intro}</p>
+  </header>
+  <div class="guide">
+    <nav aria-label="On this page">
+      <p class="eyebrow">On this page</p>
+      <ul>
+        {sections.map(({ id, label }) => <li><a href={`#${id}`}>{label}</a></li>)}
+      </ul>
+    </nav>
+    <article class="prose">
+      <slot />
+    </article>
+  </div>
+</Base>
+
+<style>
+  .guide-header { max-width: 49rem; padding: 3rem 0 1.5rem; }
+  h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin: 0 0 0.7rem; }
+  .guide-header p { font-size: 1.15rem; color: var(--ink-soft); }
+  .guide { display: grid; gap: 2rem; padding-bottom: 2rem; }
+  nav { align-self: start; border-top: 2px solid var(--uv); }
+  nav ul { margin: 0; padding-left: 1.25rem; font-size: 0.95rem; }
+  nav li + li { margin-top: 0.45rem; }
+  .prose :global(h2:first-child) { margin-top: 0; }
+  @media (min-width: 52rem) {
+    .guide { grid-template-columns: minmax(10rem, 15rem) minmax(0, 42rem); gap: 3rem; }
+  }
+</style>

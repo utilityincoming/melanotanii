@@ -17,6 +17,7 @@ const nav = [
   { href: '/record/', label: 'Record entries' },
   { href: '/skin-record/', label: 'Skin record' },
   { href: '/articles/', label: 'Articles' },
+  { href: '/faqs/', label: 'FAQs' },
   { href: '/about/', label: 'About' },
 ];
 const isActive = (href: string) => path === href || path.startsWith(href);
@@ -258,6 +259,8 @@ const siteLd = websiteLd(Astro.site);
       <nav class="foot-links" aria-label="Footer">
         <a href="/about/">About</a>
         <a href="/standards/">Editorial standards</a>
+        <a href="/peptide-stewardship/">Peptide stewardship</a>
+        <a href="/refund-policy/">Refund and order help</a>
         <a href="/rss.xml">RSS</a>
       </nav>
       <p>

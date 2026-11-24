@@ -1,0 +1,55 @@
+---
+import ReaderGuide from '../layouts/ReaderGuide.astro';
+
+const sections = [
+  { id: 'pause', label: 'Before paying' },
+  { id: 'claims', label: 'Read the claims' },
+  { id: 'after', label: 'After an order or exposure' },
+  { id: 'community', label: 'What you pass on' },
+];
+---
+<ReaderGuide
+  title="Peptide stewardship: before and after an online order | Tan Lines"
+  description="A consumer guide to online peptide claims, approved medicines, suspected side effects, safe disposal and responsible sharing."
+  heading="A stewardship guide for online peptide claims"
+  intro="Good karma starts with what you pass on. An accurate warning, a well-documented safety report or a private check-in can help the next person make a better decision."
+  {sections}
+>
+  <h2 id="pause">Before paying, check what is approved for the intended use</h2>
+  <p>When a peptide is marketed for personal use, check your medicines regulator for the exact product, formulation and indication. For a medical need, ask a licensed clinician or pharmacist about regulated options. If a prescription medicine is appropriate, verify the pharmacy through the relevant licensing authority. For cosmetic tanning, skip unapproved Melanotan products. <a href="https://www.fda.gov/consumers/consumer-updates/how-buy-medicines-safely-online-pharmacy">FDA guidance on online pharmacies</a>.</p>
+
+  <h2 id="claims">Ask what each claim can prove</h2>
+  <dl>
+    <dt><strong>“Research use only”</strong></dt>
+    <dd>A seller’s label gives no assurance of approval or suitability for human use.</dd>
+    <dt><strong>“Lab tested”</strong></dt>
+    <dd>A report describes a sample and specific tests. A purity result alone leaves questions about sterility, labeling, storage and whether the tested sample corresponds to the shipment. <a href="/articles/lab-tested-is-not-safe/">Read the testing deep dive</a>.</dd>
+    <dt><strong>“Clinically studied”</strong></dt>
+    <dd>Look for the population, formulation and outcome in the actual study. Results about one implant used for a rare disease cannot establish the safety or efficacy of another product marketed for tanning. <a href="/melanotan-i/#approval">See what Scenesse’s approval covers</a>.</dd>
+  </dl>
+
+  <details>
+    <summary>Try it on a sample listing</summary>
+    <p>Imagine a listing calls a nasal product “clinical grade” and links to the Scenesse approval and a purity certificate. The approval covers a specific implant for EPP. The certificate addresses the submitted sample and its listed tests. Neither gives you evidence that the nasal product is approved, sterile or safe to use. If a friend forwards the listing, share the approval record and point out the difference in formulation.</p>
+  </details>
+
+  <h2 id="after">After an order or exposure</h2>
+  <ol>
+    <li><strong>Get help if someone feels unwell.</strong> Seek emergency care for severe symptoms. For other symptoms or suspected exposure, contact a clinician or local poison center and describe what happened. A refund request can wait.</li>
+    <li><strong>Keep a private record.</strong> Record the product name as printed, lot if visible, dates and symptoms. Save a label photo, order confirmation and listing. Share relevant details with healthcare professionals or regulators through their official channels.</li>
+    <li><strong>Report a suspected reaction or quality problem.</strong> A report can help regulators spot patterns even when the cause is uncertain. Use your local medicines regulator’s reporting system. <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program">U.S. FDA MedWatch</a>.</li>
+    <li><strong>Keep leftovers away from others.</strong> Avoid sharing or reselling them. Ask a pharmacist or local waste authority whether a take-back program accepts the product and how to handle any sharps. <a href="https://www.fda.gov/consumers/consumer-updates/where-and-how-dispose-unused-medicines">FDA disposal guidance</a>.</li>
+  </ol>
+  <p>For billing or delivery issues, use the <a href="/refund-policy/">order dispute guide</a>.</p>
+
+  <h2 id="community">Choose what you pass on</h2>
+  <p>If someone asks about a viral post, send the regulator’s notice or the original study. When sharing your experience, say what you observed and what you still don’t know. Leave out people’s private information and seller links. If something you shared turns out to be wrong, correct it where the people who saw it can find the update.</p>
+</ReaderGuide>
+<style>
+  dt { margin-top: 1rem; }
+  dd { margin-inline-start: 0; }
+  li + li { margin-top: 0.7rem; }
+  details { margin-top: 1.5rem; padding: 0.85rem 1rem; border: 1px solid var(--line); }
+  summary { color: var(--uv); cursor: pointer; font-weight: 700; }
+  summary:focus-visible { outline: 2px solid var(--uv); outline-offset: 3px; }
+</style>

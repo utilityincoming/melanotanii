@@ -1,0 +1,37 @@
+---
+import ReaderGuide from '../layouts/ReaderGuide.astro';
+
+const sections = [
+  { id: 'origin', label: 'Why it was studied' },
+  { id: 'approval', label: 'What Scenesse approval covers' },
+  { id: 'names', label: 'Three names, three contexts' },
+  { id: 'limits', label: 'What the evidence leaves open' },
+];
+---
+<ReaderGuide
+  title="What is Melanotan I? Afamelanotide and Scenesse | Tan Lines"
+  description="The history and receptor science of Melanotan I, what Scenesse is approved for, and how Melanotan II and online products differ."
+  heading="What is Melanotan I?"
+  intro="Melanotan I is the historical name associated with afamelanotide, the active ingredient in Scenesse. Its path from pigmentation research to an approved implant began with a different medical question."
+  {sections}
+>
+  <h2 id="origin">Why it was studied</h2>
+  <p>Researchers wanted to know whether the skin could produce more protective pigment without first being exposed to ultraviolet light. They studied synthetic analogues of alpha-melanocyte-stimulating hormone, a signal involved in regulating pigment. Afamelanotide activates the melanocortin-1 receptor (MC1R), part of the pathway that promotes eumelanin production. <a href="/articles/where-melanotan-came-from/">Read the research history</a>.</p>
+
+  <h2 id="approval">What Scenesse approval covers</h2>
+  <p>Erythropoietic protoporphyria (EPP) is a rare disorder in which exposure to light can cause severe pain. The FDA approved Scenesse in 2019 to increase pain-free light exposure in adults with a history of phototoxic reactions from EPP. A trained healthcare professional administers the implant. The EU authorization also covers adult patients with EPP. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210797s000lbl.pdf">FDA prescribing information</a> · <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/scenesse">EMA assessment</a>.</p>
+
+  <h2 id="names">Three names, three contexts</h2>
+  <table>
+    <thead><tr><th scope="col">Name</th><th scope="col">What it refers to</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Melanotan I</th><td>The research name associated with afamelanotide. Online listings using the name offer a label claim about identity.</td></tr>
+      <tr><th scope="row">Scenesse</th><td>The regulated afamelanotide implant with a product-specific approval and prescribing label.</td></tr>
+      <tr><th scope="row">Melanotan II</th><td>A distinct analogue that acts on several melanocortin receptors, with broader effects reported in the research record. <a href="/articles/melanotan-1-vs-melanotan-2/">Compare the compounds</a>.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="limits">What the evidence leaves open</h2>
+  <p>Time spent in light without pain is a meaningful outcome in EPP. Establishing UV protection or skin cancer prevention for the wider public would require trials designed to measure those outcomes. The approved implant’s evidence also applies to that formulation and clinical setting. Matching a name on a listing cannot establish equivalent identity, manufacturing quality or effects. <a href="/articles/the-prevention-trial-problem/">Read what a prevention trial would need to measure</a>.</p>
+  <p><a href="/faqs/">Read the FAQs</a> or <a href="/peptide-stewardship/">check what an online listing can actually tell you</a>.</p>
+</ReaderGuide>

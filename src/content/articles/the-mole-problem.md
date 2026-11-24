@@ -21,6 +21,7 @@ to is the simplest, and the hardest to wave away: it changes your moles. Not
 metaphorically. Visibly, and sometimes dramatically.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t6">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t6 d6">
 <title id="t6">A warning sign buried in noise</title>
 <desc id="d6">On normal skin one changing mole stands out against uniform ones. On a mole-darkening drug every mole changes, so the suspicious one is camouflaged.</desc>
@@ -62,6 +63,7 @@ metaphorically. Visibly, and sometimes dramatically.
 <circle cx="655" cy="270" r="14" fill="#9A754C" stroke="#7F5E39" stroke-width="1"/>
 <text x="551" y="318" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#A6431F">the same mole &#8212; now hidden</text>
 </svg>
+</div>
 <figcaption>Signal versus noise. On normal skin one changing mole stands out &#8212; the warning sign melanoma screening depends on. A drug that darkens and changes every mole raises the noise floor until the one that matters disappears into it.</figcaption>
 </figure>
 

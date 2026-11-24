@@ -99,6 +99,7 @@ determine what the molecule does in a body are engineered, and the market
 sells you the fifth.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="nft">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 486" role="img" aria-labelledby="nft nfd">
 <title id="nft">Which parts of Melanotan II are natural and which are engineered</title>
 <desc id="nfd">A five-row ledger comparing the body's own alpha-MSH signal with Melanotan II. Only the first row — the signal the molecule is copied from — is shared and natural. The other four rows — the molecule itself, where it acts, how long it lasts, and what it reaches — are all deliberately engineered away from the natural signal. The market's "it's natural" claim describes only the one shared row.</desc>
@@ -151,6 +152,7 @@ sells you the fifth.
 <text x="36" y="470" font-family="'Spectral',Georgia,serif" font-size="13" font-weight="600" fill="#17130E">4 of 5 engineered</text>
 <text x="784" y="470" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">warm = the body&#8217;s design &#183; purple = the lab&#8217;s</text>
 </svg>
+</div>
 <figcaption>Five things decide what the molecule does in a body; only the first &mdash; the hormone it is patterned on &mdash; is natural. The molecule, the route, the duration, and the reach were each engineered away from the signal the market says it merely supplements.</figcaption>
 </figure>
 

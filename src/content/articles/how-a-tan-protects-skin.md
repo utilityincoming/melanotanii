@@ -17,6 +17,7 @@ body assembles out of one of the best broadband ultraviolet absorbers in all
 of biology.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t3">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t3 d3">
 <title id="t3">How melanin shields DNA</title>
 <desc id="d3">Eumelanin is the protective brown-black pigment; pheomelanin is a weak red-yellow shield. Melanosomes stack over the sun-facing side of the nucleus like a parasol, blocking UV.</desc>
@@ -50,6 +51,7 @@ of biology.
 <circle cx="514" cy="234" r="8" fill="#3A2A1C"/><circle cx="638" cy="234" r="8" fill="#3A2A1C"/>
 <text x="576" y="352" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">melanosomes cap the sun-facing side of the nucleus</text>
 </svg>
+</div>
 <figcaption>Two pigments, one shield. Eumelanin &#8212; the protective brown&#8211;black pigment &#8212; is packed into melanosomes that stack over the sun-facing side of each cell&#8217;s nucleus, a built-in parasol. Pheomelanin, the red-yellow pigment of fair skin, barely shields at all.</figcaption>
 </figure>
 

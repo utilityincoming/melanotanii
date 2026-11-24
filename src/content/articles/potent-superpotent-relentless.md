@@ -65,6 +65,7 @@ rare disease. Melanotan II is the cyclic descendant: same message, tied into
 a ring so the shape cannot unfold.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="pst">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" role="img" aria-labelledby="pst psd">
 <title id="pst">Three levers, and the one a real drug still needs</title>
 <desc id="psd">Three stacked bars labelled potency, super-potency, and duration, each filled, and a fourth bar labelled selectivity left empty. The point is that Melanotan II turns up the first three and does not supply the fourth.</desc>
@@ -85,6 +86,7 @@ a ring so the shape cannot unfold.
 <rect x="200" y="232" width="500" height="22" rx="3" fill="none" stroke="#A6431F" stroke-width="1.6" stroke-dasharray="4 3"/>
 <text x="216" y="248" font-family="'Archivo',sans-serif" font-size="12" fill="#A6431F">not supplied — MC1R and the other four receptors alike</text>
 </svg>
+</div>
 <figcaption>Potency, super-potency, and duration are three different claims. Melanotan II was built to maximise them. Selectivity — hitting the pigment receptor and not the others — is the property it does not have.</figcaption>
 </figure>
 

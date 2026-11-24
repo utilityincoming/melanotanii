@@ -29,6 +29,7 @@ regulator will let healthy people take the drug. The gray market never
 needed one. An approved general-public agonist cannot exist without one.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="ts1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="ts1 ds1">
 <title id="ts1">The molecule and the checkbook</title>
 <desc id="ds1">Two non-overlapping boxes: Clinuvel has the approved photoprotective and a rare-disease P&amp;L; GLP-1 sponsors have outcomes-trial budgets. The general-public sun drug sits in the gap. A third empty chair is public prevention funding.</desc>
@@ -59,6 +60,7 @@ needed one. An approved general-public agonist cannot exist without one.
 <text x="390" y="348" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">Tamoxifen had one. A melanocortin photoprotective does not.</text>
 <text x="390" y="370" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">The empty chair is also an answer.</text>
 </svg>
+</div>
 <figcaption>Two balance sheets, no overlap. The company that owns the approved photoprotective peptide cannot fund a general-public outcomes trial. The companies that can fund one do not own the peptide. Public prevention money has done this job before, for other drugs. Not this one.</figcaption>
 </figure>
 

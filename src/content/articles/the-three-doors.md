@@ -50,6 +50,7 @@ for the people who needed it most. Elsewhere this site covers afamelanotide as
 Here it is something else: the proof that the front door opens.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tc3">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="tc3 dc3">
 <title id="tc3">The three doors</title>
 <desc id="dc3">Three routes a melanocortin sun drug can take to reach Americans: FDA approval (open), compounding (restricted for Melanotan II), and the gray market (illegal). Only FDA approval yields a trusted medicine.</desc>
@@ -91,6 +92,7 @@ Here it is something else: the proof that the front door opens.
 <text x="620" y="294" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#A6431F">A side alley,</text>
 <text x="620" y="309" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="600" fill="#A6431F">not a pathway.</text>
 </svg>
+</div>
 <figcaption>The map, in three doors. A melanocortin sun drug can reach Americans through FDA approval, through compounding, or through the gray market — but only the first yields a medicine anyone can trust, and afamelanotide (SCENESSE) has already proved that door opens. Melanotan II is stuck in the third.</figcaption>
 </figure>
 

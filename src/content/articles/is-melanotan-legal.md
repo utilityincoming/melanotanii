@@ -33,6 +33,7 @@ what it does not do is criminalise possession the way a
 prohibited-substance listing would.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="lgtt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img" aria-labelledby="lgtt lgtd">
 <title id="lgtt">The status by jurisdiction</title>
 <desc id="lgtd">Five jurisdictions. Selling is illegal in all five. Australia lists melanotan prescription-only with no approved product; possession is treated inconsistently everywhere. Approved nowhere.</desc>
@@ -49,6 +50,7 @@ prohibited-substance listing would.
 <rect x="40" y="252" width="700" height="1" fill="#E4DFD6"/>
 <text x="40" y="276" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#A6431F">EU · CANADA · DENMARK — not authorised. Where it is sold, it is sold outside the law.</text>
 </svg>
+</div>
 <figcaption>Jurisdiction changes the verb, not the verdict. The map and the full dated file live on the <a href="/regulatory">regulatory tracker</a>.</figcaption>
 </figure>
 

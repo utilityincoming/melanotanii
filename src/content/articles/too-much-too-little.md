@@ -80,6 +80,7 @@ agouti protein antagonises the melanocyte-stimulating hormone receptor: it
 occupies the lock so the hormone cannot. The dial has two hands.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tmt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 280" role="img" aria-labelledby="tmt tmd">
 <title id="tmt">The melanocortin dial: accelerator, brake, and the stuck positions</title>
 <desc id="tmd">A horizontal dial. The left end is labelled POMC deficiency: no α-MSH, pale skin and red hair. The centre is labelled tuned: local α-MSH opposed by agouti signalling protein. The right end is labelled Addison's: high ACTH, skin darkens. A note under the right end says a relentless agonist pushes past the tuned position and leaves the brake behind.</desc>
@@ -102,6 +103,7 @@ occupies the lock so the hormone cannot. The dial has two hands.
 <text x="670" y="214" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">skin darkens</text>
 <text x="410" y="252" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12.5" fill="#A6431F">A relentless agonist does not sit at the middle. It holds the right-hand position and ignores the brake.</text>
 </svg>
+</div>
 <figcaption>The natural experiments sit at the ends of a dial the body normally holds in the middle: α-MSH as the accelerator, agouti signalling protein as the brake. Both stuck positions are diseases.</figcaption>
 </figure>
 

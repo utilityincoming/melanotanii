@@ -34,6 +34,7 @@ molecular event that browns your skin also releases an opioid inside it. The
 tan is the visible product. The endorphin is the hidden one.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tc1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="tc1 dc1">
 <title id="tc1">The reward loop the sun runs</title>
 <desc id="dc1">UV light drives skin cells to make POMC, which splits into alpha-MSH (the tan) and beta-endorphin (an opioid). The opioid reward creates a pull to seek more sun, closing a loop.</desc>
@@ -67,6 +68,7 @@ tan is the visible product. The endorphin is the hidden one.
 <path d="M620 268 C 620 340, 560 352, 470 352 L 205 352 C 120 352, 78 340, 78 184" fill="none" stroke="#A6431F" stroke-width="2" marker-end="url(#ac1r)"/>
 <text x="360" y="345" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" font-weight="600" fill="#A6431F">the pull to do it again</text>
 </svg>
+</div>
 <figcaption>The pathway behind the pull. UV light drives skin cells to make POMC, which is cut into two products at once: α-MSH, which triggers the tan, and β-endorphin, an endogenous opioid. In animals, blocking that opioid produces genuine withdrawal — the sun runs a small reward loop, and the tan is only its visible half.</figcaption>
 </figure>
 

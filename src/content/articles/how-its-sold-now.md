@@ -30,6 +30,7 @@ that stack has learned the same trick. When pressure lands, the molecule
 stays and the costume changes.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="ts1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 520" role="img" aria-labelledby="ts1 ds1">
 <title id="ts1">The Melanotan II supply stack and its costume changes</title>
 <desc id="ds1">Five layers of the modern supply machine — storefront, shop window, salesforce, counter, checkout — each paired with the pressure applied to it and the costume change that answers the pressure.</desc>
@@ -91,6 +92,7 @@ stays and the costume changes.
 <text x="500" y="463" font-family="'Archivo',sans-serif" font-size="12" fill="#A6431F">it&#8217;s for something else.</text>
 </g>
 </svg>
+</div>
 <figcaption>Five layers, one reflex. Each layer of the modern supply machine has absorbed its own form of pressure — takedowns, hashtag bans, ad policy, medicines law, merchant monitoring — and answered with the same move: keep the molecule, change the costume. The checkout layer is the newest front, and the least visible.</figcaption>
 </figure>
 

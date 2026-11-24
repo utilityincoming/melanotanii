@@ -24,6 +24,7 @@ the receptor actually is, in living populations, and what that does to the
 dream of a tanning drug for the people who burn.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tv1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="tv1 dv1">
 <title id="tv1">MC1R is a spectrum, not a switch</title>
 <desc id="dv1">Four genotypes from wild-type through weak r alleles and mixed R/r to strong R/R. Red hair concentrates at the far end; melanoma risk and poor tanning start earlier.</desc>
@@ -64,6 +65,7 @@ dream of a tanning drug for the people who burn.
 <text x="390" y="372" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">The people a photoprotective agonist would most help are partly</text>
 <text x="390" y="392" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">the people whose receptor answers it least. That is not a rounding error.</text>
 </svg>
+</div>
 <figcaption>Four stops on one gene. Wild-type skin can tan and needs the drug least. Strong R/R genotypes burn and may not answer an agonist at all, because the protein is missing from the cell surface or cannot couple. Between them: the quiet majority a future trial would actually enroll.</figcaption>
 </figure>
 

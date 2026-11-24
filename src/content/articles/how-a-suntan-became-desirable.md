@@ -32,6 +32,7 @@ lead-based whiteners were all technologies in service of the same message: *I
 do not have to work in the light.*
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tc2">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="tc2 dc2">
 <title id="tc2">When the status meaning of a tan flipped</title>
 <desc id="dc2">A timeline from 1900 to 2015. Before 1923 pale skin signalled wealth; after Chanel's 1923 tan, a tan signalled wealth. Later the sunbed industrialised it and in 2009 the WHO classified sunbeds as a carcinogen.</desc>
@@ -74,6 +75,7 @@ do not have to work in the light.*
 <text x="712" y="331" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10.5" fill="#A6431F">Group 1 carcinogen</text>
 </g>
 </svg>
+</div>
 <figcaption>The meaning of a tan inverted in the 1920s and never inverted back. What had signalled outdoor labour became a signal of leisure — right up until, decades later, the science confirmed that the fashionable version was carcinogenic. Desirability peaked and the danger was proven almost in the same breath.</figcaption>
 </figure>
 

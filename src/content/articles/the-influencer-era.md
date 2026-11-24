@@ -47,6 +47,7 @@ separate rulebooks — and understanding the gap explains why warnings alone hav
 done so little.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tc4">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="tc4 dc4">
 <title id="tc4">How Melanotan II sells in the open</title>
 <desc id="dc4">Two non-overlapping domains, medicines law and cosmetics law, with the product falling in the gap between them. Below, a split: illegal to sell but legal to use.</desc>
@@ -80,6 +81,7 @@ done so little.
 <text x="596" y="344" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="15" font-weight="700" fill="#2F6A52">Legal to use</text>
 <text x="596" y="364" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">(the buyer breaks no law)</text>
 </svg>
+</div>
 <figcaption>Between two rulebooks. Melanotan II is illegal to sell as a medicine, so it is marketed as a cosmetic — but cosmetics law doesn't cover it either, so it escapes the scrutiny genuine beauty products face. And while selling is illegal, using is not, so the buyer breaks no law. The product lives in the gap, which is why it can be advertised in daylight.</figcaption>
 </figure>
 

@@ -1,0 +1,40 @@
+---
+import ReaderGuide from '../layouts/ReaderGuide.astro';
+
+const sections = [
+  { id: 'compounds', label: 'Names and approvals' },
+  { id: 'evidence', label: 'Safety and evidence' },
+  { id: 'next-steps', label: 'After a purchase or exposure' },
+];
+---
+<ReaderGuide
+  title="Melanotan FAQs: safety, approvals and online orders | Tan Lines"
+  description="Answers about Melanotan I and II, Scenesse, UV protection, online peptide claims, adverse reactions and refunds."
+  heading="Melanotan FAQs"
+  intro="What the names mean, what the evidence supports, and where to turn if you already ordered or used a product."
+  {sections}
+>
+  <h2 id="compounds">Names and approvals</h2>
+  <h3>What are Melanotan I and Melanotan II?</h3>
+  <p>Both are synthetic peptides studied for their effects on pigmentation. Melanotan I is the historical name associated with afamelanotide. Melanotan II is a different compound that acts on several melanocortin receptors. The similar names make it easy to apply evidence about one to the other. <a href="/melanotan-i/">Read the Melanotan I profile</a>.</p>
+
+  <h3>Is there an approved tanning peptide?</h3>
+  <p>Scenesse, a prescription afamelanotide implant, has a specific indication for adults with erythropoietic protoporphyria (EPP). Its approval covers a defined medical use. Products marketed online as Melanotan I or II for tanning fall outside that approval. Local rules can differ. <a href="/regulatory/">See the regulatory record</a>.</p>
+
+  <h2 id="evidence">Safety and evidence</h2>
+  <h3>Does a darker tan prove that my skin is protected from UV?</h3>
+  <p>Visible pigment cannot tell you how much UV damage your skin has sustained. Evidence that a compound changes pigmentation cannot establish that it prevents skin cancer. Keep using established sun protection such as shade, protective clothing and broad-spectrum sunscreen. <a href="/articles/the-prevention-claim-misread/">Read how the prevention claim arose</a>.</p>
+
+  <h3>Does a nasal spray or a lab report resolve the safety questions?</h3>
+  <p>A nasal product still raises questions about identity, concentration, contamination and absorption. A lab report addresses the particular sample and tests it describes. It cannot establish what reached your door or how that product will affect you. <a href="/articles/the-nasal-spray-myth/">Read about nasal sprays</a> and <a href="/articles/lab-tested-is-not-safe/">what lab testing can establish</a>.</p>
+
+  <h3>Does a case report prove that Melanotan II caused a health problem?</h3>
+  <p>Case reports can bring a pattern to a clinician’s attention. They usually cannot establish cause or estimate how often an event happens because the number of people exposed and the contents of the products are often unknown. A new or changing mole warrants assessment by a healthcare professional. <a href="/articles/the-mole-problem/">Read the evidence on mole changes</a>.</p>
+
+  <h2 id="next-steps">After a purchase or exposure</h2>
+  <h3>What if I already ordered or used a product?</h3>
+  <p>For severe symptoms, seek emergency help. For other symptoms or questions about exposure, contact a healthcare professional or your local poison center and keep the package or a photo of its label. The <a href="/peptide-stewardship/#after">stewardship guide</a> covers what to record, where to report a suspected reaction and how to handle leftovers.</p>
+
+  <h3>Who can help with a missing order or a refund?</h3>
+  <p>Tan Lines is an independent publication and has no checkout. Your receipt or statement can help identify the merchant that took payment. <a href="/refund-policy/">Find the merchant and document a dispute</a>.</p>
+</ReaderGuide>

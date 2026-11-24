@@ -1,0 +1,226 @@
+/* Shared editorial palette. Figure plates retain a light paper surface in both themes. */
+:root {
+  color-scheme: light dark;
+  --paper: #FBFAF7;
+  --surface: #fffdf9;
+  --surface-raised: #f1ece4;
+  --ink: #201d29;
+  --ink-soft: #57525d;
+  --body: var(--ink-soft);
+  --line: #dcd5cc;
+  --uv: #414077;
+  --strand-mission: var(--uv);
+  --caution: #8e472f;
+  --approved: #2f6256;
+  --figure-paper: #fbfaf7;
+  --figure-rule: #dcd5cc;
+  --pigment-scale: linear-gradient(90deg, #f3dcc8, #e4b98f, #c08a5a, #8a5a34, #55351d, #241a12);
+  --font-display: 'Spectral', Georgia, serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+  --space-section: clamp(2.75rem, 6vw, 5.5rem);
+  --gutter: clamp(1rem, 3.5vw, 2.75rem);
+  --radius: 0.45rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #191823;
+    --surface: #232230;
+    --surface-raised: #2d2b3b;
+    --ink: #f6f1e8;
+    --ink-soft: #c4bcc8;
+    --line: #474352;
+    --uv: #c4bafa;
+    --caution: #f2a98c;
+    --approved: #9bd4c1;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+  line-height: 1.7;
+}
+a { color: var(--uv); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+:where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 2px solid var(--uv);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.027em;
+  text-wrap: balance;
+}
+.wrap { max-width: 80rem; margin: 0 auto; padding-inline: var(--gutter); }
+.prose { max-width: 44rem; overflow-wrap: anywhere; }
+.prose h2 { margin-top: 2.65rem; font-size: clamp(1.5rem, 2.7vw, 2rem); }
+.prose h3 { margin-top: 1.65rem; }
+.prose :is(h2, h3) { scroll-margin-top: 1.5rem; }
+.prose p { color: var(--ink); }
+/* Inline scientific figures */
+.prose figure {
+  margin: clamp(1.75rem, 5vw, 3.25rem) 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+.prose figure svg { width: 100%; height: auto; display: block; background: var(--figure-paper); }
+.prose figcaption {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.prose blockquote {
+  margin: 2rem 0;
+  border-inline-start: 3px solid var(--accent, var(--uv));
+  padding: 0.4rem clamp(1rem, 3vw, 1.65rem);
+  background: var(--surface);
+  font: 600 clamp(1.15rem, 2vw, 1.4rem)/1.5 var(--font-display);
+}
+/* Markdown tables (the dosing-record tables) */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.25rem 0 2.5rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+.prose th, .prose td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.8rem 0.55rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.prose th {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: 2px solid var(--ink);
+}
+.prose tbody tr:last-child td { border-bottom: none; }
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--uv);
+}
+/* Signature: the pigment scale bar */
+.pigment-bar { height: 6px; background: var(--pigment-scale); border: 0; }
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.2rem;
+}
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header nav { display: flex; gap: 0.35rem clamp(0.8rem, 2vw, 1.45rem); flex-wrap: wrap; }
+.site-header nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-block: 0.35rem;
+  border-bottom: 2px solid transparent;
+}
+.site-header nav a:hover { color: var(--uv); }
+.site-header nav a.is-active { color: var(--uv); border-bottom-color: var(--uv); }
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  text-decoration: none;
+  line-height: 1.15;
+}
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: var(--ink);
+}
+.brand-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+@media (max-width: 60rem) {
+  .site-header .wrap { align-items: flex-start; flex-direction: column; gap: 0.65rem; }
+}
+.skip-link {
+  position: absolute;
+  top: 0.6rem;
+  left: var(--gutter);
+  z-index: 2;
+  padding: 0.6rem 1rem;
+  background: var(--surface);
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+.site-footer {
+  margin-top: var(--space-section);
+  background: var(--surface-raised);
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+}
+.site-footer .wrap { padding-top: 2rem; padding-bottom: 3rem; }
+.site-footer p { max-width: 46rem; }
+.site-footer .foot-record,
+.site-footer .foot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-bottom: 1.1rem;
+  align-items: baseline;
+}
+.site-footer .foot-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-right: 0.3rem;
+}
+.site-footer .foot-record a,
+.site-footer .foot-links a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-footer .foot-record a:hover,
+.site-footer .foot-links a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Update the legacy line-art ink without recoloring data-bearing pigment swatches. */
+.prose figure svg [fill="#503296" i] { fill: #414077; }
+.prose figure svg [stroke="#503296" i] { stroke: #414077; }
+.prose figure svg [fill="#A6431F" i] { fill: #8e472f; }
+.prose figure svg [stroke="#A6431F" i] { stroke: #8e472f; }
+.prose figure svg [fill="#2F6A52" i] { fill: #2f6256; }
+.prose figure svg [stroke="#2F6A52" i] { stroke: #2f6256; }
+.prose figure svg [stroke="#E4DFD6" i] { stroke: var(--figure-rule); }
+
+/* Keep the original plate labels legible on narrow screens. */
+.figure-scroll { display: contents; }
+@media (max-width: 40rem) {
+  .figure-scroll { display: block; overflow-x: auto; }
+  .prose figure .figure-scroll svg { min-width: 44rem; }
+  .figure-scroll:focus-visible { outline: 2px solid var(--uv); outline-offset: -2px; }
+}

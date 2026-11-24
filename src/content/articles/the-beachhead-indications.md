@@ -25,6 +25,7 @@ A melanocortin photoprotective has its own ladder of beachheads — and, unlike
 the general-public drug, several of its rungs are real and occupied right now.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t7">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="t7 d7">
 <title id="t7">The beachhead ladder</title>
 <desc id="d7">Rising steps of indications for a melanocortin drug: EPP approved, vitiligo in Phase III now, transplant and high-risk groups as a logical next rung, general-population photoprotection not yet.</desc>
@@ -48,6 +49,7 @@ the general-public drug, several of its rungs are real and occupied right now.
 <text x="582" y="112" font-family="'Archivo',sans-serif" font-size="14" font-weight="700" fill="#A69C8D">General public</text>
 <text x="582" y="146" font-family="'Archivo',sans-serif" font-size="11" fill="#A69C8D">not yet &#8212; labeled hope</text>
 </svg>
+</div>
 <figcaption>The beachhead ladder. Each approved narrow indication builds the safety record and delivery experience the next step needs. Two rungs &#8212; EPP, and now vitiligo in Phase III &#8212; are already real; the general-public drug remains labeled hope.</figcaption>
 </figure>
 

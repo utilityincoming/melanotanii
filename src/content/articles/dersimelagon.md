@@ -21,6 +21,7 @@ has not approved it. A decision is due by the end of February 2027. Nothing
 on this page is a product you can order.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="dst">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" role="img" aria-labelledby="dst dsd">
 <title id="dst">What dersimelagon has cleared, and what it has not</title>
 <desc id="dsd">Three rungs. The oral pill exists and is under FDA review. The label, if it comes, is for two rare light-pain diseases. The cosmetic-tan rung is empty.</desc>
@@ -44,6 +45,7 @@ on this page is a product you can order.
 <text x="630" y="192" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">nobody is filing for this</text>
 <text x="630" y="214" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">a vial is not this pill</text>
 </svg>
+</div>
 <figcaption>The molecule can be oral and still not be a tan. The filing, if it succeeds, is for two rare diseases. The cosmetic rung is empty on purpose.</figcaption>
 </figure>
 

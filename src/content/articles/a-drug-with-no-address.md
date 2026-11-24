@@ -56,6 +56,7 @@ designer wants. And for a targeted medicine it is. But durability without
 targeting has a cost, and that cost is the rest of this story.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="pkt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 392" role="img" aria-labelledby="pkt pkd">
 <title id="pkt">How long each part of a Melanotan II dose lasts</title>
 <desc id="pkd">A logarithmic time scale from ten minutes to a month. The body's own alpha-MSH signal in the blood lasts only minutes. Melanotan II, engineered for stability, persists in the blood for hours. The acute effects it triggers — nausea, flushing, arousal — last hours. The tan it produces, once melanin is made, lasts weeks.</desc>
@@ -91,6 +92,7 @@ targeting has a cost, and that cost is the rest of this story.
 </g>
 <text x="740" y="372" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">time after one dose &#183; logarithmic scale</text>
 </svg>
+</div>
 <figcaption>The body keeps its own melanocortin signal on a leash of minutes. Melanotan II was engineered to slip that leash &mdash; and the pigment it triggers outlives the drug in the blood by weeks. Durations are approximate and drawn on a log scale to fit minutes and weeks on one axis.</figcaption>
 </figure>
 

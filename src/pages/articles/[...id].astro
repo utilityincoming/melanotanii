@@ -118,18 +118,21 @@ const faqLd = faq && faq.length > 0
       <span aria-hidden="true">&rsaquo;</span>
       <a class="crumb-thread" href={threadAnchor}>{strand}</a>
     </nav>
-    <p class="eyebrow accent">{isQuery ? 'Direct answer' : strand}</p>
-    <h1>{article.data.title}</h1>
-    <p class="meta">
-      By <a class="byline" href="/about/">{publication}</a>
-      <span aria-hidden="true">&middot;</span>
-      Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-      <span aria-hidden="true">&middot;</span>
-      {readingMinutes} min read
-      {article.data.updatedDate && (
-        <> <span aria-hidden="true">&middot;</span> Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
-      )}
-    </p>
+    <header class="article-head">
+      <p class="eyebrow accent">{isQuery ? 'Direct answer' : strand}</p>
+      <h1>{article.data.title}</h1>
+      <p class="meta">
+        By <a class="byline" href="/about/">{publication}</a>
+        <span aria-hidden="true">&middot;</span>
+        Published {article.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        <span aria-hidden="true">&middot;</span>
+        {readingMinutes} min read
+        {article.data.updatedDate && (
+          <> <span aria-hidden="true">&middot;</span> Updated {article.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</>
+        )}
+      </p>
+
+    </header>
 
     {isQuery && faq && faq.length > 0 && (
       <section class="faq faq-lead" aria-labelledby="faq-heading">
@@ -154,7 +157,7 @@ const faqLd = faq && faq.length > 0
       </details>
     )}
 
-    <Content />
+    <div class="article-body"><Content /></div>
 
     <Byline section={strand} />
 
@@ -211,7 +214,7 @@ const faqLd = faq && faq.length > 0
       padding: 0.6rem 1rem;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fff;
+      background: var(--surface);
       font-size: 0.92rem;
     }
     .toc summary {
@@ -233,8 +236,11 @@ const faqLd = faq && faq.length > 0
     }
     .toc a { color: var(--ink); text-decoration: none; }
     .toc a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
-    h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0.35rem 0 0.5rem; }
-    .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 2rem; }
+    .article-body { line-height: 1.78; }
+    .article-head { border-top: 2px solid var(--accent); padding-top: 1.25rem; margin-bottom: 2.1rem; }
+    .article-head .eyebrow { margin: 0; }
+    h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.05; margin: 0.35rem 0 0.7rem; text-wrap: pretty; }
+    .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 0; }
     .meta .byline { color: var(--ink); font-weight: 600; text-decoration: none; }
     .meta .byline:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
 

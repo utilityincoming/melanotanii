@@ -26,6 +26,7 @@ the missing approved drug, and they cannot police a molecule that keeps
 changing costume.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="te1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" role="img" aria-labelledby="te1 de1">
 <title id="te1">What Melanotan II enforcement can reach</title>
 <desc id="de1">Four rungs of enforcement — listings, parcels, named sellers, and the strictest ban — with the form-factor change sitting underneath, out of reach.</desc>
@@ -66,6 +67,7 @@ changing costume.
 <text x="390" y="374" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#17130E">An injectable is a medicine. A nasal spray, sold as a cosmetic, often is not.</text>
 <text x="390" y="394" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#5A4F44">That is why the 2010s playbook stopped working on the 2020s product.</text>
 </svg>
+</div>
 <figcaption>Four things a regulator can actually do. Listings and parcels are cheap to replace. Named sellers can be fined or, once, imprisoned. Australia walled off lawful supply. Underneath all of it: a spray that no longer counts as a medicine.</figcaption>
 </figure>
 

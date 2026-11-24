@@ -1,0 +1,38 @@
+<figure>
+  <svg viewBox="0 0 600 350" width="600" height="350" role="img" aria-labelledby="pigment-path-title pigment-path-desc">
+    <title id="pigment-path-title">Two routes to a pigment response</title>
+    <desc id="pigment-path-desc">UV exposure can damage skin and initiate pigment signaling. Afamelanotide acts at the MC1R receptor. Both routes can lead to more eumelanin, but a pigment response does not establish protection against UV damage.</desc>
+    <g class="lanes" fill="none">
+      <rect class="uv-lane" x="25" y="20" width="260" height="66" rx="5" />
+      <rect class="receptor-lane" x="315" y="20" width="260" height="66" rx="5" />
+      <path class="uv-flow" d="M155 86v33m-6-6 6 6 6-6M155 183v24q0 30 30 30h65" />
+      <path class="receptor-flow" d="M445 86v33m-6-6 6 6 6-6M445 183v24q0 30-30 30h-65" />
+      <rect class="uv-lane" x="25" y="119" width="260" height="64" rx="5" />
+      <rect class="receptor-lane" x="315" y="119" width="260" height="64" rx="5" />
+      <circle class="shared" cx="300" cy="237" r="36" />
+      <circle class="shared-dot" cx="291" cy="244" r="5" />
+      <circle class="shared-dot" cx="305" cy="246" r="4" />
+      <circle class="shared-dot" cx="311" cy="232" r="6" />
+      <circle class="shared-dot" cx="293" cy="227" r="4" />
+    </g>
+    <g class="labels" text-anchor="middle">
+      <text x="155" y="60">UV exposure</text>
+      <text x="445" y="60">Afamelanotide</text>
+      <text x="155" y="158">Skin stress signals</text>
+      <text x="445" y="158">MC1R activation</text>
+      <text x="300" y="313">Eumelanin response</text>
+    </g>
+  </svg>
+  <figcaption>Two routes can increase eumelanin. Whether either changes a specific UV-related health outcome requires separate evidence.</figcaption>
+</figure>
+
+<style>
+  .lanes { stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .uv-lane { fill: #f4e8df; stroke: #b67a5c; }
+  .receptor-lane { fill: #eeecf7; stroke: #8883ad; }
+  .uv-flow { stroke: #8e472f; }
+  .receptor-flow { stroke: #414077; }
+  .shared { fill: #eee5d9; stroke: #9b7656; }
+  .shared-dot { fill: #64472f; }
+  .labels { font: 600 24px var(--font-display); fill: #201d29; }
+</style>

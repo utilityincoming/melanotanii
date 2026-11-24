@@ -29,6 +29,7 @@ compared to an accurate past self. Melanotan II raids the map: it darkens
 the landmarks, plants new ones, and redraws the territory mid-survey.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="mr-t1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" role="img" aria-labelledby="mr-t1 mr-d1">
 <title id="mr-t1">The melanotan mole case corpus, 1996 to 2026</title>
 <desc id="mr-d1">A timeline. Above the axis: fourteen clinical case reports and commentaries from 2009 to 2026, coloured by type — orange for published melanomas, brown for eruptive or atypical nevi, purple for dermoscopy and commentary. Below the axis: the monitoring science, from the 1996 pilot study through the total-body photography review of 2021.</desc>
@@ -101,6 +102,7 @@ the landmarks, plants new ones, and redraws the territory mid-survey.
 <circle cx="556" cy="394" r="4" fill="#6E665A"/><text x="566" y="397.5">the monitoring science</text>
 </g>
 </svg>
+</div>
 <figcaption>Thirty years of literature on one timeline. Above the axis, the case corpus: fourteen verified reports and commentaries, 2009–2026. Below it, the science of mole surveillance the cases collide with — including the 1996 pilot in which pigment change was the drug working.</figcaption>
 </figure>
 
@@ -220,6 +222,7 @@ unregulated α-MSH analogues carry a published risk literature of their own
 ([PMID 28266027](https://pubmed.ncbi.nlm.nih.gov/28266027/)).
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="mr-t2">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="mr-t2 mr-d2">
 <title id="mr-t2">Four mole-surveillance tools and what melanotan does to each</title>
 <desc id="mr-d2">A matrix. Four rows — the ugly duckling sign, the E in ABCDE, serial mole mapping, and total-body photography. Each row lists what the tool assumes and how melanotan interference attacks that assumption.</desc>
@@ -295,6 +298,7 @@ unregulated α-MSH analogues carry a published risk literature of their own
 </g>
 <text x="24" y="456" font-family="'Archivo',sans-serif" font-size="9.3" fill="#8A7F72">Anchors: PMID 18209169 · 28886799 · 23052015 · 24334249 · 33578996 · case corpus above.</text>
 </svg>
+</div>
 <figcaption>The interference is structural, not additive. Melanotan does not add noise to one tool — it attacks the shared premise of all four: that your moles are, by default, staying put.</figcaption>
 </figure>
 

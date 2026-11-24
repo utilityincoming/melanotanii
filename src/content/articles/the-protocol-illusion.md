@@ -67,6 +67,7 @@ computed against a 30-milligram label is a precise calculation of a
 guess.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="pit">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 462" role="img" aria-labelledby="pit pid">
 <title id="pit">Why a gray-market dosing protocol cannot work</title>
 <desc id="pid">A dosing protocol in a regulated medicine is a contract with three parties: a verified label, measured pharmacology, and a licensed prescriber. The diagram shows that a gray-market Melanotan II guide borrows the vocabulary of all three but supplies none: the label is a "not for human consumption" disclaimer, the pharmacology is forum anecdote, and the prescriber is a stranger in a reply thread. A closing note records that when a regulator tested five labelled bottles, the real content varied by more than double.</desc>
@@ -117,6 +118,7 @@ guess.
 <line x1="36" y1="398" x2="784" y2="398" stroke="#EDE7DE" stroke-width="1"/>
 <text x="410" y="420" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-style="italic" fill="#6E665A">When a regulator tested five labelled bottles, the real content varied by more than double. &#8212; TGA, Aug 2026</text>
 </svg>
+</div>
 <figcaption>A dosing protocol is not a number; it is a contract between a verified label, a measured pharmacology, and a licensed prescriber. The gray-market guide keeps the format and supplies none of the three &mdash; which is why the titration math is precision applied to a guess.</figcaption>
 </figure>
 

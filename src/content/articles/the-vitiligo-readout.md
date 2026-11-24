@@ -65,6 +65,7 @@ follow-up. Afamelanotide is not approved for vitiligo anywhere; the indication
 depends entirely on this result and the one after it.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tvit">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" role="img" aria-labelledby="tvit dvit">
 <title id="tvit">One pigment pathway, three different questions</title>
 <desc id="dvit">Three columns. Left: can the drug repigment skin lost to vitiligo? — the T-VASI50 endpoint CUV105 actually measures, in diagnosed patients. Middle: can it prevent sun damage? — no endpoint, no trial, the general public. Right: can it tan healthy skin cosmetically? — never a clinical endpoint, the gray market's customers. A result on the left answers only the left.</desc>
@@ -111,6 +112,7 @@ depends entirely on this result and the one after it.
 <text x="629" y="347" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.04em" fill="#6E665A">&#10007; NOT A MEDICAL QUESTION</text>
 <text x="40" y="402" font-family="'Archivo',sans-serif" font-size="11.5" font-style="italic" fill="#5A4F44">A result in the left column is not an answer to the middle or the right one.</text>
 </svg>
+</div>
 <figcaption>CUV105 measures repigmentation of diseased skin. That is a different question from sun-damage prevention, and a different question again from cosmetic tanning — which was never a clinical endpoint anywhere.</figcaption>
 </figure>
 

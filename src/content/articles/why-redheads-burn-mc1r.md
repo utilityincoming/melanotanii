@@ -17,6 +17,7 @@ single gene — and it happens to be the gene at the dead center of the entire
 Melanotan story.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t4">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="t4 d4">
 <title id="t4">The MC1R pigment switch</title>
 <desc id="d4">Alpha-MSH activating MC1R strongly makes protective eumelanin (tanning); weak red-hair MC1R variants default to pheomelanin (burning).</desc>
@@ -46,6 +47,7 @@ Melanotan story.
 <rect x="548" y="204" width="150" height="44" rx="8" fill="#E0A07E"/>
 <text x="548" y="270" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#17130E">Pheomelanin &#8212; burns, freckles</text>
 </svg>
+</div>
 <figcaption>The pigment switch. Strong &#945;-MSH signalling through MC1R makes protective eumelanin and the skin tans. Weak &#8216;red-hair&#8217; MC1R variants can&#8217;t throw the switch, so the cell defaults to pheomelanin &#8212; and the skin burns.</figcaption>
 </figure>
 

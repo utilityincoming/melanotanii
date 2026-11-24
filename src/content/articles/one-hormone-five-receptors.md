@@ -22,6 +22,7 @@ Melanotan [confused with](/articles/not-melatonin/) — melatonin is a different
 molecule entirely, with nothing to do with pigment.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" role="img" aria-labelledby="t1 d1">
 <title id="t1">One agonist, the whole melanocortin receptor family</title>
 <desc id="d1">Melanotan II fans out to five melanocortin receptors: MC1R (pigment), MC3R, MC4R, MC5R, and MC2R which it largely spares.</desc>
@@ -74,6 +75,7 @@ molecule entirely, with nothing to do with pigment.
 <line x1="430" y1="450" x2="456" y2="450" stroke="#C9BEB0" stroke-width="1.5" stroke-dasharray="3 4"/>
 <text x="462" y="454" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">largely spared</text>
 </svg>
+</div>
 <figcaption>One agonist, the whole family. Melanotan II activates MC1R (pigment), MC3R, MC4R and MC5R with real potency, and largely spares MC2R &mdash; the tan was only ever one output among several.</figcaption>
 </figure>
 

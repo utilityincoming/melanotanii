@@ -16,6 +16,7 @@ scientific idea: a natural suntan is a scar. The protective pigment only shows
 up *after* the damage has already been done.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t2">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="t2 d2">
 <title id="t2">The tan without the sun</title>
 <desc id="d2">A UV tan is a damage response: UV to DNA damage to p53 to alpha-MSH to MC1R to eumelanin. Melanotan II activates MC1R directly, producing the same pigment without the DNA damage.</desc>
@@ -73,6 +74,7 @@ up *after* the damage has already been done.
 <path d="M118,308 C320,308 430,232 590,226" fill="none" stroke="#503296" stroke-width="2.2" marker-end="url(#arUV)"/>
 <text x="390" y="404" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="13" fill="#17130E">Same pigment, same receptor &#8212; one path pays for it in DNA damage, the other doesn&#8217;t.</text>
 </svg>
+</div>
 <figcaption>Two routes to the same pigment. A UV tan appears only after ultraviolet damages DNA and trips the p53 alarm; Melanotan II reaches MC1R directly, installing eumelanin without the injury that normally pays for it.</figcaption>
 </figure>
 

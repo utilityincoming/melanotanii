@@ -63,6 +63,7 @@ company, that use to another. One molecule, licensable in pieces. Which is
 exactly how it split in two.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tpt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" role="img" aria-labelledby="tpt tpd">
 <title id="tpt">One patent portfolio, three destinations</title>
 <desc id="tpd">The University of Arizona's melanocortin patents were licensed along two paths that each produced an FDA-approved drug in 2019 — afamelanotide via EpiTan and Clinuvel, bremelanotide via Palatin — while the Melanotan II molecule itself, its patents expired and its structure long published, fell into the public domain and the gray market.</desc>
@@ -122,6 +123,7 @@ exactly how it split in two.
 <text x="610" y="351" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="10" font-weight="700" letter-spacing="0.02em" fill="#A6431F">PUBLIC DOMAIN</text>
 <text x="610" y="378" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="9.5" fill="#6E665A">illegal to sell for human use</text>
 </svg>
+</div>
 <figcaption>The paper trail in one view: every licensed path led to an approved, owned drug; only the unlicensed molecule reached the public. Patent numbers and dates are in the text above.</figcaption>
 </figure>
 

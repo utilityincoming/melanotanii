@@ -20,6 +20,7 @@ is not a cosmetic. It is not a vial. It is not Melanotan II with a better
 name.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="sct">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" role="img" aria-labelledby="sct scd">
 <title id="sct">Scenesse and gray-market Melanotan are not the same object</title>
 <desc id="scd">Left: an approved clinic implant locked to a rare-disease label. Right: an unapproved vial with no label that holds. A shared pigment pathway does not make them the same product.</desc>
@@ -40,6 +41,7 @@ name.
 <text x="575" y="210" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">no trial, no accountable maker</text>
 <text x="575" y="234" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">a shared history is not a shared product</text>
 </svg>
+</div>
 <figcaption>Scenesse is the approved implant for a rare light-pain disease. A gray-market vial sold as Melanotan is a different compound, with no approval and no one standing behind the label.</figcaption>
 </figure>
 

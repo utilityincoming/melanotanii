@@ -296,7 +296,7 @@ const jsonLd = {
       display: grid;
       gap: 0.7rem;
       max-width: 48rem;
-      background: #fff;
+      background: var(--surface);
     }
     .legend li { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.9rem; color: var(--ink-soft); }
     .legend strong { color: var(--ink); font-weight: 600; }
@@ -315,7 +315,7 @@ const jsonLd = {
       border: 1px solid var(--line);
       border-left: 4px solid var(--accent, var(--uv));
       border-radius: 8px;
-      background: #fff;
+      background: var(--surface);
       padding: 1.05rem 1.2rem;
     }
     .settled .catalyst { background: transparent; }
@@ -339,7 +339,7 @@ const jsonLd = {
     .card {
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fff;
+      background: var(--surface);
       padding: 1.1rem 1.2rem;
     }
     .card.j { border-left: 4px solid var(--caution); }
@@ -354,7 +354,7 @@ const jsonLd = {
       padding: 0.22rem 0.55rem; border-radius: 999px; margin-bottom: 0.6rem;
     }
     .badge.caution { color: var(--caution); border: 1px solid var(--caution); }
-    .badge.danger { color: #fff; background: var(--caution); }
+    .badge.danger { color: var(--paper); background: var(--caution); }
 
     .closer {
       margin: 3.5rem 0 1rem;

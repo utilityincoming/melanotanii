@@ -1,9 +1,6 @@
 // Build-time Open Graph card renderer.
 //
-// Each article gets a distinct 1200x630 social/SERP card instead of the one
-// shared og-image.png: the pigment-scale signature across the top, the thread
-// label in its strand colour, the headline in Spectral, and the masthead line.
-// Rendered with satori (-> SVG) + resvg (-> PNG) at build; no runtime cost.
+// Satori and resvg produce interoperable PNGs for social crawlers.
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import { readFileSync } from 'node:fs';
@@ -15,17 +12,17 @@ const font = (file: string) => readFileSync(join(process.cwd(), 'src/assets/font
 const spectralRegular = font('Spectral-Regular.ttf');
 const spectralSemiBold = font('Spectral-SemiBold.ttf');
 
-// Brand hex values (satori can't read the CSS custom properties in Base.astro,
-// so the strand palette is mirrored here — keep in sync with Base.astro).
+// Brand hex values (satori can't read the CSS custom properties in editorial.css,
+// so the strand palette is mirrored here — keep in sync with editorial.css).
 const PAPER = '#FBFAF7';
-const INK = '#17130E';
-const INK_SOFT = '#5A4F44';
+const INK = '#201d29';
+const INK_SOFT = '#57525d';
 const STRAND_HEX: Record<string, string> = {
-  mission: '#503296', // UV violet — the photoprotection goal
-  market: '#A6431F', // rust — the gray market
-  approval: '#2F6A52', // green — the approved spinoffs
+  mission: '#414077', // UV violet — the photoprotection goal
+  market: '#8e472f', // rust — the gray market
+  approval: '#2f6256', // green — the approved spinoffs
 };
-// The pigment scale, matching --pigment-scale in Base.astro.
+// The pigment scale, matching --pigment-scale in editorial.css.
 const PIGMENT =
   'linear-gradient(90deg, #F3DCC8 0%, #E4B98F 20%, #C08A5A 40%, #8A5A34 60%, #55351D 80%, #241A12 100%)';
 
@@ -56,11 +53,12 @@ export async function renderOgCard({ title, threadLabel, strand }: OgCardInput):
         width: '1200px',
         height: '630px',
         backgroundColor: PAPER,
+        backgroundImage: 'linear-gradient(125deg, #FBFAF7 48%, #ece4da 100%)',
         fontFamily: 'Spectral',
       },
       children: [
         // Pigment-scale signature bar
-        { type: 'div', props: { style: { display: 'flex', height: '16px', width: '100%', backgroundImage: PIGMENT } } },
+        { type: 'div', props: { style: { display: 'flex', height: '10px', width: '100%', backgroundImage: PIGMENT } } },
         // Body
         {
           type: 'div',
@@ -70,9 +68,20 @@ export async function renderOgCard({ title, threadLabel, strand }: OgCardInput):
               flexDirection: 'column',
               flex: 1,
               justifyContent: 'space-between',
-              padding: '76px 84px 64px',
+              padding: '58px 76px 55px',
+              position: 'relative',
             },
             children: [
+              // Small registration rings echo the branching diagram on the homepage.
+              ...[30, 54, 78].map((size) => ({
+                type: 'div',
+                props: { style: {
+                  position: 'absolute', display: 'flex',
+                  top: `${86 - size / 2}px`, right: `${111 - size / 2}px`,
+                  width: `${size}px`, height: `${size}px`,
+                  border: `1px solid ${accent}`, opacity: 0.48, borderRadius: '50%',
+                } },
+              })),
               // Top: thread eyebrow + headline
               {
                 type: 'div',
@@ -84,9 +93,9 @@ export async function renderOgCard({ title, threadLabel, strand }: OgCardInput):
                       props: {
                         style: {
                           display: 'flex',
-                          fontSize: '26px',
+                          fontSize: '22px',
                           fontWeight: 600,
-                          letterSpacing: '4px',
+                          letterSpacing: '3px',
                           textTransform: 'uppercase',
                           color: accent,
                         },
@@ -104,7 +113,7 @@ export async function renderOgCard({ title, threadLabel, strand }: OgCardInput):
                           lineHeight: 1.12,
                           letterSpacing: '-0.5px',
                           color: INK,
-                          maxWidth: '1000px',
+                          maxWidth: '1010px',
                         },
                         children: title,
                       },
@@ -118,13 +127,13 @@ export async function renderOgCard({ title, threadLabel, strand }: OgCardInput):
                 props: {
                   style: { display: 'flex', flexDirection: 'column' },
                   children: [
-                    { type: 'div', props: { style: { display: 'flex', height: '3px', width: '120px', backgroundColor: accent, marginBottom: '20px' } } },
+                    { type: 'div', props: { style: { display: 'flex', height: '2px', width: '100%', backgroundColor: accent, marginBottom: '20px' } } },
                     {
                       type: 'div',
                       props: {
                         style: { display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', width: '100%' },
                         children: [
-                          { type: 'div', props: { style: { display: 'flex', fontSize: '30px', fontWeight: 600, color: INK }, children: 'Tan Lines' } },
+                          { type: 'div', props: { style: { display: 'flex', fontSize: '34px', fontWeight: 600, color: INK }, children: 'Tan Lines' } },
                           { type: 'div', props: { style: { display: 'flex', fontSize: '22px', fontWeight: 400, color: INK_SOFT }, children: 'melanotanii.com' } },
                         ],
                       },

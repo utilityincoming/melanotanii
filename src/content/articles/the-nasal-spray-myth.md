@@ -59,6 +59,7 @@ absorbed amount is not low so much as *unknown*, and unknown in a way that
 shifts from one application to the next.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="nst">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="nst nsd">
 <title id="nst">What each route actually delivers</title>
 <desc id="nsd">Two routes for the same Melanotan II dose. An injection delivers a known, measurable amount to the bloodstream — the fraction that reaches circulation is consistent enough to study. A nasal spray delivers an unknown fraction: some crosses the nasal lining, but a variable and unmeasured amount drips away, is swallowed, or is cleared, so the delivered dose changes from one application to the next.</desc>
@@ -78,6 +79,7 @@ shifts from one application to the next.
 <rect x="298" y="252" width="182" height="26" rx="3" fill="none" stroke="#C9BEB0" stroke-width="1.4" stroke-dasharray="5 4"/>
 <text x="492" y="270" font-family="'Archivo',sans-serif" font-size="12" font-weight="700" fill="#A6431F">unknown, dose to dose</text>
 </svg>
+</div>
 <figcaption>Same compound, same harms, same unapproved status. The route
 that feels gentlest is the one that erases the measurement.</figcaption>
 </figure>

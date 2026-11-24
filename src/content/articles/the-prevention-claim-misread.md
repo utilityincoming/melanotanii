@@ -163,6 +163,7 @@ people for this purpose*. Move the remainder from the future tense of
 research into the present tense of fact. What remains is the caption.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="pct">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 484" role="img" aria-labelledby="pct pcd">
 <title id="pct">How a qualified finding becomes a skin-cancer prevention caption</title>
 <desc id="pcd">A three-stage diagram. At the top, the careful 2024 Böhm review finding: melanocortin photoprotection may reduce melanoma risk but does not prevent melanoma, shown only in the lab and never tested in people for this purpose — with those four qualifiers highlighted. In the middle, the four qualifiers are struck out. At the bottom, once the hedges are deleted and the tense shifted from research to fact, what remains is the caption: Melanotan prevents skin cancer.</desc>
@@ -205,6 +206,7 @@ research into the present tense of fact. What remains is the caption.
 <line x1="36" y1="454" x2="784" y2="454" stroke="#EDE7DE" stroke-width="1"/>
 <text x="36" y="470" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">Every deleted phrase is a real finding of the literature. The caption keeps none of them.</text>
 </svg>
+</div>
 <figcaption>The prevention claim is the 2024 evidence with its qualifiers stripped and its tense changed. Each hedge the caption drops &mdash; <em>may reduce</em>, <em>does not prevent</em>, <em>only in the lab</em>, <em>never tested in people</em> &mdash; is the part that was actually established.</figcaption>
 </figure>
 

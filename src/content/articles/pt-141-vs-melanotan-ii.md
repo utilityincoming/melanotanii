@@ -21,6 +21,7 @@ line. They are not interchangeable, and this page will not tell you how to
 obtain either.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="ptt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" role="img" aria-labelledby="ptt ptd">
 <title id="ptt">PT-141 and Melanotan II, separated by approval</title>
 <desc id="ptd">Left: Vyleesi, an FDA-approved prescription for one sexual-desire disorder. Right: Melanotan II, approved for nothing. The research-chemical code PT-141 does not make a vial into the prescription.</desc>
@@ -41,6 +42,7 @@ obtain either.
 <text x="575" y="212" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">not a stand-in for Vyleesi</text>
 <text x="575" y="236" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">a shared ancestor is not a licence</text>
 </svg>
+</div>
 <figcaption>Vyleesi is a prescription with one indication. Melanotan II has none. A website using the old code PT-141 has not become the prescription by changing the name.</figcaption>
 </figure>
 

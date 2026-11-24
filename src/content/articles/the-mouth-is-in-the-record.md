@@ -84,6 +84,7 @@ medical history, examination, and — when indicated — a biopsy. This article
 cannot turn the appearance of a particular patch into an answer for you.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="mouthtimeline">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" role="img" aria-labelledby="mouthtimeline mouthdesc">
 <title id="mouthtimeline">A three-month oral-pigmentation follow-up after Melanotan II</title>
 <desc id="mouthdesc">A case-report timeline: brown pigmentation of the gums and inner cheeks was documented during use. The cheeks had started improving after 28 days without it. Three months after stopping, the gums were reduced but still pigmented. One patient's course does not predict anyone else's.</desc>
@@ -106,6 +107,7 @@ cannot turn the appearance of a particular patch into an answer for you.
 <text x="660" y="237" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="12" fill="#A6431F">but not resolved</text>
 <text x="40" y="294" font-family="'Archivo',sans-serif" font-size="12" fill="#6E665A">One patient with prior gum pigment, tobacco use and sunbed exposure. Clinical course is individual.</text>
 </svg>
+</div>
 <figcaption>A case report, not a clearance calendar. The patient stopped during the reported follow-up; nobody should use these dates to defer a dental or medical review.</figcaption>
 </figure>
 

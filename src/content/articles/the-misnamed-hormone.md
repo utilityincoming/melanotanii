@@ -58,6 +58,7 @@ pigment that absorbs UV. That is a tan: a [wound response](/articles/the-tan-wit
 pigment made only after the harm that called for it.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="mht">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 452" role="img" aria-labelledby="mht mhd">
 <title id="mht">The natural life of α-MSH: a local, short-lived signal</title>
 <desc id="mhd">A left-to-right diagram of the body's own α-MSH signal. UV light damages a keratinocyte's DNA, stabilising p53, which switches on the POMC gene; POMC is cut into α-MSH, which crosses a few microns to a neighbouring melanocyte, binds MC1R, raises cAMP and MITF, and drives eumelanin. A clock marks that plasma enzymes clear α-MSH within minutes. The whole signal is local and brief.</desc>
@@ -111,6 +112,7 @@ pigment made only after the harm that called for it.
 <text x="36" y="424" font-family="'Spectral',Georgia,serif" font-size="13" font-weight="600" fill="#17130E">Local. Brief. Triggered by damage.</text>
 <text x="784" y="424" text-anchor="end" font-family="'Archivo',sans-serif" font-size="10" font-style="italic" fill="#6E665A">violet = the lab&#8217;s frame &#183; warm = the body&#8217;s</text>
 </svg>
+</div>
 <figcaption>The body makes α-MSH at the site of the damage, sends it a few microns to the cell next door, and destroys it within minutes. Two design features — made locally, cleared fast — are the whole control system, and the two things an injected analog is built to defeat.</figcaption>
 </figure>
 

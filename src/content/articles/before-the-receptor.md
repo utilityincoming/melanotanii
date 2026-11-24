@@ -68,6 +68,7 @@ ran 26 times as potent as natural α-MSH, and it was "ultralong": resistant
 to the enzymes that had made the natural hormone a non-starter.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="bb1">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" role="img" aria-labelledby="bb1 bd1">
 <title id="bb1">α-MSH, edited twice</title>
 <desc id="bd1">The 13-amino-acid α-MSH sequence with the two substitutions that produced NDP-MSH: methionine replaced by norleucine at position 4, and L-phenylalanine replaced by D-phenylalanine at position 7, flanking the His-Phe-Arg-Trp message core.</desc>
@@ -106,6 +107,7 @@ to the enzymes that had made the natural hormone a non-starter.
 <line x1="300" y1="352" x2="326" y2="352" stroke="#A6431F" stroke-width="1.6"/>
 <text x="334" y="356" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">the two swaps &#183; Nle&#8308; at 4, D-Phe&#8311; at 7</text>
 </svg>
+</div>
 <figcaption>Thirteen residues, two edits. Replace the methionine at position 4 with norleucine and the L-phenylalanine at position 7 with its D-form, and a hormone that dissolves in minutes becomes a long-acting, superpotent melanotropin. The message core — His-Phe-Arg-Trp — is what the two edits are built around.</figcaption>
 </figure>
 

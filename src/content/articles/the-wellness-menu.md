@@ -82,6 +82,7 @@ Three drugs. Each one narrower than the claim it replaced. That is not
 an accident of history. Selectivity is what got them approved.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="wmt">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" role="img" aria-labelledby="wmt wmd">
 <title id="wmt">Three approved melanocortin drugs versus the wellness-menu vial</title>
 <desc id="wmd">Three cards show the approved melanocortin medicines — afamelanotide (Scenesse), bremelanotide (Vyleesi), and setmelanotide (Imcivree) — each targeting one receptor selectively, approved for one narrow indication, and carrying mandated monitoring. A contrasting band below shows the wellness-menu Melanotan II vial: non-selective across all five receptor families, approved nowhere, and with no dermatologist in the loop. The point: selectivity and monitoring are what got the real drugs approved, and the vial has neither.</desc>
@@ -151,6 +152,7 @@ an accident of history. Selectivity is what got them approved.
 <line x1="36" y1="404" x2="784" y2="404" stroke="#EDE7DE" stroke-width="1"/>
 <text x="410" y="428" text-anchor="middle" font-family="'Spectral',Georgia,serif" font-size="14" font-weight="600" fill="#17130E">Selectivity and monitoring are what got the real drugs approved. The vial keeps the claim and drops both.</text>
 </svg>
+</div>
 <figcaption>The melanocortin target has three approved medicines &mdash; each one selective, narrowly indicated, and sold with mandated surveillance. The wellness-menu vial borrows their vocabulary while supplying none of the selectivity, none of the approval, and none of the monitoring that made them drugs.</figcaption>
 </figure>
 

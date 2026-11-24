@@ -26,6 +26,7 @@ sits one letter from [melatonin](/articles/not-melatonin/), the pharmacy-shelf
 sleep supplement it otherwise has nothing to do with.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t5">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 320" role="img" aria-labelledby="t5 d5">
 <title id="t5">Melanotan I versus Melanotan II</title>
 <desc id="d5">Melanotan I is a linear peptide analog that became the approved drug SCENESSE. Melanotan II is a cyclic lactam, more potent and non-selective, that went to the gray market.</desc>
@@ -58,6 +59,7 @@ sleep supplement it otherwise has nothing to do with.
 <text x="585" y="272" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" fill="#5A4F44">cyclic lactam &#183; potent, non-selective</text>
 <text x="585" y="293" text-anchor="middle" font-family="'Archivo',sans-serif" font-size="11" font-weight="700" fill="#A6431F">went to the gray market</text>
 </svg>
+</div>
 <figcaption>One number apart. Melanotan I stayed close to a linear &#945;-MSH analog and became the approved drug SCENESSE. The cyclic lactam of Melanotan II made it more potent but non-selective &#8212; and sent it to the gray market.</figcaption>
 </figure>
 

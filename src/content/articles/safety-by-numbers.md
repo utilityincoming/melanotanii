@@ -91,6 +91,7 @@ world you are in, because nobody has the denominator. The claim's two numbers
 were never going to be reconcilable.
 
 <figure class="figure">
+<div class="figure-scroll" role="group" tabindex="0" aria-labelledby="tc6">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 390" role="img" aria-labelledby="tc6 dc6">
 <title id="tc6">What twenty years of uncounted use produced</title>
 <desc id="dc6">A flow: a quarter-century of use entering an attribution machine that was never built, yielding four outputs — no user count, 89 adverse-event reports over four years, scattered case reports, and one inquest that could not assess the drug's role.</desc>
@@ -128,6 +129,7 @@ were never going to be reconcilable.
 <text x="40" y="344" font-family="'Spectral',Georgia,serif" font-size="15" font-weight="600" fill="#17130E">The claim needs two numbers. The system produced neither.</text>
 <text x="40" y="366" font-family="'Archivo',sans-serif" font-size="12" fill="#5A4F44">&#8220;Millions of users, no deaths&#8221; — both halves are artifacts of not looking.</text>
 </svg>
+</div>
 <figcaption>Twenty years of gray-market use, run through an attribution system that was never built for it. What comes out the far end is not a safety record — it is a user count of "unknown," a national harm file of 89 reports, the case reports that were too dramatic to miss, and one death that the most rigorous process in the legal system could not assess.</figcaption>
 </figure>
 

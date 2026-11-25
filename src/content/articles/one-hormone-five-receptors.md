@@ -1,6 +1,6 @@
 ---
 title: "One hormone, five receptors: why Melanotan II did so much more than tan"
-serpTitle: "Melanocortin receptors: why Melanotan II does more than tan"
+serpTitle: "Melanocortin receptors: why MT-II does more"
 description: "Why Melanotan II tans, suppresses appetite, and affects libido at once: one non-selective agonist hitting all five melanocortin receptors."
 pubDate: 2026-08-18
 cluster: science

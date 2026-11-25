@@ -1,6 +1,6 @@
 ---
 title: "The vitiligo readout: what CUV105 settles, and what it doesn't"
-serpTitle: "CUV105 vitiligo results: what afamelanotide does and doesn't prove"
+serpTitle: "CUV105 vitiligo results: afamelanotide trial"
 description: "The CUV105 vitiligo readout is the year's biggest melanocortin data event. Why repigmenting vitiligo is not a tanning indication — read in advance."
 pubDate: 2026-12-15
 draft: true

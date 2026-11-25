@@ -1,6 +1,6 @@
 ---
 title: "The side-effect ledger: what Melanotan II is actually documented to do"
-serpTitle: "Melanotan II side effects: what the evidence actually says"
+serpTitle: "Melanotan II side effects: what evidence shows"
 description: "Melanotan II side effects, sorted by evidence: the documented acute and pigment effects, and the rare serious events that reach the medical literature."
 pubDate: 2026-08-18
 updatedDate: 2026-11-14

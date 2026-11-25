@@ -1,6 +1,6 @@
 ---
 title: "The mole raid: every published melanotan mole case, read in order"
-serpTitle: "Melanotan II mole changes: every published case, in order"
+serpTitle: "Melanotan II mole changes: published cases"
 description: "Every published melanotan mole case, read in order against the science of mole surveillance — and what 17 years of case reports do and don't prove."
 pubDate: 2026-11-22
 cluster: cautionary-tale

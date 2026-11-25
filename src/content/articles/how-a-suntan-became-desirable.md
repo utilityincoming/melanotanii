@@ -1,6 +1,6 @@
 ---
 title: "How a suntan became desirable"
-serpTitle: "How the tan became desirable: Chanel, the Riviera, the sunbed"
+serpTitle: "How the suntan became desirable"
 description: "For most of history a tan meant labor; then, in one decade, it flipped. How Chanel, the Riviera, and the sunbed made tanned skin aspirational."
 pubDate: 2026-08-18
 cluster: culture

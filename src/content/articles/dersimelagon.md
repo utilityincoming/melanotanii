@@ -1,6 +1,6 @@
 ---
 title: "The pill under review is not the tan"
-serpTitle: "Dersimelagon (MT-7117): the oral MC1R drug, not a tan"
+serpTitle: "Dersimelagon (MT-7117): oral MC1R drug review"
 description: "Dersimelagon is an oral MC1R agonist under FDA priority review for two rare light disorders. A decision is due by the end of February 2027. It is not a tan."
 pubDate: 2026-10-25
 cluster: next-agonist

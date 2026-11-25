@@ -1,6 +1,6 @@
 ---
 title: "The class is moving: the melanocortin sun drugs actually in trials now"
-serpTitle: "Melanocortin drugs in development 2026: dersimelagon & afamelanotide"
+serpTitle: "Melanocortin drugs in development (2026)"
 description: "A 2026 snapshot of the melanocortin drugs in real development: an oral MC1R agonist near FDA decision, and an approved one expanding into vitiligo and repair."
 pubDate: 2026-09-24
 updatedDate: 2026-11-15

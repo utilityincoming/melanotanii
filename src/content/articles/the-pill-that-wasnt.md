@@ -1,6 +1,6 @@
 ---
 title: "The pill that wasn't: why there is no oral Melanotan II"
-serpTitle: "Oral Melanotan II capsules and gummies: why they can't work"
+serpTitle: "Oral Melanotan II pills and gummies"
 description: "Melanotan II sold as a capsule, gummy, or drink can't work: a cyclic peptide doesn't survive digestion. What 'oral melanotan' actually is."
 pubDate: 2026-08-30
 cluster: culture

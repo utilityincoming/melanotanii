@@ -1,6 +1,6 @@
 ---
 title: "The middle-ground agonist already exists. You just can't have it."
-serpTitle: "Scenesse (afamelanotide): the approved sun drug you can't get"
+serpTitle: "Scenesse (afamelanotide): the approved sun drug"
 description: "Afamelanotide (Scenesse) is an approved melanocortin drug that protects skin from light — locked in a rare-disease label. Why, and what a breakout would take."
 pubDate: 2026-08-18
 cluster: next-agonist

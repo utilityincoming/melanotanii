@@ -1,6 +1,6 @@
 ---
 title: "The protocol illusion: why dosing math can't fix a vial nobody tested"
-serpTitle: "Melanotan II dosing guides: why the protocols can't work"
+serpTitle: "Melanotan II dosing guides: why they fail"
 description: "Melanotan II dosing guides carry titration schedules and maintenance plans. The dosing record — trial doses, assayed vials — every number to its source."
 pubDate: 2026-08-30
 updatedDate: 2026-11-23

@@ -1,6 +1,6 @@
 ---
 title: "The attribution gap: why 'no deaths reported' isn't a safety record"
-serpTitle: "Has anyone died from Melanotan II? Why nobody can count"
+serpTitle: "Has anyone died from Melanotan II?"
 description: "Millions of users, no deaths — the gray market's core safety claim fails at both numbers. A BMJ editorial, a Bolton inquest, and 89 counted reports explain why."
 pubDate: 2026-09-14
 updatedDate: 2026-11-22

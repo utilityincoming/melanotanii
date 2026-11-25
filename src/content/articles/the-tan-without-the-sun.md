@@ -1,6 +1,6 @@
 ---
 title: "The tan without the sun: what a peptide short-circuits that UV does the hard way"
-serpTitle: "The tan without the sun: how Melanotan skips the UV damage"
+serpTitle: "How Melanotan tans without UV damage"
 description: "A suntan is a wound response: pigment made only after UV has damaged skin DNA. Melanotan's idea was the protection without the damage."
 pubDate: 2026-08-18
 cluster: science

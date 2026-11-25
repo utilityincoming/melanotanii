@@ -1,6 +1,6 @@
 ---
 title: "Why a cosmetic went underground"
-serpTitle: "Why Melanotan II went underground: a want, not a need"
+serpTitle: "Why Melanotan II went underground"
 description: "Why Melanotan II became the most self-injected unapproved drug: it served a want, not a need — and wants don't wait for clinical trials."
 pubDate: 2026-08-18
 cluster: culture

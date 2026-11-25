@@ -3,6 +3,7 @@
 // itself. No argument, no advice — the file speaks through its primary source.
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { authorLd, orgRef, recordRef } from '../../data/brand';
 
 export async function getStaticPaths() {
   const entries = await getCollection('records');
@@ -38,6 +39,21 @@ const description = baseDesc.length <= 160
   : `${baseDesc.slice(0, 157).replace(/\s+\S*$/, '')}…`;
 
 const pageUrl = new URL(`/record/${entry.id}/`, Astro.site).href;
+const recordLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: entry.data.title,
+  description,
+  datePublished: entry.data.eventDate.toISOString(),
+  dateModified: entry.data.eventDate.toISOString(),
+  inLanguage: 'en',
+  isAccessibleForFree: true,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+  isPartOf: recordRef(Astro.site),
+  author: authorLd(Astro.site),
+  publisher: orgRef(Astro.site),
+  citation: entry.data.sourceUrl,
+};
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -50,6 +66,7 @@ const breadcrumbLd = {
 ---
 
 <Base title={pageTitle} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(recordLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   <article class="entry-page">
     <div class="wrap">

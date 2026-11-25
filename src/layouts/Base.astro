@@ -73,7 +73,7 @@ const siteLd = websiteLd(Astro.site);
         <span class="brand-tag">{tagline}</span>
       </a>
       <nav aria-label="Main">
-        {nav.map((item) => (
+        {nav.filter(({ href }) => path !== '/' || href !== '/skin-record/').map((item) => (
           <a
             href={item.href}
             class={isActive(item.href) ? 'is-active' : undefined}

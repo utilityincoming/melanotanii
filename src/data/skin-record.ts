@@ -37,9 +37,9 @@ export const skinRecord: SkinRecordEntry[] = [
   {
     id: 'hueso-2012',
     kind: 'mole-change',
-    title: 'More than a hundred new moles after a short course',
+    title: 'New and changing moles after reported melanotan use',
     claim:
-      'A phototype II man in his twenties developed more than 100 melanocytic nevi, mostly on the back, within weeks of a four-week course sold as Melanotan II. Ten of the most atypical were removed; histopathology was dysplastic nevi, three with severe dysplasia. A pigmented basal-cell carcinoma on the shoulder was also removed.',
+      'A phototype II man in his twenties reported new and rapidly changing moles after using a product sold as Melanotan II. Clinicians counted more than 100 melanocytic nevi, mostly on the back. He regularly used tanning beds. Ten of the most atypical were removed; histopathology was dysplastic nevi, three with severe dysplasia. A pigmented basal-cell carcinoma on the shoulder was also removed.',
     notAClaim:
       'The report does not prove the compound caused a melanoma, and it is not a result to copy. It does not state a dose anyone should use.',
     citation:

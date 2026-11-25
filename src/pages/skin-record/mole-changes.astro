@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import { skinRecord } from '../../data/skin-record';
+
+const observations = {
+  'hueso-2012': {
+    study: 'Hueso-Gabriel et al. (2012)',
+    change: 'New moles appeared and existing ones changed rapidly. Clinicians counted more than 100 moles, mostly on the back.',
+    photos: 'The paper shows clinical and dermoscopic images from the examination and describes no earlier photos for comparison.',
+    biopsy: 'Ten atypical moles were removed and identified as dysplastic nevi, three with severe dysplasia. A separate pigmented basal-cell carcinoma was also removed.',
+    context: 'The patient had Fitzpatrick phototype II and regularly used tanning beds.',
+  },
+  'cardones-2009': {
+    study: 'Cardones and Grichnik (2009)',
+    change: 'New moles appeared and existing ones darkened and changed shape.',
+    photos: 'Clinic photos from a year earlier helped confirm new moles. The authors said the different photo conditions prevented comparison of overall skin color.',
+    biopsy: 'Two biopsies showed dysplastic nevi with moderate or moderate-to-severe atypia.',
+    context: 'The patient already had atypical moles and a history of melanoma.',
+  },
+  'cousen-2009': {
+    study: 'Cousen, Colver, and Helbling (2009)',
+    change: 'Multiple new melanocytic moles appeared.',
+    photos: 'A baseline comparison could not be verified from the public journal extract.',
+    biopsy: 'Biopsy findings for this patient could not be verified from the public extract.',
+    context: 'The patient also used tanning beds.',
+  },
+};
+
+const cases = skinRecord.flatMap((entry) => {
+  const observation = observations[entry.id as keyof typeof observations];
+  return observation ? [{ ...entry, ...observation }] : [];
+});
+---
+
+<Base
+  title="Mole changes after reported melanotan use — Tan Lines"
+  description="Compare three published reports of mole changes after reported melanotan use, including what photographs and biopsies showed."
+>
+  <article class="prose">
+    <nav aria-label="Breadcrumb">
+      <a href="/skin-record/">Skin record</a>
+      <span aria-hidden="true"> &rsaquo; </span>
+      <span aria-current="page">Mole changes</span>
+    </nav>
+    <h1>Mole changes in three published case reports</h1>
+    <p class="lede">Clinicians described new or changing moles after patients reported using products sold as melanotan. The reports differ in what the clinicians could compare and what tissue they examined.</p>
+    <p>If you notice a new or changing mole, have it assessed by a healthcare professional. <a href="https://www.aad.org/public/diseases/skin-cancer/how-to-prevent">American Academy of Dermatology guidance</a>.</p>
+
+    <h2>Compare the cases</h2>
+    <div class="cases">
+      {cases.map(({ id, study, change, photos, biopsy, context, href, citation }) => (
+        <section aria-labelledby={id}>
+          <h3 id={id}>{study}</h3>
+          <dl>
+            <dt>What changed</dt>
+            <dd>{change}</dd>
+            <dt>Photographs</dt>
+            <dd>{photos}</dd>
+            <dt>Biopsy findings</dt>
+            <dd>{biopsy}</dd>
+            <dt>Clinical context</dt>
+            <dd>{context}</dd>
+          </dl>
+          <p><a href={href}>{citation}</a></p>
+        </section>
+      ))}
+    </div>
+
+    <h2>What the reports can establish</h2>
+    <p>Case reports document what happened to individual patients. Estimating how often these changes occur would require knowing how many people were exposed and following them systematically. Factors such as tanning-bed use, a prior melanoma, and uncertainty about product contents also limit what can be inferred about cause.</p>
+    <p>Read <a href="/articles/the-mole-problem/">The mole problem</a> for the wider evidence and clinical context.</p>
+  </article>
+</Base>
+
+<style>
+  .cases { display: grid; gap: 1.5rem; }
+  .cases section { min-width: 0; overflow-wrap: anywhere; }
+  .cases h3 { margin-top: 0; }
+  .cases dt { font-weight: 700; }
+  .cases dd { margin: 0 0 0.75rem; }
+  @media (min-width: 64rem) {
+    .prose { max-width: none; }
+    .prose > p { max-width: 72ch; }
+    .cases { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>

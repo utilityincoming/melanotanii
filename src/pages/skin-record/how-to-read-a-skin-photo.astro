@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const examples = [
+  {
+    type: 'lighting',
+    title: 'Lighting and exposure',
+    first: 'Brighter lighting',
+    second: 'Dimmer lighting',
+    explanation: 'The same mark can look darker when lighting or exposure changes. Check the figure caption before drawing conclusions about color.',
+  },
+  {
+    type: 'distance',
+    title: 'Distance and crop',
+    first: 'Wider view',
+    second: 'Closer view',
+    explanation: 'The same mark fills more of a close-up. Look for a scale or a documented measurement before inferring that it grew.',
+  },
+];
+---
+
+<Base
+  title="How to read a skin photograph — Tan Lines"
+  description="How baseline photos, lighting, scale, and biopsy findings affect what you can infer from a published skin photograph."
+>
+  <article class="prose">
+    <nav aria-label="Breadcrumb">
+      <a href="/skin-record/">Skin record</a>
+      <span aria-hidden="true"> &rsaquo; </span>
+      <span aria-current="page">How to read a skin photograph</span>
+    </nav>
+    <h1>How to read a skin photograph</h1>
+    <p class="lede">Start with the figure caption. It should tell you whether the images show the same person, which area was photographed, when each image was taken, and what the authors used the images to compare.</p>
+
+    <h2>Check what the baseline shows</h2>
+    <p>A baseline is an earlier record of the same area on the same person. Look for dates and landmarks that let you match the area across images. A spot outside the earlier frame tells you little about when it appeared.</p>
+    <p>In the Cardones and Grichnik case, clinic photographs from a year earlier helped the authors confirm that new moles had appeared. The authors said differences in how the photographs were taken prevented them from judging changes in overall skin color. <a href="https://jamanetwork.com/journals/jamadermatology/fullarticle/711987">Read the original case report</a>.</p>
+
+    <h2>Check how the images were taken</h2>
+    {examples.map(({ type, title, first, second, explanation }) => (
+      <figure class={type}>
+        <h3>{title}</h3>
+        <div class="pair">
+          <div>
+            <div class="frame first" aria-hidden="true"><span class="mark"></span></div>
+            <p>{first}</p>
+          </div>
+          <div>
+            <div class="frame second" aria-hidden="true"><span class="mark"></span></div>
+            <p>{second}</p>
+          </div>
+        </div>
+        <figcaption>{explanation}</figcaption>
+      </figure>
+    ))}
+
+    <h2>Read the biopsy result alongside the image</h2>
+    <p>A photograph records how a spot looked. A biopsy lets a pathologist examine sampled tissue under a microscope. In the Cardones and Grichnik case, a spot that raised concern for melanoma was identified on biopsy as a nevus with atypical features. That finding applies to the sampled spot. <a href="https://jamanetwork.com/journals/jamadermatology/fullarticle/711987">Read the biopsy findings in the original report</a>.</p>
+    <p>If you notice a new or changing spot, make an appointment with a dermatologist. <a href="https://www.aad.org/public/diseases/skin-cancer/abcdes-melanoma">American Academy of Dermatology guidance</a>.</p>
+    <p><a href="/skin-record/mole-changes/">Compare the three published reports of mole changes &rarr;</a></p>
+  </article>
+</Base>
+
+<style>
+  figure h3 { margin: 0; padding: 0.85rem 1rem 0; }
+  .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; padding: 0.75rem 1rem; }
+  .pair p { margin: 0.35rem 0 0; }
+  .frame { display: grid; aspect-ratio: 2 / 1; place-items: center; background: #e8bf9d; }
+  .mark { border-radius: 50%; width: 13%; aspect-ratio: 1; background: #79513c; }
+  .lighting .second { background: #ab856c; }
+  .lighting .second .mark { background: #58392c; }
+  .distance .second .mark { width: 24%; }
+</style>

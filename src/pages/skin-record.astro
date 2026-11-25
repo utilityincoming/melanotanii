@@ -111,6 +111,9 @@ const jsonLd = {
     {groups.map((group) => (
       <section>
         <h2>{group.label}</h2>
+        {group.id === 'mole-change' && (
+          <p><a href="/skin-record/mole-changes/">Compare three published reports of mole changes</a>.</p>
+        )}
         {group.entries.length === 0 && group.id === 'reference-scale' && (
           <p>
             The Fitzpatrick figure above is the reference. It is original to

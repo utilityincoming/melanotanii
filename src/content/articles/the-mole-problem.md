@@ -87,7 +87,7 @@ cannot clear an individual lesion. A dermatologist should assess new or
 changing moles, particularly one that is changing faster than the surrounding
 skin, bleeding, itching, ulcerated or noticeably different from the others.
 Tell them the actual product name and when the exposure and change happened.
-The published pairs this site will cite, and the ones it will not collect, are listed in the [skin visual record](/skin-record/). Bring older photographs if you have them; do not wait for a new dark spot to
+The [skin visual record](/skin-record/) explains how we assess clinical photographs. Its [three-case comparison](/skin-record/mole-changes/) shows what the clinicians observed, what the photographs captured, and what the biopsies found. Bring older photographs if you have them; do not wait for a new dark spot to
 declare itself against a background the drug has also changed. A fresh dark
 nail band deserves the same honesty rather than an assumption that it is
 bruising.

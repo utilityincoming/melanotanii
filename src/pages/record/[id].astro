@@ -26,16 +26,25 @@ const relatedArticles = relatedIds.length
   ? (await getCollection('articles')).filter((a) => relatedIds.includes(a.id))
   : [];
 
-const pageTitle = `${entry.data.title} — record entry, ${entry.data.when} — Tan Lines`;
-const description = `${entry.data.when} — ${entry.data.authority} (${jur[entry.data.jurisdiction]}). ${entry.data.title}.`;
+const fullTitle = `${entry.data.title} — Tan Lines`;
+const pageTitle = fullTitle.length <= 70 ? fullTitle : `${entry.data.title.slice(0, 56).replace(/\s+\S*$/, '')}… — Tan Lines`;
 
+const rawDesc = `${entry.data.when} — ${entry.data.authority} (${jur[entry.data.jurisdiction]}). ${entry.data.title}.`;
+const baseDesc = rawDesc.length < 100
+  ? `${rawDesc} Source: ${entry.data.sourceLabel}.`
+  : rawDesc;
+const description = baseDesc.length <= 160
+  ? baseDesc
+  : `${baseDesc.slice(0, 157).replace(/\s+\S*$/, '')}…`;
+
+const pageUrl = new URL(`/record/${entry.id}/`, Astro.site).href;
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
-    { '@type': 'ListItem', position: 2, name: 'Record entries', item: '/record/' },
-    { '@type': 'ListItem', position: 3, name: entry.data.title, item: `/record/${entry.id}/` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'Record entries', item: new URL('/record/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: entry.data.title, item: pageUrl },
   ],
 };
 ---

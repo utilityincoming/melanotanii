@@ -48,6 +48,11 @@ const others = rest
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
 
+// Reciprocal links to dated Record entries that cite this article.
+const relatedRecords = (await getCollection('records', ({ data }) => !data.draft))
+  .filter((r) => r.data.related?.includes(article.id))
+  .sort((a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf());
+
 const pageUrl = new URL(`/articles/${article.id}/`, Astro.site).href;
 // Per-article social card generated at /og/<id>.png (see src/pages/og/[id].png.ts).
 const ogImage = new URL(`/og/${article.id}.png`, Astro.site).href;
@@ -171,6 +176,23 @@ const faqLd = faq && faq.length > 0
           </details>
         ))}
       </section>
+    )}
+
+    {relatedRecords.length > 0 && (
+      <nav class="continue" aria-label="In The Record">
+        <p class="continue-head">
+          <span class="continue-eyebrow accent">In The Record</span>
+        </p>
+        <ul>
+          {relatedRecords.map((r) => (
+            <li>
+              <a href={`/record/${r.id}/`}>{r.data.title}</a>
+              <p>{r.data.when} &middot; {r.data.authority}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="continue-all"><a href="/record/">All record entries &rarr;</a></p>
+      </nav>
     )}
 
     {siblings.length > 0 && (

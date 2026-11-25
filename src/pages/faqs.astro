@@ -6,6 +6,72 @@ const sections = [
   { id: 'evidence', label: 'Safety and evidence' },
   { id: 'next-steps', label: 'After a purchase or exposure' },
 ];
+
+const pageUrl = new URL('/faqs/', Astro.site).href;
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${pageUrl}#faq`,
+  isPartOf: { '@id': pageUrl },
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are Melanotan I and Melanotan II?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Both are synthetic peptides studied for their effects on pigmentation. Melanotan I is the historical name associated with afamelanotide. Melanotan II is a different compound that acts on several melanocortin receptors.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is there an approved tanning peptide?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Scenesse, a prescription afamelanotide implant, has a specific indication for adults with erythropoietic protoporphyria (EPP). Products marketed online as Melanotan I or II for tanning fall outside that approval.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does a darker tan prove that my skin is protected from UV?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Visible pigment cannot tell you how much UV damage your skin has sustained, and evidence that a compound changes pigmentation cannot establish that it prevents skin cancer. Keep using shade, protective clothing, and broad-spectrum sunscreen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does a nasal spray or a lab report resolve the safety questions?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A nasal product still raises questions about identity, concentration, contamination, and absorption. A lab report addresses only the particular sample and tests it describes.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Does a case report prove that Melanotan II caused a health problem?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Case reports can bring a pattern to a clinician’s attention, though they usually cannot establish cause or estimate how often an event happens. A new or changing mole warrants assessment by a healthcare professional.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What if I already ordered or used a product?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'For severe symptoms, seek emergency help. For other symptoms or questions about exposure, contact a healthcare professional or your local poison center and keep the package or a photo of its label.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who can help with a missing order or a refund?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tan Lines is an independent publication and has no checkout. Your receipt or payment statement can help identify the merchant that took payment for an order dispute.',
+      },
+    },
+  ],
+};
 ---
 <ReaderGuide
   title="Melanotan FAQs: safety, approvals and online orders | Tan Lines"
@@ -14,6 +80,7 @@ const sections = [
   intro="What the names mean, what the evidence supports, and where to turn if you already ordered or used a product."
   {sections}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} is:inline />
   <h2 id="compounds">Names and approvals</h2>
   <h3>What are Melanotan I and Melanotan II?</h3>
   <p>Both are synthetic peptides studied for their effects on pigmentation. Melanotan I is the historical name associated with afamelanotide. Melanotan II is a different compound that acts on several melanocortin receptors. The similar names make it easy to apply evidence about one to the other. <a href="/melanotan-i/">Read the Melanotan I profile</a>.</p>

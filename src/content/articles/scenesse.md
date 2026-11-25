@@ -1,6 +1,6 @@
 ---
 title: "Scenesse is a medicine. It is not a tan."
-serpTitle: "Scenesse (afamelanotide): the approved drug, not a tan"
+serpTitle: "Scenesse (afamelanotide): approved drug, not tan"
 description: "Scenesse is afamelanotide, an approved implant for a rare light-pain disease. It is not a cosmetic tan, and it is not gray-market Melanotan."
 pubDate: 2026-10-25
 cluster: next-agonist

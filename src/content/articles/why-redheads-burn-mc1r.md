@@ -1,6 +1,6 @@
 ---
 title: "Why redheads burn: the MC1R gene and the pigment switch"
-serpTitle: "Why redheads burn: the MC1R gene and the pigment switch"
+serpTitle: "Why redheads burn: the MC1R gene"
 description: "Red hair, freckles, and burning instead of tanning trace to one receptor: MC1R. The keyhole every Melanotan was cut to fit — and a melanoma risk gene."
 pubDate: 2026-08-18
 cluster: science

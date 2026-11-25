@@ -1,6 +1,6 @@
 ---
 title: "A drug before its receptor: how the Arizona team built Melanotan in the dark"
-serpTitle: "How Melanotan II was designed before its receptors existed"
+serpTitle: "How Melanotan II was designed before MC1R"
 description: "Melanotan II was designed before its receptors were discovered — using frog-skin assays and two amino-acid swaps that made a superpotent α-MSH analog."
 pubDate: 2026-09-13
 cluster: history

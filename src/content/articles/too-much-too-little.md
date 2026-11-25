@@ -1,6 +1,6 @@
 ---
 title: "Too much, too little: what α-MSH does when the dial is stuck"
-serpTitle: "What α-MSH does when the signal is stuck high or off"
+serpTitle: "What α-MSH does when signaling goes wrong"
 description: "Addison's darkens skin; POMC deficiency pales it. The melanocortin signal is built to be tuned, which is the design a relentless agonist throws away."
 pubDate: 2026-11-15
 cluster: science

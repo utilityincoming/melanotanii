@@ -1,6 +1,6 @@
 ---
 title: "The misnamed hormone: what α-MSH actually is"
-serpTitle: "What is α-MSH? Alpha-melanocyte-stimulating hormone, explained"
+serpTitle: "What is α-MSH? The pigment hormone explained"
 description: "α-MSH, or alpha-melanocyte-stimulating hormone, was named for darkening frog skin. In humans it is a local, short-lived signal the skin makes after UV."
 pubDate: 2026-11-14
 updatedDate: 2026-11-14

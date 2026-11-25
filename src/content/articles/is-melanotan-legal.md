@@ -1,6 +1,6 @@
 ---
 title: "The verdict is unanimous; the verbs are not"
-serpTitle: "Is Melanotan legal? The status by country, without the fine print"
+serpTitle: "Is Melanotan legal? Status by country"
 description: "Melanotan II is approved nowhere. Selling it is illegal in the US, UK, Australia, Ireland and the EU. Possession is murkier. The short answer, by country."
 pubDate: 2026-11-09
 updatedDate: 2026-11-22

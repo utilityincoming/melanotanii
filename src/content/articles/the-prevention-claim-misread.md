@@ -1,6 +1,6 @@
 ---
 title: "The prevention claim, misread: what the trials showed, what the captions say"
-serpTitle: "Does Melanotan II prevent skin cancer? What the trials showed"
+serpTitle: "Does Melanotan II prevent skin cancer?"
 description: "'Melanotan prevents skin cancer' is a caption-level fact. The trials never tested that. What the evidence shows, what the claim sells, and the gap between."
 pubDate: 2026-08-30
 updatedDate: 2026-11-22

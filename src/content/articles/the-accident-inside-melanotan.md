@@ -1,6 +1,6 @@
 ---
 title: "One injection, eight hours, and a second drug hiding inside Melanotan II"
-serpTitle: "The Melanotan II self-experiment that found a libido drug"
+serpTitle: "How Melanotan II led to a libido drug"
 description: "A University of Arizona self-experiment with Melanotan II produced an eight-hour erection — and pointed the way to an FDA-approved libido drug."
 pubDate: 2026-08-18
 cluster: history

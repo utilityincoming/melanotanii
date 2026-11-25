@@ -1,6 +1,6 @@
 ---
 title: "Tanorexia: the opioid your skin makes in the sun"
-serpTitle: "Tanorexia and the opioid your skin makes in the sun"
+serpTitle: "Tanorexia and skin’s UV opioid loop"
 description: "UV light makes skin manufacture its own opioid — the hidden reward inside every tan. The science of tanning dependence, and what it says about Melanotan."
 pubDate: 2026-08-18
 cluster: culture

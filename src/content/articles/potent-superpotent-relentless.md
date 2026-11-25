@@ -1,6 +1,6 @@
 ---
 title: "Potent, super-potent, relentless: the three words that explain a peptide tan"
-serpTitle: "How Melanotan works: potency, super-potency, duration"
+serpTitle: "How Melanotan works: potency and duration"
 description: "A peptide tan is three levers: potency, super-potency, and duration. Selectivity, the property a real drug would need, is the one Melanotan II lacks."
 pubDate: 2026-11-15
 cluster: science

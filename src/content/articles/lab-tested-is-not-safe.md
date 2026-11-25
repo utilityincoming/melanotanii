@@ -1,6 +1,6 @@
 ---
 title: "“99% pure”: the lab number that became the whole sales pitch"
-serpTitle: "Melanotan II lab tested or 99% pure? What a COA actually means"
+serpTitle: "Melanotan II 99% pure: what a COA means"
 description: "A Melanotan II certificate of analysis may measure a submitted sample. Purity, identity, content, sterility and clinical safety are different questions."
 pubDate: 2026-11-14
 cluster: cautionary-tale

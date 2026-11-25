@@ -1,6 +1,6 @@
 ---
 title: "The third rebrand: a gray-market tan on the wellness menu"
-serpTitle: "Melanotan II and longevity: the wellness-menu rebrand"
+serpTitle: "Melanotan II and longevity: the rebrand"
 description: "Wellness clinics now sell Melanotan II as a longevity peptide. Real melanocortin drugs exist — approved, selective, monitored. This isn't one of them."
 pubDate: 2026-08-30
 cluster: cautionary-tale

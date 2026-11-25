@@ -1,6 +1,6 @@
 ---
 title: "The sunscreen you'd never have to reapply: where Melanotan came from"
-serpTitle: "Where Melanotan came from: the Arizona sunscreen quest"
+serpTitle: "Where Melanotan came from: Arizona origin"
 description: "Melanotan II began as 1980s melanoma-prevention research at the University of Arizona — an injectable sunscreen. The origin story of the tanning peptide."
 pubDate: 2026-08-18
 cluster: history

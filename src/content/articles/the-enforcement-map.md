@@ -1,6 +1,6 @@
 ---
 title: "A ban with no borders: how each country tried to stop Melanotan II"
-serpTitle: "Is Melanotan II illegal? UK, Australia, Ireland & US enforcement"
+serpTitle: "Is Melanotan II illegal? Country enforcement"
 description: "Melanotan II is unapproved almost everywhere. A country-by-country map of how the UK, Australia, Ireland and US fought the gray market — and why it held."
 pubDate: 2026-09-24
 updatedDate: 2026-11-23

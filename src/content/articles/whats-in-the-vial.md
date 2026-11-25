@@ -1,6 +1,6 @@
 ---
 title: "You can't know what's in the vial"
-serpTitle: "Gray-market Melanotan II: you can't know what's in the vial"
+serpTitle: "Gray-market Melanotan II: what’s in the vial"
 description: "Gray-market Melanotan II comes from unknown labs: purity, sterility, and dose are all assumptions — and assumptions have sent people to the ER."
 pubDate: 2026-08-18
 updatedDate: 2026-11-14

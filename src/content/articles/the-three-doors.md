@@ -1,6 +1,6 @@
 ---
 title: "The three doors: the U.S. regulatory map for a melanocortin sun drug"
-serpTitle: "Three U.S. doors for Melanotan II: FDA, compounding, gray market"
+serpTitle: "Three U.S. doors for Melanotan II"
 description: "The U.S. map for Melanotan II: FDA approval, compounding, and the gray market. Not the country-by-country legal verdict."
 pubDate: 2026-08-18
 cluster: next-agonist

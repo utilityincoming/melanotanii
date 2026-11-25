@@ -1,6 +1,6 @@
 ---
 title: "How the science escaped the lab: the patents that made a gray market inevitable"
-serpTitle: "How Melanotan II escaped the lab: patents and the gray market"
+serpTitle: "How Melanotan II escaped the lab"
 description: "Melanotan II's recipe was published in journals and patents, then orphaned by its developers. Public structure plus real demand made the gray market inevitable."
 pubDate: 2026-08-18
 cluster: history

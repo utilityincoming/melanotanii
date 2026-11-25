@@ -1,6 +1,6 @@
 ---
 title: "The Barbie drug: how an unapproved peptide built a global gray market"
-serpTitle: "The Barbie drug: how Melanotan II built a gray market"
+serpTitle: "The Barbie drug: Melanotan II’s gray market"
 description: "Never approved anywhere, Melanotan II sold anyway — through forums, gyms, and 'research chemical' sites. How the gray market formed, and what it costs."
 pubDate: 2026-08-18
 cluster: cautionary-tale

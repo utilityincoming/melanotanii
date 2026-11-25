@@ -1,6 +1,6 @@
 ---
 title: "The mole problem: what dermatologists actually fear about Melanotan II"
-serpTitle: "Melanotan II and moles: what dermatologists actually fear"
+serpTitle: "Melanotan II and moles: what doctors fear"
 description: "Melanotan II darkens and multiplies moles — and the deeper danger is diagnostic: the case reports, the melanoma question, and the signals you lose."
 pubDate: 2026-08-18
 updatedDate: 2026-11-14

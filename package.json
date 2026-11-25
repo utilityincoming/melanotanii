@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "seo:check": "node scripts/seo-audit.mjs",
     "gsc": "node scripts/gsc-report.mjs"
   },
   "dependencies": {

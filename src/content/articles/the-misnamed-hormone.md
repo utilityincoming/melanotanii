@@ -1,12 +1,12 @@
 ---
 title: "The misnamed hormone: what α-MSH actually is"
-serpTitle: "What is α-MSH? The pigment hormone explained"
-description: "α-MSH, or alpha-melanocyte-stimulating hormone, was named for darkening frog skin. In humans it is a local, short-lived signal the skin makes after UV."
+serpTitle: "What is alpha-MSH (a-MSH)?"
+description: "Alpha-MSH (a-MSH, α-MSH) is the pigment hormone named for darkening frog skin. In humans it is a local, short-lived UV signal — not Melanotan."
 pubDate: 2026-11-14
 updatedDate: 2026-11-14
 cluster: science
 faq:
-  - q: "What is α-MSH?"
+  - q: "What is α-MSH (alpha-MSH, a-MSH)?"
     a: "α-MSH (alpha-melanocyte-stimulating hormone) is a small 13-amino-acid peptide the body cuts from a larger precursor protein called POMC. In skin it is released locally — mostly by UV-damaged keratinocytes — and tells neighbouring pigment cells to make the brown pigment that darkens a tan. It is also cleared within minutes, so its signal is brief by design."
   - q: "Is α-MSH the same thing as Melanotan?"
     a: "No. Melanotan I and II are engineered analogs patterned on α-MSH, not the hormone itself. The lab versions were deliberately altered to resist the enzymes that destroy natural α-MSH and to act far longer and more broadly — which is exactly why an injected analog produces whole-body effects the local hormone never would."

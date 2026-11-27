@@ -1,10 +1,12 @@
 ---
 title: "Why redheads burn: the MC1R gene and the pigment switch"
-serpTitle: "Why redheads burn: the MC1R gene"
-description: "Red hair, freckles, and burning instead of tanning trace to one receptor: MC1R. The keyhole every Melanotan was cut to fit — and a melanoma risk gene."
+serpTitle: "What is the MC1R gene? Why redheads burn"
+description: "The MC1R gene is the pigment switch: variants explain red hair, burning, and extra melanoma risk. It is the receptor Melanotan was built to hit."
 pubDate: 2026-08-18
 cluster: science
 faq:
+  - q: "What is the MC1R gene?"
+    a: "MC1R is the gene for the melanocortin-1 receptor, the switch between tanning and burning. Common red-hair-colour variants build a receptor that responds poorly to α-MSH, so the cell makes red-yellow pheomelanin instead of protective eumelanin — red hair, fair skin, freckling and a tendency to burn as a set."
   - q: "Why do redheads burn instead of tan?"
     a: "A single receptor, MC1R, is the switch between tanning and burning. When α-MSH activates it strongly, the cell makes protective brown-black eumelanin. Common 'red-hair-colour' variants build a receptor that responds poorly, so the cell falls back on red-yellow pheomelanin, which barely shields — carrying red hair, fair skin, freckling and a tendency to burn as a set. It's a receptor that doesn't fully answer, not a failure of willpower."
   - q: "Does the redhead gene affect melanoma risk?"

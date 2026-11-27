@@ -1,11 +1,13 @@
 ---
 title: "The pill that wasn't: why there is no oral Melanotan II"
-serpTitle: "Oral Melanotan II pills and gummies"
-description: "Melanotan II sold as a capsule, gummy, or drink can't work: a cyclic peptide doesn't survive digestion. What 'oral melanotan' actually is."
+serpTitle: "Melanotan pill: why oral MT-II cannot work"
+description: "A Melanotan pill, gummy, or drink cannot deliver the peptide: digestion breaks it. What is sold as oral melanotan is not a working dose."
 pubDate: 2026-08-30
 cluster: culture
 kind: query
 faq:
+  - q: "Is there a Melanotan pill?"
+    a: "No working one. Melanotan II is a cyclic peptide, and peptides are broken apart by stomach acid and digestive enzymes before they reach the bloodstream. A capsule, gummy, or drink cannot deliver an intact dose, which is why the injectable form exists at all."
   - q: "Is there an oral Melanotan II pill?"
     a: "No working one. Melanotan II is a cyclic peptide, and peptides are broken apart by stomach acid and digestive enzymes before they reach the bloodstream. A capsule, gummy, or drink cannot deliver an intact dose, which is why the injectable form exists at all."
   - q: "What is being sold as 'oral melanotan' then?"

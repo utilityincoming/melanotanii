@@ -184,8 +184,7 @@ h1, h2, h3 {
 }
 .site-footer .wrap { padding-top: 2rem; padding-bottom: 3rem; }
 .site-footer p { max-width: 46rem; }
-.site-footer .foot-record,
-.site-footer .foot-links {
+.site-footer .foot-record {
   display: flex;
   flex-wrap: wrap;
   gap: 1.1rem;
@@ -199,14 +198,12 @@ h1, h2, h3 {
   color: var(--ink-soft);
   margin-right: 0.3rem;
 }
-.site-footer .foot-record a,
-.site-footer .foot-links a {
+.site-footer .foot-record a {
   color: var(--ink);
   text-decoration: none;
   font-weight: 500;
 }
-.site-footer .foot-record a:hover,
-.site-footer .foot-links a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
+.site-footer .foot-record a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Update the legacy line-art ink without recoloring data-bearing pigment swatches. */
 .prose figure svg [fill="#503296" i] { fill: #414077; }

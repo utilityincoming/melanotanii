@@ -1,7 +1,7 @@
 ---
 title: "Melanotan I and Melanotan II: one number, two completely different fates"
 serpTitle: "Melanotan 1 vs 2: two peptides, two fates"
-description: "Melanotan 1 vs 2: near-identical peptides from the same Arizona lab. One became an approved medicine; the other, the gray market's favorite. Why."
+description: "Melanotan 1 became the approved medicine Scenesse. Melanotan 2 is the unapproved gray-market tanning peptide. Same Arizona lab, opposite fates."
 pubDate: 2026-08-18
 cluster: history
 kind: query

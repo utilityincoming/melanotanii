@@ -1,7 +1,7 @@
 ---
 title: "The verdict is unanimous; the verbs are not"
-serpTitle: "Is Melanotan legal? Status by country"
-description: "Melanotan II is approved nowhere. Selling it is illegal in the US, UK, Australia, Ireland and the EU. Possession is murkier. The short answer, by country."
+serpTitle: "Is Melanotan legal? Approved nowhere"
+description: "Selling Melanotan II is illegal in the US, UK, Australia, Ireland and the EU — approved nowhere. Possession is murkier. The short answer, by country."
 pubDate: 2026-11-09
 updatedDate: 2026-11-22
 cluster: cautionary-tale
@@ -11,6 +11,8 @@ faq:
     a: "No, not as a product. Melanotan II is an unapproved new drug, which makes its sale and marketing unlawful under federal law and subjects it to import controls. There is no approved Melanotan product for tanning, and personal possession, while rarely prosecuted, is not a legal category the FDA recognises."
   - q: "Is Melanotan legal in Australia?"
     a: "Selling and supplying it are illegal — melanotan peptides are listed in Schedule 4 of the Poisons Standard (prescription-only), and no Melanotan II product is on the ARTG, so no lawful channel to obtain one exists. Possession is not criminalised the way a prohibited-substance listing would; the TGA's enforcement targets supply — six-figure fines, lab tests on seized bottles, and recurring public warnings."
+  - q: "Is Melanotan 2 legal?"
+    a: "No. Melanotan 2 (Melanotan II) is not approved for any use in any country. Selling it is illegal in the US, UK, Australia, Ireland and the EU. Possession is treated inconsistently; Australia lists it prescription-only (Schedule 4) with no approved product, which closes lawful supply without making possession a prohibited-substance offence."
   - q: "Is any melanotan legal anywhere?"
     a: "One related drug is: afamelanotide, the compound once called Melanotan I, is approved as the prescription implant Scenesse — but only for a rare genetic light-pain disease (EPP), only by specialist prescription, and only in some countries. Melanotan II, the peptide sold online for tanning, is approved nowhere for anything."
 ---

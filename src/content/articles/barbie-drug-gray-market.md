@@ -1,12 +1,15 @@
 ---
 title: "The Barbie drug: how an unapproved peptide built a global gray market"
-serpTitle: "The Barbie drug: Melanotan II’s gray market"
-description: "Never approved anywhere, Melanotan II sold anyway — through forums, gyms, and 'research chemical' sites. How the gray market formed, and what it costs."
+serpTitle: "What is the Barbie drug (Melanotan II)?"
+description: "The Barbie drug is Melanotan II: never approved, sold through forums, gyms, and research-chemical sites. How the gray market formed, and what it costs."
 pubDate: 2026-08-18
+updatedDate: 2026-11-27
 cluster: cautionary-tale
 faq:
+  - q: "What is the Barbie drug?"
+    a: "A media nickname for Melanotan II, coined for the combination of effects advertised in a single vial — tanning, appetite suppression and libido effects. The label describes the marketing pitch, not a verified or approved product."
   - q: "Is Melanotan II approved or legal?"
-    a: "Melanotan II has never been approved by any regulator, anywhere, for any use. Its legal status varies by country: the UK, Ireland and the US restrict sale and supply, while Australia has gone furthest and made even possession a criminal offence. 'Unapproved' is the one status that holds everywhere."
+    a: "Melanotan II has never been approved by any regulator, anywhere, for any use. The UK, Ireland and the US restrict sale and supply. Australia lists it prescription-only (Schedule 4) with no approved product, so every vial sold there is unlawful supply — possession is not a prohibited-substance offence. 'Unapproved' is the status that holds everywhere."
   - q: "Why is Melanotan II called the Barbie drug?"
     a: "It is a media nickname, coined for the combination of effects advertised in a single vial — tanning, appetite suppression and libido effects. The label describes the marketing pitch, not a verified or approved product."
   - q: "What are the main risks of gray-market Melanotan II?"
@@ -69,3 +72,5 @@ formed in the vacuum. Moralizing at individual users doesn't change that
 dynamic. A legitimate, tested, approved alternative would — which is why the
 final section of this site takes the future seriously instead of ending on
 the warning.
+
+*Corrected 27 November 2026: Australia lists melanotan prescription-only (Schedule 4) with no approved product; possession is not a prohibited-substance offence. See the [correction log](/standards/#corrections).*

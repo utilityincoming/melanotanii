@@ -1,13 +1,13 @@
 ---
 title: "A ban with no borders: how each country tried to stop Melanotan II"
-serpTitle: "Is Melanotan II illegal? Country enforcement"
+serpTitle: "Melanotan II enforcement by country"
 description: "Melanotan II is unapproved almost everywhere. A country-by-country map of how the UK, Australia, Ireland and US fought the gray market — and why it held."
 pubDate: 2026-09-24
 updatedDate: 2026-11-23
 cluster: cautionary-tale
 faq:
-  - q: "Is Melanotan II legal?"
-    a: "In no major market is Melanotan II an approved medicine. It is an unapproved drug in the United States, and its advertising and supply are unlawful in the United Kingdom, Australia, Ireland and across the EU. Selling it is illegal in those places; possession for personal use is treated less consistently, but the product itself is not authorised anywhere for cosmetic tanning."
+  - q: "How has each country enforced Melanotan II?"
+    a: "In no major market is Melanotan II an approved medicine. Sale and supply are unlawful in the United States, the United Kingdom, Australia, Ireland and across the EU. Possession for personal use is treated less consistently. The short legal answer by country is the Is Melanotan legal page; this page is the enforcement map."
   - q: "Why is Melanotan II still sold if it's banned?"
     a: "Because enforcement targets sellers and advertisements, not the molecule's popularity. Regulators can fine suppliers, order ads removed, and suspend websites — the UK, Ireland and Australia have all done exactly this — but the cross-border, social-media nature of the market means new listings replace old ones faster than any single agency can act."
   - q: "What have regulators actually done about Melanotan II?"

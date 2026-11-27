@@ -40,6 +40,7 @@ export function organizationLd(site: URL | undefined) {
     '@type': 'NewsMediaOrganization',
     '@id': `${origin}/#org`,
     name: publication,
+    alternateName: 'Melanotan II',
     url: `${origin}/`,
     publishingPrinciples: `${origin}/standards/`,
     correctionsPolicy: `${origin}/standards/`,
@@ -55,6 +56,7 @@ export function websiteLd(site: URL | undefined) {
     '@type': 'WebSite',
     '@id': `${origin}/#website`,
     name: publication,
+    alternateName: 'Melanotan II',
     url: `${origin}/`,
     publisher: { '@id': `${origin}/#org` },
     hasPart: {

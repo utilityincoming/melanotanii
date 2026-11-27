@@ -1,7 +1,7 @@
 ---
 title: "One letter, two different molecules"
-serpTitle: "Melatonin vs Melanotan: what’s the difference"
-description: "Melatonin vs Melanotan: a sleep supplement and an unapproved tanning peptide. The names are one letter apart; the molecules are not related."
+serpTitle: "Melatonin vs Melanotan: not the same thing"
+description: "Melatonin is a sleep supplement. Melanotan is an unapproved tanning peptide. One letter apart — different molecules, receptors, and law."
 pubDate: 2026-08-30
 updatedDate: 2026-11-22
 cluster: science

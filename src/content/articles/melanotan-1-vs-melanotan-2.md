@@ -3,6 +3,7 @@ title: "Melanotan I and Melanotan II: one number, two completely different fates
 serpTitle: "Melanotan 1 vs 2: two peptides, two fates"
 description: "Melanotan 1 became the approved medicine Scenesse. Melanotan 2 is the unapproved gray-market tanning peptide. Same Arizona lab, opposite fates."
 pubDate: 2026-08-18
+updatedDate: 2026-11-27
 cluster: history
 kind: query
 faq:
@@ -12,6 +13,8 @@ faq:
     a: "Yes. Melanotan I became afamelanotide (Scenesse), approved for erythropoietic protoporphyria. Melanotan II has never been approved for any use in any country and is sold only through unregulated channels."
   - q: "Which one is in gray-market tanning products?"
     a: "Almost always Melanotan II. Its broader receptor activity produced the side effects that got attention, and its structure entered the public domain, making it cheap to synthesise for the unregulated market."
+  - q: "Are Melanotan 1 and Melanotan 2 the same drug?"
+    a: "No. Melanotan 1 is a linear 13-amino-acid analog later approved as afamelanotide (Scenesse) for a rare light-pain disease. Melanotan 2 is a smaller cyclic peptide that reached only a pilot Phase I trial and has never been approved. Almost everything sold as a tanning injection is Melanotan 2."
 ---
 
 The two compounds — Melanotan I and Melanotan II, written as often as not as
@@ -24,6 +27,15 @@ much is the most instructive story in the Melanotan file.
 The digit is not the only confusable thing about the name. Melanotan also
 sits one letter from [melatonin](/articles/not-melatonin/), the pharmacy-shelf
 sleep supplement it otherwise has nothing to do with.
+
+## Melanotan 1 vs 2 at a glance
+
+| | Melanotan 1 | Melanotan 2 | Source |
+| --- | --- | --- | --- |
+| Chemistry | Linear 13-amino-acid analog of α-MSH | Cyclic heptapeptide lactam | [Sawyer et al. 1980](https://pubmed.ncbi.nlm.nih.gov/6777774/); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Names | Afamelanotide; Scenesse | MT-II | [FDA label, 2019](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/210797Orig1s000lbl.pdf); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Receptor | Binds predominantly to MC1-R | Tans, and in the only human trial also caused nausea, yawning and erections | [FDA label, 2019](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/210797Orig1s000lbl.pdf); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Status | Approved implant for EPP (EU 22 Dec 2014; US 8 Oct 2019) | Pilot Phase I only; no approved product | [EMA EPAR](https://www.ema.europa.eu/en/medicines/human/EPAR/scenesse); [FDA approval, 8 Oct 2019](https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2019/210797Orig1s000ltr.pdf); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
 
 <figure class="figure">
 <div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t5">

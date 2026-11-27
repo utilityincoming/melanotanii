@@ -1,7 +1,7 @@
 ---
 title: "What the warnings actually did: a decade of Melanotan II enforcement"
-serpTitle: "Melanotan II enforcement: what warnings did"
-description: "Regulators seized sites, parcels, and sellers. Australia walled off lawful supply. The market moved to nasal sprays. Why enforcement keeps losing."
+serpTitle: "What Melanotan II warnings actually did"
+description: "A decade of Melanotan II warnings: sites seized, parcels stopped, Australia walled off supply. The market moved to nasal sprays. Why enforcement keeps losing."
 pubDate: 2026-08-26
 updatedDate: 2026-11-22
 cluster: cautionary-tale

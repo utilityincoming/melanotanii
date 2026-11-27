@@ -3,6 +3,7 @@ title: "PT-141 and Melanotan II are not the same drug"
 serpTitle: "PT-141 vs Melanotan II: one approved drug, one not"
 description: "PT-141 is bremelanotide (Vyleesi), FDA-approved for one sexual-desire disorder. Melanotan II is not approved for anything. They are not the same drug."
 pubDate: 2026-10-25
+updatedDate: 2026-11-27
 cluster: next-agonist
 kind: query
 faq:
@@ -19,6 +20,15 @@ There isn't one. **PT-141 is the old code for an approved prescription drug.
 Melanotan II is an unapproved peptide.** They came out of the same research
 line. They are not interchangeable, and this page will not tell you how to
 obtain either.
+
+## PT-141 vs Melanotan II at a glance
+
+| | PT-141 (Vyleesi) | Melanotan II | Source |
+| --- | --- | --- | --- |
+| Names | Bremelanotide; Vyleesi | MT-II | [FDA label, 2019](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Chemistry | Cyclic heptapeptide; free-acid C-terminus | Cyclic heptapeptide lactam; amide C-terminus | [FDA label, 2019](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Status | FDA approved June 2019 | Pilot Phase I only; no approved product | [Dhillon and Keam 2019](https://pubmed.ncbi.nlm.nih.gov/31429064/); [Dorr et al. 1996](https://pubmed.ncbi.nlm.nih.gov/8637402/) |
+| Indication | HSDD in premenopausal women; not for men or sexual performance | None | [FDA label, 2019](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf) |
 
 <figure class="figure">
 <div class="figure-scroll" role="group" tabindex="0" aria-labelledby="ptt">

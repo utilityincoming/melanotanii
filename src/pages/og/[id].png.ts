@@ -8,6 +8,7 @@ const pageCards = [
   { id: 'page-countries', title: 'The record by country', threadLabel: 'The Record', strand: 'market' },
   { id: 'page-mole-cases', title: 'Mole cases', threadLabel: 'The cautionary tale', strand: 'market' },
   { id: 'page-history', title: 'The history, in order', threadLabel: 'The mission', strand: 'mission' },
+  { id: 'page-lander', title: 'The old link opens the file', threadLabel: 'Tan Lines', strand: 'mission' },
 ];
 
 const strandCards = [

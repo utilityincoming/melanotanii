@@ -1,12 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-import { clusters, clustersByStrand, clusterColorVar, clusterStrand, strandLabel, strandOrder } from '../../data/clusters';
+import { clusterColorVar, clusterStrand, strandLabel } from '../../data/clusters';
 import { publication, orgRef, recordRef, authorLd } from '../../data/brand';
 import Byline from '../../components/Byline.astro';
 import RelatedReading from '../../components/RelatedReading.astro';
 import SourceList from '../../components/SourceList.astro';
-import { citationsFromMarkdown, mergeCitations } from '../../lib/citations';
+import { buildSourceCatalog, pickRelated, sourcesForArticle } from '../../lib/source-registry';
 import IntentLinks from '../../components/IntentLinks.astro';
 import { intents, otherIntents } from '../../data/intents';
 import { strandPaths } from '../../data/strands-pages';
@@ -44,24 +44,35 @@ const isQuery = article.data.kind === 'query';
 // Siblings in the same thread — the curated lead first, then newest — for the
 // "Continue in this thread" footer (keeps readers moving through the site).
 const allLive = await getCollection('articles', ({ data }) => !data.draft);
-const leadId = (clusters as Record<string, { lead: string }>)[clusterKey]?.lead;
-const rest = allLive.filter((a) => a.data.cluster === clusterKey && a.id !== article.id);
-const lead = rest.find((a) => a.id === leadId);
-const others = rest
-  .filter((a) => a.id !== leadId)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const siblings = (lead ? [lead, ...others] : others).slice(0, 3);
-
-const crossStrand = strandOrder
-  .filter((key) => key !== strandKey)
-  .flatMap((key) => {
-    const leadArticle = allLive.find((a) =>
-      clustersByStrand[key].some((cluster) => clusters[cluster].lead === a.id),
-    );
-    return leadArticle && leadArticle.id !== article.id ? [leadArticle] : [];
-  });
-
-const labeledSources = mergeCitations(article.data.sources, citationsFromMarkdown(article.body));
+const recordEntries = await getCollection('records', ({ data }) => !data.draft);
+const catalog = buildSourceCatalog(
+  allLive.map((item) => ({
+    id: item.id,
+    title: item.data.title,
+    cluster: item.data.cluster,
+    body: item.body,
+    sources: item.data.sources,
+  })),
+  recordEntries.map((item) => ({
+    id: item.id,
+    title: item.data.title,
+    sourceUrl: item.data.sourceUrl,
+    sourceLabel: item.data.sourceLabel,
+    eventDate: item.data.eventDate,
+    body: item.body,
+  })),
+);
+const labeledSources = sourcesForArticle(catalog, article.id);
+const relatedPool = allLive.map((item) => ({
+  id: item.id,
+  strand: clusterStrand(item.data.cluster),
+  date: item.data.pubDate.valueOf(),
+  title: item.data.title,
+  description: item.data.description,
+}));
+const related = pickRelated(article.id, strandKey, catalog, relatedPool);
+const siblings = related.sameStrand;
+const crossStrand = related.crossStrand;
 const directAnswer = article.data.answer;
 const onIntentPage = intents.some((item) => item.id === article.id);
 const intentLinks = onIntentPage ? otherIntents(article.id) : [];
@@ -212,13 +223,13 @@ const faqLd = faq && faq.length > 0
       strandHref={strandPaths[strandKey]}
       sameStrand={siblings.map((a) => ({
         href: `/articles/${a.id}/`,
-        title: a.data.title,
-        note: a.data.description,
+        title: a.title,
+        note: a.description,
       }))}
       crossStrand={crossStrand.map((a) => ({
         href: `/articles/${a.id}/`,
-        title: a.data.title,
-        note: strandLabel(clusterStrand(a.data.cluster)),
+        title: a.title,
+        note: strandLabel(a.strand),
       }))}
     />
 

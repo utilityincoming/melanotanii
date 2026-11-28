@@ -1,10 +1,17 @@
 ---
-import type { Citation } from '../lib/citations';
+import type { SourceRecord } from '../lib/source-registry';
 interface Props {
-  sources: Citation[];
+  sources: SourceRecord[];
   heading?: string;
 }
 const { sources, heading = 'Sources' } = Astro.props;
+const typeLabel: Record<SourceRecord['type'], string> = {
+  paper: 'Paper',
+  regulator: 'Regulator',
+  company: 'Company',
+  foi: 'FOI',
+  other: 'Other',
+};
 ---
 {sources.length > 0 && (
   <section class="source-list">
@@ -12,10 +19,16 @@ const { sources, heading = 'Sources' } = Astro.props;
     <ol>
       {sources.map((source) => (
         <li>
-          <a href={source.url} rel="noopener noreferrer">{source.label}</a>
+          <a href={source.url} rel="noopener noreferrer">{source.title}</a>
+          <span>
+            {typeLabel[source.type]}
+            {source.year ? ` · ${source.year}` : ''}
+            {source.pmid ? ` · PMID ${source.pmid}` : ''}
+          </span>
         </li>
       ))}
     </ol>
+    <p class="all-sources"><a href="/sources/">All sources</a></p>
   </section>
 )}
 
@@ -32,7 +45,9 @@ const { sources, heading = 'Sources' } = Astro.props;
     margin: 0 0 0.7rem;
     color: var(--ink-soft);
   }
-  ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
-  li { font-size: 0.88rem; word-break: break-word; }
+  ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.55rem; }
+  li { font-size: 0.92rem; }
   a { color: var(--ink); }
+  span { display: block; color: var(--ink-soft); font-size: 0.78rem; letter-spacing: 0.04em; }
+  .all-sources { margin: 0.8rem 0 0; font-size: 0.88rem; }
 </style>

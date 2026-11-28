@@ -5,6 +5,7 @@ import pigmentStudy from '../assets/editorial/pigment-study.webp';
 import { getCollection } from 'astro:content';
 import { clusters, clustersByStrand, clusterStrand, strands, strandOrder } from '../data/clusters';
 import { strandPaths } from '../data/strands-pages';
+import StrandIndex from '../components/StrandIndex.astro';
 import type { Strand } from '../data/clusters';
 
 const all = (await getCollection('articles', ({ data }) => !data.draft))
@@ -107,22 +108,19 @@ function articlesForStrand(key: Strand) {
           <article class="cluster" id={`strand-${key}`} style={`--accent: ${meta.colorVar}`}>
             <h3 class="cluster-label"><a href={strandPaths[key]}>{meta.label}</a></h3>
             <p class="blurb">{meta.caption}</p>
-            <ul>
-              {items.slice(0, 4).map((a, i) => (
-                <li class={i === 0 ? 'lead' : ''}>
-                  <a href={`/articles/${a.id}/`}>{a.data.title}</a>
-                  <p>{a.data.description}</p>
-                </li>
-              ))}
-              {items.length === 0 && <li class="soon">Articles coming soon.</li>}
-              {items.length > 4 && (
-                <li class="more">
-                  <a href={strandPaths[key]}>
-                    {items.length - 4} more in this strand&nbsp;&rarr;
-                  </a>
-                </li>
-              )}
-            </ul>
+            <StrandIndex
+              name={`home-${key}`}
+              accent={meta.colorVar}
+              items={items.map((article) => ({
+                id: article.id,
+                href: `/articles/${article.id}/`,
+                title: article.data.title,
+                description: article.data.description,
+                cluster: article.data.cluster,
+                date: article.data.pubDate,
+              }))}
+            />
+            <p class="more"><a href={strandPaths[key]}>Strand index</a></p>
           </article>
         );
       })}

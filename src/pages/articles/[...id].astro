@@ -6,7 +6,9 @@ import { publication, orgRef, recordRef, authorLd } from '../../data/brand';
 import Byline from '../../components/Byline.astro';
 import RelatedReading from '../../components/RelatedReading.astro';
 import SourceList from '../../components/SourceList.astro';
-import { citationsFromMarkdown } from '../../lib/citations';
+import { citationsFromMarkdown, mergeCitations } from '../../lib/citations';
+import IntentLinks from '../../components/IntentLinks.astro';
+import { intents, otherIntents } from '../../data/intents';
 import { strandPaths } from '../../data/strands-pages';
 
 export async function getStaticPaths() {
@@ -59,7 +61,10 @@ const crossStrand = strandOrder
     return leadArticle && leadArticle.id !== article.id ? [leadArticle] : [];
   });
 
-const labeledSources = article.data.sources ?? citationsFromMarkdown(article.body);
+const labeledSources = mergeCitations(article.data.sources, citationsFromMarkdown(article.body));
+const directAnswer = article.data.answer;
+const onIntentPage = intents.some((item) => item.id === article.id);
+const intentLinks = onIntentPage ? otherIntents(article.id) : [];
 
 // Reciprocal links to dated Record entries that cite this article.
 const relatedRecords = (await getCollection('records', ({ data }) => !data.draft))
@@ -137,7 +142,7 @@ const faqLd = faq && faq.length > 0
       <a class="crumb-thread" href={strandPaths[strandKey]}>{strand}</a>
     </nav>
     <header class="article-head">
-      <p class="eyebrow accent">{isQuery ? 'Direct answer' : strand}</p>
+      <p class="eyebrow accent">{directAnswer || isQuery ? 'Direct answer' : strand}</p>
       <h1>{article.data.title}</h1>
       <p class="meta">
         By <a class="byline" href="/about/">{publication}</a>
@@ -152,17 +157,7 @@ const faqLd = faq && faq.length > 0
 
     </header>
 
-    {isQuery && faq && faq.length > 0 && (
-      <section class="faq faq-lead" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">The short answers</h2>
-        {faq.map((item, i) => (
-          <details class="faq-item" open={i === 0 ? true : undefined}>
-            <summary>{item.q}</summary>
-            <p>{item.a}</p>
-          </details>
-        ))}
-      </section>
-    )}
+    {directAnswer && <p class="direct-answer">{directAnswer}</p>}
 
     {showToc && (
       <details class="toc">
@@ -179,7 +174,7 @@ const faqLd = faq && faq.length > 0
 
     <Byline section={strand} />
 
-    {!isQuery && faq && faq.length > 0 && (
+    {faq && faq.length > 0 && (
       <section class="faq" aria-labelledby="faq-heading">
         <h2 id="faq-heading">Common questions</h2>
         {faq.map((item) => (
@@ -190,6 +185,8 @@ const faqLd = faq && faq.length > 0
         ))}
       </section>
     )}
+
+    {intentLinks.length > 0 && <IntentLinks items={[...intentLinks]} />}
 
     {relatedRecords.length > 0 && (
       <nav class="continue" aria-label="In The Record">
@@ -272,7 +269,16 @@ const faqLd = faq && faq.length > 0
     .toc a { color: var(--ink); text-decoration: none; }
     .toc a:hover { color: var(--uv); text-decoration: underline; text-underline-offset: 3px; }
     .article-body { line-height: 1.78; }
-    .article-head { border-top: 2px solid var(--accent); padding-top: 1.25rem; margin-bottom: 2.1rem; }
+    .article-head { border-top: 2px solid var(--accent); padding-top: 1.25rem; margin-bottom: 1.4rem; }
+    .direct-answer {
+      margin: 0 0 2rem;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid var(--accent);
+      background: var(--surface);
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
     .article-head .eyebrow { margin: 0; }
     h1 { font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.05; margin: 0.35rem 0 0.7rem; text-wrap: pretty; }
     .meta { color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 0; }

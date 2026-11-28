@@ -11,36 +11,30 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { clusterStrand, strandLabel } from '../data/clusters';
 import oralLedger from '../data/oral-citations.json';
+import { citationsFromMarkdown, mergeCitations } from '../lib/citations';
 
 const articles = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-// External citations straight out of the markdown body, in order of first
-// appearance. SVG namespace URIs and internal links are not citations.
-const URL_RE = /https?:\/\/[^\s)>\]"'`]+/g;
 interface CitedArticle {
   id: string;
   title: string;
   strand: string;
-  urls: string[];
+  sources: { label: string; url: string }[];
 }
 const cited: CitedArticle[] = [];
 for (const a of articles) {
-  const seen = new Set<string>();
-  const urls: string[] = [];
-  for (const m of a.body?.match(URL_RE) ?? []) {
-    const url = m.replace(/[.,;:]+$/, '');
-    if (url.includes('w3.org')) continue;
-    if (!seen.has(url)) {
-      seen.add(url);
-      urls.push(url);
-    }
-  }
-  if (urls.length > 0) {
-    cited.push({ id: a.id, title: a.data.title, strand: strandLabel(clusterStrand(a.data.cluster)), urls });
+  const sources = mergeCitations(a.data.sources, citationsFromMarkdown(a.body));
+  if (sources.length > 0) {
+    cited.push({
+      id: a.id,
+      title: a.data.title,
+      strand: strandLabel(clusterStrand(a.data.cluster)),
+      sources,
+    });
   }
 }
-const totalUrls = cited.reduce((n, c) => n + c.urls.length, 0);
+const totalUrls = cited.reduce((n, c) => n + c.sources.length, 0);
 const recordEntries = (await getCollection('records')).sort(
   (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
 );
@@ -55,8 +49,10 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
     <p class="eyebrow">The Record</p>
     <h1 class="page-title">Sources</h1>
     <p class="page-sub">
-      {totalUrls} citations across {cited.length} articles and the primary
-      sources of {recordEntries.length} record entries, pulled from the files,
+      {totalUrls} citations across {cited.length} articles, plus the primary
+      sources of {recordEntries.length} record entries. A new article is included
+      when it links a source in the text, or when it lists labeled sources in
+      its frontmatter. Pulled from the files,
       plus the oral-pigmentation ledger. A claim on this site should be
       checkable against a source you can open. The method is on the
       <a href="/standards/">editorial standards</a> page.
@@ -71,8 +67,8 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
           <span class="strand">{c.strand}</span>
         </h2>
         <ul>
-          {c.urls.map((u) => (
-            <li><a href={u} rel="noopener noreferrer nofollow">{u}</a></li>
+          {c.sources.map((source) => (
+            <li><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
           ))}
         </ul>
       </article>
@@ -87,7 +83,12 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
           <span class="strand">{r.data.when} · {r.data.status === 'scheduled' ? 'scheduled' : 'filed'}</span>
         </h2>
         <ul>
-          <li><a href={r.data.sourceUrl} rel="noopener noreferrer nofollow">{r.data.sourceLabel}: {r.data.sourceUrl}</a></li>
+          {mergeCitations(
+            [{ label: r.data.sourceLabel, url: r.data.sourceUrl }],
+            citationsFromMarkdown(r.body),
+          ).map((source) => (
+            <li><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
+          ))}
         </ul>
       </article>
     ))}

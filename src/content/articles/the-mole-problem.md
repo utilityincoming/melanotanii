@@ -5,6 +5,7 @@ description: "Melanotan II darkens and multiplies moles — and the deeper dange
 pubDate: 2026-08-18
 updatedDate: 2026-11-14
 cluster: cautionary-tale
+answer: "Melanotan II can darken moles and new ones can appear. Case reports include melanoma in users. Those reports do not prove the drug caused the cancer."
 faq:
   - q: "Does Melanotan II affect moles?"
     a: "Yes. It drives pigment cells throughout the body, so existing moles can darken and enlarge and new ones can appear. The dermatology literature carries repeated case reports, including a man who erupted more than a hundred new moles within weeks of a short course."

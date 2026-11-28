@@ -5,6 +5,7 @@ description: "Afamelanotide (Scenesse) is an approved clinic implant for EPP. De
 pubDate: 2026-11-24
 cluster: next-agonist
 kind: query
+answer: "Afamelanotide (Scenesse) is an approved clinic implant for a rare light-pain disease. Dersimelagon is an oral drug still under FDA review. Neither is a cosmetic tan."
 faq:
   - q: "What is the difference between afamelanotide and dersimelagon?"
     a: "Afamelanotide (Scenesse) is an approved 13-amino-acid peptide delivered as a clinic-administered subcutaneous implant for adults with erythropoietic protoporphyria (EPP). Dersimelagon (MT-7117) is an investigational, once-daily oral small-molecule MC1R agonist under FDA priority review for EPP and X-linked protoporphyria (XLP), with a decision due by the end of February 2027."

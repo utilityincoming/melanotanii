@@ -5,6 +5,7 @@ description: "Dersimelagon is an oral MC1R agonist under FDA priority review for
 pubDate: 2026-10-25
 cluster: next-agonist
 kind: query
+answer: "Dersimelagon is an investigational oral drug for two rare light-pain diseases. It is not approved, and it is not Melanotan."
 faq:
   - q: "What is dersimelagon?"
     a: "Dersimelagon (MT-7117) is an investigational, once-daily oral small-molecule agonist of the melanocortin-1 receptor. It is under FDA priority review for two rare genetic light-pain disorders, erythropoietic protoporphyria and X-linked protoporphyria. It is not approved anywhere, and it is not a tanning product."

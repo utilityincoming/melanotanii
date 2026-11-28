@@ -1,0 +1,82 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import { clusters, clusterColorVar, type Cluster } from '../data/clusters';
+
+interface Item {
+  id: string;
+  href: string;
+  title: string;
+  description: string;
+  cluster: Cluster;
+  date: Date;
+}
+interface Props {
+  items: Item[];
+  name: string;
+  accent: string;
+}
+const { items, name, accent } = Astro.props;
+const byDate = [...items].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const clusterKeys = [...new Set(items.map((item) => item.cluster))];
+---
+<div class="strand-index" style={`--accent: ${accent}`}>
+  <div class="index-switch">
+    <input type="radio" name={name} id={`${name}-sub`} checked />
+    <input type="radio" name={name} id={`${name}-date`} />
+    <label for={`${name}-sub`}>By subcategory</label>
+    <label for={`${name}-date`}>By date</label>
+  </div>
+  <div class="view view-sub">
+    {clusterKeys.map((key) => {
+      const group = items.filter((item) => item.cluster === key);
+      const lead = group.find((item) => item.id === clusters[key].lead);
+      const ordered = lead ? [lead, ...group.filter((item) => item.id !== lead.id)] : group;
+      return (
+        <div class="sub">
+          <h3>{clusters[key].label}</h3>
+          {ordered.map((item) => (
+            <ArticleCard
+              href={item.href}
+              title={item.title}
+              description={item.description}
+              strand={clusters[key].label}
+              accent={clusterColorVar(key)}
+              date={item.date}
+            />
+          ))}
+        </div>
+      );
+    })}
+  </div>
+  <div class="view view-date">
+    {byDate.map((item) => (
+      <ArticleCard
+        href={item.href}
+        title={item.title}
+        description={item.description}
+        strand={clusters[item.cluster].label}
+        accent={clusterColorVar(item.cluster)}
+        date={item.date}
+      />
+    ))}
+  </div>
+</div>
+
+<style>
+  .index-switch { display: flex; gap: 0.8rem; margin: 0.6rem 0 0.2rem; }
+  .index-switch input { position: absolute; opacity: 0; pointer-events: none; }
+  .index-switch label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .view-date { display: none; }
+  input[id$='-date']:checked ~ label[for$='-date'],
+  input[id$='-sub']:checked ~ label[for$='-sub'] { color: var(--accent); }
+  .strand-index:has(input[id$='-date']:checked) .view-sub { display: none; }
+  .strand-index:has(input[id$='-date']:checked) .view-date { display: block; }
+  .sub h3 { font-size: 1.02rem; margin: 1rem 0 0; }
+</style>

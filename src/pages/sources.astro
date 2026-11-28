@@ -9,35 +9,60 @@
  */
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { clusterStrand, strandLabel } from '../data/clusters';
+import { strandLabel, strandOrder, clusterStrand } from '../data/clusters';
 import oralLedger from '../data/oral-citations.json';
-import { citationsFromMarkdown, mergeCitations } from '../lib/citations';
+import { buildSourceCatalog, type SourceRecord, type SourceType } from '../lib/source-registry';
 
 const articles = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-interface CitedArticle {
-  id: string;
-  title: string;
-  strand: string;
-  sources: { label: string; url: string }[];
-}
-const cited: CitedArticle[] = [];
-for (const a of articles) {
-  const sources = mergeCitations(a.data.sources, citationsFromMarkdown(a.body));
-  if (sources.length > 0) {
-    cited.push({
-      id: a.id,
-      title: a.data.title,
-      strand: strandLabel(clusterStrand(a.data.cluster)),
-      sources,
-    });
-  }
-}
-const totalUrls = cited.reduce((n, c) => n + c.sources.length, 0);
 const recordEntries = (await getCollection('records')).sort(
-  (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
+  (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf(),
 );
+const catalog = buildSourceCatalog(
+  articles.map((item) => ({
+    id: item.id,
+    title: item.data.title,
+    cluster: item.data.cluster,
+    body: item.body,
+    sources: item.data.sources,
+  })),
+  recordEntries.map((item) => ({
+    id: item.id,
+    title: item.data.title,
+    sourceUrl: item.data.sourceUrl,
+    sourceLabel: item.data.sourceLabel,
+    eventDate: item.data.eventDate,
+    body: item.body,
+  })),
+);
+const sources = catalog.sources;
+const typeOrder: SourceType[] = ['paper', 'regulator', 'company', 'foi', 'other'];
+const typeLabel: Record<SourceType, string> = {
+  paper: 'Papers',
+  regulator: 'Regulators',
+  company: 'Companies',
+  foi: 'FOI',
+  other: 'Other',
+};
+const typeShort: Record<SourceType, string> = {
+  paper: 'Paper',
+  regulator: 'Regulator',
+  company: 'Company',
+  foi: 'FOI',
+  other: 'Other',
+};
+const articleTitle = new Map(articles.map((item) => [item.id, item.data.title]));
+const articleStrand = new Map(articles.map((item) => [item.id, strandLabel(clusterStrand(item.data.cluster))]));
+const years = [...new Set(sources.map((source) => source.year ?? 'Undated'))].sort((a, b) => {
+  if (a === 'Undated') return 1;
+  if (b === 'Undated') return -1;
+  return b.localeCompare(a);
+});
+function renderMeta(source: SourceRecord) {
+  return [typeShort[source.type], source.year, source.pmid ? `PMID ${source.pmid}` : '']
+    .filter(Boolean)
+    .join(' · ');
+}
 
 const ledger = (oralLedger as { oral: string[][] }).oral;
 ---
@@ -49,50 +74,86 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
     <p class="eyebrow">The Record</p>
     <h1 class="page-title">Sources</h1>
     <p class="page-sub">
-      {totalUrls} citations across {cited.length} articles, plus the primary
-      sources of {recordEntries.length} record entries. A new article is included
-      when it links a source in the text, or when it lists labeled sources in
-      its frontmatter. Pulled from the files,
-      plus the oral-pigmentation ledger. A claim on this site should be
-      checkable against a source you can open. The method is on the
-      <a href="/standards/">editorial standards</a> page.
+      {sources.length} distinct sources from the articles and record entries.
+      A new article is included when it links a source or lists one in frontmatter.
+      Corrections for title, type, date, or PMID live in the source override file.
+      The method is on the <a href="/standards/">editorial standards</a> page.
     </p>
   </header>
 
-  <section class="cited" aria-label="Citations by article">
-    {cited.map((c) => (
-      <article class="cited-article">
-        <h2>
-          <a href={`/articles/${c.id}/`}>{c.title}</a>
-          <span class="strand">{c.strand}</span>
-        </h2>
-        <ul>
-          {c.sources.map((source) => (
-            <li><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
-          ))}
-        </ul>
-      </article>
-    ))}
-  </section>
+  <div class="source-index">
+    <div class="index-switch">
+      <input type="radio" name="sources-group" id="sources-type" checked />
+      <input type="radio" name="sources-group" id="sources-year" />
+      <input type="radio" name="sources-group" id="sources-strand" />
+      <label for="sources-type">Type</label>
+      <label for="sources-year">Year</label>
+      <label for="sources-strand">Strand</label>
+    </div>
 
-  <section class="cited" aria-label="Record entry primary sources">
-    {recordEntries.map((r) => (
-      <article class="cited-article">
-        <h2>
-          <a href={`/record/${r.id}/`}>{r.data.title}</a>
-          <span class="strand">{r.data.when} · {r.data.status === 'scheduled' ? 'scheduled' : 'filed'}</span>
-        </h2>
-        <ul>
-          {mergeCitations(
-            [{ label: r.data.sourceLabel, url: r.data.sourceUrl }],
-            citationsFromMarkdown(r.body),
-          ).map((source) => (
-            <li><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
-          ))}
-        </ul>
-      </article>
-    ))}
-  </section>
+    <div class="view view-type">
+      {typeOrder.map((type) => {
+        const group = sources.filter((source) => source.type === type);
+        if (group.length === 0) return null;
+        return (
+          <section>
+            <h2>{typeLabel[type]} <span>{group.length}</span></h2>
+            <ul>
+              {group.map((source) => (
+                <li>
+                  <a href={source.url} rel="noopener noreferrer">{source.title}</a>
+                  <span>{renderMeta(source)}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+    </div>
+
+    <div class="view view-year">
+      {years.map((year) => {
+        const group = sources.filter((source) => (source.year ?? 'Undated') === year);
+        return (
+          <section>
+            <h2>{year} <span>{group.length}</span></h2>
+            <ul>
+              {group.map((source) => (
+                <li>
+                  <a href={source.url} rel="noopener noreferrer">{source.title}</a>
+                  <span>{renderMeta(source)}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+    </div>
+
+    <div class="view view-strand">
+      {strandOrder.map((strand) => {
+        const group = sources.filter((source) =>
+          source.articleIds.some((id) => articleStrand.get(id) === strandLabel(strand)),
+        );
+        if (group.length === 0) return null;
+        return (
+          <section>
+            <h2>{strandLabel(strand)} <span>{group.length}</span></h2>
+            <ul>
+              {group.map((source) => (
+                <li>
+                  <a href={source.url} rel="noopener noreferrer">{source.title}</a>
+                  <span>
+                    {source.articleIds.map((id) => articleTitle.get(id)).filter(Boolean).slice(0, 3).join(' · ')}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+    </div>
+  </div>
 
   <section class="ledger" aria-label="Oral pigmentation citation ledger">
     <h2 class="ledger-title">Oral-pigmentation citation ledger</h2>
@@ -126,6 +187,29 @@ const ledger = (oralLedger as { oral: string[][] }).oral;
     .page-head .eyebrow { margin: 0 0 0.35rem; }
     .page-title { font-size: 2.2rem; margin: 0; }
     .page-sub { color: var(--ink-soft); margin: 0.5rem 0 0; }
+    .source-index { max-width: 52rem; margin-top: 2rem; }
+    .index-switch { display: flex; gap: 0.9rem; }
+    .index-switch input { position: absolute; opacity: 0; pointer-events: none; }
+    .index-switch label { cursor: pointer; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+    .view-year, .view-strand { display: none; }
+    .source-index:has(#sources-year:checked) .view-type,
+    .source-index:has(#sources-strand:checked) .view-type,
+    .source-index:has(#sources-type:checked) .view-year,
+    .source-index:has(#sources-strand:checked) .view-year,
+    .source-index:has(#sources-type:checked) .view-strand,
+    .source-index:has(#sources-year:checked) .view-strand { display: none; }
+    .source-index:has(#sources-year:checked) .view-year,
+    .source-index:has(#sources-strand:checked) .view-strand,
+    .source-index:has(#sources-type:checked) .view-type { display: block; }
+    .source-index:has(#sources-type:checked) label[for='sources-type'],
+    .source-index:has(#sources-year:checked) label[for='sources-year'],
+    .source-index:has(#sources-strand:checked) label[for='sources-strand'] { color: var(--uv); }
+    .source-index section { margin-top: 1.6rem; }
+    .source-index h2 { font-size: 1.2rem; margin: 0 0 0.5rem; }
+    .source-index h2 span { color: var(--ink-soft); font-size: 0.85rem; }
+    .source-index ul { list-style: none; margin: 0; padding: 0; }
+    .source-index li { border-top: 1px solid var(--line); padding: 0.65rem 0; }
+    .source-index li span { display: block; color: var(--ink-soft); font-size: 0.8rem; }
     .cited { max-width: 52rem; margin-top: 2.5rem; }
     .cited-article { border-top: 1px solid var(--line); padding: 1.3rem 0; }
     .cited-article h2 { font-size: 1.15rem; margin: 0 0 0.5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }

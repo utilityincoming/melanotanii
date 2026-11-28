@@ -1,18 +1,16 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { clusters, clustersByStrand, strands, strandOrder } from '../../data/clusters';
+import { clustersByStrand, strands, strandOrder } from '../../data/clusters';
+import StrandIndex from '../../components/StrandIndex.astro';
 
 const all = (await getCollection('articles', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const answers = all.filter((a) => a.data.kind === 'query');
 
-function articlesFor(key: keyof typeof clusters) {
-  const inCluster = all.filter((a) => a.data.cluster === key);
-  const lead = inCluster.find((a) => a.id === clusters[key].lead);
-  const rest = inCluster.filter((a) => a.id !== clusters[key].lead);
-  return lead ? [lead, ...rest] : inCluster;
+function articlesForStrand(strand: (typeof strandOrder)[number]) {
+  return all.filter((article) => clustersByStrand[strand].includes(article.data.cluster));
 }
 ---
 <Base
@@ -42,32 +40,24 @@ function articlesFor(key: keyof typeof clusters) {
 
   {strandOrder.map((strand) => {
     const meta = strands[strand];
-    const keys = clustersByStrand[strand];
-    const count = keys.reduce((n, key) => n + articlesFor(key).length, 0);
-    if (count === 0) return null;
+    const items = articlesForStrand(strand);
+    if (items.length === 0) return null;
     return (
       <section class="strand" id={`strand-${strand}`} style={`--accent: ${meta.colorVar}`}>
         <h2 class="strand-label">{meta.label}</h2>
         <p class="strand-blurb">{meta.caption}</p>
-        {keys.map((key) => {
-          const cluster = clusters[key];
-          const items = articlesFor(key);
-          if (items.length === 0) return null;
-          return (
-            <div class="thread" id={`thread-${key}`}>
-              <h3 class="thread-label">{cluster.label}</h3>
-              <p class="thread-blurb">{cluster.blurb}</p>
-              <ul class="list">
-                {items.map((a) => (
-                  <li>
-                    <a href={`/articles/${a.id}/`}>{a.data.title}</a>
-                    <p>{a.data.description}</p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          );
-        })}
+        <StrandIndex
+          name={`all-${strand}`}
+          accent={meta.colorVar}
+          items={items.map((article) => ({
+            id: article.id,
+            href: `/articles/${article.id}/`,
+            title: article.data.title,
+            description: article.data.description,
+            cluster: article.data.cluster,
+            date: article.data.pubDate,
+          }))}
+        />
       </section>
     );
   })}

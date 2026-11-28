@@ -4,6 +4,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { authorLd, orgRef, recordRef } from '../../data/brand';
+import { jurisdictionLabel } from '../../data/jurisdictions';
 
 export async function getStaticPaths() {
   const entries = await getCollection('records');
@@ -13,15 +14,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const jur: Record<string, string> = {
-  au: 'Australia',
-  us: 'United States',
-  uk: 'United Kingdom',
-  eu: 'European Union',
-  ca: 'Canada',
-  global: 'Global',
-};
-
 const relatedIds: string[] = entry.data.related ?? [];
 const relatedArticles = relatedIds.length
   ? (await getCollection('articles')).filter((a) => relatedIds.includes(a.id))
@@ -30,7 +22,7 @@ const relatedArticles = relatedIds.length
 const fullTitle = `${entry.data.title} — Tan Lines`;
 const pageTitle = fullTitle.length <= 70 ? fullTitle : `${entry.data.title.slice(0, 56).replace(/\s+\S*$/, '')}… — Tan Lines`;
 
-const rawDesc = `${entry.data.when} — ${entry.data.authority} (${jur[entry.data.jurisdiction]}). ${entry.data.title}.`;
+const rawDesc = `${entry.data.when} — ${entry.data.authority} (${jurisdictionLabel(entry.data.jurisdiction)}). ${entry.data.title}.`;
 const baseDesc = rawDesc.length < 100
   ? `${rawDesc} Source: ${entry.data.sourceLabel}.`
   : rawDesc;
@@ -65,7 +57,7 @@ const breadcrumbLd = {
 };
 ---
 
-<Base title={pageTitle} description={description}>
+<Base title={pageTitle} description={description} ogImage={`/og/record-${entry.id}.png`} ogType="article">
   <script type="application/ld+json" set:html={JSON.stringify(recordLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   <article class="entry-page">
@@ -80,7 +72,7 @@ const breadcrumbLd = {
 
       <p class="eyebrow">
         {entry.data.status === 'filed' ? 'Filed' : 'Scheduled'}
-        &middot; {jur[entry.data.jurisdiction]}
+        &middot; {jurisdictionLabel(entry.data.jurisdiction)}
       </p>
       <h1>{entry.data.title}</h1>
       <p class="meta-line">

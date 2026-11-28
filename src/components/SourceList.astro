@@ -1,0 +1,38 @@
+---
+import type { Citation } from '../lib/citations';
+interface Props {
+  sources: Citation[];
+  heading?: string;
+}
+const { sources, heading = 'Sources' } = Astro.props;
+---
+{sources.length > 0 && (
+  <section class="source-list">
+    <h2>{heading}</h2>
+    <ol>
+      {sources.map((source) => (
+        <li>
+          <a href={source.url} rel="noopener noreferrer">{source.label}</a>
+        </li>
+      ))}
+    </ol>
+  </section>
+)}
+
+<style>
+  .source-list {
+    margin-top: 2.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--line);
+  }
+  h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 0 0.7rem;
+    color: var(--ink-soft);
+  }
+  ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+  li { font-size: 0.88rem; word-break: break-word; }
+  a { color: var(--ink); }
+</style>

@@ -1,0 +1,73 @@
+---
+interface Item {
+  href: string;
+  title: string;
+  note: string;
+}
+interface Props {
+  sameStrand: Item[];
+  crossStrand: Item[];
+  strandLabel: string;
+  strandHref: string;
+}
+const { sameStrand, crossStrand, strandLabel, strandHref } = Astro.props;
+---
+{(sameStrand.length > 0 || crossStrand.length > 0) && (
+  <nav class="related" aria-label="Related reading">
+    {sameStrand.length > 0 && (
+      <div>
+        <p class="related-kicker">More in {strandLabel}</p>
+        <ul>
+          {sameStrand.map((item) => (
+            <li>
+              <a href={item.href}>{item.title}</a>
+              <p>{item.note}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="related-all"><a href={strandHref}>All of {strandLabel} →</a></p>
+      </div>
+    )}
+    {crossStrand.length > 0 && (
+      <div>
+        <p class="related-kicker">Across the other strands</p>
+        <ul>
+          {crossStrand.map((item) => (
+            <li>
+              <a href={item.href}>{item.title}</a>
+              <p>{item.note}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </nav>
+)}
+
+<style>
+  .related {
+    margin-top: 3.5rem;
+    padding-top: 1.6rem;
+    border-top: 3px solid var(--accent, var(--uv));
+    display: grid;
+    gap: 2rem;
+  }
+  @media (min-width: 48rem) {
+    .related { grid-template-columns: 1fr 1fr; }
+  }
+  .related-kicker {
+    margin: 0 0 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent, var(--uv));
+  }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.9rem; }
+  li a { font-weight: 500; text-decoration: none; }
+  li a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  li p { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.88rem; }
+  .related-all { margin: 1rem 0 0; font-size: 0.9rem; }
+  .related-all a { text-decoration: none; font-weight: 500; }
+  .related-all a:hover { text-decoration: underline; text-underline-offset: 3px; }
+</style>

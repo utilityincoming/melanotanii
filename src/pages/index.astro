@@ -4,6 +4,7 @@ import { Picture } from 'astro:assets';
 import pigmentStudy from '../assets/editorial/pigment-study.webp';
 import { getCollection } from 'astro:content';
 import { clusters, clustersByStrand, clusterStrand, strands, strandOrder } from '../data/clusters';
+import { strandPaths } from '../data/strands-pages';
 import type { Strand } from '../data/clusters';
 
 const all = (await getCollection('articles', ({ data }) => !data.draft))
@@ -88,7 +89,7 @@ function articlesForStrand(key: Strand) {
       {strandOrder.map((key) => (
         <li class={`strand-${key}`}>
           <span class="swatch" aria-hidden="true"></span>
-          <a href={`#strand-${key}`}>{strands[key].label}</a>
+          <a href={strandPaths[key]}>{strands[key].label}</a>
         </li>
       ))}
     </ul>
@@ -104,7 +105,7 @@ function articlesForStrand(key: Strand) {
         const items = articlesForStrand(key);
         return (
           <article class="cluster" id={`strand-${key}`} style={`--accent: ${meta.colorVar}`}>
-            <h3 class="cluster-label">{meta.label}</h3>
+            <h3 class="cluster-label"><a href={strandPaths[key]}>{meta.label}</a></h3>
             <p class="blurb">{meta.caption}</p>
             <ul>
               {items.slice(0, 4).map((a, i) => (
@@ -116,7 +117,7 @@ function articlesForStrand(key: Strand) {
               {items.length === 0 && <li class="soon">Articles coming soon.</li>}
               {items.length > 4 && (
                 <li class="more">
-                  <a href={`/articles/#strand-${key}`}>
+                  <a href={strandPaths[key]}>
                     {items.length - 4} more in this strand&nbsp;&rarr;
                   </a>
                 </li>
@@ -223,6 +224,8 @@ function articlesForStrand(key: Strand) {
     }
     .cluster:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
     .cluster-label { font-size: 1.55rem; margin: 0; color: var(--ink); }
+    .cluster-label a { color: inherit; text-decoration: none; }
+    .cluster-label a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .cluster .blurb { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--ink-soft); }
     .cluster ul { list-style: none; margin: 0; padding: 0; }
     .cluster li { padding-block: 0.8rem; border-top: 1px solid var(--line); }

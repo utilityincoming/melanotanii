@@ -7,8 +7,9 @@ interface Props {
   description: string;
   /** Per-page social card; falls back to the site-wide og-image.png. */
   ogImage?: string;
+  ogType?: 'website' | 'article';
 }
-const { title, description, ogImage: ogImageProp } = Astro.props;
+const { title, description, ogImage: ogImageProp, ogType = 'website' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(ogImageProp ?? '/og-image.png', Astro.site).href;
 const path = Astro.url.pathname;
@@ -45,7 +46,7 @@ const siteLd = websiteLd(Astro.site);
   <!-- Open Graph / social share -->
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:url" content={canonical} />
   <meta property="og:site_name" content={publication} />
   <meta property="og:image" content={ogImage} />
@@ -94,6 +95,9 @@ const siteLd = websiteLd(Astro.site);
         <a href="/regulatory/">Regulatory</a>
         <a href="/record/">Record entries</a>
         <a href="/skin-record/">Skin record</a>
+        <a href="/strands/mission/">The mission</a>
+        <a href="/strands/gray-market/">The gray market</a>
+        <a href="/strands/spinoffs/">The spinoffs</a>
         <a href="/articles/">Articles</a>
         <a href="/sources/">Sources</a>
       </nav>

@@ -20,6 +20,8 @@ const articles = defineCollection({
     // visible FAQ block and emitted as FAQPage JSON-LD (AEO / AI Overviews).
     // Answers must obey the non-negotiables: no dosing, no sourcing, harms plain.
     faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).optional(),
+    // Labeled primary sources. When present, they render as the article's source list.
+    sources: z.array(z.object({ label: z.string(), url: z.string().url() })).optional(),
   }).refine(
     (data) => data.kind !== 'query' || (data.faq !== undefined && data.faq.length >= 2),
     { message: 'Query pages require an faq with at least two questions.', path: ['faq'] },

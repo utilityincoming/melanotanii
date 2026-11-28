@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+import RecordEntry from '../components/RecordEntry.astro';
+import { getCollection } from 'astro:content';
+import { jurisdictions } from '../data/jurisdictions';
+import type { Jurisdiction } from '../data/jurisdictions';
+
+const order: Jurisdiction[] = ['au', 'us', 'uk', 'eu', 'ca', 'global'];
+const entries = (await getCollection('records', ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.eventDate.valueOf() - b.data.eventDate.valueOf(),
+);
+const groups = order
+  .map((key) => ({
+    key,
+    label: jurisdictions[key],
+    entries: entries.filter((entry) => entry.data.jurisdiction === key),
+  }))
+  .filter((group) => group.entries.length > 0);
+
+const pageUrl = new URL('/countries/', Astro.site).href;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'By country', item: pageUrl },
+  ],
+};
+---
+<Base
+  title="Melanotan II record by country — Tan Lines"
+  description="Record entries grouped by jurisdiction: Australia, the United States, the United Kingdom, the European Union, Canada, and filings that are not one country."
+  ogImage="/og/page-countries.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  <header class="page-head">
+    <p class="eyebrow">The Record</p>
+    <h1>By country</h1>
+    <p class="page-sub">
+      The same file as the <a href="/record/">dated entries</a>, grouped by who
+      issued the document. The argument is on
+      <a href="/articles/the-enforcement-map/">enforcement by country</a>. The
+      calendar is the <a href="/regulatory/">regulatory tracker</a>.
+    </p>
+  </header>
+  {groups.map((group) => (
+    <section class="group" aria-labelledby={`j-${group.key}`}>
+      <h2 id={`j-${group.key}`}>{group.label}</h2>
+      <ol>
+        {group.entries.map((entry) => (
+          <li>
+            <RecordEntry
+              href={`/record/${entry.id}/`}
+              title={entry.data.title}
+              when={entry.data.when}
+              authority={entry.data.authority}
+              jurisdiction={entry.data.jurisdiction}
+              status={entry.data.status}
+            />
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+  <style>
+    .page-head { margin-top: 3rem; max-width: 46rem; }
+    .eyebrow { margin: 0; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0.3rem 0; }
+    .page-sub { color: var(--ink-soft); margin: 0; }
+    .group { max-width: 46rem; margin-top: 2rem; }
+    h2 { font-size: 1.35rem; margin: 0; }
+    ol { list-style: none; margin: 0.6rem 0 0; padding: 0; }
+  </style>
+</Base>

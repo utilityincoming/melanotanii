@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { skinRecord } from '../data/skin-record';
+
+const order = ['cardones-2009', 'cousen-2009', 'hueso-2012'];
+const cases = order.flatMap((id) => {
+  const entry = skinRecord.find((item) => item.id === id);
+  return entry ? [entry] : [];
+});
+const years: Record<string, string> = {
+  'cardones-2009': '2009',
+  'cousen-2009': '2009',
+  'hueso-2012': '2012',
+};
+
+const pageUrl = new URL('/mole-cases/', Astro.site).href;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'Mole cases', item: pageUrl },
+  ],
+};
+---
+<Base
+  title="Melanotan II mole cases in the record — Tan Lines"
+  description="Three published reports of mole changes after reported melanotan use, in publication order, with the essays and the skin-record comparison."
+  ogImage="/og/page-mole-cases.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  <header class="page-head">
+    <p class="eyebrow">The cautionary tale</p>
+    <h1>Mole cases</h1>
+    <p class="direct-answer">
+      Published reports describe new and changing moles after people used products sold as melanotan. The reports do not prove the drug caused a melanoma.
+    </p>
+    <p class="page-sub">
+      The dermatology argument is
+      <a href="/articles/the-mole-problem/">The mole problem</a>.
+      The cases read in order are
+      <a href="/articles/the-mole-raid/">The mole raid</a>.
+      Side-by-side notes on photos and biopsies are
+      <a href="/skin-record/mole-changes/">Mole changes</a>.
+    </p>
+  </header>
+  <ol class="cases">
+    {cases.map((entry) => (
+      <li>
+        <p class="year">{years[entry.id]}</p>
+        <h2>{entry.title}</h2>
+        <p>{entry.claim}</p>
+        <p class="limit">{entry.notAClaim}</p>
+        <p class="cite">
+          {entry.href ? <a href={entry.href} rel="noopener noreferrer">{entry.citation}</a> : entry.citation}
+        </p>
+      </li>
+    ))}
+  </ol>
+  <style>
+    .page-head { margin-top: 3rem; max-width: 46rem; }
+    .eyebrow { margin: 0; color: var(--caution); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0.3rem 0 0.8rem; }
+    .direct-answer {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1rem;
+      border-left: 3px solid var(--caution);
+      background: var(--surface);
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+    .page-sub { color: var(--ink-soft); }
+    .cases { list-style: none; margin: 2rem 0 0; padding: 0; max-width: 46rem; }
+    .cases li { border-top: 1px solid var(--line); padding: 1.1rem 0; }
+    .year { margin: 0; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: var(--caution); }
+    h2 { font-size: 1.35rem; margin: 0.2rem 0 0.5rem; }
+    .limit, .cite { color: var(--ink-soft); font-size: 0.92rem; }
+  </style>
+</Base>

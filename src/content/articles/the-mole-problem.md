@@ -19,7 +19,8 @@ faq:
 
 Of everything laid at Melanotan II's feet, the concern dermatologists return
 to is the simplest, and the hardest to wave away: it changes your moles. Not
-metaphorically. Visibly, and sometimes dramatically.
+metaphorically. Visibly, and sometimes dramatically. The published reports,
+in the order they appeared, are on [Mole cases](/mole-cases/).
 
 <figure class="figure">
 <div class="figure-scroll" role="group" tabindex="0" aria-labelledby="t6">

@@ -87,6 +87,8 @@
     { "source": "/dosages/", "destination": "/articles/the-protocol-illusion/", "permanent": true },
     { "source": "/melanotan-dosage", "destination": "/articles/the-protocol-illusion/", "permanent": true },
     { "source": "/melanotan-dosage/", "destination": "/articles/the-protocol-illusion/", "permanent": true },
+    { "source": "/melanotan-1-vs-melanotan-2", "destination": "/articles/melanotan-1-vs-melanotan-2/", "permanent": true },
+    { "source": "/melanotan-1-vs-melanotan-2/", "destination": "/articles/melanotan-1-vs-melanotan-2/", "permanent": true },
     { "source": "/blog", "destination": "/articles/", "permanent": true },
     { "source": "/blog/", "destination": "/articles/", "permanent": true },
     { "source": "/blog/:path*", "destination": "/articles/", "permanent": true }

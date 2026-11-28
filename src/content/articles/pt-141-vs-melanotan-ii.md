@@ -6,6 +6,7 @@ pubDate: 2026-10-25
 updatedDate: 2026-11-27
 cluster: next-agonist
 kind: query
+answer: "PT-141 is the old research name for bremelanotide (Vyleesi), an FDA-approved prescription. Melanotan II is not approved for any use. They are not the same drug."
 faq:
   - q: "Is PT-141 the same as Melanotan II?"
     a: "No. PT-141 is the old research name for bremelanotide, approved by the FDA in June 2019 as Vyleesi for one indication: acquired, generalized hypoactive sexual desire disorder in premenopausal women. Melanotan II has never been approved for any use. A shared origin is not a shared product."

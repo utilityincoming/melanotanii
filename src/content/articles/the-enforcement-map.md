@@ -5,6 +5,7 @@ description: "Melanotan II is unapproved almost everywhere. A country-by-country
 pubDate: 2026-09-24
 updatedDate: 2026-11-23
 cluster: cautionary-tale
+answer: "No major market has approved Melanotan II. The US, UK, Australia, Ireland, and the EU have acted against sale and supply. None of them has closed the market."
 faq:
   - q: "How has each country enforced Melanotan II?"
     a: "In no major market is Melanotan II an approved medicine. Sale and supply are unlawful in the United States, the United Kingdom, Australia, Ireland and across the EU. Possession for personal use is treated less consistently. The short legal answer by country is the Is Melanotan legal page; this page is the enforcement map."

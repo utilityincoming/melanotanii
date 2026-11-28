@@ -9,6 +9,8 @@ const articles = defineCollection({
     // <title> uses this when present so search and answer engines get the query.
     serpTitle: z.string().max(70).optional(),
     description: z.string().max(160),
+    // One-sentence answer shown above the essay on high-intent pages.
+    answer: z.string().max(320).optional(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     cluster: z.enum(['history', 'cautionary-tale', 'science', 'culture', 'next-agonist']),

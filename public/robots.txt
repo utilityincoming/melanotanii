@@ -36,4 +36,10 @@ Allow: /
 # https://melanotanii.com/llms.txt
 # https://melanotanii.com/rss.xml
 
+# Retired shop paths (/product, /products, /cart, /shop, /checkout,
+# /about-us, /contact-us, /shipping-policy, /privacy-policy, /privacy-policy-2,
+# /category, /melatropin, /dosage) permanently 301 to publication pages and
+# are omitted from the sitemap. They are not Disallowed: a disallow would
+# stop crawlers from seeing the redirect and dropping the old URL.
+
 Sitemap: https://melanotanii.com/sitemap-index.xml

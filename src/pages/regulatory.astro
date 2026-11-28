@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
+import IntentLinks from '../components/IntentLinks.astro';
+import { otherIntents } from '../data/intents';
 
 type Strand = 'approved' | 'caution' | 'mission';
 
@@ -189,12 +191,14 @@ const jsonLd = {
   <section class="head">
     <p class="eyebrow">The Record</p>
     <h1>On the docket.</h1>
+    <p class="direct-answer">Melanotan II is approved nowhere. This page is the dated file of filings, warnings, and trial dates, each one tied to a record entry.</p>
     <p class="lede">
       The question this site is watching, with dates on it: does a legitimate
       photoprotective drug arrive before the gray market sells another vial.
       What is coming, what already happened, and where Melanotan II stands
       in each jurisdiction.
     </p>
+    <IntentLinks items={[...otherIntents('regulatory')]} />
     <p class="meta-line">
       <strong>Last reviewed {lastReviewed}.</strong> Analysis, not legal or
       medical advice. Dates are targets and can slip. The short answer by country
@@ -299,6 +303,15 @@ const jsonLd = {
   <style>
     .head { padding: 4rem 0 1.5rem; max-width: 48rem; }
     .head h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0.6rem 0 1rem; }
+    .direct-answer {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1rem;
+      border-left: 3px solid var(--caution);
+      background: var(--surface);
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
     .lede { font-size: 1.15rem; color: var(--ink-soft); }
     .meta-line { margin-top: 1.2rem; font-size: 0.82rem; color: var(--ink-soft); line-height: 1.6; }
     .meta-line strong { color: var(--ink); }

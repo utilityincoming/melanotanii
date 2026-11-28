@@ -4,6 +4,7 @@ serpTitle: "Where Melanotan came from: Arizona origin"
 description: "Melanotan II began as 1980s melanoma-prevention research at the University of Arizona — an injectable sunscreen. The origin story of the tanning peptide."
 pubDate: 2026-08-18
 cluster: history
+answer: "Melanotan II started in the 1980s at the University of Arizona as an attempt to induce a protective tan before sun exposure."
 faq:
   - q: "What was Melanotan originally invented for?"
     a: "Melanoma prevention. In the 1980s, University of Arizona researchers wanted to separate sunlight's damage from sunlight's tan — a pharmacologically induced tan that would sit in the skin as built-in protection before UV exposure, for fair-skinned populations in high-UV regions. The founding idea was photoprotection, not vanity."

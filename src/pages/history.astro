@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { clusterColorVar, clusterLabel } from '../data/clusters';
+
+const order = [
+  'where-melanotan-came-from',
+  'before-the-receptor',
+  'who-owned-melanotan',
+  'the-accident-inside-melanotan',
+  'how-the-science-escaped-the-lab',
+  'melanotan-1-vs-melanotan-2',
+];
+const articles = await getCollection('articles', ({ data }) => !data.draft);
+const path = order.flatMap((id) => {
+  const article = articles.find((item) => item.id === id);
+  return article ? [article] : [];
+});
+
+const pageUrl = new URL('/history/', Astro.site).href;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: Astro.site?.href },
+    { '@type': 'ListItem', position: 2, name: 'History', item: pageUrl },
+  ],
+};
+---
+<Base
+  title="Melanotan II history, in reading order — Tan Lines"
+  description="A short path through the Arizona origin of Melanotan II: the lab, the design, the patents, the accidental side effect, and how the structure left the lab."
+  ogImage="/og/page-history.png"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
+  <header class="page-head">
+    <p class="eyebrow">The mission</p>
+    <h1>History, in order</h1>
+    <p class="page-sub">
+      Six pieces, in the order the story happened. The forty-year map, including
+      the gray market and the approved drugs, is the <a href="/timeline/">timeline</a>.
+      The rest of this strand is <a href="/strands/mission/">The mission</a>.
+    </p>
+  </header>
+  <div class="cards">
+    {path.map((article, index) => (
+      <div class="step">
+        <span>{index + 1}</span>
+        <ArticleCard
+          href={`/articles/${article.id}/`}
+          title={article.data.title}
+          description={article.data.description}
+          strand={clusterLabel(article.data.cluster)}
+          accent={clusterColorVar(article.data.cluster)}
+          date={article.data.pubDate}
+        />
+      </div>
+    ))}
+  </div>
+  <style>
+    .page-head { margin-top: 3rem; max-width: 46rem; }
+    .eyebrow { margin: 0; color: var(--strand-mission); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 0.3rem 0; }
+    .page-sub { color: var(--ink-soft); }
+    .cards { max-width: 46rem; margin-top: 1.5rem; }
+    .step { display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.6rem; }
+    .step span { padding-top: 1.05rem; font-weight: 700; color: var(--strand-mission); }
+  </style>
+</Base>

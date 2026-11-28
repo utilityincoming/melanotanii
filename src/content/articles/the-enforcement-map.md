@@ -27,7 +27,8 @@ same verdict. What differed — and what makes the story worth mapping — is th
 *weapon* each one chose, and the fact that none of the weapons worked.
 
 This is the enforcement map: the same unapproved drug, five regulators, one
-outcome. Read alongside [what the warnings actually did](/articles/what-the-warnings-actually-did/),
+outcome. The dated documents, grouped by who issued them, are
+[the record by country](/countries/). Read alongside [what the warnings actually did](/articles/what-the-warnings-actually-did/),
 it is a case study in why a borderless, socially-transmitted market is so hard for
 border-bound agencies to stop.
 

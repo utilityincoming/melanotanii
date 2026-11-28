@@ -4,6 +4,12 @@ import { getCollection } from 'astro:content';
 import { clusterLabel, clusterStrand } from '../../data/clusters';
 import { renderOgCard } from '../../lib/og-card';
 
+const pageCards = [
+  { id: 'page-countries', title: 'The record by country', threadLabel: 'The Record', strand: 'market' },
+  { id: 'page-mole-cases', title: 'Mole cases', threadLabel: 'The cautionary tale', strand: 'market' },
+  { id: 'page-history', title: 'The history, in order', threadLabel: 'The mission', strand: 'mission' },
+];
+
 const strandCards = [
   { id: 'strand-mission', title: 'The mission', threadLabel: 'The mission', strand: 'mission' },
   { id: 'strand-market', title: 'The gray market', threadLabel: 'The gray market', strand: 'market' },
@@ -31,6 +37,7 @@ export async function getStaticPaths() {
       },
     })),
     ...strandCards.map((card) => ({ params: { id: card.id }, props: card })),
+    ...pageCards.map((card) => ({ params: { id: card.id }, props: card })),
   ];
 }
 

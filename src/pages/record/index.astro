@@ -4,6 +4,7 @@
 // are replaced by filed ones when the event lands.
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import RecordEntry from '../../components/RecordEntry.astro';
 
 const entries = (await getCollection('records')).sort(
   (a, b) => b.data.eventDate.valueOf() - a.data.eventDate.valueOf()
@@ -11,14 +12,6 @@ const entries = (await getCollection('records')).sort(
 const filed = entries.filter((e) => e.data.status === 'filed');
 const scheduled = entries.filter((e) => e.data.status === 'scheduled');
 
-const jur: Record<string, string> = {
-  au: 'Australia',
-  us: 'United States',
-  uk: 'United Kingdom',
-  eu: 'European Union',
-  ca: 'Canada',
-  global: 'Global',
-};
 ---
 
 <Base
@@ -50,13 +43,14 @@ const jur: Record<string, string> = {
       {
         filed.map((e) => (
           <li>
-            <a class="entry-link" href={`/record/${e.id}/`}>
-              <span class="when">{e.data.when}</span>
-              <span class="entry-title">{e.data.title}</span>
-              <span class="meta">
-                {e.data.authority} &middot; {jur[e.data.jurisdiction]}
-              </span>
-            </a>
+            <RecordEntry
+              href={`/record/${e.id}/`}
+              title={e.data.title}
+              when={e.data.when}
+              authority={e.data.authority}
+              jurisdiction={e.data.jurisdiction}
+              status={e.data.status}
+            />
           </li>
         ))
       }
@@ -70,13 +64,14 @@ const jur: Record<string, string> = {
       {
         scheduled.map((e) => (
           <li class="scheduled">
-            <a class="entry-link" href={`/record/${e.id}/`}>
-              <span class="when">{e.data.when}</span>
-              <span class="entry-title">{e.data.title}</span>
-              <span class="meta">
-                {e.data.authority} &middot; {jur[e.data.jurisdiction]}
-              </span>
-            </a>
+            <RecordEntry
+              href={`/record/${e.id}/`}
+              title={e.data.title}
+              when={e.data.when}
+              authority={e.data.authority}
+              jurisdiction={e.data.jurisdiction}
+              status={e.data.status}
+            />
           </li>
         ))
       }

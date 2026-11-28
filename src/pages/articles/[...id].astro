@@ -1,9 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
-import { clusters, clusterLabel, clusterColorVar, clusterStrand, strandLabel } from '../../data/clusters';
+import { clusters, clustersByStrand, clusterColorVar, clusterStrand, strandLabel, strandOrder } from '../../data/clusters';
 import { publication, orgRef, recordRef, authorLd } from '../../data/brand';
 import Byline from '../../components/Byline.astro';
+import RelatedReading from '../../components/RelatedReading.astro';
+import SourceList from '../../components/SourceList.astro';
+import { citationsFromMarkdown } from '../../lib/citations';
+import { strandPaths } from '../../data/strands-pages';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -29,24 +33,33 @@ const sections = headings.filter((h) => h.depth === 2);
 const showToc = sections.length >= 5 && wordCount >= 1200;
 
 const clusterKey = article.data.cluster;
-const label = clusterLabel(clusterKey);
 const strandKey = clusterStrand(clusterKey);
 const strand = strandLabel(strandKey);
 const accent = clusterColorVar(clusterKey);
-const threadAnchor = `/articles/#strand-${strandKey}`;
+const threadAnchor = strandPaths[strandKey];
 const isQuery = article.data.kind === 'query';
 
 // Siblings in the same thread — the curated lead first, then newest — for the
 // "Continue in this thread" footer (keeps readers moving through the site).
+const allLive = await getCollection('articles', ({ data }) => !data.draft);
 const leadId = (clusters as Record<string, { lead: string }>)[clusterKey]?.lead;
-const rest = (await getCollection('articles', ({ data }) => !data.draft)).filter(
-  (a) => a.data.cluster === clusterKey && a.id !== article.id
-);
+const rest = allLive.filter((a) => a.data.cluster === clusterKey && a.id !== article.id);
 const lead = rest.find((a) => a.id === leadId);
 const others = rest
   .filter((a) => a.id !== leadId)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const siblings = (lead ? [lead, ...others] : others).slice(0, 4);
+const siblings = (lead ? [lead, ...others] : others).slice(0, 3);
+
+const crossStrand = strandOrder
+  .filter((key) => key !== strandKey)
+  .flatMap((key) => {
+    const leadArticle = allLive.find((a) =>
+      clustersByStrand[key].some((cluster) => clusters[cluster].lead === a.id),
+    );
+    return leadArticle && leadArticle.id !== article.id ? [leadArticle] : [];
+  });
+
+const labeledSources = article.data.sources ?? citationsFromMarkdown(article.body);
 
 // Reciprocal links to dated Record entries that cite this article.
 const relatedRecords = (await getCollection('records', ({ data }) => !data.draft))
@@ -111,7 +124,7 @@ const faqLd = faq && faq.length > 0
     }
   : null;
 ---
-<Base title={pageTitle} description={article.data.description} ogImage={`/og/${article.id}.png`}>
+<Base title={pageTitle} description={article.data.description} ogImage={`/og/${article.id}.png`} ogType="article">
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} is:inline />
   {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} is:inline />}
@@ -121,7 +134,7 @@ const faqLd = faq && faq.length > 0
       <span aria-hidden="true">&rsaquo;</span>
       <a href="/articles/">Articles</a>
       <span aria-hidden="true">&rsaquo;</span>
-      <a class="crumb-thread" href={threadAnchor}>{strand}</a>
+      <a class="crumb-thread" href={strandPaths[strandKey]}>{strand}</a>
     </nav>
     <header class="article-head">
       <p class="eyebrow accent">{isQuery ? 'Direct answer' : strand}</p>
@@ -195,22 +208,22 @@ const faqLd = faq && faq.length > 0
       </nav>
     )}
 
-    {siblings.length > 0 && (
-      <nav class="continue" aria-label={`More in ${label}`}>
-        <p class="continue-head">
-          <span class="continue-eyebrow accent">Continue in {label}</span>
-        </p>
-        <ul>
-          {siblings.map((a) => (
-            <li>
-              <a href={`/articles/${a.id}/`}>{a.data.title}</a>
-              <p>{a.data.description}</p>
-            </li>
-          ))}
-        </ul>
-        <p class="continue-all"><a href="/articles/">All articles &rarr;</a></p>
-      </nav>
-    )}
+    <SourceList sources={labeledSources} />
+
+    <RelatedReading
+      strandLabel={strand}
+      strandHref={strandPaths[strandKey]}
+      sameStrand={siblings.map((a) => ({
+        href: `/articles/${a.id}/`,
+        title: a.data.title,
+        note: a.data.description,
+      }))}
+      crossStrand={crossStrand.map((a) => ({
+        href: `/articles/${a.id}/`,
+        title: a.data.title,
+        note: strandLabel(clusterStrand(a.data.cluster)),
+      }))}
+    />
 
   </article>
   <style>

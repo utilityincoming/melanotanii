@@ -1,0 +1,39 @@
+---
+import { jurisdictionLabel } from '../data/jurisdictions';
+interface Props {
+  href: string;
+  title: string;
+  when: string;
+  authority: string;
+  jurisdiction: string;
+  status: 'filed' | 'scheduled';
+}
+const { href, title, when, authority, jurisdiction, status } = Astro.props;
+const filed = status === 'filed' ? 'Filed' : 'Scheduled';
+---
+<a class="record-entry" href={href}>
+  <span class="record-kicker">{filed} · {jurisdictionLabel(jurisdiction)}</span>
+  <span class="record-title">{title}</span>
+  <span class="record-meta">{when} · {authority}</span>
+</a>
+
+<style>
+  .record-entry {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.95rem 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+  }
+  .record-entry:hover .record-title { text-decoration: underline; text-underline-offset: 3px; }
+  .record-kicker {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--uv);
+  }
+  .record-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--ink); }
+  .record-meta { color: var(--ink-soft); font-size: 0.88rem; }
+</style>

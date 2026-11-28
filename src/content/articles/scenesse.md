@@ -5,6 +5,7 @@ description: "Scenesse is afamelanotide, an FDA-approved implant for EPP, a rare
 pubDate: 2026-10-25
 cluster: next-agonist
 kind: query
+answer: "Scenesse is an approved implant for a rare disease in which light causes pain. It is not a cosmetic tan and not gray-market Melanotan."
 faq:
   - q: "What is Scenesse?"
     a: "Scenesse is the brand name of afamelanotide, a clinic-administered implant approved to increase pain-free light exposure in adults with erythropoietic protoporphyria (EPP). It is not a cosmetic tan and not gray-market Melanotan."

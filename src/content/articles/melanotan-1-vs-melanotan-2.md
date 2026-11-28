@@ -6,6 +6,7 @@ pubDate: 2026-08-18
 updatedDate: 2026-11-27
 cluster: history
 kind: query
+answer: "Melanotan I became the approved medicine Scenesse. Melanotan II has never been approved and is the peptide in the gray market."
 faq:
   - q: "What's the difference between Melanotan 1 and Melanotan 2?"
     a: "Melanotan 1 (Melanotan I, afamelanotide) is a linear peptide that mainly stimulates pigment; it was developed into an approved medicine for a rare light disorder. Melanotan 2 (Melanotan II) is a smaller cyclic peptide that hits several melanocortin receptors, which is why it also affects appetite and sexual arousal — and why it stayed in the gray market."
